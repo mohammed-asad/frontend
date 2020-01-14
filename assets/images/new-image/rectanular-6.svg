@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 543 325">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.25" y1="-0.223" x2="1.25" y2="1.223" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cffbf9"/>
+      <stop offset="1" stop-color="#339c9f"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rounded_Rectangle_5_copy_2" data-name="Rounded Rectangle 5 copy 2" class="cls-1" width="543" height="325" rx="10"/>
+</svg>

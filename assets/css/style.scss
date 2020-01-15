@@ -511,6 +511,103 @@ ul.timeline > li:before {
 }
 /**************************** travel packages page css **************************************/
 
+/**************************** Nav Menu css Munsif**************************************/
+.navigation{
+  position: relative;
+  width: 100%;
+  .nav-items-holder{
+    background: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    .nav-item{
+      padding: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      // position: relative;
+      &:hover{
+        background: #444444;
+        color: #fff;
+
+        .sub-menu{
+          display: block;
+        }
+      }
+    }
+
+    .nav-item .sub-menu{
+      position: absolute;
+      width: 100%;
+      background: #fcfcfc;
+      height: 300px;
+      left: 0;
+      z-index: 9;
+      margin-top: 15px;
+      display: none;
+
+      .sub-menu-items-holder{
+        width: 100%;
+        margin: 0 auto;
+        height: 200px;
+
+        .sub-menu-item-list{
+          height: 300px;
+          width: 40%;
+          background: #444;
+          .sub-menu-item{
+            color: #fff;
+            text-align: right;
+            span{
+              display: inline-block;
+              padding: 15px;
+            }
+            &:hover{
+              span{
+                background: #fcfcfc;
+                color: #444;
+              }
+              .sub-item-desc{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .sub-item-desc-holder{
+        position: absolute;
+        top: 0;
+        left: 40%;
+        width: 60%;
+        padding-left: 15px;
+
+        .sub-item-desc{
+          width: 600px;
+          text-align: left;
+          height: 200px;
+          color: #444;
+          padding: 15px;
+          display: flex;
+          justify-content: start;
+          display: none;
+
+          .sub-item-item{
+            margin-right: 50px;
+            ul{
+              list-style: none;
+              padding: 0; margin: 0;
+            }
+          }
+
+          &:first-of-type{
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+/**************************** Nav Menu css Munsif **************************************/
+
 /*************************************************** media queries ***********************************/
 /*************************enquery form ***************************************************************/
 

@@ -1,3 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holidaymate</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/header.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/bootstrap-datepicker3" rel="stylesheet" type="text/css">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <!--[if IE 7]>
+      <link rel="stylesheet" href="css/fontello-ie7.css">
+      <![endif]-->
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+</head>
+
+<body>
+
+<section class="navigation">
+	<div class="nav-items-holder">
+		<a href="" class="nav-item">Travel private</a>
+		<div class="nav-item">
+			Destinations
+			<div class="sub-menu">
+				<div class="sub-menu-items-holder">
+					<div class="sub-menu-item-list">
+						<div class="sub-menu-item" >
+							<span data-region="europe">
+							Europe
+							</span>
+						</div>
+
+						<div class="sub-menu-item" >
+							<span data-region="asia">
+							Asia
+							</span>
+						</div>
+					
+						<div class="sub-menu-item">
+							<span>
+							America
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="sub-item-desc-holder">
+					<div class="sub-item-desc" data-region="europe">
+						<div class="sub-item-item overview">
+							<h2>Overview</h2>
+						</div>
+						<div class="sub-item-item countries">
+							<ul>
+								<li>Switzerland</li>
+								<li>France</li>
+								<li>Italy</li>
+								<li>Turkey</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sub-item-desc" data-region="asia">
+						<div class="sub-item-item overview">
+							<h2>Overview</h2>
+						</div>
+						<div class="sub-item-item countries">
+							<ul>
+								<li>India</li>
+								<li>Indonesia</li>
+								<li>Bangladesh</li>
+								<li>Pakistan</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="" class="nav-item">Private trip</a>
+	</div>
+</section>
+
 <section class="banner">
 	<div id="demo" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -350,3 +443,18 @@
 		</div>
 	</div>
 </section>
+
+<!-- Jquery for Navigation Menu -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+
+	$('.sub-menu-item').on('mouseover', function(e){
+		var target = $(e.target).attr("data-region");
+		$('.sub-item-desc-holder').find('.sub-item-desc').css("display","none");
+		$('.sub-item-desc-holder').find('[data-region="'+target+'"]').css("display","flex");
+	})
+</script>
+
+<!-- Jquery for Navigation Menu -->

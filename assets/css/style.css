@@ -184,6 +184,26 @@ h4 {
   border-radius: 55px;
 }
 
+.carousel .custom-aleft {
+  position: absolute;
+  left: 0;
+  border: 2px solid;
+  width: 30px;
+  height: 30px;
+  top: 41%;
+  border-radius: 55px;
+}
+
+.carousel .custom-aright {
+  position: absolute;
+  right: 0;
+  border: 2px solid;
+  width: 30px;
+  height: 30px;
+  top: 41%;
+  border-radius: 55px;
+}
+
 .carousel .carousel-inner img {
   width: 100%;
   height: 100%;
@@ -620,12 +640,14 @@ ul.timeline > li:before {
 /**************************** travel packages page css **************************************/
 /**************************** Nav Menu css Munsif**************************************/
 .navigation {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 98%;
+  z-index: 2;
 }
 
 .navigation .nav-items-holder {
-  background: #e4e4e4;
+  background: transparent;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,23 +664,27 @@ ul.timeline > li:before {
 }
 
 .navigation .nav-items-holder .nav-item:hover {
-  background: #444444;
+  background: transparent;
   color: #fff;
 }
 
 .navigation .nav-items-holder .nav-item:hover .sub-menu {
   display: block;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu {
   position: absolute;
   width: 100%;
   background: #fcfcfc;
-  height: 300px;
+  height: 400px;
   left: 0;
   z-index: 9;
   margin-top: 15px;
   display: none;
+  border-radius: 29px;
+  overflow-x: hidden;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder {
@@ -668,9 +694,11 @@ ul.timeline > li:before {
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list {
-  height: 300px;
-  width: 40%;
+  height: 400px;
+  width: 30%;
   background: #444;
+  max-width: 25%;
+  text-align: right;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item {
@@ -681,6 +709,9 @@ ul.timeline > li:before {
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item span {
   display: inline-block;
   padding: 15px;
+  width: 50%;
+  text-align: center;
+  border-radius: 29px 0px 0px 29px;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item:hover span {
@@ -690,18 +721,19 @@ ul.timeline > li:before {
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item:hover .sub-item-desc {
   display: block;
+  border-radius: 29px;
+  overflow-x: hidden;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-item-desc-holder {
   position: absolute;
   top: 0;
-  left: 40%;
-  width: 60%;
   padding-left: 15px;
+  max-width: 75%;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-item-desc-holder .sub-item-desc {
-  width: 600px;
+  width: 55%;
   text-align: left;
   height: 200px;
   color: #444;
@@ -713,10 +745,6 @@ ul.timeline > li:before {
       -ms-flex-pack: start;
           justify-content: start;
   display: none;
-}
-
-.navigation .nav-items-holder .nav-item .sub-menu .sub-item-desc-holder .sub-item-desc .sub-item-item {
-  margin-right: 50px;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-item-desc-holder .sub-item-desc .sub-item-item ul {
@@ -769,6 +797,17 @@ ul.timeline > li:before {
     border-radius: 50%;
     border: 1px solid #d4d9df;
     left: 89px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navigation .nav-items-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    -webkit-box-pack: initial;
+    -ms-flex-pack: center;
+    justify-content: normal;
   }
 }
 

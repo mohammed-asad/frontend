@@ -78,12 +78,19 @@
                         </div>
                       </div>
                       <div class="col-md-12">
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                           <label for="to1">Date of Departure</label>
                           <span class="date-image2">
                             <img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
                           </span>
                           <input class="form-control" id="uname1" name="where" required="" type="date">
+                        </div> -->
+                        <div class="form-group custom-formgroup1">
+                          <label class="control-label">From</label>
+                          <div class="icon-input">
+                            <i class="fa fa-calendar newfacalendar1"></i>
+                            <input id="datepicker1" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+                          </div>
                         </div>
                       </div>
 

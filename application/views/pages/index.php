@@ -1,43 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Holidaymate</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/header.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/bootstrap-datepicker3" rel="stylesheet" type="text/css">
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-	<!--[if IE 7]>
-      <link rel="stylesheet" href="css/fontello-ie7.css">
-      <![endif]-->
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
-</head>
-
 <body>
-
 	<section class="navigation">
 		<div class="nav-items-holder">
 			<a href="" class="nav-item">Travel private</a>
 			<div class="nav-item">
 				Destinations
-				<div class="sub-menu">
-					<div class="sub-menu-items-holder">
-						<div class="sub-menu-item-list">
+				<div class="col-md-12 sub-menu p-0">
+					<div class="row sub-menu-items-holder">
+						<div class="col-md-3 pr-0 sub-menu-item-list">
 							<div class="sub-menu-item">
 								<span data-region="europe">
 									Europe
@@ -51,18 +20,23 @@
 							</div>
 
 							<div class="sub-menu-item">
-								<span>
+								<span data-region="america">
 									America
 								</span>
 							</div>
 						</div>
 					</div>
-					<div class="sub-item-desc-holder">
-						<div class="sub-item-desc" data-region="europe">
-							<div class="sub-item-item overview">
-								<h2>Overview</h2>
+					<div class="col-md-9 offset-md-3 sub-item-desc-holder">
+						<div class="col-md-12 sub-item-desc" data-region="europe" style="/* display: none; */">
+							<div class="col-xl-6 col-lg-6 col-md-6 sub-item-item overview">
+								<h4 class="mb-2">Overview</h4>
+								<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
+									It is bordered by the Arctic Ocean to the north,
+									the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
+									It comprises the westernmost part of Eurasia.</p>
 							</div>
-							<div class="sub-item-item countries">
+							<div class="col-xl-6 col-lg-6 col-md-6 sub-item-item countries">
+								<h4 class="mb-2">Destinations</h4>
 								<ul>
 									<li>Switzerland</li>
 									<li>France</li>
@@ -70,8 +44,49 @@
 									<li>Turkey</li>
 								</ul>
 							</div>
+							<div class="col-xl-6 col-lg-8 col-md-6">
+
+								<h4 class="mb-2">Featured Tours</h4>
+								<div class="wrapper-carousel-fix mega-menu-slider text-white">
+									<!-- Carousel Wrapper carousel-fade-->
+									<div id="carousel-example-2" class="carousel no-flex testimonial-carousel" data-ride="carousel" data-interval="false">
+										<!--Slides-->
+										<div class="carousel-inner" role="listbox">
+											<!--First slide-->
+											<div class="carousel-item example2-0 active"></div>
+											<!--First slide-->
+											<!--Second slide-->
+											<div class="carousel-item example2-1"></div>
+											<!--Second slide-->
+											<!--Third slide-->
+											<div class="carousel-item example2-2"></div>
+											<!--Third slide-->
+
+										</div>
+										<!--Controls-->
+										<a class="carousel-control-prev left carousel-control custom-aleft" href="#carousel-example-2" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next right carousel-control custom-aright" href="#carousel-example-2" role="button" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											<span class="sr-only">Next</span>
+										</a>
+										<!--Controls-->
+										<!--Slides-->
+										<!--Controls-->
+										<ul class="carousel-indicators custom-indicators text-left d-inline-flex">
+											<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel-example-2" data-slide-to="1" class=""></li>
+											<li data-target="#carousel-example-2" data-slide-to="2" class=""></li>
+
+										</ul>
+									</div>
+									<!-- Carousel Wrapper -->
+								</div>
+
+							</div>
 						</div>
-						<div class="sub-item-desc" data-region="asia">
+						<!-- <div class="col-md-12 sub-item-desc" data-region="asia" style="display: none;">
 							<div class="sub-item-item overview">
 								<h2>Overview</h2>
 							</div>
@@ -83,6 +98,122 @@
 									<li>Pakistan</li>
 								</ul>
 							</div>
+						</div> -->
+						<div class="col-md-12 sub-item-desc" data-region="asia" style="/* display: none; */">
+							<div class="col-xl-6 col-lg-6 col-md-6 sub-item-item overview">
+								<h4 class="mb-2">Overview</h4>
+								<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
+									It is bordered by the Arctic Ocean to the north,
+									the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
+									It comprises the westernmost part of Eurasia.</p>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 sub-item-item countries">
+								<h4 class="mb-2">Destinations</h4>
+								<ul>
+									<li>India</li>
+									<li>Indonesia</li>
+									<li>Bangladesh</li>
+									<li>Pakistan</li>
+								</ul>
+							</div>
+							<div class="col-xl-6 col-lg-8 col-md-6">
+
+								<h4 class="mb-2">Featured Tours</h4>
+								<div class="wrapper-carousel-fix mega-menu-slider text-white">
+									<!-- Carousel Wrapper carousel-fade-->
+									<div id="carousel-example-21" class="carousel no-flex testimonial-carousel" data-ride="carousel" data-interval="false">
+										<!--Slides-->
+										<div class="carousel-inner" role="listbox">
+											<!--First slide-->
+											<div class="carousel-item example2-0 active"></div>
+											<!--First slide-->
+											<!--Second slide-->
+											<div class="carousel-item example2-1"></div>
+											<!--Second slide-->
+											<!--Third slide-->
+											<div class="carousel-item example2-2"></div>
+											<!--Third slide-->
+
+										</div>
+										<!--Controls-->
+										<a class="carousel-control-prev left carousel-control custom-aleft" href="#carousel-example-21" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next right carousel-control custom-aright" href="#carousel-example-21" role="button" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											<span class="sr-only">Next</span>
+										</a>
+										<!--Controls-->
+										<!--Slides-->
+										<!--Controls-->
+										<ul class="carousel-indicators custom-indicators text-left d-inline-flex">
+											<li data-target="#carousel-example-21" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel-example-21" data-slide-to="1" class=""></li>
+											<li data-target="#carousel-example-21" data-slide-to="2" class=""></li>
+
+										</ul>
+									</div>
+									<!-- Carousel Wrapper -->
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-12 sub-item-desc" data-region="america" style="/* display: none; */">
+							<div class="col-xl-6 col-lg-6 col-md-6 sub-item-item overview">
+								<h4 class="mb-2">Overview</h4>
+								<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
+									It is bordered by the Arctic Ocean to the north,
+									the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
+									It comprises the westernmost part of Eurasia.</p>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 sub-item-item countries">
+								<h4 class="mb-2">Destinations</h4>
+								<ul>
+									<li>India</li>
+
+								</ul>
+							</div>
+							<div class="col-xl-6 col-lg-8 col-md-6">
+
+								<h4 class="mb-2">Featured Tours</h4>
+								<div class="wrapper-carousel-fix mega-menu-slider text-white">
+									<!-- Carousel Wrapper carousel-fade-->
+									<div id="carousel-example-22" class="carousel no-flex testimonial-carousel" data-ride="carousel" data-interval="false">
+										<!--Slides-->
+										<div class="carousel-inner" role="listbox">
+											<!--First slide-->
+											<div class="carousel-item example2-0 active"></div>
+											<!--First slide-->
+											<!--Second slide-->
+											<div class="carousel-item example2-1"></div>
+											<!--Second slide-->
+											<!--Third slide-->
+											<div class="carousel-item example2-2"></div>
+											<!--Third slide-->
+
+										</div>
+										<!--Controls-->
+										<a class="carousel-control-prev left carousel-control custom-aleft" href="#carousel-example-22" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next right carousel-control custom-aright" href="#carousel-example-22" role="button" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											<span class="sr-only">Next</span>
+										</a>
+										<!--Controls-->
+										<!--Slides-->
+										<!--Controls-->
+										<ul class="carousel-indicators custom-indicators text-left d-inline-flex">
+											<li data-target="#carousel-example-22" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel-example-22" data-slide-to="1" class=""></li>
+											<li data-target="#carousel-example-22" data-slide-to="2" class=""></li>
+
+										</ul>
+									</div>
+									<!-- Carousel Wrapper -->
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
@@ -90,7 +221,6 @@
 			<a href="" class="nav-item">Private trip</a>
 		</div>
 	</section>
-
 	<section class="banner">
 		<div id="demo" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -122,8 +252,6 @@
 				<div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-7 offset-md-5 col-sm-6 offset-sm-6">
 					<!-- form card login -->
 					<div class="card card-outline-secondary">
-						<!-- <div class="card-header"> -->
-						<!-- </div> -->
 						<div class="card-body enqury-card">
 							<h3 class="mb-10">Book unique places to stay and things to do.</h3>
 							<form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
@@ -135,13 +263,6 @@
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 pr-0">
-										<!-- <div class="form-group">
-										<label>From</label>
-										<span class="date-image1">
-											<img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
-										</span>
-										<input name="fromdate" class="form-control cst-pr" id="pwd1" required="" type="date">
-									</div> -->
 										<div class="form-group custom-formgroup1">
 											<label class="control-label">From</label>
 											<div class="icon-input">
@@ -151,13 +272,6 @@
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 pl-0">
-										<!-- <div class="form-group">
-										<label for="to1">To</label>
-										<span class="date-image2">
-											<img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
-										</span>
-										<input class="form-control cst-pl cstpl-wd" id="to1" name="todate" required="" type="date">
-									</div> -->
 										<div class="form-group custom-formgroup2">
 											<label class="control-label">To</label>
 											<div class="icon-input">
@@ -181,7 +295,6 @@
 									<div class="col-md-12">
 										<div class="form-group">
 											<label for="mobile">Mobile Number</label>
-											<!-- <span class="country-code">+91</span> -->
 											<input class="form-control country-code text-center" name="mobile" type="text" disable="disabled" readonly value="+91">
 											<input class="form-control pl-65" name="mobile" required="" type="text">
 										</div>
@@ -215,22 +328,22 @@
 										<input class="form-control" id="uname1" name="where" required="" type="text">
 									</div>
 								</div>
-								<div class="col-md-6 col-sm-6">
-									<div class="form-group">
-										<label>From</label>
-										<span class="date-image1">
-											<img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
-										</span>
-										<input name="fromdate" class="form-control cst-pr" id="pwd1" required="" type="date">
+								<div class="col-md-6 col-sm-6 pr-0">
+									<div class="form-group custom-formgroup1">
+										<label class="control-label">From</label>
+										<div class="icon-input">
+											<i class="fa fa-calendar newfacalendar1"></i>
+											<input id="datepicker1" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+										</div>
 									</div>
 								</div>
-								<div class="col-md-6 col-sm-6">
-									<div class="form-group">
-										<label for="to1">To</label>
-										<span class="date-image2">
-											<img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
-										</span>
-										<input class="form-control cst-pl cstpl-wd" id="to1" name="todate" required="" type="date">
+								<div class="col-md-6 col-sm-6 pl-0">
+									<div class="form-group custom-formgroup2">
+										<label class="control-label">To</label>
+										<div class="icon-input">
+											<i class="fa fa-calendar newfacalendar2"></i>
+											<input id="datepicker2" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+										</div>
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pr-0">
@@ -248,7 +361,6 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="mobile">Mobile Number</label>
-										<!-- <span class="country-code">+91</span> -->
 										<input class="form-control country-code text-center" name="mobile" type="text" disable="disabled" readonly value="+91">
 										<input class="form-control pl-65" name="mobile" required="" type="text">
 									</div>
@@ -463,17 +575,3 @@
 			</div>
 		</div>
 	</section>
-
-	<!-- Jquery for Navigation Menu -->
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-	<script>
-		$('.sub-menu-item').on('mouseover', function(e) {
-			var target = $(e.target).attr("data-region");
-			$('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
-			$('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
-		})
-	</script>
-
-	<!-- Jquery for Navigation Menu -->

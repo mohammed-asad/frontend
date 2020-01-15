@@ -161,6 +161,24 @@ h4 {
     //      height: 95.5vh;
     // }
   }
+  .custom-aleft {
+    position: absolute;
+    left: 0;
+    border: 2px solid;
+    width: 30px;
+    height: 30px;
+    top: 41%;
+    border-radius: 55px;
+  }
+  .custom-aright {
+    position: absolute;
+    right: 0;
+    border: 2px solid;
+    width: 30px;
+    height: 30px;
+    top: 41%;
+    border-radius: 55px;
+  }
   .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -554,10 +572,14 @@ ul.timeline > li:before {
 
 /**************************** Nav Menu css Munsif**************************************/
 .navigation {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  // width: 100%;
+  width: 98%;
+  z-index: 2;
   .nav-items-holder {
-    background: #e4e4e4;
+    // background: #e4e4e4;
+    background: transparent;
+    color: #fff;
     display: flex;
     justify-content: center;
     .nav-item {
@@ -567,11 +589,13 @@ ul.timeline > li:before {
       color: inherit;
       // position: relative;
       &:hover {
-        background: #444444;
+        // background: #444444;
+        background: transparent;
         color: #fff;
 
         .sub-menu {
           display: block;
+          box-shadow: 0px 3px 6px #00000029;
         }
       }
     }
@@ -580,11 +604,13 @@ ul.timeline > li:before {
       position: absolute;
       width: 100%;
       background: #fcfcfc;
-      height: 300px;
+      height: 400px;
       left: 0;
       z-index: 9;
       margin-top: 15px;
       display: none;
+      border-radius: 29px;
+      overflow-x: hidden;
 
       .sub-menu-items-holder {
         width: 100%;
@@ -592,15 +618,20 @@ ul.timeline > li:before {
         height: 200px;
 
         .sub-menu-item-list {
-          height: 300px;
-          width: 40%;
+          height: 400px;
+          width: 30%;
           background: #444;
+          max-width: 25%;
+          text-align: right;
           .sub-menu-item {
             color: #fff;
             text-align: right;
             span {
               display: inline-block;
               padding: 15px;
+              width: 50%;
+              text-align: center;
+              border-radius: 29px 0px 0px 29px;
             }
             &:hover {
               span {
@@ -609,6 +640,8 @@ ul.timeline > li:before {
               }
               .sub-item-desc {
                 display: block;
+                border-radius: 29px;
+                overflow-x: hidden;
               }
             }
           }
@@ -617,12 +650,13 @@ ul.timeline > li:before {
       .sub-item-desc-holder {
         position: absolute;
         top: 0;
-        left: 40%;
-        width: 60%;
+        // left: 30%;
+        // width: 60%;
         padding-left: 15px;
-
+        max-width: 75%;
         .sub-item-desc {
-          width: 600px;
+          // width: 500px;
+          width: 55%;
           text-align: left;
           height: 200px;
           color: #444;
@@ -632,7 +666,7 @@ ul.timeline > li:before {
           display: none;
 
           .sub-item-item {
-            margin-right: 50px;
+            // margin-right: 50px;
             ul {
               list-style: none;
               padding: 0;
@@ -693,6 +727,16 @@ ul.timeline > li:before {
     border-radius: 50%;
     border: 1px solid #d4d9df;
     left: 89px;
+  }
+}
+@media (max-width: 1024px) {
+  .navigation .nav-items-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    -webkit-box-pack: initial;
+    -ms-flex-pack: center;
+    justify-content: normal;
   }
 }
 

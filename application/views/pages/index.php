@@ -1,3 +1,8 @@
+<style>
+	.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top {
+		display: inline-block !important;
+	}
+</style>
 <section class="banner">
 	<div id="demo" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -26,7 +31,7 @@
 			</div>
 		</div>
 		<div class="row  form-block sm-form-none">
-			<div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-6 offset-md-6 col-sm-6 offset-sm-6">
+			<div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-7 offset-md-5 col-sm-6 offset-sm-6">
 				<!-- form card login -->
 				<div class="card card-outline-secondary">
 					<!-- <div class="card-header"> -->
@@ -42,21 +47,35 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pr-0">
-									<div class="form-group">
+									<!-- <div class="form-group">
 										<label>From</label>
 										<span class="date-image1">
 											<img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
 										</span>
 										<input name="fromdate" class="form-control cst-pr" id="pwd1" required="" type="date">
+									</div> -->
+									<div class="form-group custom-formgroup1">
+										<label class="control-label">From</label>
+										<div class="icon-input">
+											<i class="fa fa-calendar newfacalendar1"></i>
+											<input id="datepicker1" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+										</div>
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pl-0">
-									<div class="form-group">
+									<!-- <div class="form-group">
 										<label for="to1">To</label>
 										<span class="date-image2">
 											<img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
 										</span>
 										<input class="form-control cst-pl cstpl-wd" id="to1" name="todate" required="" type="date">
+									</div> -->
+									<div class="form-group custom-formgroup2">
+										<label class="control-label">To</label>
+										<div class="icon-input">
+											<i class="fa fa-calendar newfacalendar2"></i>
+											<input id="datepicker2" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+										</div>
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pr-0">
@@ -280,16 +299,22 @@
 				<div class="carousel-inner" role="listbox">
 					<!--First slide-->
 					<div class="carousel-item cstitem1 active">
-						<div class="testimonial text-white">
+						<!-- <div class="testimonial text-white"> -->
 
-							<!--Content-->
-							<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+						<!--Content-->
+						<!-- <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
 								<h3 class="text-white">Travel Private</h3>
 								<p>
 									holiday<strong>mate</strong> motto when it comes to Travel Private means</p>
-								<h4 class="font-weight-bold">Gathering with Family</h4>
-								<!-- <h6 class="font-weight-bold my-3">Founder at ET Company</h6> -->
-								<!--Review-->
+								<h4 class="font-weight-bold">Gathering with Family</h4> -->
+						<!-- <h6 class="font-weight-bold my-3">Founder at ET Company</h6> -->
+						<!--Review-->
+						<!-- </div> -->
+						<!-- </div> -->
+						<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+							<div class="jumbotron custom-jumbotron">
+								<h3 class="text-white">Travel Private</h3>
+								<p>Bootstrap is the most popular HTML, CSS...</p>
 							</div>
 						</div>
 					</div>

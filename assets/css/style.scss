@@ -217,6 +217,31 @@ h4 {
             left: 5px;
             z-index: 1;
           }
+          .newfacalendar1 {
+            position: absolute;
+            top: 27px;
+            left: 12px;
+            font-size: 14px;
+            padding-top: 12px;
+            line-height: 1;
+            color: #bdbdbd;
+          }
+          .newfacalendar2 {
+            position: absolute;
+            top: 27px;
+            left: 31px;
+            font-size: 14px;
+            padding-top: 12px;
+            line-height: 1;
+            color: #bdbdbd;
+          }
+          #datepicker1 {
+            padding: 10px 35px;
+          }
+          #datepicker2 {
+            padding: 10px 5px 10px 49px;
+          }
+
           .form-control {
             border: 1px solid #e4e4e4;
             border-radius: 28px;
@@ -242,6 +267,15 @@ h4 {
             width: 60px;
             background: transparent;
           }
+        }
+        .custom-formgroup2 {
+          margin-left: -26px;
+          position: relative;
+          z-index: 0;
+        }
+        .custom-formgroup1 {
+          position: relative;
+          z-index: 1;
         }
       }
     }
@@ -280,6 +314,13 @@ header {
 }
 .cst-sm-form-block {
   display: none;
+}
+.custom-jumbotron {
+  position: relative;
+  top: 15rem;
+  left: 2rem;
+  background: transparent;
+  padding: 0;
 }
 .new-cardblock {
   .card {
@@ -686,10 +727,10 @@ ul.timeline > li:before {
   }
 }
 @media (max-height: 600px) {
-  .form-block {
+  /*.form-block {
     position: relative;
     top: 14%;
-  }
+  }*/
   .banner-inner img {
     height: 94vh !important;
   }

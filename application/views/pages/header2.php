@@ -18,7 +18,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/header.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/bootstrap-datepicker3" rel="stylesheet" type="text/css">
+  <link href="assets/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css">
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   <!--[if IE 7]>
       <link rel="stylesheet" href="css/fontello-ie7.css">

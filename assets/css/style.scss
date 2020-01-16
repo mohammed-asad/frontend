@@ -161,6 +161,13 @@ h4 {
     //      height: 95.5vh;
     // }
   }
+  .banner-carousel-inner {
+    .banner-inner {
+      img {
+        height: 96vh;
+      }
+    }
+  }
   .custom-aleft {
     position: absolute;
     left: 0;
@@ -193,13 +200,69 @@ h4 {
     background-color: transparent;
     border: 1px solid #fff;
   }
+
   .cst-carousel-control-prev {
     left: 35%;
   }
   .cst-carousel-control-next {
     right: 35%;
   }
+  .csthome-indict {
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+  }
+  .custom-indicators1 {
+    position: absolute;
+    z-index: 0;
+    li {
+      width: 14px;
+      height: 14px;
+      background-color: #fff;
+      border-radius: 15px;
+    }
+    li.active {
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+
+    .cst-carousel-control-prev {
+      left: 35%;
+    }
+    .cst-carousel-control-next {
+      right: 35%;
+    }
+  }
+  .cst-carousel-control-prev2 {
+    position: relative;
+    margin: 0 10%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    left: 0rem;
+    top: -1rem;
+    z-index: 9;
+    span {
+      position: relative;
+      z-index: 9;
+    }
+  }
+  .cst-carousel-control-next2 {
+    position: relative;
+    margin: 0 10%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    right: 0rem;
+    top: -1rem;
+    z-index: 9;
+    span {
+      position: relative;
+      z-index: 9;
+    }
+  }
 }
+
 .form-block {
   position: absolute;
   top: 20%;
@@ -333,10 +396,10 @@ header {
 .cst-sm-form-block {
   display: none;
 }
-.custom-jumbotron {
+.custom-jumbotronhome {
   position: relative;
   top: 15rem;
-  left: 2rem;
+  left: 0rem;
   background: transparent;
   padding: 0;
 }
@@ -385,26 +448,29 @@ header {
 .cstitem1.active {
   background: url("../images/home/Base.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-position: center;
   height: 520px;
   width: 100%;
+  border-radius: 55px;
 }
 .cstitem2.active {
   background: url("../images/home/Base@2x.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-position: center;
   height: 520px;
   width: 100%;
+  border-radius: 55px;
 }
 .cstitem3.active {
   background: url("../images/home/Base@3x.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-position: center;
   height: 520px;
   width: 100%;
+  border-radius: 55px;
 }
 .cst-carousel-control-prev1 {
   left: 0%;
@@ -729,16 +795,6 @@ ul.timeline > li:before {
     left: 89px;
   }
 }
-@media (max-width: 1024px) {
-  .navigation .nav-items-holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: block;
-    -webkit-box-pack: initial;
-    -ms-flex-pack: center;
-    justify-content: normal;
-  }
-}
 
 @media (max-width: 1366px) {
   .enqury-card {
@@ -788,6 +844,12 @@ ul.timeline > li:before {
 @media (max-width: 1024px) {
   .banner-inner img {
     height: 94vh !important;
+  }
+  .cst-carousel-control-prev {
+    margin: 0 -20%;
+  }
+  .cst-carousel-control-next {
+    margin: 0 -20%;
   }
 }
 // @media(max-height:768px){
@@ -869,12 +931,8 @@ ul.timeline > li:before {
   }
 }
 @media (max-height: 600px) {
-  /*.form-block {
-    position: relative;
-    top: 14%;
-  }*/
   .banner-inner img {
-    height: 94vh !important;
+    height: 100vh !important;
   }
   footer {
     padding: 15px;
@@ -895,6 +953,20 @@ ul.timeline > li:before {
   footer {
     padding: 5px;
   }
+  .custom-formgroup2 {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 414px) {
+  .cst-carousel-control-next2 {
+    top: 0.5rem;
+  }
+  .cst-carousel-control-prev2 {
+    top: 0.5rem;
+  }
+  .banner-inner img {
+    height: 50vh !important;
+  }
 }
 @media (max-width: 320px) {
   ul.timeline:before {
@@ -904,6 +976,9 @@ ul.timeline > li:before {
     position: absolute;
     left: 0px;
     height: 88%;
+  }
+  .banner-inner img {
+    height: 50vh !important;
   }
 }
 /*************************enquery form ***************************************************************/

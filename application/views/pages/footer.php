@@ -8,7 +8,7 @@
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
+      <div class="col-lg-3 col-md-6 mx-auto">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">CONTACT US</h5>
@@ -32,7 +32,7 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
+      <div class="col-lg-3 col-md-6 mx-auto">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">CUSTOMER RERVICE</h5>
@@ -56,7 +56,7 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
+      <div class="col-lg-3 col-md-6 mx-auto">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">INFORMATION</h5>
@@ -86,7 +86,7 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
+      <div class="col-lg-3 col-md-6 mx-auto">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">Subscribe to Holidaymate via Email</h5>

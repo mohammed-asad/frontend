@@ -237,17 +237,7 @@
 				</a>
 			</ul>
 			<!-- The slideshow -->
-			<div class="carousel-inner">
-				<div class="carousel-item banner-inner active ">
-					<img class="img-fluid" src="assets/images/home/background.png" alt="Los Angeles">
-				</div>
-				<div class="carousel-item banner-inner">
-					<img class="img-fluid" src="assets/images/home/background.png" alt="Chicago">
-				</div>
-				<div class="carousel-item banner-inner">
-					<img class="img-fluid" src="assets/images/home/background.png" alt="New York">
-				</div>
-			</div>
+			<div class="carousel-inner banner-carousel-inner"></div>
 			<div class="row  form-block sm-form-none">
 				<div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-7 offset-md-5 col-sm-6 offset-sm-6">
 					<!-- form card login -->
@@ -383,7 +373,7 @@
 					<h2 class="text-center head1">Upcoming Tours</h2>
 					<div class="row">
 						<!-- card start -->
-						<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+						<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
 							<div class="card mt-3 mb-3">
 								<img class="card-img-top" src="<?php echo base_url(); ?>assets/images/card/Image.png">
 								<div class="card-block">
@@ -407,32 +397,7 @@
 						</div>
 						<!-- card end -->
 						<!-- card start -->
-						<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-							<div class="card mt-3 mb-3">
-								<img class="card-img-top" src="<?php echo base_url(); ?>assets/images/card/Image.png">
-								<div class="card-block">
-									<div class="text-right mt-3">
-										<!-- <i class="fa fa-heart active" aria-hidden="true"></i> -->
-									</div>
-									<h4 class="card-title text-center">Dubai</h4>
-									<!-- <div class="meta">
-                                 <a>Friends</a>
-                                 </div> -->
-									<div class="card-text text-center">
-										<!-- <p class="text-center"></p> -->
-										<small class="text-center"> Tour to Stunning Dubai 2N/3D</small>
-									</div>
-								</div>
-								<div class="card-footer">
-									<p class="d-inline price-align">Price <span>Rs. 00,000</span></p>
-									<button class="btn btn-lg small-btn-submit float-right">View Details</button>
-								</div>
-							</div>
-						</div>
-						<!-- card end -->
-
-						<!-- card start -->
-						<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+						<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
 							<div class="card mt-3 mb-3">
 								<img class="card-img-top" src="<?php echo base_url(); ?>assets/images/card/Image.png">
 								<div class="card-block">
@@ -457,7 +422,32 @@
 						<!-- card end -->
 
 						<!-- card start -->
-						<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+						<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+							<div class="card mt-3 mb-3">
+								<img class="card-img-top" src="<?php echo base_url(); ?>assets/images/card/Image.png">
+								<div class="card-block">
+									<div class="text-right mt-3">
+										<!-- <i class="fa fa-heart active" aria-hidden="true"></i> -->
+									</div>
+									<h4 class="card-title text-center">Dubai</h4>
+									<!-- <div class="meta">
+                                 <a>Friends</a>
+                                 </div> -->
+									<div class="card-text text-center">
+										<!-- <p class="text-center"></p> -->
+										<small class="text-center"> Tour to Stunning Dubai 2N/3D</small>
+									</div>
+								</div>
+								<div class="card-footer">
+									<p class="d-inline price-align">Price <span>Rs. 00,000</span></p>
+									<button class="btn btn-lg small-btn-submit float-right">View Details</button>
+								</div>
+							</div>
+						</div>
+						<!-- card end -->
+
+						<!-- card start -->
+						<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
 							<div class="card mt-3 mb-3">
 								<img class="card-img-top" src="<?php echo base_url(); ?>assets/images/card/Image.png">
 								<div class="card-block">
@@ -502,76 +492,70 @@
 							<!-- <div class="testimonial text-white"> -->
 
 							<!--Content-->
-							<!-- <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-								<h3 class="text-white">Travel Private</h3>
-								<p>
-									holiday<strong>mate</strong> motto when it comes to Travel Private means</p>
-								<h4 class="font-weight-bold">Gathering with Family</h4> -->
-							<!-- <h6 class="font-weight-bold my-3">Founder at ET Company</h6> -->
-							<!--Review-->
-							<!-- </div> -->
-							<!-- </div> -->
-							<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-								<div class="jumbotron custom-jumbotron">
+							<div class="jumbotron custom-jumbotronhome">
+								<div class="col-sm-12 col-md-12 col-lg-4">
 									<h3 class="text-white">Travel Private</h3>
-									<p>Bootstrap is the most popular HTML, CSS...</p>
+									<p>holiday<strong>mate</strong> motto when it comes to</p>
+									<h4 class="font-weight-bold">Gathering with Family</h4>
 								</div>
 							</div>
 						</div>
 						<!--First slide-->
 						<!--Second slide-->
 						<div class="carousel-item cstitem2">
-							<div class="testimonial">
-
-								<!--Content-->
-								<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+							<div class="jumbotron custom-jumbotronhome">
+								<div class="col-sm-12 col-md-12 col-lg-4">
+									<!--Content-->
 									<h3 class="text-white">Travel Private</h3>
-									<p>
-										<i class="fas fa-quote-left"></i>holiday<strong>mate</strong> motto when it comes to Travel Private means</p>
-									<h4 class="font-weight-bold">Retreats With Colleagues</h4>
-									<!-- <h6 class="font-weight-bold my-3">Founder at ET Company</h6> -->
-									<!--Review-->
+									<p>holiday<strong>mate</strong> motto when it comes to</p>
+									<h4 class="font-weight-bold">Celebration with Friends</h4>
 								</div>
-
 							</div>
 						</div>
 						<!--Second slide-->
 						<!--Third slide-->
 						<div class="carousel-item cstitem3">
-							<div class="testimonial">
-
+							<div class="jumbotron custom-jumbotronhome">
 								<!--Content-->
-								<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+								<div class="col-sm-12 col-md-12 col-lg-4">
 									<h3 class="text-white">Travel Private</h3>
-									<p>
-										<i class="fas fa-quote-left"></i>holiday<strong>mate</strong> motto when it comes to Travel Private means</p>
-									<h4 class="font-weight-bold">Gathering with Family</h4>
-									<!-- <h6 class="font-weight-bold my-3">Founder at ET Company</h6> -->
-									<!--Review-->
+									<p>holiday<strong>mate</strong> motto when it comes to</p>
+									<h4 class="font-weight-bold">Retreats With Colleagues</h4>
 								</div>
 							</div>
 						</div>
 						<!--Third slide-->
+						<div class="csthome-indict">
+							<div class="col-sm-12 col-md-12 col-lg-4">
+								<!--Controls-->
+								<a class="carousel-control-prev left carousel-control cst-carousel-control-prev2" href="#carousel-example-1" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon"></span>
+								</a>
+								<ul class="carousel-indicators custom-indicators1 text-left d-inline-flex">
+
+									<li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-1" data-slide-to="1"></li>
+									<li data-target="#carousel-example-1" data-slide-to="2"></li>
+
+
+
+
+									<!--Controls-->
+								</ul>
+								<a class="carousel-control-next right carousel-control cst-carousel-control-next2" href="#carousel-example-1" role="button" data-slide="next">
+									<span class="carousel-control-next-icon"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
 					</div>
-					<!--Slides-->
-					<!--Controls-->
-					<ul class="carousel-indicators custom-indicators text-left d-inline-flex">
-
-						<li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-1" data-slide-to="1"></li>
-						<li data-target="#carousel-example-1" data-slide-to="2"></li>
-
-						<a class="carousel-control-prev left carousel-control cst-carousel-control-prev1" href="#carousel-example-1" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon"></span>
-						</a>
-						<a class="carousel-control-next right carousel-control cst-carousel-control-next1" href="#carousel-example-1" role="button" data-slide="next">
-							<span class="carousel-control-next-icon"></span>
-							<span class="sr-only">Next</span>
-						</a>
-						<!--Controls-->
-					</ul>
 				</div>
+				<!--Slides-->
+
 				<!-- Carousel Wrapper -->
 			</div>
 		</div>
 	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/frontend/home-slider.js"></script>

@@ -362,6 +362,7 @@ h4 {
     }
   }
 }
+
 header {
   section {
     border-radius: 50px;
@@ -391,7 +392,7 @@ header {
 }
 .banner {
   // height: 100vh;
-  margin: 0 30px 0 30px;
+  margin: 30px 30px 0 30px;
   border-radius: 30px;
   overflow: hidden;
   position: relative;
@@ -759,7 +760,7 @@ ul.timeline > li:before {
   position: absolute;
   width: calc(100% - 60px);
   top: 50px;
-  z-index: 99;
+  z-index: 1009;
   margin: 0 30px;
   .blur-backdrop{
     position: fixed;
@@ -767,7 +768,7 @@ ul.timeline > li:before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 97;
+    z-index: 1008;
     background: rgba(255,255,255,0.3);
     display: none;
   }
@@ -786,7 +787,7 @@ ul.timeline > li:before {
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 98;
+    z-index: 1007;
     margin-top: 20px;
     .nav-item {
       text-decoration: none;
@@ -798,8 +799,12 @@ ul.timeline > li:before {
       line-height: 20px;
       }
       &:hover {
-        // background: #444444;
-        font-weight: bold;
+        // background: #1c1c1c444;
+        font-family: 'Mont-Bold';
+        // color: #1c1c1c;
+        &>span{
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        }
 
         .sub-menu {
           display: block;
@@ -811,41 +816,45 @@ ul.timeline > li:before {
       position: absolute;
       width: 100%;
       left: 0;
-      z-index: 9;
+      z-index: 1009;
       margin-top: 15px;
       display: none;
-      // border-radius: 29px;
       overflow-x: hidden;
 
       .sub-menu-items-holder {
         background: #fcfcfc;
-        margin: 20px;
+        margin: 20px 0;
         margin-bottom: 8px;
-        border-radius: 30px;
+        border-radius: 33px;
         box-shadow: 0 0 10px rgba(0,0,0,0.34);
         overflow: hidden;
         display: flex;
 
         .sub-menu-item-list {
-          height: 400px;
+          height: 550px;
           width: 30%;
-          background: #444;
+          background: #393939;
           max-width: 25%;
           text-align: right;
+          padding-top: 15px;
           .sub-menu-item {
             color: #fff;
             text-align: right;
             span {
               display: inline-block;
               padding: 15px 0 15px 55px;
-              width: 50%;
+              width: 65%;
+              height: 58px;
               text-align: left;
+              font-family: 'Mont-Book';
+              line-height: 1.9;
               border-radius: 29px 0px 0px 29px;
             }
-            &:hover {
+            &:hover, &.active {
               span {
                 background: #fcfcfc;
-                color: #444;
+                color: #1c1c1c;
+                font-family: 'Mont-Bold';
               }
               .sub-item-desc {
                 display: block;
@@ -859,13 +868,11 @@ ul.timeline > li:before {
       .sub-item-desc-holder {
         width: 70%;
         padding-left: 15px;
-        // max-width: 75%;
+        padding-top: 20px;
         .sub-item-desc {
-          // width: 500px;
-          width: 55%;
           text-align: left;
           height: 200px;
-          color: #444;
+          color: #1c1c1c;
           padding: 15px;
           display: flex;
           justify-content: flex-start;
@@ -873,10 +880,27 @@ ul.timeline > li:before {
 
           .sub-item-item {
             margin-right: 50px;
+            width: 33.333%;
+            h4{
+              margin-bottom: 36px;
+              font-size: 18px; 
+              font-family: 'Mont-Bold'
+            }
+            p{
+              font-size: 16px;
+              line-height: 1.3;
+              font-family: 'Mont-Book'
+            }
             ul {
               list-style: none;
               padding: 0;
               margin: 0;
+              li{
+                a{
+                  color: inherit;
+                  font-family: 'Mont-Bold';
+                }
+              }
             }
           }
 

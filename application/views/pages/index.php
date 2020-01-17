@@ -5,15 +5,19 @@
 			<img src="<?php echo base_url();?>assets/images/logo/holidaymate.svg" alt="">
 		</div>
 		<div class="nav-items-holder">
-			<a href="" class="nav-item">Travel private</a>
+			<a href="" class="nav-item">
+				<span>
+					Travel private
+				</span>
+			</a>
 			<div class="nav-item" data-bluritem="true">
-				Destinations
+				<span>Destinations</span>
 				<div class="sub-menu">
 				<!-- Sub Menu Start-->
 					<div class="sub-menu-items-holder">
 					<!-- Sub Menu Region Start-->
 						<div class="sub-menu-item-list">
-							<div class="sub-menu-item">
+							<div class="sub-menu-item active">
 								<span data-region="europe">
 									Europe
 								</span>
@@ -38,7 +42,7 @@
 						<div class="sub-item-desc-holder">
 							<div class="sub-item-desc" data-region="europe">
 								<div class="sub-item-item overview">
-									<h4 class="mb-2">Overview</h4>
+									<h4>Overview</h4>
 									<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
 										It is bordered by the Arctic Ocean to the north,
 										the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
@@ -46,7 +50,7 @@
 									</p>
 								</div>
 								<div class="sub-item-item countries">
-									<h4 class="mb-2">Destinations</h4>
+									<h4 >Destinations</h4>
 									<ul>
 										<li>Switzerland</li>
 										<li>France</li>
@@ -81,7 +85,11 @@
 				<!-- Sub Menu End-->
 				</div>
 			</div>
-			<a href="" class="nav-item">Private trip</a>
+			<a href="" class="nav-item">
+				<span>
+					Private trip
+				</span>
+			</a>
 		</div>
 	</section>
 
@@ -349,8 +357,8 @@
 			</div>
 		</section>
 	</div>
-<!-- Blur content Starts -->
 
+<!-- Blur content Starts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>

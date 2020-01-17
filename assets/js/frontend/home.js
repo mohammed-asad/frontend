@@ -3,8 +3,8 @@ var home = {
 
   getSlider: function () {
     var maxLenght = 100;
-    fns.ajaxGet('holidaymate/api/slider/id/').
-      success(function (response) {
+    fns.ajaxGet('holidaymate/api/slider/id/')
+      .done(function (response) {
         if (response.status === 401) {
           alert(response.message)
         } else if (response.status === 200) {
@@ -27,6 +27,47 @@ var home = {
       })
   },
 
+  generatenavigation: function () {
+    fns.ajaxGet('holidaymate/api/navigation')
+      .done(function (res) {
+        if (res.status === 200) {
+          $('.navigation .sub-menu').find('.sub-menu-item-list').html("");
+          $('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
+          $.map(res.data, function (item) {
+            //Dumping Regions
+            var nav_item = `<div class="sub-menu-item">
+            <span data-region="${ item.region.toLowerCase() }">
+              ${item.region }
+            </span>
+          </div>`;
+            $('.navigation .sub-menu').find('.sub-menu-item-list').append(nav_item);
+
+            //Dumping Countries
+            var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
+            <div class="sub-item-item overview">
+              <h4 >Overview</h4>
+              <p>
+              ${item.overview }
+              </p>
+            </div>
+            <div class="sub-item-item countries">
+              <h4 >Destinations</h4>
+              <ul>
+              ${item.countries.map(function (country) {
+              return '<li><a href="">' + country + '</a></li>';
+            }).join('') }
+              </ul>
+            </div>
+          </div>`;
+            $('.navigation .sub-menu').find('.sub-item-desc-holder').append(nav_desc);
+          });
+        }
+      })
+      .always(function () {
+        home.navigationItemHover()
+      });
+  },
+
   navigationHover: function () {
     $('.navigation').find('.nav-item').hover(function (e) {
       var target = e.target;
@@ -36,23 +77,21 @@ var home = {
       }
     },
       function () {
-        // var target = e.target;
-        // var blur = $(target).attr("data-bluritem");
-        // console.log(blur);
-        // if (blur === true) {
         $(".other-container").removeClass("blur");
-        // }
       })
-    // $('.navigation').find('.nav-item').mouseout('on', function () {
-    //   // var target = e.target;
-    //   // var blur = $(target).attr("data-bluritem");
-    //   // console.log(blur);
-    //   // if (blur === true) {
-    //   $(".other-container").removeClass("blur");
-    //   // }
-    // })
+  },
+
+  navigationItemHover: function () {
+    $('.sub-menu-item').on('mouseover', function (e) {
+      var target = $(e.target).attr("data-region");
+      $('.sub-menu-item-list').find('.sub-menu-item').removeClass('active');
+      $(this).addClass('active');
+      $('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
+      $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
+    })
   }
 
 };
 home.getSlider();
+home.generatenavigation();
 home.navigationHover();

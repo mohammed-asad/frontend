@@ -126,16 +126,7 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/bootstrap-datepicker.js"></script>
-<!-- Jquery for Navigation Menu -->
-<script>
-  $('.sub-menu-item').on('mouseover', function(e) {
-    var target = $(e.target).attr("data-region");
-    $('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
-    $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
-  })
-</script>
 
-<!-- Jquery for Navigation Menu -->
 <script>
   $('#carousel-example-1').carousel({
     interval: 3000,

@@ -18,6 +18,21 @@
   src: url("../fonts/Mont-fonts/Mont-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Mont-Regular";
+  src: url("../fonts/Mont-fonts/Mont-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mont-HeavyItalic";
+  src: url("../fonts/Mont-fonts/Mont-HeavyItalic.ttf");
+}
+
+@font-face {
+  font-family: "AllThatMatters";
+  src: url("../fonts/allthatmatters/AllThatMatters.ttf");
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -89,7 +104,7 @@ h4 {
 }
 
 .head1 {
-  font-size: 40px;
+  font-size: 36px;
   font-family: "Mont-Bold";
 }
 
@@ -274,14 +289,38 @@ h4 {
   display: inline-block;
   vertical-align: top;
   margin-top: 0px;
-  left: 0rem;
-  top: -1rem;
+  left: -1rem;
+  top: -1.8rem;
   z-index: 9;
 }
 
 .carousel .cst-carousel-control-prev2 span {
   position: relative;
   z-index: 9;
+}
+
+.carousel .cst-carousel-control-prev2 span:before {
+  content: "";
+  position: absolute;
+  top: -0px;
+  left: 11px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 1px;
+  height: 30px;
+  border-right: 2px solid #fff;
+}
+
+.carousel .cst-carousel-control-prev2 span:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 11px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 1px;
+  height: 30px;
+  border-right: 2px solid #fff;
 }
 
 .carousel .cst-carousel-control-next2 {
@@ -291,13 +330,39 @@ h4 {
   vertical-align: top;
   margin-top: 0px;
   right: 0rem;
-  top: -1rem;
+  top: -0.5rem;
   z-index: 9;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .carousel .cst-carousel-control-next2 span {
   position: relative;
   z-index: 9;
+}
+
+.carousel .cst-carousel-control-next2 span:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 1px;
+  height: 30px;
+  border-right: 2px solid #fff;
+}
+
+.carousel .cst-carousel-control-next2 span:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 11px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 1px;
+  height: 30px;
+  border-right: 2px solid #fff;
 }
 
 .form-block {
@@ -446,6 +511,11 @@ header span {
   position: relative;
 }
 
+.banner .slick-slide {
+  border-radius: 55px;
+  overflow: hidden;
+}
+
 .banner .slick-arrow.slick-prev {
   font-size: 0;
   position: absolute;
@@ -567,16 +637,36 @@ header span {
   width: 60%;
 }
 
+.banner .slick-slide img {
+  height: 95vh;
+}
+
 .cst-sm-form-block {
   display: none;
 }
 
 .custom-jumbotronhome {
   position: relative;
-  top: 15rem;
+  top: 13rem;
   left: 0rem;
   background: transparent;
   padding: 0;
+}
+
+.custom-jumbotronhome p {
+  margin-top: 20px;
+  font-family: Mont-Regular;
+}
+
+.custom-jumbotronhome p span {
+  font-family: Mont-HeavyItalic;
+}
+
+.custom-jumbotronhome h1 {
+  font-family: AllThatMatters;
+  font-size: 50px;
+  margin: 0;
+  line-height: 0.5;
 }
 
 .new-cardblock .card {
@@ -679,6 +769,7 @@ footer {
   border-radius: 50px;
   color: #fff;
   padding: 50px;
+  height: 400px;
 }
 
 footer .subscribe {
@@ -715,7 +806,19 @@ footer .subscribe-btn:active {
   outline: none;
 }
 
+footer .list-unstyled li a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .list-unstyled li .lastlink {
+  color: #2699fb !important;
+}
+
 /**************************** travel private page css **************************************/
+.holidaymate-style span {
+  font-family: Mont-HeavyItalic;
+}
+
 .travel-section {
   margin: 0px 17px;
   border-radius: 55px;
@@ -724,14 +827,34 @@ footer .subscribe-btn:active {
 }
 
 .travel-section .custom-jumbotron {
-  height: 100vh;
+  height: 95vh;
   background: url("../images/travelprivate/banner.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   border-radius: 55px;
   overflow: hidden;
+  margin: 24px 0px;
+}
+
+.travel-section .custom-jumbotron .travel-content {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  width: 100%;
+}
+
+.travel-section .custom-jumbotron .travel-content h1 {
+  font-family: AllThatMatters;
+  font-size: 10rem;
+  margin: 0;
+  line-height: 0.5;
+}
+
+.travel-section .custom-jumbotron .travel-content p {
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
 }
 
 .image-container img {
@@ -746,9 +869,139 @@ footer .subscribe-btn:active {
   left: 0;
   right: 0;
   margin: auto;
-  height: 40%;
+  height: 70%;
   width: 100%;
   padding-left: 20px;
+}
+
+.section .content-block .custom-blue a {
+  font-size: 21px;
+  border: 1px solid #5786e8;
+  padding: 8px 15px;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  color: #5786e8;
+  margin-left: 5px;
+}
+
+.section .content-block .cutom-button {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #37bcaf;
+  background: transparent;
+  border-radius: 50px;
+  padding: 15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section .content-block .cutom-button:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 1px;
+  height: 18px;
+  border-right: 2px solid #37bcaf;
+}
+
+.section .content-block .cutom-button:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 1px;
+  height: 18px;
+  border-right: 2px solid #37bcaf;
+}
+
+.section .content-block .maroon {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #b53894;
+  background: transparent;
+  border-radius: 50px;
+  padding: 15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section .content-block .maroon:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 1px;
+  height: 18px;
+  border-right: 2px solid #b53894;
+}
+
+.section .content-block .maroon:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 1px;
+  height: 18px;
+  border-right: 2px solid #b53894;
+}
+
+.section .content-block .dark-blue {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #3c51a2;
+  background: transparent;
+  border-radius: 50px;
+  padding: 15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section .content-block .dark-blue:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 1px;
+  height: 18px;
+  border-right: 2px solid #3c51a2;
+}
+
+.section .content-block .dark-blue:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 1px;
+  height: 18px;
+  border-right: 2px solid #3c51a2;
+}
+
+.section .content-block .cutom-button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.section .content-block h2 {
+  font-family: "Mont-Bold";
+}
+
+.section .content-block p {
+  font-family: "Mont-Regular";
 }
 
 /**************************** travel private page css **************************************/
@@ -1052,6 +1305,13 @@ ul.timeline > li:before {
     border: 1px solid #d4d9df;
     left: 73px;
   }
+  .new-cardblock .card-footer {
+    padding: 12px 8px !important;
+  }
+  .small-btn-submit {
+    padding: 3px 10px;
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 1199px) and (min-width: 768px) {
@@ -1089,6 +1349,9 @@ ul.timeline > li:before {
   .btn-submit {
     padding: 5px 50px;
   }
+  .slick-slide img {
+    height: 94vh !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1096,6 +1359,16 @@ ul.timeline > li:before {
     top: 48rem;
     
 }*/
+}
+
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .new-cardblock .card-footer {
+    padding: 12px 8px !important;
+  }
+  .small-btn-submit {
+    padding: 3px 10px;
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1107,6 +1380,9 @@ ul.timeline > li:before {
   }
   .enqury-card h3 {
     font-size: 20px !important;
+  }
+  .slick-slide img {
+    height: 83vh !important;
   }
 }
 
@@ -1135,6 +1411,12 @@ ul.timeline > li:before {
   }
 }
 
+@media (max-width: 992px) {
+  .travel-section .custom-jumbotron {
+    height: 60vh;
+  }
+}
+
 @media (max-width: 800px) {
   .carousel {
     position: relative;
@@ -1150,6 +1432,9 @@ ul.timeline > li:before {
   }
   .banner-inner img {
     height: 65vh !important;
+  }
+  .slick-slide img {
+    height: 60vh !important;
   }
 }
 
@@ -1183,7 +1468,7 @@ ul.timeline > li:before {
   .section .content-block {
     position: relative;
     height: auto !important;
-    top: 40% !important;
+    top: 0% !important;
   }
   ul.timeline:before {
     content: " ";
@@ -1202,6 +1487,9 @@ ul.timeline > li:before {
     border: 1px solid #d4d9df;
     left: -7px;
   }
+  footer {
+    height: 100% !important;
+  }
 }
 
 @media (max-height: 600px) {
@@ -1210,6 +1498,9 @@ ul.timeline > li:before {
   }
   footer {
     padding: 15px;
+  }
+  .small-btn-submit {
+    padding: 5px 15px;
   }
 }
 
@@ -1230,6 +1521,9 @@ ul.timeline > li:before {
   }
   .custom-formgroup2 {
     margin-left: 0 !important;
+  }
+  .slick-slide img {
+    height: 50vh !important;
   }
 }
 

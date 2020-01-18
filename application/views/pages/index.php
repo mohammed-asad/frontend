@@ -95,7 +95,7 @@
 <!-- Blur content Starts -->
 <div class="other-container">
 	<!-- Slidee Banner -->
-	<section class="banner">
+	<section class="banner mall-24">
 		<div class="header-banner">
 			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
 			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
@@ -283,7 +283,7 @@
 	<section class="text-center section">
 		<div class="contianer">
 			<!-- Section heading -->
-			<h2 class="h1-responsive font-weight-bold my-5 text-center head1">Introducing Travel Private</h2>
+			<h2 class="h1-responsive font-weight-bold text-center head1">Introducing Travel Private</h2>
 
 			<div class="wrapper-carousel-fix text-white mall-24">
 				<!-- Carousel Wrapper carousel-fade-->
@@ -297,9 +297,10 @@
 							<!--Content-->
 							<div class="jumbotron custom-jumbotronhome">
 								<div class="col-sm-12 col-md-12 col-lg-4">
-									<h3 class="text-white">Travel Private</h3>
-									<p>holiday<strong>mate</strong> motto when it comes to</p>
-									<h4 class="font-weight-bold">Gathering with Family</h4>
+									<h1 class="text-white">Travel</h1>
+									<h1 class="text-white">Private</h1>
+									<p>holiday<span>mate</span> motto when it comes to</p>
+									<h4>Gathering with Family</h4>
 								</div>
 							</div>
 						</div>
@@ -309,9 +310,10 @@
 							<div class="jumbotron custom-jumbotronhome">
 								<div class="col-sm-12 col-md-12 col-lg-4">
 									<!--Content-->
-									<h3 class="text-white">Travel Private</h3>
-									<p>holiday<strong>mate</strong> motto when it comes to</p>
-									<h4 class="font-weight-bold">Celebration with Friends</h4>
+									<h1 class="text-white">Travel</h1>
+									<h1 class="text-white">Private</h1>
+									<p>holiday<span>mate</span> motto when it comes to</p>
+									<h4>Celebration with Friends</h4>
 								</div>
 							</div>
 						</div>
@@ -321,9 +323,10 @@
 							<div class="jumbotron custom-jumbotronhome">
 								<!--Content-->
 								<div class="col-sm-12 col-md-12 col-lg-4">
-									<h3 class="text-white">Travel Private</h3>
-									<p>holiday<strong>mate</strong> motto when it comes to</p>
-									<h4 class="font-weight-bold">Retreats With Colleagues</h4>
+									<h1 class="text-white">Travel</h1>
+									<h1 class="text-white">Private</h1>
+									<p>holiday<span>mate</span> motto when it comes to</p>
+									<h4>Retreats With Colleagues</h4>
 								</div>
 							</div>
 						</div>
@@ -332,7 +335,7 @@
 							<div class="col-sm-12 col-md-12 col-lg-4">
 								<!--Controls-->
 								<a class="carousel-control-prev left carousel-control cst-carousel-control-prev2" href="#carousel-example-1" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon"></span>
+									<span class=""></span>
 								</a>
 								<ul class="carousel-indicators custom-indicators1 text-left d-inline-flex">
 
@@ -342,7 +345,7 @@
 									<!--Controls-->
 								</ul>
 								<a class="carousel-control-next right carousel-control cst-carousel-control-next2" href="#carousel-example-1" role="button" data-slide="next">
-									<span class="carousel-control-next-icon"></span>
+									<span class=""></span>
 									<span class="sr-only">Next</span>
 								</a>
 							</div>

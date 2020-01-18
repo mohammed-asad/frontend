@@ -93,13 +93,13 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</a>
+            <a class="lastlink" href="#!">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</a>
           </li>
 
           <section class="text-center mt-2">
             <form action="#" method="Post">
               <div class="mb-3 d-flex">
-                <input type="text" class="form-control subscribe" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input type="text" class="form-control subscribe" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <button class="btn subscribe-btn" type="button">Subscribe</button>
               </div>
             </form>

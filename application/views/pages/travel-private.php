@@ -114,9 +114,3 @@
     $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
   })
 </script>
-<script>
-  $('#carousel-example-1').carousel({
-    interval: 3000,
-    cycle: true
-  });
-</script>

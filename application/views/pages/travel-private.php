@@ -1,11 +1,13 @@
-<section class="custom-jumbotron">
+<section class="travel-section">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-4 offset-md-8 col-sm-6 offset-sm-3 col-6 offset-col-3">
-        <div class="text-center">
-          <!-- <h1>Heaven Sent</h1>
+    <div class="custom-jumbotron">
+      <div class="row">
+        <div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-4 offset-md-8 col-sm-6 offset-sm-3 col-6 offset-col-3">
+          <div class="text-center">
+            <!-- <h1>Heaven Sent</h1>
           <p class="lead"><span>Welcome to </span>Smart Earning !!</p>
           <p>we are glad that you're here </p> -->
+          </div>
         </div>
       </div>
     </div>
@@ -101,3 +103,20 @@
   </div>
 </section>
 <!-- ------------------------end third section --------------------------- -->
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+
+<!-- Jquery for Navigation Menu -->
+<script>
+  $('.sub-menu-item').on('mouseover', function(e) {
+    var target = $(e.target).attr("data-region");
+    $('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
+    $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
+  })
+</script>
+<script>
+  $('#carousel-example-1').carousel({
+    interval: 3000,
+    cycle: true
+  });
+</script>

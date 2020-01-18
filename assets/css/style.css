@@ -41,6 +41,10 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }*/
+.mall-24 {
+  margin: 24px;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -90,7 +94,7 @@ h4 {
 }
 
 .section {
-  margin: 50px 0px;
+  margin: 80px 0px;
   position: relative;
   /* top: 75rem;*/
 }
@@ -436,8 +440,8 @@ header span {
 }
 
 .banner {
-  margin: 0 30px 0 30px;
-  border-radius: 30px;
+  margin: 24px;
+  border-radius: 55px;
   overflow: hidden;
   position: relative;
 }
@@ -458,7 +462,7 @@ header span {
 }
 
 .banner .slick-arrow.slick-prev:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   left: 11px;
@@ -470,7 +474,7 @@ header span {
 }
 
 .banner .slick-arrow.slick-prev:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   left: 11px;
@@ -499,7 +503,7 @@ header span {
 }
 
 .banner .slick-arrow.slick-next:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   left: 11px;
@@ -511,7 +515,7 @@ header span {
 }
 
 .banner .slick-arrow.slick-next:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   left: 11px;
@@ -560,7 +564,7 @@ header span {
 .banner .enquiry-form {
   position: absolute;
   z-index: 1002;
-  width: 35%;
+  width: 60%;
 }
 
 .cst-sm-form-block {
@@ -712,8 +716,15 @@ footer .subscribe-btn:active {
 }
 
 /**************************** travel private page css **************************************/
-.custom-jumbotron {
-  height: 94vh;
+.travel-section {
+  margin: 0px 17px;
+  border-radius: 55px;
+  overflow: hidden;
+  position: relative;
+}
+
+.travel-section .custom-jumbotron {
+  height: 100vh;
   background: url("../images/travelprivate/banner.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -860,7 +871,7 @@ ul.timeline > li:before {
 
 .navigation .logo {
   position: absolute;
-  width: 197px;
+  width: 30%;
   left: 30px;
 }
 
@@ -1081,6 +1092,19 @@ ul.timeline > li:before {
   }
   .cst-carousel-control-next {
     margin: 0 -20%;
+  }
+  .banner .enquiry-form {
+    position: relative;
+    z-index: 1002;
+    width: 100%;
+    right: 0;
+    margin: 30px 0px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .enquiry-form .offset-md-6 {
+    margin-left: 30%;
   }
 }
 

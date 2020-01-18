@@ -1,4 +1,4 @@
-<section class="packsection mb-5">
+<section class="packsection mb-5 mall-24">
   <div class="container-fluid">
     <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
       <div class="row">
@@ -367,3 +367,20 @@
         </div>
       </div>
 </section>
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+
+<!-- Jquery for Navigation Menu -->
+<script>
+  $('.sub-menu-item').on('mouseover', function(e) {
+    var target = $(e.target).attr("data-region");
+    $('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
+    $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
+  })
+</script>
+<script>
+  $('#carousel-example-1').carousel({
+    interval: 3000,
+    cycle: true
+  });
+</script>

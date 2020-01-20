@@ -2,8 +2,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
-        <div class="spacelity-banner">
-          <img src="<?php echo base_url(); ?>assets/images/home/specialities.jpg" alt="" class="img-fluid">
+        <div class="spacelity-banner text-center">
+          <img src="<?php echo base_url(); ?>assets/images/others/ourspecilities.jpg" alt="" class="img-fluid">
         </div>
       </div>
     </div>

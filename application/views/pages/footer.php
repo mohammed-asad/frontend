@@ -2,7 +2,7 @@
 <footer class="mall-24">
 
   <!-- Footer Links  text-center text-md-left-->
-  <div class="container">
+  <div class="col-xl-10 offset-xl-1">
 
     <!-- Grid row -->
     <div class="row">

@@ -24,7 +24,7 @@ class Travelprivate extends CI_Controller
 		// 		$data['mega_header'][] = (object) array('title' => 'portfolio image' ,
 		//     'img' => 'https://complete path of image' );
 		// $this->load->view('multiple_array', $data);
-		$this->load->view('pages/header3');
+		$this->load->view('pages/header');
 		$this->load->view('pages/travel-private');
 		$this->load->view('pages/footer');
 	}

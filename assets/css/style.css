@@ -51,6 +51,10 @@ body {
   padding: 0;
 }
 
+.mont-r p {
+  font-family: "Mont-Regular";
+}
+
 /*.abs-center-x {
     position: absolute;
     left: 50%;
@@ -1305,17 +1309,40 @@ ul.timeline > li:before {
 }
 
 .gather-section .gather-jumbotron .travel-content {
-  position: absolute;
+  /*position: absolute;
+      text-align: center;
+      left: 30%;
+      bottom: 15%;*/
+  position: relative;
+  width: 100%;
   text-align: center;
-  left: 30%;
-  bottom: 15%;
+  top: 70%;
 }
 
 .gather-section .gather-jumbotron .travel-content h1 {
   font-size: 5rem;
 }
 
+.gather-section .friends {
+  background: url("../images/gather/banner.png");
+  background-repeat: no-repeat;
+  height: 95vh;
+  background-size: cover;
+}
+
+.gather-section .colleague {
+  background: url("../images/gather/colleague.png");
+  background-repeat: no-repeat;
+  height: 95vh;
+  background-size: cover;
+}
+
+.section3 {
+  margin: 50px 0px;
+}
+
 .slideshow-container {
+  border-radius: 55px;
   /* Position the "next button" to the right */
   /* On hover, add a black background color with a little bit see-through */
 }
@@ -1440,11 +1467,26 @@ ul.timeline > li:before {
 
 /************************************* gathering page ******************************************/
 /************************************* region page ******************************************/
+.region-banner {
+  border-radius: 55px;
+  overflow: hidden;
+}
+
 .region-banner img {
   border-radius: 55px;
+  height: 95vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
 }
 
 /************************************* region page ******************************************/
+/************************************* our specialities page ******************************************/
+.specialities p {
+  font-family: Mont-regular;
+}
+
+/************************************* our specialities page ******************************************/
 /*************************enquery form ***************************************************************/
 @media (max-width: 1550px) and (min-width: 1200px) {
   ul.timeline:before {
@@ -1561,11 +1603,23 @@ ul.timeline > li:before {
     right: 0;
     margin: 30px 0px;
   }
+  .gather-section {
+    margin: 10px;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .enquiry-form .offset-md-6 {
     margin-left: 30%;
+  }
+  .gather-section .gather-jumbotron {
+    height: 65vh;
+  }
+  .gather-section .gather-jumbotron .travel-content h1 {
+    font-size: 3rem;
+  }
+  .gather-section .gather-jumbotron .travel-content p {
+    font-size: 16px;
   }
 }
 
@@ -1648,6 +1702,19 @@ ul.timeline > li:before {
   footer {
     height: 100% !important;
   }
+  .gather-section .gather-jumbotron {
+    height: 65vh;
+  }
+  .gather-section .gather-jumbotron .travel-content {
+    padding: 15px;
+    top: 60%;
+  }
+  .gather-section .gather-jumbotron .travel-content h1 {
+    font-size: 2rem;
+  }
+  .gather-section .gather-jumbotron .travel-content p {
+    font-size: 14px;
+  }
 }
 
 @media (max-height: 600px) {
@@ -1708,6 +1775,20 @@ ul.timeline > li:before {
   }
   .banner-inner img {
     height: 50vh !important;
+  }
+  .gather-section .gather-jumbotron {
+    height: 50vh;
+  }
+  .gather-section .gather-jumbotron .travel-content {
+    position: relative;
+    top: 42%;
+    padding: 15px;
+  }
+  .gather-section .gather-jumbotron .travel-content h1 {
+    font-size: 2rem;
+  }
+  .gather-section .gather-jumbotron .travel-content p {
+    font-size: 14px;
   }
 }
 

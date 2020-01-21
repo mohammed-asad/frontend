@@ -43,7 +43,11 @@ body {
     overflow-y: auto;*/
   padding: 0;
 }
-
+.mont-r {
+  p {
+    font-family: "Mont-Regular";
+  }
+}
 /*.abs-center-x {
     position: absolute;
     left: 50%;
@@ -1154,8 +1158,10 @@ ul.timeline > li:before {
 /*************************************************** media queries ***********************************/
 
 /************************************* gathering page ******************************************/
+
 .gather-section {
   margin: 24px;
+
   .gather-jumbotron {
     border-radius: 55px;
     background: url("../images/others/gather-banner.png");
@@ -1163,17 +1169,38 @@ ul.timeline > li:before {
     height: 95vh;
     background-size: cover;
     .travel-content {
-      position: absolute;
+      /*position: absolute;
       text-align: center;
       left: 30%;
-      bottom: 15%;
+      bottom: 15%;*/
+      position: relative;
+      width: 100%;
+      text-align: center;
+      top: 70%;
       h1 {
         font-size: 5rem;
       }
     }
   }
+  .friends {
+    background: url("../images/gather/banner.png");
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-size: cover;
+  }
+  .colleague {
+    background: url("../images/gather/colleague.png");
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-size: cover;
+  }
+}
+
+.section3 {
+  margin: 50px 0px;
 }
 .slideshow-container {
+  border-radius: 55px;
   .mySlides {
     .text {
       position: absolute;
@@ -1292,11 +1319,24 @@ ul.timeline > li:before {
 /************************************* gathering page ******************************************/
 /************************************* region page ******************************************/
 .region-banner {
+  border-radius: 55px;
+  overflow: hidden;
+  // height: 95vh;
   img {
     border-radius: 55px;
+    height: 95vh;
+    object-fit: cover;
+    width: 100vw;
   }
 }
 /************************************* region page ******************************************/
+/************************************* our specialities page ******************************************/
+.specialities {
+  p {
+    font-family: Mont-regular;
+  }
+}
+/************************************* our specialities page ******************************************/
 
 /*************************enquery form ***************************************************************/
 
@@ -1432,11 +1472,27 @@ ul.timeline > li:before {
     right: 0;
     margin: 30px 0px;
   }
+  .gather-section {
+    margin: 10px;
+  }
 }
 @media (max-width: 1024px) and (min-width: 768px) {
   .enquiry-form {
     .offset-md-6 {
       margin-left: 30%;
+    }
+  }
+  .gather-section {
+    .gather-jumbotron {
+      height: 65vh;
+      .travel-content {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
@@ -1529,6 +1585,21 @@ ul.timeline > li:before {
   footer {
     height: 100% !important;
   }
+  .gather-section {
+    .gather-jumbotron {
+      height: 65vh;
+      .travel-content {
+        padding: 15px;
+        top: 60%;
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 @media (max-height: 600px) {
   .banner-inner img {
@@ -1585,6 +1656,22 @@ ul.timeline > li:before {
   }
   .banner-inner img {
     height: 50vh !important;
+  }
+  .gather-section {
+    .gather-jumbotron {
+      height: 50vh;
+      .travel-content {
+        position: relative;
+        top: 42%;
+        padding: 15px;
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
 /*************************enquery form ***************************************************************/

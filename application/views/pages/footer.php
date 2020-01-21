@@ -123,8 +123,8 @@
 <!-- Footer -->
 
 </body>
-<script src="assets/js/jquery.min.js"></script>
+<!-- <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-datepicker.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script> -->
 
 </html>

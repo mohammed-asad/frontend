@@ -28,4 +28,22 @@ class Gathering extends CI_Controller
     $this->load->view('pages/gathering');
     $this->load->view('pages/footer');
   }
+  public function friends()
+  {
+    // 		$data['mega_header'][] = (object) array('title' => 'portfolio image' ,
+    //     'img' => 'https://complete path of image' );
+    // $this->load->view('multiple_array', $data);
+    $this->load->view('pages/header');
+    $this->load->view('pages/gathering-friends');
+    $this->load->view('pages/footer');
+  }
+  public function colleagues()
+  {
+    // 		$data['mega_header'][] = (object) array('title' => 'portfolio image' ,
+    //     'img' => 'https://complete path of image' );
+    // $this->load->view('multiple_array', $data);
+    $this->load->view('pages/header');
+    $this->load->view('pages/gathering-colleagues');
+    $this->load->view('pages/footer');
+  }
 }

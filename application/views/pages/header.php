@@ -9,18 +9,18 @@
    <meta name="description" content="" />
    <meta name="keywords" content="" />
    <meta name="author" content="" />
-   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo/holidaymate.svg" type="image/x-icon">
    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-   <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-   <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-   <link href="assets/css/slick.min.css" rel="stylesheet" type="text/css">
-   <link href="assets/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css">
-   <link href="assets/css/header.css" rel="stylesheet" type="text/css">
-   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+   <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link href="<?php echo base_url(); ?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="<?php echo base_url(); ?>assets/css/slick.min.css" rel="stylesheet" type="text/css">
+   <link href="<?php echo base_url(); ?>assets/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css">
+   <link href="<?php echo base_url(); ?>assets/css/header.css" rel="stylesheet" type="text/css">
+   <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css">
    <!--[if IE 7]>
       <link rel="stylesheet" href="css/fontello-ie7.css">
       <![endif]-->

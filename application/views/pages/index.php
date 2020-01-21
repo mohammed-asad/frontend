@@ -97,7 +97,7 @@
 	<!-- Slidee Banner -->
 	<section class="banner mall-24">
 		<div class="header-banner">
-			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
+			<img src="assets/images/home/background.png" alt="">
 			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
 		</div>
 

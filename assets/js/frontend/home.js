@@ -11,7 +11,7 @@ var home = {
           $.map(response.data, function (item, index) {
             //Populate slider list
             var slider = `<div class="carousel-item banner-inner">
-					<img class="img-fluid" src="${item.url }" alt="Los Angeles">
+					<img class="img-fluid" src="${item.url}" alt="Los Angeles">
         </div>`;
 
             $("#demo .banner-inner").first().addClass("active");
@@ -36,18 +36,18 @@ var home = {
           $.map(res.data, function (item) {
             //Dumping Regions
             var nav_item = `<div class="sub-menu-item">
-            <span data-region="${ item.region.toLowerCase() }">
-              ${item.region }
+            <span data-region="${ item.region.toLowerCase()}">
+              ${item.region}
             </span>
           </div>`;
             $('.navigation .sub-menu').find('.sub-menu-item-list').append(nav_item);
 
             //Dumping Countries
-            var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
+            var nav_desc = `<div class="sub-item-desc" data-region="${item.region.toLowerCase()}">
             <div class="sub-item-item overview">
               <h4 >Overview</h4>
               <p>
-              ${item.overview }
+              ${item.overview}
               </p>
             </div>
             <div class="sub-item-item countries">
@@ -55,7 +55,7 @@ var home = {
               <ul>
               ${item.countries.map(function (country) {
               return '<li><a href="">' + country + '</a></li>';
-            }).join('') }
+            }).join('')}
               </ul>
             </div>
           </div>`;

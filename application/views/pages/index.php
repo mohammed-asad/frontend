@@ -4,7 +4,7 @@
 		<img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 		</div>
 		<div class="nav-items-holder">
-			<a href="" class="nav-item">
+			<a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
 				<span>
 					Travel private
 				</span>
@@ -97,14 +97,14 @@
 	<!-- Slidee Banner -->
 	<section class="banner mall-24">
 		<div class="header-banner">
-			<img src="assets/images/home/background.png" alt="">
+			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
 			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
 		</div>
 
 		<!-- Form -->
 		<!-- <div class="mt-5 enquiry-form"> -->
 		<div class="row form-block enquiry-form">
-			<div class="col-md-6 offset-md-6 custom-md-6 col-sm-10 offset-sm-1">
+			<div class="col-xl-6 offset-xl-6 col-lg-8 offset-lg-4 col-md-8 offset-md-2 custom-md-6 col-sm-10 offset-sm-1">
 				<!-- form card login -->
 				<div class="card card-outline-secondary">
 					<!-- <div class="card-header"> -->
@@ -172,7 +172,7 @@
 	<section class="section new-cardblock">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-12 m-auto p-xl-0">
 					<h2 class="text-center head1">Upcoming Tours</h2>
 					<div class="row">
 						<!-- card start -->

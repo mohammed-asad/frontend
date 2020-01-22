@@ -7,7 +7,7 @@
             <div class="text-center text-white">
               <h1>Travel</h1>
               <h1>Private</h1>
-              <p class="mt-3">Think about your holiday, we make it happen</p>
+              <p class="mt-5">Think about your holiday, we make it happen</p>
             </div>
           </div>
         </div>
@@ -32,24 +32,20 @@
 
 <!-- ----------------------fist section start-------------------------------- -->
 <section class="section">
-  <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 custom-container">
+  <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 custom-container pl-xl-5 pr-xl-5 pl-lg-4 pr-lg-4">
     <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-xl-6 offset-xl-1 col-lg-6 offset-lg-1 col-md-6 order-md-2 wow fadeInRight">
-            <div class="image-container">
-              <img class="img-responsive hvr-shake" src="assets/images/travelprivate/travelp1.png">
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5 col-md-6 order-md-1 wow fadeInLeft">
-            <div class="content-block">
-              <h2>Gathering with Family</h2>
-              <p>Travelling with the family is a way of learning and exploring while making memories with the people you love the most.</p>
-              <p>Mom wants the spa, kids want to dive in pool, dad need to relish nature, grand parents want some adventure.</p>
-              <p class="holidaymate-style">Oh Yeah!!! holiday<span>mate</span> has got it covered all.</p>
-              <a href="#" class="cutom-button float-right mr-4"></a>
-            </div>
-          </div>
+      <div class="col-xl-6 offset-xl-1 col-lg-6 col-md-6 order-md-2 wow fadeInRight">
+        <div class="image-container">
+          <img class="img-responsive hvr-shake" src="assets/images/travelprivate/travelp1.png">
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-6 col-md-6 order-md-1 wow fadeInLeft custom-text-align">
+        <div class="content-block">
+          <h2>Gathering with Family</h2>
+          <p>Travelling with the family is a way of learning and exploring while making memories with the people you love the most.</p>
+          <p>Mom wants the spa, kids want to dive in pool, dad need to relish nature, grand parents want some adventure.</p>
+          <p class="holidaymate-style">Oh Yeah!!! holiday<span>mate</span> has got it covered all.</p>
+          <a href="#" class="cutom-button float-right mr-4"></a>
         </div>
       </div>
     </div>
@@ -59,21 +55,17 @@
 <section class="section">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 custom-container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6  wow fadeInRight">
-            <div class="image-container">
-              <img class="img-responsive hvr-bounce" src="assets/images/travelprivate/travelp2.png">
-            </div>
-          </div>
-          <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 wow fadeInLeft">
-            <div class="content-block">
-              <h2>Celebration with Friends</h2>
-              <p>The bond of friendship gets deeper and stronger with travel dairies.</p>
-              <p>Down the life time when you sit on a couch and get nostalgic about that particular moment with your pals and buddies….. Well….. Priceless isn’t it…?</p>
-              <a href="#" class="cutom-button float-left maroon"></a>
-            </div>
-          </div>
+      <div class="col-xl-6 col-lg-6 col-md-6  wow fadeInRight">
+        <div class="image-container">
+          <img class="img-responsive hvr-bounce" src="assets/images/travelprivate/travelp2.png">
+        </div>
+      </div>
+      <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6 wow fadeInLeft custom-text-align">
+        <div class="content-block">
+          <h2>Celebration with Friends</h2>
+          <p>The bond of friendship gets deeper and stronger with travel dairies.</p>
+          <p>Down the life time when you sit on a couch and get nostalgic about that particular moment with your pals and buddies….. Well….. Priceless isn’t it…?</p>
+          <a href="#" class="cutom-button float-left maroon"></a>
         </div>
       </div>
     </div>
@@ -83,23 +75,16 @@
 <section class="section section-block4">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 custom-container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-
-          <div class="col-xl-6 offset-xl-1 col-lg-6 offset-lg-1 col-md-6 order-md-2 wow fadeInRight">
-            <div class="image-container">
-              <img class="img-responsive hvr-tada" src="assets/images/travelprivate/travelp3.png">
-            </div>
-          </div>
-
-          <div class="col-xl-5 col-lg-5 col-md-6 order-md-1 wow fadeInLeft">
-            <div class="content-block">
-              <h2>Retreats With Colleagues</h2>
-              <p>The strength of the team is each individual member. The strength of each member is the team. Leave the desks for recreation and rejuvenation.</p>
-              <a href="#" class="cutom-button float-right dark-blue mr-4"></a>
-            </div>
-          </div>
-
+      <div class="col-xl-6 offset-xl-1 col-lg-6  col-md-6 order-md-2 wow fadeInRight">
+        <div class="image-container">
+          <img class="img-responsive hvr-tada" src="assets/images/travelprivate/travelp3.png">
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-6 col-md-6 order-md-1 wow fadeInLeft custom-text-align">
+        <div class="content-block">
+          <h2>Retreats With Colleagues</h2>
+          <p>The strength of the team is each individual member. The strength of each member is the team. Leave the desks for recreation and rejuvenation.</p>
+          <a href="#" class="cutom-button float-right dark-blue mr-4"></a>
         </div>
       </div>
     </div>

@@ -12,8 +12,10 @@
 <section class="section">
   <div class="container">
     <h1 class="text-center">A Portrait of India</h1>
-    <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra.
-      It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal;
+    <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of
+      Agra.
+      It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz
+      Mahal;
       it also houses the tomb of Shah Jahan himself.</p>
   </div>
 </section>
@@ -65,7 +67,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <p class="d-inline price-align">Price <i class="fa fa-inr" aria-hidden="true"></i> <span>10,000</span></p>
+                <p class="d-inline price-align">Price <i class="fa fa-inr" aria-hidden="true"></i> <span>10,000</span>
+                </p>
                 <button class="btn btn-lg small-btn-submit float-right">View Details</button>
               </div>
             </div>

@@ -361,8 +361,18 @@
             </div>
           </div>
           <div class="col-md-12 col-sm-12 section">
+            <div class="dis">
+              <div class="ab">
+                <p class="t">Hassle free<p>
+              </div>
 
-            <p><span>Hassle Free.</span>support@holidaymate.in <br />+91 9845 944499</p>
+              <div class="cd ">
+                <p class="mont-book">support@holidaymate.in<p>
+                    <p class="mont-bold">+919845 944499</p>
+              </div>
+
+            </div>
+            <!-- <p><span>Hassle Free.</span>support@holidaymate.in <br />+91 9845 944499</p> -->
           </div>
         </div>
       </div>

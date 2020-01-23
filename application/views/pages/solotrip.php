@@ -1,10 +1,10 @@
 <section class="gather-section ">
   <div class="container-fluid p-0">
-    <div class="gather-jumbotron colleague">
+    <div class="gather-jumbotron solo">
       <div class="travel-content">
         <div class="text-center text-white">
-          <h1>Celebration with Friends</h1>
-          <p class="mt-3">Rejoice with your family on a perfect holiday</p>
+          <h1>As you Travel Solo</h1>
+          <!-- <p class="mt-3">Rejoice with your family on a perfect holiday</p> -->
         </div>
       </div>
     </div>
@@ -13,20 +13,14 @@
 <section class="section3">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
     <div class="trvalep-content mont-r">
-      <p>The bond of friendship gets deeper and stronger with travel dairies.
-        Down the life time when you sit on a couch and get nostalgic about that particular moment with your pals and buddies…..
-        Well….. Priceless isn’t it…?</p>
-      <p>The world is a book, and those who do not travel read only the cover page.
-        The friends come in every chapter of that amazing book.</p>
-      <p> A bucket list is not complete without friends.</p>
-      <p>The best Cappuccino</p>
-      <p>View of an Ionian Sea <p>That mountain u conquered </p>
-        <p>To celebrate your important milestones</p>
-        <p>Everything is best when you are with your friends.</p>
-        <p>Get in touch with HolidayMate to know more about touring with friends to make memories.</p>
-
-        <p>We Fabricate the best travel advisory, making sure you spend each moment on tour with your family creating unforgettable memories.</p>
-        <p> There will be hours full of exercises designed to learn and explore for all ages. Stay together, Eat, Cuddle and Relax with Love.</p>
+      <p>At Holidaymate we encourage the individuals to take the Solotrip we organise. Go on Solotrip but dont feel lonely as u will be with the group of unknown but equally enthusiastic group of people. Do the things which you always wanted to do but shy(ed) away to do in front of your family/friends.</p>
+      <p> This Lonetrips will make you Beat out those deep fears and phobias which are accumulated within you from long and gives the gut to do the things which you longed to do but haven't done cause of the peer pressures. On Holidaymate 's Rediscovery trips there are no one who wants to judge you nor want to get judged.
+      </p>
+      <p>Find new Passions
+        Break the Chains with the Past,
+        Do little drama, Dance a lot
+        Discover a New You
+        Find the answers you seek by yourself. Love yourself first because "An empty Lantern gives no light, Self-care is the fuel that allows your light shine brightly". While you re-evalue yourself, we will have your back and we say you are safe with us even in unknown location and with unknown People.</p>
     </div>
   </div>
 </section>
@@ -37,40 +31,35 @@
       <div class="slideshow-container">
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
           <div class="text">
-            <p>You are not born just to pay bills, there is an explorer waiting inside you.
-              Disconnect from Work and Chaos for a while and plan the adventure with your friends</p>
-            <p>- Dive in, to Plethora of adventures through HolidayMate </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+            <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
           <div class="text">
-            <p>Life is meant for big adventures and good friends, OH YEAH!!! Friends that travel together, stay together for ever.</p>
-            <p>- Don’t Sweat the Details, leave it to HolidayMate to bring out the best plan for you and your buddies</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.text ever since the 1500s, </p>
+            <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
           <div class="text">
-            <p>Good Times and Crazy friends make the best memories. Let the HolidayMate create those best times for you with your buddies.</p>
-            </p>- Travel at Your Pace, leave the planning and execution to HolidayMate<p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
           <div class="text">
-            <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes. Pack your bags, choose your friends and say “Here we GO”</p>
-            </p>- At HolidayMate, you get Custom Journeys, tailor made for you through your choice.<p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever, </p>
+            <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
-
-
-
-
         <a class="prev" onclick="plusSlides(-1)"></a>
         <a class="next" onclick="plusSlides(1)"></a>
 

@@ -19,13 +19,13 @@ class Gathering extends CI_Controller
    * map to /index.php/welcome/<method_name>
    * @see https://codeigniter.com/user_guide/general/urls.html
    */
-  public function index()
+  public function family()
   {
     // 		$data['mega_header'][] = (object) array('title' => 'portfolio image' ,
     //     'img' => 'https://complete path of image' );
     // $this->load->view('multiple_array', $data);
     $this->load->view('pages/header');
-    $this->load->view('pages/gathering');
+    $this->load->view('pages/family');
     $this->load->view('pages/footer');
   }
   public function friends()
@@ -44,6 +44,15 @@ class Gathering extends CI_Controller
     // $this->load->view('multiple_array', $data);
     $this->load->view('pages/header');
     $this->load->view('pages/gathering-colleagues');
+    $this->load->view('pages/footer');
+  }
+  public function solotrip()
+  {
+    // 		$data['mega_header'][] = (object) array('title' => 'portfolio image' ,
+    //     'img' => 'https://complete path of image' );
+    // $this->load->view('multiple_array', $data);
+    $this->load->view('pages/header');
+    $this->load->view('pages/solotrip');
     $this->load->view('pages/footer');
   }
 }

@@ -172,7 +172,7 @@
 	<section class="section new-cardblock">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-12 m-auto p-xl-0">
+				<div class="col-xl-11 col-lg-12 col-md-12 col-sm-12 col-12 m-auto p-xl-0">
 					<h2 class="text-center head1">Upcoming Tours</h2>
 					<div class="row">
 						<!-- card start -->

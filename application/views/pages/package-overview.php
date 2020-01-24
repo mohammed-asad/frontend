@@ -1,59 +1,60 @@
 <section class="packsection mb-5 mall-24">
   <div class="container-fluid">
-    <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
+    <div class="col-xl-11 offset-xl-1 col-lg-11 offset-lg-1 col-md-12 m-auto">
       <div class="row">
-        <div class="col-xl-8 col-lg-8 col-md-6">
+        <div class="col-xl-8 col-lg-8 col-md-6 cst-padding-0">
           <div class="pack-block">
             <div class="r">
               <img src="<?php echo base_url(); ?>assets/images/packages/pack1.png" alt="" class="img-fluid">
             </div>
             <div class="row">
-              <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6">
+              <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6 col-sm-6">
                 <h3>Dubai</h3>
-                <p>Tour to Stunning Dubai</p>
-                <!-- <p>4.95 (15)</p> -->
+                <p class="m-0">Tour to Stunning Dubai</p>
+                <p>4.95 <img class="img-fluid star" src="<?php echo base_url() ?>assets/images/icons/star.svg"> (15)</p>
 
               </div>
-              <div class="col-xl-5 col-lg-6 col-md-6 text-right">
-                <span class="d-inline-block"> Starting From <h2 class="d-inline-block ml-2"> <i class="fa fa-inr" aria-hidden="true"></i> 10499</h2>
-                </span>
+              <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 cst-text-r">
+                <div class="d-inline-block"><span class="mont-book"> Starting From </span>
+                  <h2 class="d-inline-block ml-2"> <i class="fa fa-inr" aria-hidden="true"></i> 10499</h2>
+                </div>
                 <p> Per Person on twin sharing</p>
               </div>
             </div>
-            <p class="text-center mt-5 mb-5">Take part in sunset & sunrise views of Dubai Red Dunes safari overnig</p>
+            <p class="text-center mt-5 mb-4">Take part in sunset & sunrise views of Dubai Red Dunes safari overnig</p>
             <ul class="list-inline text-center">
-              <li class="list-inline-item mr-4">
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <li class="list-inline-item ">
+                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/clock.svg">
                 <p>2 Nights & 3 Days</p>
               </li>
-              <li class="list-inline-item mr-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <li class="list-inline-item">
+                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/location.svg">
                 <p>Dubai</p>
               </li>
-              <li class="list-inline-item mr-4">
-                <i class="fa fa-plane" aria-hidden="true"></i>
+              <li class="list-inline-item">
+                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/plain.svg">
                 <p>Flight</p>
               </li>
-              <li class="list-inline-item mr-4">
-                <i class="fa fa-bed" aria-hidden="true"></i>
+              <li class="list-inline-item">
+                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/bed.svg">
                 <p>Hotel</p>
               </li>
-              <li class="list-inline-item mr-4">
-                <i class="fa fa-eye" aria-hidden="true"></i>
+              <li class="list-inline-item">
+                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/gogle.svg">
                 <p>Sight Seeing</p>
               </li>
-              <li class="list-inline-item mr-4">
-                <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <li class="list-inline-item">
+                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/plateandspoon.svg">
                 <p>Meal</p>
               </li>
-              <li class="list-inline-item mr-4">
-                <i class="fa fa-bus" aria-hidden="true"></i>
+              <li class="list-inline-item">
+                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/bus.svg">
                 <p>Transfer</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6">
+        <div class="col-xl-4 col-lg-4 col-md-6 cst-padding-0">
           <div class="row  form-block position-relative cst-position">
             <div class="col-12">
               <!-- form card login -->
@@ -61,8 +62,8 @@
                 <!-- <div class="card-header"> -->
                 <!-- </div> -->
                 <div class="card-body enqury-card">
-                  <h3 class="mb-10">Want to Go For A Memorable Holiday</h3>
-                  <p>Provide Your Details to Know Best Holiday Deals</p>
+                  <h3 class="mb-10">Want to Go For <br />A Memorable Holiday</h3>
+                  <p class="labeltext">Provide Your Details to Know Best Holiday Deals</p>
                   <form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
                     <div class="row">
                       <div class="col-md-12">
@@ -77,14 +78,8 @@
                           <input class="form-control" id="uname1" name="where" required="" type="text">
                         </div>
                       </div>
+                      <p class="mont-book text-center line">Contact Details</p>
                       <div class="col-md-12">
-                        <!-- <div class="form-group">
-                          <label for="to1">Date of Departure</label>
-                          <span class="date-image2">
-                            <img src="<?php echo base_url(); ?>assets/images/home/calendar.svg" title="date" alt="date">
-                          </span>
-                          <input class="form-control" id="uname1" name="where" required="" type="date">
-                        </div> -->
                         <div class="form-group custom-formgroup1">
                           <label class="control-label">From</label>
                           <div class="icon-input">
@@ -131,31 +126,31 @@
 </section>
 <section class="section">
   <div class="container-fluid">
-    <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+    <div class="col-xl-10 offset-xl-2 col-lg-10 offset-lg-2 col-md-12 m-auto">
+      <div class="row hotel-itenary-details">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Package Overview</h1>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
           <p>Expand your world and experience fascinating cultures with Emirates Holidays. Exclusive offers. Tailored experiences. Personal attention. Flights + Hotels. Types: Beach holidays,Romantic retreats, Family vacations.</p>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>What's included</h1>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
           <p>Meet and Greet at Abu Dhabi International Airport. Return Airport transfers from Abu Dhabi International Airport on private basis. 3 Nights 4 Days stay at above mentioned hotels on Bed & breakfast basis. Acces to all parks (1 day 1 Park) while staying at above mentioned hotels. Return economy airfare from Delhi Vat charges. Visa + OTB GST</p>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>What's Excluded</h1>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
           <p>Personal Expenses(Telephone,Laundry,Mini Bar,Shopping,etc) Tourism Dhiram Extra & Direct payable at Hotel High and or Peak seasons supplement surcharge Optional tour and other arrangements. Meals as not mentioned on the itinerary Tipping Guide and Driver</p>
         </div>
 
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Hotel Details</h1>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
           <div class="boredercls">
             <img src="<?php echo base_url(); ?>assets/images/hotel/hotel.png" alt="" class="img-fluid">
           </div>
@@ -168,11 +163,11 @@
         </div>
 
 
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Your itinerary</h1>
         </div>
         <!-- itenry track -->
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
           <p>Day1</p>
           <ul class="timeline  mb-3">
             <li>
@@ -333,10 +328,10 @@
           </ul>
         </div>
         <!-- itenry track -->
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
-          <h1>Your itinerary</h1>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
+          <h1>Additional Info</h1>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs cst-nav-tabs" role="tablist">
             <li class="nav-item">
@@ -348,27 +343,24 @@
           </ul>
 
           <!-- Tab panes -->
-          <div class="tab-content">
-            <div id="home" class="container tab-pane active"><br>
+          <div class="tab-content terms">
 
-              <p>All rates and confirmations venience offloading</p>
-            </div>
-            <div id="menu1" class="container tab-pane fade"><br>
+            <div id="menu1" class="container tab-pane cancellation-tab fade"><br>
 
               <p>All rates and confirmations are subject to availability at the time of booking Special requests are subject to availability at the time of
                 Check in Rates are in USD based on current rate of exchange Rates are subject to change without prior notice or due to events beyond our
                 control Please check the visas requirements for the countries visiting Please check the names given as per the passports to avoid inconvenience offloading</p>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 section">
-            <div class="dis">
+          <div class="col-md-12 col-sm-12 section ">
+            <div class="dis  mt-5">
               <div class="ab">
                 <p class="t">Hassle free<p>
               </div>
 
-              <div class="cd ">
-                <p class="mont-book">support@holidaymate.in<p>
-                    <p class="mont-bold">+919845 944499</p>
+              <div class="cd">
+                <p class="mont-book">support@holidaymate.in</p>
+                <p class="mont-bold">+919845 944499</p>
               </div>
 
             </div>
@@ -379,6 +371,8 @@
 </section>
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
+
 
 <!-- Jquery for Navigation Menu -->
 <script>
@@ -388,9 +382,6 @@
     $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
   })
 </script>
-<script>
-  $('#carousel-example-1').carousel({
-    interval: 3000,
-    cycle: true
-  });
-</script>
+
+<script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/terms.js"></script>

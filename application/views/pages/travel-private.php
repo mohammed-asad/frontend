@@ -49,7 +49,7 @@
           <p>Mom wants the spa, kids want to dive in pool, dad need to relish nature, grand parents want some adventure.
           </p>
           <p class="holidaymate-style">Oh Yeah!!! holiday<span>mate</span> has got it covered all.</p>
-          <a href="#" class="cutom-button float-right mr-4"></a>
+          <a href="<?php echo base_url(); ?>gathering/family" class="cutom-button float-right mr-4"></a>
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@
           <p>The bond of friendship gets deeper and stronger with travel dairies.</p>
           <p>Down the life time when you sit on a couch and get nostalgic about that particular moment with your pals
             and buddies….. Well….. Priceless isn’t it…?</p>
-          <a href="#" class="cutom-button float-left maroon"></a>
+          <a href="<?php echo base_url(); ?>gathering/friends" class="cutom-button float-left maroon"></a>
         </div>
       </div>
     </div>
@@ -90,7 +90,7 @@
           <h2>Retreats With Colleagues</h2>
           <p>The strength of the team is each individual member. The strength of each member is the team. Leave the
             desks for recreation and rejuvenation.</p>
-          <a href="#" class="cutom-button float-right dark-blue mr-4"></a>
+          <a href="<?php echo base_url(); ?>gathering/colleagues" class="cutom-button float-right dark-blue mr-4"></a>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@
           <p>At Holidaymate we encourage the individuals to take the Solotrip we organise. Go on Solotrip but dont feel
             lonely as u will be with the group of unknown but equally enthusiastic group of people. Do the things which
             you always wanted to do but shy(ed) away to do in front of your family/friends...</p>
-          <a href="#" class="cutom-button float-left maroon"></a>
+          <a href="<?php echo base_url(); ?>gathering/solotrip" class="cutom-button float-left maroon"></a>
         </div>
       </div>
     </div>

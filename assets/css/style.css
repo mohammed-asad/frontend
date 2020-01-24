@@ -130,6 +130,11 @@ h4 {
   /* top: 75rem;*/
 }
 
+.star {
+  position: relative;
+  top: -4px;
+}
+
 .small-btn-submit {
   background: #ff5a5f 0% 0% no-repeat padding-box;
   border-radius: 28px;
@@ -1033,6 +1038,24 @@ footer .list-unstyled li .lastlink {
   right: 0;
 }
 
+.packsection .pack-block ul li {
+  margin: 0 20px;
+}
+
+.packsection .pack-block ul li img {
+  width: 17px;
+  height: 17px;
+}
+
+.packsection .pack-block p {
+  font-size: 16px;
+  font-family: Mont-Regular;
+}
+
+.packsection .pack-block h2 {
+  font-family: Mont-Bold;
+}
+
 .boredercls {
   border-radius: 55px;
   overflow: hidden;
@@ -1097,7 +1120,7 @@ ul.timeline > li:before {
 
 .zbtn {
   position: absolute;
-  left: 23%;
+  left: 17%;
   padding: 10px 40px;
 }
 
@@ -1308,7 +1331,7 @@ ul.timeline > li:before {
   display: flex;
 }
 
-.ab {
+.dis .ab {
   width: 288px;
   height: 69px;
   border: 2px solid #E4E4E4;
@@ -1320,7 +1343,7 @@ ul.timeline > li:before {
   padding: 10px 30px;
 }
 
-.cd {
+.dis .cd {
   width: 325px;
   height: 86px;
   border: 2px solid #E4E4E4;
@@ -1330,11 +1353,10 @@ ul.timeline > li:before {
   padding: 10px;
 }
 
-.cd p {
+.dis .cd p {
   margin-bottom: 0px;
 }
 
-/*************************************************** media queries ***********************************/
 /************************************* gathering page ******************************************/
 .gather-section {
   margin: 24px;
@@ -1542,14 +1564,61 @@ ul.timeline > li:before {
 }
 
 /************************************* our specialities page ******************************************/
+.enqury-card .labeltext {
+  font-size: 18px;
+  font-family: Mont-Regular;
+  color: #B4B4B4;
+}
+
+.enqury-card .form-group label {
+  font-family: Mont-Semibold;
+}
+
+.line {
+  color: #B4B4B4;
+  margin: 5px auto;
+}
+
+.line::before,
+.line::after {
+  display: inline-block;
+  content: "";
+  border-top: .1rem solid #B4B4B4;
+  width: 4rem;
+  margin: 0 1rem;
+  -webkit-transform: translateY(-0.4rem);
+          transform: translateY(-0.4rem);
+}
+
+.cst-text-r {
+  text-align: right;
+}
+
+.hotel-itenary-details p {
+  font-family: Mont-Regular;
+}
+
+.hotel-itenary-details h1 {
+  font-family: Mont-Bold;
+}
+
+/*************************************************** media queries ***********************************/
 /*************************enquery form ***************************************************************/
+@media (max-width: 1700px) {
+  .slideshow-container .mySlides .text {
+    position: absolute;
+    right: -3%;
+    top: 60px;
+  }
+}
+
 @media (max-width: 1550px) and (min-width: 1200px) {
   ul.timeline:before {
     content: " ";
     background: #d4d9df;
     display: inline-block;
     position: absolute;
-    left: 80px;
+    left: 100px;
   }
   ul.timeline > li:before {
     content: " ";
@@ -1558,7 +1627,7 @@ ul.timeline > li:before {
     position: absolute;
     border-radius: 50%;
     border: 1px solid #d4d9df;
-    left: 73px;
+    left: 93px;
   }
   .new-cardblock .card-footer {
     padding: 12px 8px !important;
@@ -1566,6 +1635,12 @@ ul.timeline > li:before {
   .small-btn-submit {
     padding: 3px 10px;
     font-size: 11px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .packsection .pack-block ul li {
+    margin: 0 10px;
   }
 }
 
@@ -1975,6 +2050,42 @@ ul.timeline > li:before {
   .slick-slide img {
     height: 50vh !important;
   }
+  .mySlides img {
+    height: 40vh;
+  }
+  .mySlides .text {
+    width: 300px !important;
+    left: 7%;
+  }
+  .dis {
+    display: block;
+  }
+  .dis .ab {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #fff;
+  }
+  .dis .cd {
+    width: 100%;
+    height: 60px;
+    margin-left: 0;
+    padding: 10px;
+    margin-top: -8px;
+  }
+  .dis .cd p {
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .cst-text-r {
+    text-align: left;
+  }
+  .cst-padding-0 {
+    padding: 0px !important;
+  }
 }
 
 @media (max-width: 414px) {
@@ -1992,6 +2103,24 @@ ul.timeline > li:before {
   }
   .custom-indicators1 {
     bottom: 8px !important;
+  }
+  .btn-black {
+    padding: 10px 20px 10px 10px !important;
+    font-size: 12px;
+  }
+  .zbtn {
+    left: 39%;
+    padding: 10px 10px 10px 20px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .zbtn {
+    left: 43%;
+  }
+  .line::before,
+  .line::after {
+    width: 2rem;
   }
 }
 

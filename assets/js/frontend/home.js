@@ -11,7 +11,7 @@ var home = {
           $.map(response.data, function (item, index) {
             //Populate slider list
             var slider = `<div class="carousel-item banner-inner">
-					<img class="img-fluid" src="${item.url}" alt="Los Angeles">
+					<img class="img-fluid" src="${item.url }" alt="Los Angeles">
         </div>`;
 
             $("#demo .banner-inner").first().addClass("active");
@@ -33,21 +33,13 @@ var home = {
         if (res.status === 200) {
           $('.navigation .sub-menu').find('.sub-menu-item-list').html("");
           $('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
-          $.map(res.data, function (item) {
-            //Dumping Regions
-            var nav_item = `<div class="sub-menu-item">
-            <span data-region="${ item.region.toLowerCase()}">
-              ${item.region}
-            </span>
-          </div>`;
-            $('.navigation .sub-menu').find('.sub-menu-item-list').append(nav_item);
-
+          $.map(res.data, function (item, index) {
             //Dumping Countries
-            var nav_desc = `<div class="sub-item-desc" data-region="${item.region.toLowerCase()}">
+            var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
             <div class="sub-item-item overview">
               <h4 >Overview</h4>
               <p>
-              ${item.overview}
+              ${item.overview }
               </p>
             </div>
             <div class="sub-item-item countries">
@@ -55,11 +47,19 @@ var home = {
               <ul>
               ${item.countries.map(function (country) {
               return '<li><a href="">' + country + '</a></li>';
-            }).join('')}
+            }).join('') }
               </ul>
             </div>
           </div>`;
-            $('.navigation .sub-menu').find('.sub-item-desc-holder').append(nav_desc);
+            //Dumping Regions
+            var nav_item = `<div class="sub-menu-item ${ (index === 0 ? 'active' : '') }">
+            <span data-region="${ item.region.toLowerCase() }">
+              ${item.region }
+            </span>
+            ${ nav_desc }
+          </div>`;
+            $('.navigation .sub-menu').find('.sub-menu-item-list').append(nav_item);
+            // $('.navigation .sub-menu').find('.sub-item-desc-holder').append(nav_desc);
           });
         }
       })
@@ -78,20 +78,46 @@ var home = {
     },
       function () {
         $(".other-container").removeClass("blur");
-      })
+      });
+
+    $('.navigation').find('.nav-item').on('click', function (e) {
+      var target = e.target;
+      var blur = $(target).attr("data-bluritem");
+      if (blur) {
+        $(".other-container").addClass("blur");
+        $('.sub-menu').css("display", "block");
+      }
+    })
   },
 
   navigationItemHover: function () {
-    $('.sub-menu-item').on('mouseover', function (e) {
+    $('.sub-menu-item').on('mouseover, click', function (e) {
       var target = $(e.target).attr("data-region");
       $('.sub-menu-item-list').find('.sub-menu-item').removeClass('active');
       $(this).addClass('active');
       $('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
       $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
     })
-  }
+  },
 
+  // Tab menu
+  showTabMenu: function () {
+    $('.hamburger-menu').click('on', function () {
+      $('.nav-items-holder').addClass("active");
+    })
+  },
+  closeTabMenu: function () {
+    $('.close-hamburger-menu').click('on', function () {
+      $('.nav-items-holder').removeClass("active");
+    });
+    $('.reset-menu').click('on', function () {
+      $('.sub-menu').css("display", "none");
+    });
+
+  }
 };
 home.getSlider();
 home.generatenavigation();
 home.navigationHover();
+home.showTabMenu();
+home.closeTabMenu();

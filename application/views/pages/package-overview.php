@@ -151,15 +151,17 @@
           <h1>Hotel Details</h1>
         </div>
         <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
-          <div class="boredercls">
-            <img src="<?php echo base_url(); ?>assets/images/hotel/hotel.png" alt="" class="img-fluid">
+          <div class="hotel-description">
+            <div class="boredercls">
+              <img src="<?php echo base_url(); ?>assets/images/hotel/hotel.png" alt="" class="img-fluid">
+            </div>
+            <h4 class="mt-3">Panorama Grand Hotel</h4>
+            <p><img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"> <img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"> <img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"></p>
+            <p>Panorama Grand Hotel Located just 10 minutes away from Dubai International Airport, Panorma Grand is the perfect hotel to stay when in Dubai.
+              The hotel offers 103 rooms, all equipped with amenities like A.C, satellite TV, direct dial phone, Wi-Fi access, mini bar and personal safe.
+              It also provides facilities of currency exchange, laundry, business centre,
+              beach transfer and 24-hour room service. It’s in house restaurant and Cafe serves an array of lip-smacking delicacies.</p>
           </div>
-          <h4 class="mt-3">Panorama Grand Hotel</h4>
-          <p><img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"> <img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"> <img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"></p>
-          <p>Panorama Grand Hotel Located just 10 minutes away from Dubai International Airport, Panorma Grand is the perfect hotel to stay when in Dubai.
-            The hotel offers 103 rooms, all equipped with amenities like A.C, satellite TV, direct dial phone, Wi-Fi access, mini bar and personal safe.
-            It also provides facilities of currency exchange, laundry, business centre,
-            beach transfer and 24-hour room service. It’s in house restaurant and Cafe serves an array of lip-smacking delicacies.</p>
         </div>
 
 
@@ -384,4 +386,5 @@
 </script>
 
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/hotel.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/terms.js"></script>

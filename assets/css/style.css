@@ -51,6 +51,10 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mont-book {
   font-family: "Mont-Book";
 }
@@ -388,7 +392,7 @@ h4 {
 
 .form-block {
   position: absolute;
-  top: 20%;
+  top: 14%;
   right: 5%;
 }
 
@@ -399,16 +403,21 @@ h4 {
 }
 
 .form-block .card-outline-secondary .card-body {
-  padding: 30px;
+  padding: 30px 30px;
 }
 
 .form-block .card-outline-secondary .card-body h3 {
   font-family: "Mont-Bold";
-  font-size: 32px;
+  font-size: 35px;
+  margin-bottom: 25px;
 }
 
 .form-block .card-outline-secondary .card-body form .form-group lable {
   font-family: "Mont-SemiBold";
+}
+
+.form-block .card-outline-secondary .card-body form .form-group .custom-to {
+  margin-left: 50px;
 }
 
 .form-block .card-outline-secondary .card-body form .form-group .date-image1 img {
@@ -431,7 +440,7 @@ h4 {
 
 .form-block .card-outline-secondary .card-body form .form-group .newfacalendar1 {
   position: absolute;
-  top: 27px;
+  top: 35px;
   left: 12px;
   font-size: 14px;
   padding-top: 12px;
@@ -441,8 +450,8 @@ h4 {
 
 .form-block .card-outline-secondary .card-body form .form-group .newfacalendar2 {
   position: absolute;
-  top: 27px;
-  left: 31px;
+  top: 35px;
+  left: 50px;
   font-size: 14px;
   padding-top: 12px;
   line-height: 1;
@@ -450,17 +459,17 @@ h4 {
 }
 
 .form-block .card-outline-secondary .card-body form .form-group #datepicker1 {
-  padding: 10px 35px;
+  padding: 10px 30px;
 }
 
 .form-block .card-outline-secondary .card-body form .form-group #datepicker2 {
-  padding: 10px 5px 10px 49px;
+  padding: 10px 5px 10px 70px;
 }
 
 .form-block .card-outline-secondary .card-body form .form-group .form-control {
   border: 1px solid #e4e4e4;
   border-radius: 28px;
-  height: 40px;
+  height: 55px;
 }
 
 .form-block .card-outline-secondary .card-body form .form-group .cst-pr {
@@ -476,18 +485,18 @@ h4 {
 }
 
 .form-block .card-outline-secondary .card-body form .form-group .cstpl-wd {
-  width: 114%;
-  left: -30px;
+  width: 116%;
+  left: -40px;
 }
 
 .form-block .card-outline-secondary .card-body form .form-group .country-code {
   position: absolute;
-  width: 60px;
+  width: 85px;
   background: transparent;
 }
 
 .form-block .card-outline-secondary .card-body form .custom-formgroup2 {
-  margin-left: -26px;
+  margin-left: -40px;
   position: relative;
   z-index: 0;
 }
@@ -881,6 +890,14 @@ footer .list-unstyled li .lastlink {
 
 .image-container img {
   width: 100%;
+}
+
+.section1 .trvalep-content h3 {
+  font-size: 24px;
+}
+
+.section1 .trvalep-content p {
+  font-family: Mont-SemiBold;
 }
 
 .section .custom-text-align {
@@ -1909,11 +1926,30 @@ ul.timeline > li:before {
 }
 
 @media (max-width: 1366px) {
-  .enqury-card {
+  .form-block {
+    top: 11% !important;
+  }
+  .form-block .enqury-card {
     padding: 20px 15px !important;
   }
-  .enqury-card h3 {
+  .form-block .enqury-card h3 {
     font-size: 24px !important;
+  }
+  .form-block .enqury-card .form-group .newfacalendar1 {
+    top: 26px !important;
+  }
+  .form-block .enqury-card .form-group .newfacalendar2 {
+    top: 26px !important;
+  }
+  .form-block .enqury-card .form-group .cstpl-wd {
+    width: 114% !important;
+    left: -25px !important;
+  }
+  .form-block .enqury-card .form-group .country-code {
+    width: 60px !important;
+  }
+  .cst-position {
+    top: 0% !important;
   }
   #formLogin .form-control {
     height: 35px;
@@ -2134,7 +2170,7 @@ ul.timeline > li:before {
 
 @media (max-width: 992px) {
   .travel-section .custom-jumbotron {
-    height: 60vh;
+    height: 45vh;
   }
 }
 
@@ -2150,6 +2186,14 @@ ul.timeline > li:before {
   }
   .small-btn-submit {
     padding: 5px 15px;
+  }
+  .slideshow-container .mySlides .text {
+    position: absolute;
+    right: 2%;
+    top: 35px;
+    padding: 30px;
+    height: 290px;
+    width: 375px;
   }
 }
 
@@ -2275,7 +2319,11 @@ ul.timeline > li:before {
 }
 
 @media (max-width: 575px) {
-  .cstpl-wd {
+  .form-block .enqury-card .form-group {
+    width: 100% !important;
+    left: 0px !important;
+  }
+  .form-block .enqury-card .form-group .cstpl-wd {
     width: 100% !important;
     left: 0 !important;
     right: 0 !important;
@@ -2330,6 +2378,9 @@ ul.timeline > li:before {
   }
   .cst-padding-0 {
     padding: 0px !important;
+  }
+  .custom-to {
+    margin-left: 0px;
   }
 }
 

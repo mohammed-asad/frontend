@@ -52,21 +52,21 @@
         <img src="<?php echo base_url(); ?>assets/images/others/gather.png" style="width:100%">
         <div class="text">
           <p>In this amazing world with eternal beauty its endless exploration when you take a trip with your family.</p>
-          </p>- Use Your Pace and Rejoice with your family by choosing Exquisite HolidayMate Tour plans<p>
+          <p>- Use Your Pace and Rejoice with your family by choosing Exquisite HolidayMate Tour plans</p>
         </div>
       </div>
       <div class="mySlides ">
         <img src="<?php echo base_url(); ?>assets/images/others/gather.png" style="width:100%">
         <div class="text">
           <p>On the ocean of life when you sail on the family ship, choose HolidayMate as your compass.</p>
-          </p>- Endless Exploration family tours from HolidayMate<p>
+          <p>- Endless Exploration family tours from HolidayMate</p>
         </div>
       </div>
       <div class="mySlides ">
         <img src="<?php echo base_url(); ?>assets/images/others/gather.png" style="width:100%">
         <div class="text">
           <p>Family are God’s gift to you, as you are to them. A family trip is a celebration.</p>
-          </p>- Let the HolidayMate plan the Itinerary that you choose to explore<p>
+          <p>- Let the HolidayMate plan the Itinerary that you choose to explore</p>
         </div>
       </div>
 

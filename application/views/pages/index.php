@@ -1,139 +1,139 @@
 <section class="navigation">
 	<div class="blur-backdrop"></div>
-		<div class="hamburger-menu"></div>
-		<a href="#" class="logo">
+	<div class="hamburger-menu"></div>
+	<a href="#" class="logo">
+		<img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
+	</a>
+	<div class="nav-items-holder">
+		<span class="close-hamburger-menu"></span>
+		<a href="#" class="logo secondary">
 			<img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 		</a>
-		<div class="nav-items-holder">
-			<span class="close-hamburger-menu"></span>
-			<a href="#" class="logo secondary">
-				<img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
-			</a>
-			<a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
-				<span>
-					Travel private
-				</span>
-			</a>
-			<div class="nav-item" data-bluritem="true">
-				<span>Destinations</span>
-				<div class="sub-menu">
-					<!-- Sub Menu Start-->
-					<div class="sub-menu-items-holder">
+		<a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
+			<span>
+				Travel private
+			</span>
+		</a>
+		<div class="nav-item" data-bluritem="true">
+			<span>Destinations</span>
+			<div class="sub-menu">
+				<!-- Sub Menu Start-->
+				<div class="sub-menu-items-holder">
 					<span class="reset-menu"></span>
-						<!-- Sub Menu Region Start-->
-						<div class="sub-menu-item-list">
-							<div class="sub-menu-item active">
-								<span data-region="europe">
-									Europe
-								</span>
-								<div class="sub-item-desc" data-region="europe">
-									<div class="sub-item-item overview">
-										<h4>Overview</h4>
-										<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
-											It is bordered by the Arctic Ocean to the north,
-											the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
-											It comprises the westernmost part of Eurasia.
-										</p>
-									</div>
-									<div class="sub-item-item countries">
-										<h4>Destinations</h4>
-										<ul>
-											<li>Switzerland</li>
-											<li>France</li>
-											<li>Turkey</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="sub-menu-item">
-								<span data-region="asia">
-									Asia
-								</span>
-								<div class="sub-item-desc" data-region="europe">
-									<div class="sub-item-item overview">
-										<h4>Overview</h4>
-										<p>Asia is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
-											It is bordered by the Arctic Ocean to the north,
-											the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
-											It comprises the westernmost part of Eurasia.
-										</p>
-									</div>
-									<div class="sub-item-item countries">
-										<h4>Destinations</h4>
-										<ul>
-											<li>Switzerland</li>
-											<li>Turkey</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="sub-menu-item">
-								<span data-region="america">
-									America
-								</span>
-								<div class="sub-item-desc" data-region="europe">
-									<div class="sub-item-item overview">
-										<h4>Overview</h4>
-										<p>America is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
-											It is bordered by the Arctic Ocean to the north,
-											the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
-											It comprises the westernmost part of Eurasia.
-										</p>
-									</div>
-									<div class="sub-item-item countries">
-										<h4>Destinations</h4>
-										<ul>
-											<li>France</li>
-											<li>Italy</li>
-											<li>Turkey</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<!-- Sub Menu Region Ends-->
-
-						<!-- Sub Menu Detauls Start-->
-						<div class="sub-item-desc-holder">
-							
-
-							<div class="sub-item-desc" data-region="asia">
+					<!-- Sub Menu Region Start-->
+					<div class="sub-menu-item-list">
+						<div class="sub-menu-item active">
+							<span data-region="europe">
+								Europe
+							</span>
+							<div class="sub-item-desc" data-region="europe">
 								<div class="sub-item-item overview">
-									<h4 class="mb-2">Overview</h4>
+									<h4>Overview</h4>
 									<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
 										It is bordered by the Arctic Ocean to the north,
 										the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
-										It comprises the westernmost part of Eurasia.</p>
+										It comprises the westernmost part of Eurasia.
+									</p>
 								</div>
 								<div class="sub-item-item countries">
-									<h4 class="mb-2">Destinations</h4>
+									<h4>Destinations</h4>
 									<ul>
-										<li>India</li>
-										<li>Indonesia</li>
-										<li>Bangladesh</li>
-										<li>Pakistan</li>
+										<li>Switzerland</li>
+										<li>France</li>
+										<li>Turkey</li>
 									</ul>
 								</div>
 							</div>
-
 						</div>
-						<!-- Sub Menu Detauls End-->
-					</div>
-					<!-- Sub Menu End-->
-				</div>
-			</div>
-			<a href="" class="nav-item">
-				<span>
-					Private trip
-				</span>
-			</a>
-		</div>
-		<div class="nav-texts">
 
+						<div class="sub-menu-item">
+							<span data-region="asia">
+								Asia
+							</span>
+							<div class="sub-item-desc" data-region="europe">
+								<div class="sub-item-item overview">
+									<h4>Overview</h4>
+									<p>Asia is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
+										It is bordered by the Arctic Ocean to the north,
+										the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
+										It comprises the westernmost part of Eurasia.
+									</p>
+								</div>
+								<div class="sub-item-item countries">
+									<h4>Destinations</h4>
+									<ul>
+										<li>Switzerland</li>
+										<li>Turkey</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="sub-menu-item">
+							<span data-region="america">
+								America
+							</span>
+							<div class="sub-item-desc" data-region="europe">
+								<div class="sub-item-item overview">
+									<h4>Overview</h4>
+									<p>America is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
+										It is bordered by the Arctic Ocean to the north,
+										the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
+										It comprises the westernmost part of Eurasia.
+									</p>
+								</div>
+								<div class="sub-item-item countries">
+									<h4>Destinations</h4>
+									<ul>
+										<li>France</li>
+										<li>Italy</li>
+										<li>Turkey</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sub Menu Region Ends-->
+
+					<!-- Sub Menu Detauls Start-->
+					<div class="sub-item-desc-holder">
+
+
+						<div class="sub-item-desc" data-region="asia">
+							<div class="sub-item-item overview">
+								<h4 class="mb-2">Overview</h4>
+								<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
+									It is bordered by the Arctic Ocean to the north,
+									the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
+									It comprises the westernmost part of Eurasia.</p>
+							</div>
+							<div class="sub-item-item countries">
+								<h4 class="mb-2">Destinations</h4>
+								<ul>
+									<li>India</li>
+									<li>Indonesia</li>
+									<li>Bangladesh</li>
+									<li>Pakistan</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sub Menu Detauls End-->
+				</div>
+				<!-- Sub Menu End-->
+			</div>
 		</div>
+		<a href="" class="nav-item">
+			<span>
+				Private trip
+			</span>
+		</a>
+	</div>
+	<div class="nav-texts">
+
+	</div>
 
 </section>
 
@@ -169,16 +169,16 @@
 										<label class="control-label">From</label>
 										<div class="icon-input">
 											<i class="fa fa-calendar newfacalendar1"></i>
-											<input id="datepicker1" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+											<input id="datepicker1" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control" placeholder="Select a date">
 										</div>
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pl-0">
 									<div class="form-group custom-formgroup2">
-										<label class="control-label">To</label>
+										<label class="control-label custom-to">To</label>
 										<div class="icon-input">
 											<i class="fa fa-calendar newfacalendar2"></i>
-											<input id="datepicker2" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+											<input id="datepicker2" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control" placeholder="Select a date">
 										</div>
 									</div>
 								</div>
@@ -190,7 +190,7 @@
 								</div>
 								<div class="col-md-6 col-sm-6 pl-0">
 									<div class="form-group">
-										<label for="to1">Email</label>
+										<label for="to1" class="ml-3">Email</label>
 										<input class="form-control cst-pl cstpl-wd text-left pl-30" name="email" required="" type="email">
 									</div>
 								</div>
@@ -217,7 +217,7 @@
 	<section class="section new-cardblock">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl-11 col-lg-12 col-md-12 col-sm-12 col-12 m-auto p-xl-0">
+				<div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 m-auto p-xl-0">
 					<h2 class="text-center head1">Upcoming Tours</h2>
 					<div class="row">
 						<!-- card start -->

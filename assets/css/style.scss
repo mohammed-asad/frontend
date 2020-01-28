@@ -1200,6 +1200,12 @@ ul.timeline>li:before {
 
 /**************************** Nav Menu css Munsif**************************************/
 .navigation {
+	.position {
+		position: absolute;
+		top: 30%;
+		right: 10px;
+	}
+
 	position: absolute;
 	width: calc(100% - 60px);
 	top: 50px;
@@ -1243,8 +1249,8 @@ ul.timeline>li:before {
 
 	.hamburger-menu {
 		display: inline-block;
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 20px;
 		position: relative;
 		border-top: 2px solid #fff;
 		border-bottom: 2px solid #fff;
@@ -1256,7 +1262,7 @@ ul.timeline>li:before {
 			content: '';
 			position: absolute;
 			width: 100%;
-			top: 12px;
+			top: 7px;
 			height: 1px;
 			border-top: 2px solid #fff;
 		}
@@ -1328,9 +1334,21 @@ ul.timeline>li:before {
 			-webkit-box-pack: start;
 			-ms-flex-pack: start;
 			justify-content: start;
-			width: 30%;
+			width: 32%;
 			// display: none;
 			transform: translate3d(-100%, 0, 0);
+		}
+
+		@media all and(max-width: 600px) {
+			width: 40%;
+		}
+
+		@media all and(max-width: 414px) {
+			width: 50%;
+		}
+
+		@media all and(max-width: 380px) {
+			width: 65%;
 		}
 
 		.nav-item {
@@ -1437,7 +1455,7 @@ ul.timeline>li:before {
 
 						span {
 							display: inline-block;
-							padding: 15px 0 15px 55px;
+							padding: 15px 0 15px 30px;
 							width: 65%;
 							height: 58px;
 							text-align: left;
@@ -1474,6 +1492,8 @@ ul.timeline>li:before {
 								top: 0;
 								position: static;
 							}
+
+
 
 							.sub-item-item {
 								margin-right: 50px;
@@ -1516,7 +1536,7 @@ ul.timeline>li:before {
 								@media all and (max-width: 1023px) {
 									border: 1px solid #141414;
 									padding: 15px 0 15px 30px;
-									pointer-events: none
+									pointer-events: none;
 								}
 							}
 
@@ -1579,12 +1599,26 @@ ul.timeline>li:before {
 								}
 							}
 						}
+
+
 					}
 
 					&:first-of-type {
 						display: flex;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media(max-width:600px) {
+	.sub-menu-item.active {
+		.sub-item-desc {
+			display: block !important;
+
+			.sub-item-item {
+				width: 100% !important;
 			}
 		}
 	}

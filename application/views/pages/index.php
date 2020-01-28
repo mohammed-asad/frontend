@@ -1,7 +1,9 @@
 <section class="navigation">
-	<div class="blur-backdrop"></div>
-	<div class="hamburger-menu"></div>
-	<a href="#" class="logo">
+	<div class="position">
+		<div class="blur-backdrop"></div>
+		<div class="hamburger-menu"></div>
+	</div>
+	<a href="#" class="logo mobile-logo">
 		<img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 	</a>
 	<div class="nav-items-holder">

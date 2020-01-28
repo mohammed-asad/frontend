@@ -1173,6 +1173,12 @@ ul.timeline > li:before {
           align-items: center;
 }
 
+.navigation .position {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+}
+
 .navigation .blur-backdrop {
   position: fixed;
   top: 0;
@@ -1208,8 +1214,8 @@ ul.timeline > li:before {
 
 .navigation .hamburger-menu {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 20px;
   position: relative;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
@@ -1222,7 +1228,7 @@ ul.timeline > li:before {
   content: '';
   position: absolute;
   width: 100%;
-  top: 12px;
+  top: 7px;
   height: 1px;
   border-top: 2px solid #fff;
 }
@@ -1307,9 +1313,27 @@ ul.timeline > li:before {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
-    width: 30%;
+    width: 32%;
     -webkit-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation .nav-items-holder {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .navigation .nav-items-holder {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .navigation .nav-items-holder {
+    width: 65%;
   }
 }
 
@@ -1427,7 +1451,7 @@ ul.timeline > li:before {
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item span {
   display: inline-block;
-  padding: 15px 0 15px 55px;
+  padding: 15px 0 15px 30px;
   width: 65%;
   height: 58px;
   text-align: left;
@@ -1584,6 +1608,15 @@ ul.timeline > li:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .sub-menu-item.active .sub-item-desc {
+    display: block !important;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item {
+    width: 100% !important;
+  }
 }
 
 /**************************** Nav Menu css Munsif **************************************/

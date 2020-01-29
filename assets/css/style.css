@@ -709,6 +709,7 @@ header span {
   -webkit-box-shadow: 0px 16px 24px #00000033;
           box-shadow: 0px 16px 24px #00000033;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .new-cardblock .card .card-block {
@@ -744,6 +745,10 @@ header span {
 
 .new-cardblock .card .fa-heart.active {
   color: #ff234a;
+}
+
+.new-cardblock .card .card-img-top {
+  height: 460px;
 }
 
 .new-cardblock .card:hover {
@@ -1043,6 +1048,12 @@ footer .list-unstyled li .lastlink {
 }
 
 /**************************** travel private page css **************************************/
+/*********************************** package overview ************************************/
+.hotel-img {
+  height: 375px;
+}
+
+/*********************************** package overview ************************************/
 /**************************** travel packages page css **************************************/
 .packsection {
   background: #efefef;

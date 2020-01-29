@@ -4,7 +4,8 @@ var hotel = {
 	getHotel: function () {
 		var maxLenght = 100;
 		var i = 0;
-		fns.ajaxGet('holidaymate/api/hotel/id/').
+		var id = 3;
+		fns.ajaxGet('holidaymate/api/hotel/id/' + id).
 		done(function (response) {
 				if (response.status === 401) {
 					alert(response.message)
@@ -19,14 +20,21 @@ var hotel = {
 						} else {
 							stat = "Undefined"
 						}
-						var hotel_new = `<div class="">
-            <div id="hotel_id"${j}>
-            <h2>${item.name }</h2>
-            <p>${item.long_desc }</p>
-            </div>
-           </div>`;
+						var rate = item.rating;
+						var staricon = " ";
+						for (var k = 1; k <= rate; k++) {
+							staricon += `<img src ="../assets/images/hotel/star.svg" alt = "" class ="ima-fluid mb-3 mt-2" >`;
+						}
+
+						var hotel_new = `<div class=""><div id="hotel_id"></div>`;
+						var hotel_name = `<h4 class="mt-3">${item.name }</h4>`;
+						var hotel_content = `<p>${item.long_desc }</p></div>`;
+
 						if (index <= (maxLenght - 1)) {
 							$('.hotel-description').append(hotel_new);
+							$('.hotel-description').append(hotel_name);
+							$('.hotel-description').append(staricon);
+							$('.hotel-description').append(hotel_content);
 						}
 						hotel.getHotelImages(item.name, index);
 					})
@@ -39,7 +47,7 @@ var hotel = {
 
 	//******************************** Code to load Hotel Images ***************************************//
 
-	getHotelImages: function (hotel, j) {
+	getHotelImages: function (hotel) {
 		console.log(hotel);
 		var img = "";
 		fns.ajaxGet('holidaymate/api/hotelimages/images/' + hotel).
@@ -48,9 +56,9 @@ var hotel = {
 					alert(e.message)
 				} else if (r.status === 200) {
 					$.map(r.data, function (item1, index1) {
-						img += `<div><img src="${item1.url}" width="50" height="50" ></div>`;
+						img += `<div class="boredercls hotel-img"><img src="${item1.url}" class="img-fluid"></div>`;
 					});
-					$(`#hotel_id${j}`).append(img);
+					$(`#hotel_id`).append(img);
 				}
 			})
 			.fail(function (r) {

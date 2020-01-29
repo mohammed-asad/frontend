@@ -13,9 +13,9 @@ var terms = {
 					$.map(response.data, function (item, index) {
 						i += 1;
 						//Populate Terms list
-						var terms = `<div id="home" class="container tab-pane term-tab active mt-3"><p>${item.description}</p></div>`;
+						var terms = `<p>${item.description}</p>`;
 						if (index <= (maxLenght - 1)) {
-							$('.terms').append(terms);
+							$('.term-tab').append(terms);
 						}
 					})
 				}

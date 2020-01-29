@@ -127,26 +127,10 @@
 <section class="section">
   <div class="container-fluid">
     <div class="col-xl-10 offset-xl-2 col-lg-10 offset-lg-2 col-md-12 m-auto">
-      <div class="row hotel-itenary-details">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
-          <h1>Package Overview</h1>
-        </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
-          <p>Expand your world and experience fascinating cultures with Emirates Holidays. Exclusive offers. Tailored experiences. Personal attention. Flights + Hotels. Types: Beach holidays,Romantic retreats, Family vacations.</p>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
-          <h1>What's included</h1>
-        </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
-          <p>Meet and Greet at Abu Dhabi International Airport. Return Airport transfers from Abu Dhabi International Airport on private basis. 3 Nights 4 Days stay at above mentioned hotels on Bed & breakfast basis. Acces to all parks (1 day 1 Park) while staying at above mentioned hotels. Return economy airfare from Delhi Vat charges. Visa + OTB GST</p>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
-          <h1>What's Excluded</h1>
-        </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
-          <p>Personal Expenses(Telephone,Laundry,Mini Bar,Shopping,etc) Tourism Dhiram Extra & Direct payable at Hotel High and or Peak seasons supplement surcharge Optional tour and other arrangements. Meals as not mentioned on the itinerary Tipping Guide and Driver</p>
-        </div>
-
+      <div class="row section hotel-overview"></div>
+      <div class="row section hotel-included"></div>
+      <div class="row section hotel-excluded"></div>
+      <div class="row section">
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Hotel Details</h1>
         </div>
@@ -163,7 +147,8 @@
               beach transfer and 24-hour room service. It’s in house restaurant and Cafe serves an array of lip-smacking delicacies.</p>
           </div>
         </div>
-
+      </div>
+      <div class="row section hotel-itinerary">
 
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Your itinerary</h1>
@@ -329,6 +314,8 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="row section hotel-Info">
         <!-- itenry track -->
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Additional Info</h1>
@@ -346,12 +333,14 @@
 
           <!-- Tab panes -->
           <div class="tab-content terms">
+            <div id="home" class="container tab-pane  active mt-3">
+              <div class="term-tab">
+              </div>
+            </div>
+            <div id="menu1" class="container tab-pane  fade"><br>
+              <div class="cancellation-tab">
+              </div>
 
-            <div id="menu1" class="container tab-pane cancellation-tab fade"><br>
-
-              <p>All rates and confirmations are subject to availability at the time of booking Special requests are subject to availability at the time of
-                Check in Rates are in USD based on current rate of exchange Rates are subject to change without prior notice or due to events beyond our
-                control Please check the visas requirements for the countries visiting Please check the names given as per the passports to avoid inconvenience offloading</p>
             </div>
           </div>
           <div class="col-md-12 col-sm-12 section ">
@@ -386,5 +375,6 @@
 </script>
 
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/hotel.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/terms.js"></script>

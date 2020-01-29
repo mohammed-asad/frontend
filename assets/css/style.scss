@@ -716,6 +716,7 @@ header {
 		transition: box-shadow 0.3s ease-in-out;
 		box-shadow: 0px 16px 24px #00000033;
 		border-radius: 20px;
+		overflow: hidden;
 
 		.card-block {
 			padding: 0px 15px;
@@ -751,6 +752,10 @@ header {
 
 		.fa-heart.active {
 			color: #ff234a;
+		}
+
+		.card-img-top {
+			height: 460px;
 		}
 	}
 
@@ -1067,6 +1072,12 @@ footer {
 }
 
 /**************************** travel private page css **************************************/
+/*********************************** package overview ************************************/
+.hotel-img {
+	height: 375px;
+}
+
+/*********************************** package overview ************************************/
 /**************************** travel packages page css **************************************/
 .packsection {
 	background: #efefef;

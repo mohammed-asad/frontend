@@ -221,7 +221,7 @@
 			<div class="row">
 				<div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 m-auto p-xl-0">
 					<h2 class="text-center head1">Upcoming Tours</h2>
-					<div class="row">
+					<div class="row packages">
 						<!-- card start -->
 						<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
 							<div class="card mt-3 mb-3">
@@ -255,11 +255,7 @@
 										<!-- <i class="fa fa-heart active" aria-hidden="true"></i> -->
 									</div>
 									<h4 class="card-title text-center">Dubai</h4>
-									<!-- <div class="meta">
-																	<a>Friends</a>
-																	</div> -->
 									<div class="card-text text-center">
-										<!-- <p class="text-center"></p> -->
 										<small class="text-center"> Tour to Stunning Dubai 2N/3D</small>
 									</div>
 								</div>
@@ -429,6 +425,7 @@
 <script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
 <script>
 	$('.header-banner').slick({
 		autoplay: true,

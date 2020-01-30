@@ -1,32 +1,5 @@
 //API call to fetch Slider
 var home = {
-
-	getSlider: function () {
-		var maxLenght = 100;
-		fns.ajaxGet('holidaymate/api/slider/id/')
-			.done(function (response) {
-				if (response.status === 401) {
-					alert(response.message)
-				} else if (response.status === 200) {
-					$.map(response.data, function (item, index) {
-						//Populate slider list
-						var slider = `<div class="carousel-item banner-inner">
-					<img class="img-fluid" src="${item.url }" alt="Los Angeles">
-        </div>`;
-
-						$("#demo .banner-inner").first().addClass("active");
-
-						if (index <= (maxLenght - 1)) {
-							$('.banner-carousel-inner').append(slider);
-						}
-					})
-				}
-			})
-			.fail(function (response) {
-				alert("API failed, check Token");
-			})
-	},
-
 	generatenavigation: function () {
 		fns.ajaxGet('holidaymate/api/navigation')
 			.done(function (res) {
@@ -116,7 +89,7 @@ var home = {
 
 	}
 };
-home.getSlider();
+
 home.generatenavigation();
 home.navigationHover();
 home.showTabMenu();

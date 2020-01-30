@@ -144,8 +144,10 @@
 	<!-- Slidee Banner -->
 	<section class="banner mall-24">
 		<div class="header-banner">
-			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
-			<img src="<?php echo base_url(); ?>assets/images/home/background.png" alt="">
+			<!-- <img src="<? php // echo base_url(); 
+											?>assets/images/home/background.png" alt="">
+			<img src="<?php //echo base_url(); 
+								?>assets/images/home/background.png" alt=""> -->
 		</div>
 
 		<!-- Form -->
@@ -402,9 +404,11 @@
 		</div>
 	</section>
 </div>
+<input type="hidden" id="base" value="<?php echo base_url(); ?>">
 <!-- Blur content Starts -->
 
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 
 <!-- Jquery for Navigation Menu -->
@@ -422,16 +426,8 @@
 	});
 </script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
+
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/home-slider.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
-<script>
-	$('.header-banner').slick({
-		autoplay: true,
-		arrows: true,
-		autoplaySpeed: 2000,
-		dots: true,
-		adaptiveHeight: true
-	});
-</script>

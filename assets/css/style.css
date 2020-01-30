@@ -82,11 +82,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -137,6 +137,52 @@ h4 {
 .star {
   position: relative;
   top: -4px;
+}
+
+.changenev {
+  position: relative !important;
+  top: 0px !important;
+}
+
+.changenev .blur-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1008;
+  background: rgba(255, 255, 255, 0.3);
+  display: none;
+}
+
+.changenev .logo {
+  width: 10%;
+  min-width: 120px;
+  margin-left: 30px;
+}
+
+.changenev .logo img {
+  width: 100%;
+}
+
+.changenev .logo.secondary {
+  margin-bottom: 15px;
+  margin-top: -30px;
+  display: none;
+}
+
+@media all and (max-width: 1023px) {
+  .changenev .logo.secondary {
+    display: block;
+  }
+}
+
+.changenev .nav-items-holder a {
+  color: #000 !important;
+}
+
+.changenev .nav-items-holder .nav-item {
+  color: #000 !important;
 }
 
 .small-btn-submit {
@@ -1053,6 +1099,10 @@ footer .list-unstyled li .lastlink {
   height: 375px;
 }
 
+.pakage-bannerblock .pack-column {
+  margin-top: 10px;
+}
+
 /*********************************** package overview ************************************/
 /**************************** travel packages page css **************************************/
 .packsection {
@@ -1085,7 +1135,7 @@ footer .list-unstyled li .lastlink {
 }
 
 .boredercls {
-  border-radius: 55px;
+  border-radius: 50px;
   overflow: hidden;
 }
 
@@ -1669,7 +1719,7 @@ ul.timeline > li:before {
 }
 
 .gather-section .gather-jumbotron {
-  border-radius: 55px;
+  border-radius: 50px;
   background: url("../images/others/gather-banner.png");
   background-repeat: no-repeat;
   height: 95vh;
@@ -1717,7 +1767,7 @@ ul.timeline > li:before {
 }
 
 .slideshow-container {
-  border-radius: 55px;
+  border-radius: 50px;
   /* Position the "next button" to the right */
   /* On hover, add a black background color with a little bit see-through */
 }
@@ -1851,12 +1901,12 @@ ul.timeline > li:before {
 /************************************* gathering page ******************************************/
 /************************************* region page ******************************************/
 .region-banner {
-  border-radius: 55px;
+  border-radius: 50px;
   overflow: hidden;
 }
 
 .region-banner img {
-  border-radius: 55px;
+  border-radius: 50px;
   height: 95vh;
   -o-object-fit: cover;
      object-fit: cover;

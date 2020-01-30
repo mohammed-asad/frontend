@@ -20,17 +20,19 @@ var hotel = {
 						} else {
 							stat = "Undefined"
 						}
+						var base_url = $('#base').val();
 						var rate = item.rating;
 						var staricon = " ";
 						for (var k = 1; k <= rate; k++) {
-							staricon += `<img src ="../assets/images/hotel/star.svg" alt = "" class ="ima-fluid mb-3 mt-2" >`;
+							staricon += `<img src =${base_url}assets/images/icons/star.svg alt = "star-icon" class ="ima-fluid mb-3 mt-2" >`;
 						}
 
-						var hotel_new = `<div class=""><div id="hotel_id"></div>`;
+						var hotel_new = `<div id="hotel_id"></div>`;
 						var hotel_name = `<h4 class="mt-3">${item.name }</h4>`;
-						var hotel_content = `<p>${item.long_desc }</p></div>`;
+						var hotel_content = `<p>${item.long_desc }</p>`;
 
 						if (index <= (maxLenght - 1)) {
+							$('.package-rating').append(rate);
 							$('.hotel-description').append(hotel_new);
 							$('.hotel-description').append(hotel_name);
 							$('.hotel-description').append(staricon);

@@ -4,22 +4,8 @@
       <div class="row">
         <div class="col-xl-8 col-lg-8 col-md-6 cst-padding-0">
           <div class="pack-block">
-            <div class="r">
-              <img src="<?php echo base_url(); ?>assets/images/packages/pack1.png" alt="" class="img-fluid">
-            </div>
-            <div class="row">
-              <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6 col-sm-6">
-                <h3>Dubai</h3>
-                <p class="m-0">Tour to Stunning Dubai</p>
-                <p>4.95 <img class="img-fluid star" src="<?php echo base_url() ?>assets/images/icons/star.svg"> (15)</p>
+            <div class="pakage-bannerblock">
 
-              </div>
-              <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 cst-text-r">
-                <div class="d-inline-block"><span class="mont-book"> Starting From </span>
-                  <h2 class="d-inline-block ml-2"> <i class="fa fa-inr" aria-hidden="true"></i> 10499</h2>
-                </div>
-                <p> Per Person on twin sharing</p>
-              </div>
             </div>
             <p class="text-center mt-5 mb-4">Take part in sunset & sunrise views of Dubai Red Dunes safari overnig</p>
             <ul class="list-inline text-center">
@@ -136,25 +122,17 @@
         </div>
         <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
           <div class="hotel-description">
-            <div class="boredercls">
-              <img src="<?php echo base_url(); ?>assets/images/hotel/hotel.png" alt="" class="img-fluid">
-            </div>
-            <h4 class="mt-3">Panorama Grand Hotel</h4>
-            <p><img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"> <img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"> <img src="<?php echo base_url(); ?>assets/images/hotel/star.svg" alt="" class="ima-fluid"></p>
-            <p>Panorama Grand Hotel Located just 10 minutes away from Dubai International Airport, Panorma Grand is the perfect hotel to stay when in Dubai.
-              The hotel offers 103 rooms, all equipped with amenities like A.C, satellite TV, direct dial phone, Wi-Fi access, mini bar and personal safe.
-              It also provides facilities of currency exchange, laundry, business centre,
-              beach transfer and 24-hour room service. It’s in house restaurant and Cafe serves an array of lip-smacking delicacies.</p>
+
           </div>
         </div>
       </div>
       <div class="row section hotel-itinerary">
 
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
           <h1>Your itinerary</h1>
         </div>
         <!-- itenry track -->
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
           <p>Day1</p>
           <ul class="timeline  mb-3">
             <li>
@@ -359,6 +337,7 @@
           </div>
         </div>
       </div>
+      <input type="hidden" id="base" value="<?php echo base_url(); ?>">
 </section>
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>

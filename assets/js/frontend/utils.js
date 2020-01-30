@@ -26,4 +26,9 @@ var fns = {
       }
     });
   },
+  getURLSlugs: function(){
+    var url = window.location.href;
+    url = url.split("/");
+    return url[url.length - 1];
+  }
 }

@@ -1,11 +1,13 @@
 //API call to fetch country
+var baseURL='http://localhost/';
 var package = {
 	//-------------------------------------- Code to load home package  ----------------------------------------------------------------------------------------------------
 
-	getPackage: function () {
+	getPackageDetails: function () {
 		var maxLenght = 100;
 		var i = 0;
-		var id = 1;
+		// var id = 1;
+		const id = fns.getURLSlugs();
 		fns.ajaxGet('holidaymate/api/packages/id/' + id).
 		done(function (response) {
 				if (response.status === 401) {
@@ -15,26 +17,7 @@ var package = {
 						i += 1;
 						//var stat;
 						var base_url = $('#base').val();
-						var url = base_url + 'packageoverview';
-						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-						<a href="${url}">
-            <div class="card mt-3 mb-3">
-             <div id="countryid${item.package_name}"></div>
-              <div class="text-right mt-3">
-							</div>
-              <div class="card-block">
-                <h4 class="card-title text-center">${item.package_name}</h4>
-                <div class="card-text text-center">
-                  <small class="text-center"> ${item.short_desc}</small>
-                </div>
-              </div>
-              <div class="card-footer">
-                <p class="d-inline price-align">Price <span><i class="fa fa-inr" aria-hidden="true"></i> ${item.price}</span></p>
-                <button class="btn btn-lg small-btn-submit float-right">View Details</button>
-              </div>
-						</div>
-						</a>
-					</div>`;
+
 						var newpackageoverview = ` <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
 						<h1>Package Overview</h1>
 					</div>
@@ -75,12 +58,63 @@ var package = {
 						if (index <= (maxLenght - 1)) {
 
 							$('.pakage-bannerblock').append(newpackagebannerimage);
-							$('.packages').append(newpackage);
 							$('.hotel-overview').append(newpackageoverview);
 							$('.hotel-included').append(newpackageinclude);
 							$('.hotel-excluded').append(newpackageexclude);
+
+							//fetch hotel details from here by sending the Hotel name mentined in the Pacakge
+							var hotelName = item.hotel_name.replace(/ /g, "_")
+							hotel.getHotelByName(hotelName);
 						}
-						package.getPackageImages(item.package_name);
+						//Get images for package
+						var packageName = item.package_name.replace(/ /g,"_");
+						package.getPackageImages(packageName);
+					});
+
+				}
+			})
+			.fail(function (response) {
+				alert("API failed, check Token");
+			})
+	},
+
+	getPackage: function () {
+		var maxLenght = 100;
+		fns.ajaxGet('holidaymate/api/packages/id/').
+		done(function (response) {
+				if (response.status === 401) {
+					alert(response.message)
+				} else if (response.status === 200) {
+					$.map(response.data, function (item, index) {
+						var base_url = $('#base').val();
+						var url = `${base_url}packageoverview/${item.id}`;
+						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+						<a href="${url}">
+            <div class="card mt-3 mb-3">
+             <div id="countryid${item.package_name}"></div>
+              <div class="text-right mt-3">
+							</div>
+              <div class="card-block">
+                <h4 class="card-title text-center">${item.package_name}</h4>
+                <div class="card-text text-center">
+                  <small class="text-center"> ${item.short_desc}</small>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p class="d-inline price-align">Price <span><i class="fa fa-inr" aria-hidden="true"></i> ${item.price}</span></p>
+                <a href="${url}" class="btn btn-lg small-btn-submit float-right">View Details</a>
+              </div>
+						</div>
+						</a>
+					</div>`;
+
+						if (index <= (maxLenght - 1)) {
+
+							$('.packages').append(newpackage);
+						}
+						//Get images for package
+						var packageName = item.package_name.replace(/ /g,"_");
+						package.getPackageImages(packageName);
 
 					});
 
@@ -90,6 +124,7 @@ var package = {
 				alert("API failed, check Token");
 			})
 	},
+
 	getPackageImages: function (package) {
 		//console.log(country);
 		var img = "";
@@ -110,4 +145,3 @@ var package = {
 
 	}
 };
-package.getPackage();

@@ -354,6 +354,10 @@
 </script>
 
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/hotel.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/terms.js"></script>
+
+<script>
+  package.getPackageDetails();
+</script>

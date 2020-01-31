@@ -120,6 +120,7 @@
   <!-- Copyright -->
 
 </footer>
+<input type="hidden" id="base" value="<?php echo base_url(); ?>">
 <!-- Footer -->
 
 </body>

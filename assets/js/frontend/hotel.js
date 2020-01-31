@@ -6,7 +6,7 @@ var hotel = {
 		var i = 0;
 		var id = fns.getURLSlugs();
 		fns.ajaxGet('holidaymate/api/hotel/id/' + id)
-		.done(function (response) {
+			.done(function (response) {
 				if (response.status === 401) {
 					alert(response.message)
 				} else if (response.status === 200) {
@@ -38,9 +38,9 @@ var hotel = {
 							$('.hotel-description').append(staricon);
 							$('.hotel-description').append(hotel_content);
 						}
-						
+
 						//Get images for package
-						var hotelName = item.name.replace(/ /g,"_");
+						var hotelName = item.name.replace(/ /g, "_");
 						hotel.getHotelImages(hotelName, index);
 					})
 				}
@@ -54,7 +54,7 @@ var hotel = {
 		var maxLenght = 100;
 		var i = 0;
 		fns.ajaxGet('holidaymate/api/hotel/name/' + name)
-		.done(function (response) {
+			.done(function (response) {
 				if (response.status === 401) {
 					alert(response.message)
 				} else if (response.status === 200) {
@@ -85,9 +85,15 @@ var hotel = {
 							$('.hotel-description').append(hotel_name);
 							$('.hotel-description').append(staricon);
 							$('.hotel-description').append(hotel_content);
+
 						}
-						var hotelName = item.name.replace(/ /g,"_");
+						// var hotelName = item.name.replace(/ /g, "_");
+						var hotelName = item.id;
 						hotel.getHotelImages(hotelName, index);
+						var hotelpolicytittle = item.id.replace(/ /g, "_");
+						hotel.getPolicy(hotelpolicytittle, index);
+						var hotelterms_n_condition = item.id.replace(/ /g, "_");
+						hotel.getTerms(hotelterms_n_condition, index);
 					})
 				}
 			})
@@ -99,9 +105,9 @@ var hotel = {
 	//******************************** Code to load Hotel Images ***************************************//
 
 	getHotelImages: function (hotel) {
-		console.log(hotel);
+		//	console.log(hotel);
 		var img = "";
-		fns.ajaxGet('holidaymate/api/hotelimages/images/' + hotel).
+		fns.ajaxGet('holidaymate/api/hotelimages/id/' + hotel).
 		done(function (r) {
 				if (r.status === 401) {
 					alert(e.message)
@@ -115,5 +121,53 @@ var hotel = {
 			.fail(function (r) {
 				alert(r.message);
 			});
+	},
+	//-------------------------------------- Code to cancellation policy----------------------------------------------------------------------------------------------------
+
+	getPolicy: function (hotel) {
+		console.log(hotel);
+		var maxLenght = 100;
+		i = 0;
+		fns.ajaxGet('holidaymate/api/policy/id/' + hotel).
+		done(function (response) {
+				if (response.status === 401) {
+					alert(response.message)
+				} else if (response.status === 200) {
+					$.map(response.data, function (item, index) {
+						i += 1;
+						//Populate Terms list
+						var newcancellation = `<p>${item.description}</p>`;
+						if (index <= (maxLenght - 1)) {
+							$('.cancellation-tab').append(newcancellation);
+						}
+					})
+				}
+			})
+			.fail(function (response) {
+				alert("API failed, check Token");
+			})
+	},
+	//-------------------------------------- Code to Terms and Conditions----------------------------------------------------------------------------------------------------
+	getTerms: function (hotel) {
+		var maxLenght = 100;
+		i = 0;
+		fns.ajaxGet('holidaymate/api/terms/id/' + hotel).
+		done(function (response) {
+				if (response.status === 401) {
+					alert(response.message)
+				} else if (response.status === 200) {
+					$.map(response.data, function (item, index) {
+						i += 1;
+						//Populate Terms list
+						var terms = `<p>${item.description}</p>`;
+						if (index <= (maxLenght - 1)) {
+							$('.term-tab').append(terms);
+						}
+					})
+				}
+			})
+			.fail(function (response) {
+				alert("API failed, check Token");
+			})
 	}
 };

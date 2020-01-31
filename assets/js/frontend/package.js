@@ -1,5 +1,5 @@
 //API call to fetch country
-var baseURL='http://localhost/';
+var baseURL = 'http://localhost/';
 var package = {
 	//-------------------------------------- Code to load home package  ----------------------------------------------------------------------------------------------------
 
@@ -54,10 +54,14 @@ var package = {
 						</div>
 						</div>
 					</div>`;
+						//----------------------------- form input value fetching ----------------------
+						var inputpackage = `<input class="form-control" name="where" required="" type="text" value="${item.package_name}" readonly>`
+						//----------------------------- form input value fetching ----------------------
 
 						if (index <= (maxLenght - 1)) {
 
 							$('.pakage-bannerblock').append(newpackagebannerimage);
+							$('#input-packagename').append(inputpackage);
 							$('.hotel-overview').append(newpackageoverview);
 							$('.hotel-included').append(newpackageinclude);
 							$('.hotel-excluded').append(newpackageexclude);
@@ -67,7 +71,7 @@ var package = {
 							hotel.getHotelByName(hotelName);
 						}
 						//Get images for package
-						var packageName = item.package_name.replace(/ /g,"_");
+						var packageName = item.package_name.replace(/ /g, "_");
 						package.getPackageImages(packageName);
 					});
 
@@ -113,7 +117,7 @@ var package = {
 							$('.packages').append(newpackage);
 						}
 						//Get images for package
-						var packageName = item.package_name.replace(/ /g,"_");
+						var packageName = item.package_name.replace(/ /g, "_");
 						package.getPackageImages(packageName);
 
 					});

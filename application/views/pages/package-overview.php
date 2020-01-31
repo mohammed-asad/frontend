@@ -8,7 +8,8 @@
 
             </div>
             <p class="text-center mt-5 mb-4">Take part in sunset & sunrise views of Dubai Red Dunes safari overnig</p>
-            <ul class="list-inline text-center">
+
+            <ul class="list-inline text-center aminiteisvalue">
               <li class="list-inline-item ">
                 <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/clock.svg">
                 <p>2 Nights & 3 Days</p>
@@ -38,6 +39,7 @@
                 <p>Transfer</p>
               </li>
             </ul>
+
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 cst-padding-0">
@@ -53,15 +55,15 @@
                   <form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
                     <div class="row">
                       <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="uname1">Package Name</label>
-                          <input class="form-control" id="uname1" name="where" required="" type="text">
+                        <div class="form-group" id="input-packagename">
+                          <label for="packagename">Package Name</label>
+
                         </div>
                       </div>
                       <div class="col-md-12">
-                        <div class="form-group">
-                          <label>City of Departure</label>
-                          <input class="form-control" id="uname1" name="where" required="" type="text">
+                        <div class="form-group" id="input-citydeparture">
+                          <label for="city">City of Departure</label>
+                          <input class="form-control" name="where" required="" type="text">
                         </div>
                       </div>
                       <p class="mont-book text-center line">Contact Details</p>
@@ -92,7 +94,7 @@
                           <label for="mobile">Mobile Number</label>
                           <!-- <span class="country-code">+91</span> -->
                           <input class="form-control country-code text-center" name="mobile" type="text" disable="disabled" readonly value="+91">
-                          <input class="form-control pl-65" name="mobile" required="" type="text">
+                          <input class="form-control pl-90" name="mobile" required="" type="text">
                         </div>
                       </div>
                       <div class="col-md-12 text-center">
@@ -356,8 +358,6 @@
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/hotel.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/frontend/terms.js"></script>
-
 <script>
   package.getPackageDetails();
 </script>

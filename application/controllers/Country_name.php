@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Regiondetails extends CI_Controller
+class Country_name extends CI_Controller
 {
 
   /**
@@ -19,7 +19,7 @@ class Regiondetails extends CI_Controller
    * map to /index.php/welcome/<method_name>
    * @see https://codeigniter.com/user_guide/general/urls.html
    */
-  public function index()
+  public function index($name)
   {
     // 		$data['mega_header'][] = (object) array('title' => 'portfolio image' ,
     //     'img' => 'https://complete path of image' );

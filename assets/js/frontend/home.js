@@ -19,11 +19,18 @@ var home = {
               <h4 >Destinations</h4>
               <ul>
               ${item.countries.map(function (country) {
-              return '<li><a href="">' + country + '</a></li>';
+							 //console.log(country);
+							 	var base_url = $('#base').val();
+							 var url = `${base_url}country_name/${country}`;
+							 
+						return `<li><a href="${url}">${country}</a></li>`;
+					
+						
             }).join('') }
               </ul>
             </div>
-          </div>`;
+					</div>`;
+
 						//Dumping Regions
 						var nav_item = `<div class="sub-menu-item ${ (index === 0 ? 'active' : '') }">
             <span data-region="${ item.region.toLowerCase() }">
@@ -87,7 +94,53 @@ var home = {
 			$('.sub-menu').css("display", "none");
 		});
 
+	},
+	// get country banner image and details
+	getCountryByName: function () {
+		var maxLenght = 100;
+		const countryname = fns.getURLSlugs();
+		fns.ajaxGet('holidaymate/api/country/country_name/' + countryname)
+			.done(function (response) {
+				if (response.status === 401) {
+					alert(response.message)
+				} else if (response.status === 200) {
+					$.map(response.data, function (item, index) {
+
+						console.log(item);
+						var newcountry = `<div id="countryid${item.country_name}"></div>`;
+						var region_content = `<h1 class="text-center">${item.country_name}</h1>
+            <p class="text-center">${item.description}</p>`;
+						if (index <= (maxLenght - 1)) {
+
+							$('.region-banner').append(newcountry);
+							$('.region-content').append(region_content);
+						}
+						home.getCountryImages(item.country_name);
+
+					})
+				}
+			})
+	},
+	//-------------------------------------- Code to country images ----------------------------------------------------------------------------------------------------
+	getCountryImages: function (country) {
+		var img = "";
+		fns.ajaxGet('holidaymate/api/country/images/' + country).
+		done(function (r) {
+				if (r.status === 401) {
+					alert(e.message)
+				} else if (r.status === 200) {
+					$.map(r.data, function (item1, index1) {
+						img += `<img src="${item1.url}">`;
+					});
+					$(`#countryid${country}`).append(img);
+				}
+			})
+			.fail(function (r) {
+				alert(r.message);
+			});
 	}
+
+	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 };
 
 home.generatenavigation();

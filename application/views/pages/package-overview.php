@@ -1,4 +1,120 @@
 <section class="packsection mb-5 mall-24">
+  <section class="navigation changenev">
+    <div class="position">
+      <div class="blur-backdrop"></div>
+      <div class="hamburger-menu"></div>
+    </div>
+    <a href="<?php echo base_url(); ?>" class="logo mobile-logo">
+      <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/logo.svg" alt="">
+    </a>
+    <div class="nav-items-holder">
+      <span class="close-hamburger-menu"></span>
+      <a href="<?php echo base_url(); ?>" class="logo secondary">
+        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
+      </a>
+      <a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
+        <span>
+          Travel private
+        </span>
+      </a>
+      <div class="nav-item" data-bluritem="true">
+        <span>Destinations</span>
+        <div class="sub-menu">
+          <!-- Sub Menu Start-->
+          <div class="sub-menu-items-holder">
+            <span class="reset-menu"></span>
+            <!-- Sub Menu Region Start-->
+            <div class="sub-menu-item-list">
+              <div class="sub-menu-item active">
+                <span data-region="europe">
+
+                </span>
+                <div class="sub-item-desc" data-region="europe">
+                  <div class="sub-item-item overview">
+                    <h4>Overview</h4>
+
+                  </div>
+                  <div class="sub-item-item countries">
+                    <h4>Destinations</h4>
+                    <ul>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-menu-item">
+                <span data-region="asia">
+                  <!-- region list -->
+                </span>
+                <div class="sub-item-desc" data-region="europe">
+                  <div class="sub-item-item overview">
+                    <h4>Overview</h4>
+
+                  </div>
+                  <div class="sub-item-item countries">
+                    <h4>Destinations</h4>
+                    <ul>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-menu-item">
+                <span data-region="america">
+
+                </span>
+                <div class="sub-item-desc" data-region="europe">
+                  <div class="sub-item-item overview">
+                    <h4>Overview</h4>
+
+                  </div>
+                  <div class="sub-item-item countries">
+                    <h4>Destinations</h4>
+                    <ul>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- Sub Menu Region Ends-->
+
+            <!-- Sub Menu Detauls Start-->
+            <div class="sub-item-desc-holder">
+
+
+              <div class="sub-item-desc" data-region="asia">
+                <div class="sub-item-item overview">
+                  <h4 class="mb-2">Overview</h4>
+                  <!-- country overview -->
+                </div>
+                <div class="sub-item-item countries">
+                  <h4 class="mb-2">Destinations</h4>
+                  <!-- country list -->
+                  <ul> </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- Sub Menu Detauls End-->
+          </div>
+          <!-- Sub Menu End-->
+        </div>
+      </div>
+      <a href="<?php echo base_url(); ?>ourspecialities" class="nav-item">
+        <span>
+          Our Specialities
+        </span>
+      </a>
+    </div>
+    <div class="nav-texts">
+
+    </div>
+
+  </section>
   <div class="container-fluid">
     <div class="col-xl-11 offset-xl-1 col-lg-11 offset-lg-1 col-md-12 m-auto">
       <div class="row">
@@ -10,34 +126,7 @@
             <p class="text-center mt-5 mb-4">Take part in sunset & sunrise views of Dubai Red Dunes safari overnig</p>
 
             <ul class="list-inline text-center aminiteisvalue">
-              <li class="list-inline-item ">
-                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/clock.svg">
-                <p>2 Nights & 3 Days</p>
-              </li>
-              <li class="list-inline-item">
-                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/location.svg">
-                <p>Dubai</p>
-              </li>
-              <li class="list-inline-item">
-                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/plain.svg">
-                <p>Flight</p>
-              </li>
-              <li class="list-inline-item">
-                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/bed.svg">
-                <p>Hotel</p>
-              </li>
-              <li class="list-inline-item">
-                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/gogle.svg">
-                <p>Sight Seeing</p>
-              </li>
-              <li class="list-inline-item">
-                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/plateandspoon.svg">
-                <p>Meal</p>
-              </li>
-              <li class="list-inline-item">
-                <img class="img-fluid" src="<?php echo base_url() ?>assets/images/icons/bus.svg">
-                <p>Transfer</p>
-              </li>
+
             </ul>
 
           </div>
@@ -116,8 +205,23 @@
   <div class="container-fluid">
     <div class="col-xl-10 offset-xl-2 col-lg-10 offset-lg-2 col-md-12 m-auto">
       <div class="row section hotel-overview"></div>
-      <div class="row section hotel-included"></div>
-      <div class="row section hotel-excluded"></div>
+      <div class="row section hotel-included">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <h1>What's included</h1>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+          <div class="inlude-description"></div>
+        </div>
+      </div>
+      <div class="row section hotel-excluded">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <h1>What's exclude</h1>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+          <div class="exclude-content"></div>
+        </div>
+
+      </div>
       <div class="row section">
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Hotel Details</h1>
@@ -357,6 +461,7 @@
 
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/hotel.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
 <script>
   package.getPackageDetails();

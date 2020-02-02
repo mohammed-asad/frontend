@@ -3,12 +3,12 @@
     <div class="blur-backdrop"></div>
     <div class="hamburger-menu"></div>
   </div>
-  <a href="#" class="logo mobile-logo">
+  <a href="<?php echo base_url(); ?>" class="logo mobile-logo">
     <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/logo.svg" alt="">
   </a>
   <div class="nav-items-holder">
     <span class="close-hamburger-menu"></span>
-    <a href="#" class="logo secondary">
+    <a href="<?php echo base_url(); ?>" class="logo secondary">
       <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
     </a>
     <a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
@@ -127,9 +127,9 @@
         <!-- Sub Menu End-->
       </div>
     </div>
-    <a href="" class="nav-item">
+    <a href="<?php echo base_url(); ?>ourspecialities" class="nav-item">
       <span>
-        Private trip
+        Our Specialities
       </span>
     </a>
   </div>

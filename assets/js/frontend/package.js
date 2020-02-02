@@ -24,18 +24,6 @@ var package = {
 					<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
 						<p>${item.overview}</p>
 					</div>`;
-						// 		var newpackageinclude = `<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-						//   <h1>What's included</h1>
-						// </div>
-						// <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
-						//   <p>${item.include}</p>
-						// </div>`;
-						// 		var newpackageexclude = `<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-						//   <h1>What's exclude</h1>
-						// </div>
-						// <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
-						//   <p>${item.exclude}</p>
-						// </div>`;
 						var newpackagebannerimage = `<div id="countryid${item.package_name}" class="boredercls"></div>
 						<div class="row">
 						<div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6 col-sm-6">
@@ -63,8 +51,6 @@ var package = {
 							$('.pakage-bannerblock').append(newpackagebannerimage);
 							$('#input-packagename').append(inputpackage);
 							$('.hotel-overview').append(newpackageoverview);
-							//$('.hotel-included').append(newpackageinclude);
-							//	$('.hotel-excluded').append(newpackageexclude);
 
 							//fetch hotel details from here by sending the Hotel name mentined in the Pacakge
 							var hotelName = item.hotel_name.replace(/ /g, "_")
@@ -85,6 +71,7 @@ var package = {
 							$('.inlude-description').append(newpackageinclude);
 
 						});
+						// Get exclucded aminities
 						var objexclude = JSON.parse(item.exclude);
 						$.map(objexclude, function (item2, index2) {
 

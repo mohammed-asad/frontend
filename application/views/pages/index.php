@@ -294,5 +294,5 @@
 <script src="<?php echo base_url(); ?>assets/js/frontend/home-slider.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
 <script>
-package.getPackage();
+	package.getPackage();
 </script>

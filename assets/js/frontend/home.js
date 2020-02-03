@@ -19,10 +19,18 @@ var home = {
               <h4 >Destinations</h4>
               <ul>
               ${item.countries.map(function (country) {
-              return '<li><a href="">' + country + '</a></li>';
-            }).join('') }
+							return '<li><a href="">' + country + '</a></li>';
+						}).join('') }
               </ul>
-            </div>
+						</div>
+						<div class="sub-item-item slider">
+						${item.images.length > 0 ? '<img src="' + item.images[0] + '" class="placeholder-image" />' : '' }
+							<div class="nav-slider">
+							${item.images.map(function (image) {
+							return '<img src = "' + image + '"/>'
+						}).join('') }
+							</div>
+						</div>
           </div>`;
 						//Dumping Regions
 						var nav_item = `<div class="sub-menu-item ${ (index === 0 ? 'active' : '') }">
@@ -38,17 +46,21 @@ var home = {
 			})
 			.always(function () {
 				home.navigationItemHover()
+				$('.nav-slider').slick({
+					autoplay: true,
+					autoplaySpeed: 2000,
+				});
 			});
 	},
 
 	navigationHover: function () {
 		$('.navigation').find('.nav-item').hover(function (e) {
-				var target = e.target;
-				var blur = $(target).attr("data-bluritem");
-				if (blur) {
-					$(".other-container").addClass("blur");
-				}
-			},
+			var target = e.target;
+			var blur = $(target).attr("data-bluritem");
+			if (blur) {
+				$(".other-container").addClass("blur");
+			}
+		},
 			function () {
 				$(".other-container").removeClass("blur");
 			});

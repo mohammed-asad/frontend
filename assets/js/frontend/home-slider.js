@@ -8,7 +8,7 @@ var slider = {
 				} else if (response.status === 200) {
 					$.map(response.data, function (item, index) {
 						//Populate slider list
-						var slider = `<img class="img-fluid" src="${item.url }" alt="Los Angeles">`;
+						var slider = `<img class="img-fluid" src="${ item.url }" alt="Los Angeles">`;
 						if (index <= (maxLenght - 1)) {
 							$('.header-banner').append(slider);
 

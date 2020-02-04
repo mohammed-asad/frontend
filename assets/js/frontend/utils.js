@@ -1,9 +1,23 @@
-var baseURL='http://localhost/';
+var baseURL = 'http://localhost/';
 
 var fns = {
 
   //Defined functions for AJAX
   baseURL: 'http://localhost/',
+  ajaxPostFile: function (url, method, formData) {
+    // console.log({ data })
+    return $.ajax({
+      url: baseURL + url,
+      method: method,
+      data: formData,
+      contentType: false,
+      cache: false,
+      processData: false,
+      headers: {
+        'Authorization': localStorage.getItem("admin_token")
+      }
+    });
+  },
   ajaxPost: function (url, method, data) {
     return $.ajax({
       url: baseURL + url,
@@ -26,7 +40,7 @@ var fns = {
       }
     });
   },
-  getURLSlugs: function(){
+  getURLSlugs: function () {
     var url = window.location.href;
     url = url.split("/");
     return url[url.length - 1];

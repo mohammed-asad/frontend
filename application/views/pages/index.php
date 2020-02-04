@@ -20,12 +20,12 @@
 					<!-- </div> -->
 					<div class="card-body enqury-card">
 						<h3 class="mb-10">Book unique places to stay and things to do.</h3>
-						<form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
+						<form autocomplete="off" class="form createmail" id="formLogin" name="createmail" role="form">
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="uname1">where</label>
-										<input class="form-control" id="uname1" name="where" required="" type="text">
+										<input class="form-control from_where" id="uname1" name="from_where" required="" type="text">
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pr-0">
@@ -33,7 +33,7 @@
 										<label class="control-label">From</label>
 										<div class="icon-input">
 											<i class="fa fa-calendar newfacalendar1"></i>
-											<input id="datepicker1" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control" placeholder="Select a date">
+											<input id="datepicker1" name="date_from" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_from" placeholder="Select a date">
 										</div>
 									</div>
 								</div>
@@ -42,31 +42,32 @@
 										<label class="control-label custom-to">To</label>
 										<div class="icon-input">
 											<i class="fa fa-calendar newfacalendar2"></i>
-											<input id="datepicker2" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control" placeholder="Select a date">
+											<input id="datepicker2" name="date_to" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_to" placeholder="Select a date">
 										</div>
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pr-0">
 									<div class="form-group">
 										<label>Name</label>
-										<input name="uname" class="form-control cst-pr text-left" required="" type="text">
+										<input name="c_name" class="form-control cst-pr text-left c_name" required="" type="text">
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6 pl-0">
 									<div class="form-group">
 										<label for="to1" class="ml-3">Email</label>
-										<input class="form-control cst-pl cstpl-wd text-left pl-30" name="email" required="" type="email">
+										<input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="mobile">Mobile Number</label>
 										<input class="form-control country-code text-center" name="mobile" type="text" disable="disabled" readonly value="+91">
-										<input class="form-control pl-65" name="mobile" required="" type="text">
+										<input class="form-control pl-65 c_mobile" name="c_mobile" required="" type="text">
 									</div>
 								</div>
 								<div class="col-md-12 text-center">
-									<button class="btn btn-submit btn-lg" type="button">Submit</button>
+									<!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
+									<input type="submit" name="btncreatemail" class="btn btn-submit btn-lg btncreatemail" value="submit" />
 								</div>
 						</form>
 					</div>
@@ -291,7 +292,7 @@
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home-slider.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
-
+<script src="<?php echo base_url(); ?>assets/js/frontend/mail.js"></script>
 <script>
 	package.getPackage();
 </script>

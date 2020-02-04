@@ -141,7 +141,7 @@
                 <div class="card-body enqury-card">
                   <h3 class="mb-10">Want to Go For <br />A Memorable Holiday</h3>
                   <p class="labeltext">Provide Your Details to Know Best Holiday Deals</p>
-                  <form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
+                  <form autocomplete="off" name="createmail" class="form createmail" id="formLogin" role="form">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group" id="input-packagename">
@@ -152,7 +152,7 @@
                       <div class="col-md-12">
                         <div class="form-group" id="input-citydeparture">
                           <label for="city">City of Departure</label>
-                          <input class="form-control" name="where" required="" type="text">
+                          <input class="form-control from_where" name="from_where" required="" type="text">
                         </div>
                       </div>
                       <p class="mont-book text-center line">Contact Details</p>
@@ -161,7 +161,7 @@
                           <label class="control-label">From</label>
                           <div class="icon-input">
                             <i class="fa fa-calendar newfacalendar1"></i>
-                            <input id="datepicker1" data-provide="datepicker" type="text" class="form-control" placeholder="Select a date">
+                            <input id="datepicker1" data-provide="datepicker" name="date_from" type="text" class="form-control date_from" placeholder="Select a date">
                           </div>
                         </div>
                       </div>
@@ -169,13 +169,13 @@
                       <div class="col-md-6 col-sm-6 pr-0">
                         <div class="form-group">
                           <label>Name</label>
-                          <input class="form-control" id="uname1" name="where" required="" type="text">
+                          <input class="form-control c_name" name="c_name" id="uname1" required="" type="text">
                         </div>
                       </div>
                       <div class="col-md-6 col-sm-6 pl-0">
                         <div class="form-group">
                           <label for="to1">Email</label>
-                          <input class="form-control cst-pl cstpl-wd text-left pl-30" name="email" required="" type="email">
+                          <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
                         </div>
                       </div>
                       <div class="col-md-12">
@@ -183,11 +183,12 @@
                           <label for="mobile">Mobile Number</label>
                           <!-- <span class="country-code">+91</span> -->
                           <input class="form-control country-code text-center" name="mobile" type="text" disable="disabled" readonly value="+91">
-                          <input class="form-control pl-90" name="mobile" required="" type="text">
+                          <input class="form-control pl-90 c_mobile" name="c_mobile" required="" type="text">
                         </div>
                       </div>
                       <div class="col-md-12 text-center">
-                        <button class="btn btn-submit btn-lg" type="button">Submit</button>
+                        <!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
+                        <input type="submit" name="btncreatemail1" class="btn btn-submit btn-lg btncreatemail1" value="submit" />
                       </div>
                   </form>
                 </div>
@@ -446,6 +447,7 @@
       <input type="hidden" id="base" value="<?php echo base_url(); ?>">
 </section>
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
 
@@ -463,6 +465,7 @@
 <script src="<?php echo base_url(); ?>assets/js/frontend/hotel.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/mail.js"></script>
 <script>
   package.getPackageDetails();
 </script>

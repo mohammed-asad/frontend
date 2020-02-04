@@ -1,15 +1,13 @@
 <!-- //Load the navigation menu -->
-<?php $this->load->view('pages/sections/navigation'); ?>
+<?php $data['home'] = "home"; ?>
+<?php $this->load->view('pages/sections/navigation', $data); ?>
 
 <!-- Blur content Starts -->
 <div class="other-container">
 	<!-- Slidee Banner -->
 	<section class="banner mall-24">
 		<div class="header-banner">
-			<!-- <img src="<? php // echo base_url(); 
-											?>assets/images/home/background.png" alt="">
-			<img src="<?php //echo base_url(); 
-								?>assets/images/home/background.png" alt=""> -->
+
 		</div>
 
 		<!-- Form -->
@@ -293,6 +291,7 @@
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home-slider.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
+
 <script>
 	package.getPackage();
 </script>

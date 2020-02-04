@@ -19,12 +19,15 @@ var home = {
               <h4 >Destinations</h4>
               <ul>
               ${item.countries.map(function (country) {
-							return '<li><a href="">' + country + '</a></li>';
+								var base_url = $('#base').val();
+							var url = `${base_url}country_name/${country}`;
+							return `<li><a href="${url}">${country}</a></li>`;
+							//return '<li><a href="">' + country + '</a></li>';
 						}).join('') }
               </ul>
 						</div>
 						<div class="sub-item-item slider">
-						${item.images.length > 0 ? '<img src="' + item.images[0] + '" class="placeholder-image" />' : '' }
+						<!-- ${item.images.length > 0 ? '<img src="' + item.images[0] + '" class="placeholder-image" />' : '' } -->
 							<div class="nav-slider">
 							${item.images.map(function (image) {
 							return '<img src = "' + image + '"/>'
@@ -55,12 +58,12 @@ var home = {
 
 	navigationHover: function () {
 		$('.navigation').find('.nav-item').hover(function (e) {
-			var target = e.target;
-			var blur = $(target).attr("data-bluritem");
-			if (blur) {
-				$(".other-container").addClass("blur");
-			}
-		},
+				var target = e.target;
+				var blur = $(target).attr("data-bluritem");
+				if (blur) {
+					$(".other-container").addClass("blur");
+				}
+			},
 			function () {
 				$(".other-container").removeClass("blur");
 			});
@@ -130,7 +133,7 @@ var home = {
 	getCountryImages: function (country) {
 		var img = "";
 		fns.ajaxGet('holidaymate/api/country/images/' + country).
-			done(function (r) {
+		done(function (r) {
 				if (r.status === 401) {
 					alert(e.message)
 				} else if (r.status === 200) {

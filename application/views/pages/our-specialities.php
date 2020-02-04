@@ -1,3 +1,7 @@
+<!-- //Load the navigation menu -->
+<?php $data['home'] = "changenev"; ?>
+<?php $this->load->view('pages/sections/navigation', $data); ?>
+
 <section class="section">
   <div class="container-fluid">
     <div class="row">
@@ -31,3 +35,17 @@
     </div>
   </div>
 </section>
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+
+<!-- Jquery for Navigation Menu -->
+<script>
+  $('.sub-menu-item').on('mouseover', function(e) {
+    var target = $(e.target).attr("data-region");
+    $('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
+    $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
+  })
+</script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>

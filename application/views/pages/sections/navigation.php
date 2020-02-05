@@ -4,7 +4,7 @@
 		<div class="blur-backdrop"></div>
 		<div class="hamburger-menu"></div>
 	</div>
-	<a href="<?php echo base_url(); ?>" class="logo mobile-logo">
+	<a href="<?php echo base_url(); ?>" class="logo mobile-logo page-logo">
 		<img class="img-fluid  <?php echo $home ?>" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 		<img class="img-fluid <?php echo $home ?>1" src="<?php echo base_url(); ?>assets/images/logo/logo.svg" alt="">
 	</a>

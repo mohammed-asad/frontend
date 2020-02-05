@@ -88,7 +88,7 @@ html {
 }
 
 p {
-	font-size: 18px;
+	//font-size: 18px;
 	word-break: break-word;
 }
 
@@ -123,7 +123,7 @@ h4 {
 }
 
 .pl-30 {
-	padding-left: 35px;
+	padding-left: 45px;
 }
 
 .pl-50 {
@@ -215,7 +215,9 @@ h4 {
 	background: #ff5a5f 0% 0% no-repeat padding-box;
 	border-radius: 28px;
 	border: none;
-	padding: 5px 35px;
+	// padding: 5px 35px;
+	width: 123px;
+	height: 32px;
 	color: #fff;
 	font-size: 12px;
 	font-family: "Mont-Bold";
@@ -243,6 +245,12 @@ h4 {
 .btn-submit:active {
 	box-shadow: none;
 	outline: none;
+	color: #fff;
+}
+
+.btncreatemail1 {
+	margin-top: 10px;
+	background-color: #51317E;
 }
 
 .navbar {
@@ -478,9 +486,10 @@ h4 {
 	.card-outline-secondary {
 		box-shadow: 0px 5px 8px #0000003d;
 		border-radius: 50px;
+		padding: 10px;
 
 		.card-body {
-			padding: 30px 30px;
+			//	padding: 30px 30px;
 
 			h3 {
 				font-family: "Mont-Bold";
@@ -573,6 +582,7 @@ h4 {
 						// width: 60px;
 						width: 85px;
 						background: transparent;
+						padding: 15px;
 					}
 				}
 
@@ -736,10 +746,10 @@ header {
 	overflow: hidden;
 	position: relative;
 
-	.slick-slide {
-		border-radius: 55px;
-		overflow: hidden;
-	}
+	// .slick-slide {
+	// 	border-radius: 55px;
+	// 	overflow: hidden;
+	// }
 
 	.slick-arrow.slick-prev {
 		margin-left: -200px;
@@ -758,7 +768,8 @@ header {
 		position: absolute;
 		z-index: 1002;
 		//width: 60%;
-		width: 55%;
+		// width: 55%;
+		width: 465px;
 	}
 
 	.slick-slide img {
@@ -823,11 +834,15 @@ header {
 			border-radius: 20px;
 			/*padding: 15px;
     padding: 15px 15px 30px 15px;*/
-			padding: 15px 15px;
+			padding: 15px 30px;
 
 			.price-align {
 				position: relative;
+				top: 8px;
+			}
 
+			a {
+				vertical-align: middle;
 			}
 		}
 
@@ -1167,6 +1182,18 @@ footer {
 	.pack-column {
 		margin-top: 10px;
 	}
+
+	.overview-img {
+		margin: 100px 30px 10px;
+		height: 50vh;
+	}
+}
+
+.hotel-description {
+	h4 {
+		font-size: 20px;
+		font-family: Mont-bold;
+	}
 }
 
 /*********************************** package overview ************************************/
@@ -1335,11 +1362,12 @@ ul.timeline>li:before {
 		min-width: 120px;
 		//margin-left: 30px;
 		position: relative;
-		left: 50px;
+		// left: 50px;
+		text-align: center;
 		top: 30px;
 
 		img {
-			width: 197px;
+			width: 160px;
 		}
 
 		&.secondary {
@@ -1351,6 +1379,10 @@ ul.timeline>li:before {
 				display: block;
 			}
 		}
+	}
+
+	.page-logo {
+		left: 50px;
 	}
 
 	.hamburger-menu {
@@ -1387,7 +1419,8 @@ ul.timeline>li:before {
 		justify-content: center;
 		z-index: 1007;
 		//margin-top: 20px;
-		width: 70.5%;
+		//	width: 70.5%;
+		width: 82%;
 		transition: all 250ms ease-in;
 
 		.close-hamburger-menu {
@@ -1647,7 +1680,7 @@ ul.timeline>li:before {
 
 									img {
 										width: 300px;
-										height: 200px;
+										height: 200px !important;
 										object-fit: cover;
 									}
 
@@ -1823,6 +1856,7 @@ ul.timeline>li:before {
 		right: 30px;
 		top: 0;
 		font-family: Mont-LightItalic;
+		font-size: 18px;
 
 		color: #fff;
 
@@ -2156,13 +2190,13 @@ ul.timeline>li:before {
 	}
 }
 
-@media(max-width:1600px) {
-	.enquiry-form {
+// @media(max-width:1600px) {
+// 	.enquiry-form {
 
-		width: 64% !important;
+// 		width: 64% !important;
 
-	}
-}
+// 	}
+// }
 
 @media (max-width: 1550px) and (min-width: 1200px) {
 	ul.timeline:before {
@@ -2185,12 +2219,12 @@ ul.timeline>li:before {
 
 	.new-cardblock {
 		.card-footer {
-			padding: 12px 8px !important;
+			padding: 12px 15px !important;
 		}
 	}
 
 	.small-btn-submit {
-		padding: 3px 10px;
+		// padding: 3px 10px;
 		font-size: 11px;
 	}
 }
@@ -2230,47 +2264,176 @@ ul.timeline>li:before {
 
 @media (max-width: 1366px) {
 
-	.form-block {
-		top: 20% !important;
+	/*********************home slider arrow and dots ******************************************/
+	.banner {
+		margin: 15px;
+		border-radius: 30px;
 
-		.enqury-card {
-			padding: 20px 15px !important;
+		.slick-arrow.slick-prev {
+			margin-left: -158px;
 
-			h3 {
-				font-size: 24px !important;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 2px;
+				left: 11px;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				width: 1px;
+				height: 20px;
+				border-right: 2px solid #ffffff;
+			}
+		}
+
+		.slick-arrow.slick-prev {
+			&:after {
+				content: "";
+				position: absolute;
+				top: 9px;
+				left: 11px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				width: 1px;
+				height: 20px;
+				border-right: 2px solid #fff;
+			}
+		}
+
+		.slick-arrow.slick-prev {
+			bottom: 15px;
+		}
+
+		.slick-arrow.slick-next {
+			margin-left: 120px;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 7px;
+				left: 12px;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				width: 1px;
+				height: 20px;
+				border-right: 2px solid #fff;
+			}
+		}
+
+		.slick-arrow.slick-next:after {
+			content: "";
+			position: absolute;
+			top: 14px;
+			left: 12px;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			width: 1px;
+			height: 20px;
+			border-right: 2px solid #fff;
+		}
+
+		.slick-arrow.slick-next {
+			bottom: 20px;
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		.slick-dots {
+			position: absolute;
+			bottom: 18px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+
+			li {
+				width: 12px;
+				height: 12px;
 			}
 
-			.form-group {
-				.newfacalendar1 {
-					top: 26px !important;
+			button {
+				width: 12px;
+				height: 12px;
+				background: none;
+				border: none;
+				outline: none;
+			}
+		}
+	}
+
+	/*********************home slider arrow and dots ******************************************/
+
+	.form-block {
+		top: 18% !important;
+		width: 320px !important;
+
+		.card-outline-secondary {
+			padding: 0px;
+			border-radius: 30px;
+
+			.enqury-card {
+
+
+				h3 {
+					font-size: 24px !important;
+					margin-bottom: 10px;
+					text-align: center;
 				}
 
-				.newfacalendar2 {
-					top: 26px !important;
-				}
+				.form-group {
+					margin-bottom: 10px;
 
-				.cstpl-wd {
-					width: 114% !important;
-					left: -25px !important;
-				}
+					.newfacalendar1 {
+						top: 21px !important;
 
-				.country-code {
-					width: 60px !important;
+					}
 
+					.newfacalendar2 {
+						top: 21px !important;
+					}
+
+					.cstpl-wd {
+						width: 114% !important;
+						left: -25px !important;
+					}
+
+					.country-code {
+						width: 60px !important;
+						padding: 5px !important;
+					}
+
+					label {
+						font-size: 12px;
+					}
+
+					input {
+						font-size: 12px;
+					}
 				}
 			}
 		}
 	}
 
-	.cst-position {
+	.form-block.cst-position {
 		top: 0% !important;
+		width: 100% !important;
+
+		.enqury-card h3 {
+			font-size: 18px !important;
+		}
+
+
+		.enqury-card .labeltext {
+			font-size: 14px;
+		}
 	}
 
 	// .section {
 	//     top: 53rem;
 	// }
 	#formLogin .form-control {
-		height: 35px;
+		height: 30px;
 	}
 
 	.banner-inner img {
@@ -2282,7 +2445,7 @@ ul.timeline>li:before {
 	}
 
 	.slick-slide img {
-		height: 94vh !important;
+		height: 95vh !important;
 	}
 
 	.travel-section {
@@ -2300,7 +2463,7 @@ ul.timeline>li:before {
 
 	.card-footer {
 		.price-align {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
@@ -2309,8 +2472,141 @@ ul.timeline>li:before {
 	}
 
 	.navigation {
+
 		font-size: 14px;
+		top: 30px;
+
+		.right-toptext {
+			font-size: 14px;
+		}
+
+		.nav-items-holder {
+			width: 75%;
+
+			.nav-item span {
+				font-size: 14px;
+			}
+		}
+
+		.logo img {
+			width: 140px;
+		}
 	}
+
+	.packages {
+		.card {
+			border-radius: 15px;
+
+			.card-body .title {
+				font-size: 16px;
+			}
+
+			.card-footer .price-align {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.small-btn-submit {
+		width: 100px;
+		height: 32px;
+	}
+
+	.new-cardblock {
+		.card {
+			.card-block {
+				padding: 0px 15px;
+
+				.card-title {
+					font-size: 18px;
+				}
+
+			}
+		}
+	}
+
+	.head1 {
+		font-size: 36px;
+	}
+
+	/************************** package over view page *********************************/
+	.pakage-bannerblock {
+		.overview-img {
+			margin: 50px 15px 10px;
+			height: 45vh;
+		}
+
+		.pack-column {
+
+			h3,
+			h2 {
+				font-size: 18px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.form-.form-block.cst-position {
+		.h3 {
+			font-size: 18px !important;
+		}
+	}
+
+	.packsection {
+		border-radius: 30px;
+	}
+
+	.mall-24 {
+		margin: 15px;
+	}
+
+	.section {
+		margin: 50px 0px;
+	}
+
+	.packdetail {
+		h1 {
+			font-size: 24px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		.hotel-description {
+			h4 {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.hotel-Info {
+		.nav-tabs {
+			.nav-item a {
+				font-size: 12px;
+			}
+
+			.zbtn {
+				left: 22%;
+			}
+		}
+	}
+
+	.dis .ab {
+		width: 230px;
+		height: 56px;
+	}
+
+	.dis .cd {
+		width: 290px;
+		height: 72px;
+	}
+
+
+	/************************** package over view page *********************************/
 }
 
 @media (max-width: 1280px) {
@@ -2334,7 +2630,7 @@ ul.timeline>li:before {
 	}
 
 	.small-btn-submit {
-		padding: 3px 10px;
+		//	padding: 3px 10px;
 		font-size: 11px;
 	}
 }
@@ -2359,99 +2655,99 @@ ul.timeline>li:before {
 		height: 83vh !important;
 	}
 
-	.banner {
-		.slick-arrow.slick-prev {
-			margin-left: -130px;
+	// .banner {
+	// 	.slick-arrow.slick-prev {
+	// 		margin-left: -130px;
 
-			&:before {
-				content: "";
-				position: absolute;
-				top: 0px;
-				left: 11px;
-				-webkit-transform: rotate(45deg);
-				transform: rotate(45deg);
-				width: 1px;
-				height: 25px;
-				border-right: 2px solid #ffffff;
-			}
-		}
+	// 		&:before {
+	// 			content: "";
+	// 			position: absolute;
+	// 			top: 0px;
+	// 			left: 11px;
+	// 			-webkit-transform: rotate(45deg);
+	// 			transform: rotate(45deg);
+	// 			width: 1px;
+	// 			height: 25px;
+	// 			border-right: 2px solid #ffffff;
+	// 		}
+	// 	}
 
-		.slick-arrow.slick-prev {
-			&:after {
-				content: "";
-				position: absolute;
-				top: 10px;
-				left: 11px;
-				-webkit-transform: rotate(-45deg);
-				transform: rotate(-45deg);
-				width: 1px;
-				height: 25px;
-				border-right: 2px solid #fff;
-			}
-		}
+	// 	.slick-arrow.slick-prev {
+	// 		&:after {
+	// 			content: "";
+	// 			position: absolute;
+	// 			top: 10px;
+	// 			left: 11px;
+	// 			-webkit-transform: rotate(-45deg);
+	// 			transform: rotate(-45deg);
+	// 			width: 1px;
+	// 			height: 25px;
+	// 			border-right: 2px solid #fff;
+	// 		}
+	// 	}
 
-		.slick-arrow.slick-prev {
-			bottom: 15px;
-		}
+	// 	.slick-arrow.slick-prev {
+	// 		bottom: 15px;
+	// 	}
 
-		.slick-arrow.slick-next {
-			margin-left: 90px;
+	// 	.slick-arrow.slick-next {
+	// 		margin-left: 90px;
 
-			&:before {
-				content: "";
-				position: absolute;
-				top: 0px;
-				left: 11px;
-				-webkit-transform: rotate(45deg);
-				transform: rotate(45deg);
-				width: 1px;
-				height: 25px;
-				border-right: 2px solid #fff;
-			}
-		}
+	// 		&:before {
+	// 			content: "";
+	// 			position: absolute;
+	// 			top: 0px;
+	// 			left: 11px;
+	// 			-webkit-transform: rotate(45deg);
+	// 			transform: rotate(45deg);
+	// 			width: 1px;
+	// 			height: 25px;
+	// 			border-right: 2px solid #fff;
+	// 		}
+	// 	}
 
-		.slick-arrow.slick-next:after {
-			content: "";
-			position: absolute;
-			top: 10px;
-			left: 11px;
-			-webkit-transform: rotate(-45deg);
-			transform: rotate(-45deg);
-			width: 1px;
-			height: 25px;
-			border-right: 2px solid #fff;
-		}
+	// 	.slick-arrow.slick-next:after {
+	// 		content: "";
+	// 		position: absolute;
+	// 		top: 10px;
+	// 		left: 11px;
+	// 		-webkit-transform: rotate(-45deg);
+	// 		transform: rotate(-45deg);
+	// 		width: 1px;
+	// 		height: 25px;
+	// 		border-right: 2px solid #fff;
+	// 	}
 
-		.slick-arrow.slick-next {
-			bottom: 20px;
-			-webkit-transform: rotate(180deg);
-			transform: rotate(180deg);
-		}
+	// 	.slick-arrow.slick-next {
+	// 		bottom: 20px;
+	// 		-webkit-transform: rotate(180deg);
+	// 		transform: rotate(180deg);
+	// 	}
 
-		.slick-dots {
-			position: absolute;
-			bottom: 18px;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			justify-content: center;
+	// 	.slick-dots {
+	// 		position: absolute;
+	// 		bottom: 18px;
+	// 		display: -webkit-box;
+	// 		display: -ms-flexbox;
+	// 		display: flex;
+	// 		-webkit-box-pack: center;
+	// 		-ms-flex-pack: center;
+	// 		justify-content: center;
 
-			li {
-				width: 14px;
-				height: 14px;
-			}
+	// 		li {
+	// 			width: 14px;
+	// 			height: 14px;
+	// 		}
 
-			button {
-				width: 14px;
-				height: 14px;
-				background: none;
-				border: none;
-				outline: none;
-			}
-		}
-	}
+	// 		button {
+	// 			width: 14px;
+	// 			height: 14px;
+	// 			background: none;
+	// 			border: none;
+	// 			outline: none;
+	// 		}
+	// 	}
+	// }
 
 	.head1 {
 		font-size: 26px;
@@ -2478,13 +2774,13 @@ ul.timeline>li:before {
 
 	.card-footer {
 		.price-align {
-			font-size: 14px;
+			font-size: 14px !important;
 		}
 	}
 
-	.enquiry-form {
-		width: 52% !important;
-	}
+	// .enquiry-form {
+	// 	width: 52% !important;
+	// }
 }
 
 @media (max-width: 1024px) {
@@ -2519,6 +2815,11 @@ ul.timeline>li:before {
 		.nav-items-holder {
 			margin-top: 0px;
 		}
+	}
+
+	.pakage-bannerblock .overview-img {
+
+		height: auto;
 	}
 }
 
@@ -2572,6 +2873,12 @@ ul.timeline>li:before {
 		width: 100% !important;
 		right: 0;
 		margin: 30px 0px;
+		padding: 15px;
+	}
+
+	.navigation .page-logo {
+		top: 5px;
+		left: 15px;
 	}
 }
 
@@ -2594,9 +2901,7 @@ ul.timeline>li:before {
 		}
 	}
 
-	.small-btn-submit {
-		padding: 5px 15px;
-	}
+
 
 	.slideshow-container {
 		.mySlides .text {
@@ -2768,10 +3073,6 @@ ul.timeline>li:before {
 		padding: 15px;
 	}
 
-	.small-btn-submit {
-		padding: 5px 15px;
-	}
-
 	.travel-section {
 		.custom-jumbotron {
 			.travel-content {
@@ -2798,6 +3099,29 @@ ul.timeline>li:before {
 				width: 100% !important;
 				left: 0 !important;
 				right: 0 !important;
+			}
+		}
+	}
+
+	.form-block {
+		.card-outline-secondary .enqury-card {
+			.form-group .cstpl-wd {
+				width: 100% !important;
+				left: 0 !important;
+				right: 0 !important;
+			}
+
+			.custom-to {
+				margin-left: 0px !important;
+			}
+
+			#datepicker2 {
+				padding: 10px 5px 10px 30px !important;
+			}
+
+			.newfacalendar2 {
+				left: 10px !important;
+				top: 24px !important;
 			}
 		}
 	}

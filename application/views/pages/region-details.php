@@ -1,6 +1,7 @@
 <!-- //Load the navigation menu -->
 <?php $data['home'] = "changenev"; ?>
 <?php $this->load->view('pages/sections/navigation', $data); ?>
+
 <section class="mall-24">
   <div class="container-fluid">
     <div class="row">

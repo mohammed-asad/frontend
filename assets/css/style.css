@@ -87,7 +87,6 @@ html {
 }
 
 p {
-  font-size: 18px;
   word-break: break-word;
 }
 
@@ -123,7 +122,7 @@ h4 {
 }
 
 .pl-30 {
-  padding-left: 35px;
+  padding-left: 45px;
 }
 
 .pl-50 {
@@ -211,7 +210,8 @@ h4 {
   background: #ff5a5f 0% 0% no-repeat padding-box;
   border-radius: 28px;
   border: none;
-  padding: 5px 35px;
+  width: 123px;
+  height: 32px;
   color: #fff;
   font-size: 12px;
   font-family: "Mont-Bold";
@@ -241,6 +241,12 @@ h4 {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+  color: #fff;
+}
+
+.btncreatemail1 {
+  margin-top: 10px;
+  background-color: #51317E;
 }
 
 .navbar {
@@ -467,10 +473,7 @@ h4 {
   -webkit-box-shadow: 0px 5px 8px #0000003d;
           box-shadow: 0px 5px 8px #0000003d;
   border-radius: 50px;
-}
-
-.form-block .card-outline-secondary .card-body {
-  padding: 30px 30px;
+  padding: 10px;
 }
 
 .form-block .card-outline-secondary .card-body h3 {
@@ -560,6 +563,7 @@ h4 {
   position: absolute;
   width: 85px;
   background: transparent;
+  padding: 15px;
 }
 
 .form-block .card-outline-secondary .card-body form .custom-formgroup2 {
@@ -722,11 +726,6 @@ header span {
   position: relative;
 }
 
-.banner .slick-slide {
-  border-radius: 55px;
-  overflow: hidden;
-}
-
 .banner .slick-arrow.slick-prev {
   margin-left: -200px;
 }
@@ -742,7 +741,7 @@ header span {
 .banner .enquiry-form {
   position: absolute;
   z-index: 1002;
-  width: 55%;
+  width: 465px;
 }
 
 .banner .slick-slide img {
@@ -810,11 +809,16 @@ header span {
   border-radius: 20px;
   /*padding: 15px;
     padding: 15px 15px 30px 15px;*/
-  padding: 15px 15px;
+  padding: 15px 30px;
 }
 
 .new-cardblock .card .card-footer .price-align {
   position: relative;
+  top: 8px;
+}
+
+.new-cardblock .card .card-footer a {
+  vertical-align: middle;
 }
 
 .new-cardblock .card .fa-heart {
@@ -1136,6 +1140,16 @@ footer .list-unstyled li .lastlink {
   margin-top: 10px;
 }
 
+.pakage-bannerblock .overview-img {
+  margin: 100px 30px 10px;
+  height: 50vh;
+}
+
+.hotel-description h4 {
+  font-size: 20px;
+  font-family: Mont-bold;
+}
+
 /*********************************** package overview ************************************/
 /**************************** travel packages page css **************************************/
 .packsection {
@@ -1287,12 +1301,12 @@ ul.timeline > li:before {
 .navigation .logo {
   min-width: 120px;
   position: relative;
-  left: 50px;
+  text-align: center;
   top: 30px;
 }
 
 .navigation .logo img {
-  width: 197px;
+  width: 160px;
 }
 
 .navigation .logo.secondary {
@@ -1305,6 +1319,10 @@ ul.timeline > li:before {
   .navigation .logo.secondary {
     display: block;
   }
+}
+
+.navigation .page-logo {
+  left: 50px;
 }
 
 .navigation .hamburger-menu {
@@ -1345,7 +1363,7 @@ ul.timeline > li:before {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1007;
-  width: 70.5%;
+  width: 82%;
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
@@ -1636,7 +1654,7 @@ ul.timeline > li:before {
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .sub-item-desc .sub-item-item.slider img {
   width: 300px;
-  height: 200px;
+  height: 200px !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1814,6 +1832,7 @@ ul.timeline > li:before {
   right: 30px;
   top: 0;
   font-family: Mont-LightItalic;
+  font-size: 18px;
   color: #fff;
 }
 
@@ -2122,12 +2141,6 @@ ul.timeline > li:before {
   }
 }
 
-@media (max-width: 1600px) {
-  .enquiry-form {
-    width: 64% !important;
-  }
-}
-
 @media (max-width: 1550px) and (min-width: 1200px) {
   ul.timeline:before {
     content: " ";
@@ -2146,10 +2159,9 @@ ul.timeline > li:before {
     left: 93px;
   }
   .new-cardblock .card-footer {
-    padding: 12px 8px !important;
+    padding: 12px 15px !important;
   }
   .small-btn-submit {
-    padding: 3px 10px;
     font-size: 11px;
   }
 }
@@ -2180,142 +2192,62 @@ ul.timeline > li:before {
 }
 
 @media (max-width: 1366px) {
-  .form-block {
-    top: 20% !important;
-  }
-  .form-block .enqury-card {
-    padding: 20px 15px !important;
-  }
-  .form-block .enqury-card h3 {
-    font-size: 24px !important;
-  }
-  .form-block .enqury-card .form-group .newfacalendar1 {
-    top: 26px !important;
-  }
-  .form-block .enqury-card .form-group .newfacalendar2 {
-    top: 26px !important;
-  }
-  .form-block .enqury-card .form-group .cstpl-wd {
-    width: 114% !important;
-    left: -25px !important;
-  }
-  .form-block .enqury-card .form-group .country-code {
-    width: 60px !important;
-  }
-  .cst-position {
-    top: 0% !important;
-  }
-  #formLogin .form-control {
-    height: 35px;
-  }
-  .banner-inner img {
-    height: 94vh !important;
-  }
-  .btn-submit {
-    padding: 5px 50px;
-  }
-  .slick-slide img {
-    height: 94vh !important;
-  }
-  .travel-section .custom-jumbotron .travel-content h1 {
-    font-family: AllThatMatters;
-    font-size: 72px;
-  }
-  .travel-section .custom-jumbotron .travel-content p {
-    font-size: 18px;
-  }
-  .card-footer .price-align {
-    font-size: 16px;
-  }
-  .pl-90 {
-    padding-left: 65px;
-  }
-  .navigation {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1200px) {
-  /*.section {
-    top: 48rem;
-    
-}*/
-}
-
-@media (max-width: 1199px) and (min-width: 1024px) {
-  .new-cardblock .card-footer {
-    padding: 12px 8px !important;
-  }
-  .small-btn-submit {
-    padding: 3px 10px;
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .banner-inner img {
-    height: 65vh !important;
-  }
-  #formLogin .form-control {
-    height: 35px;
-  }
-  .enqury-card h3 {
-    font-size: 20px !important;
-  }
-  .slick-slide img {
-    height: 83vh !important;
+  /*********************home slider arrow and dots ******************************************/
+  .banner {
+    margin: 15px;
+    border-radius: 30px;
   }
   .banner .slick-arrow.slick-prev {
-    margin-left: -130px;
+    margin-left: -158px;
   }
   .banner .slick-arrow.slick-prev:before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 2px;
     left: 11px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 1px;
-    height: 25px;
+    height: 20px;
     border-right: 2px solid #ffffff;
   }
   .banner .slick-arrow.slick-prev:after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 9px;
     left: 11px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     width: 1px;
-    height: 25px;
+    height: 20px;
     border-right: 2px solid #fff;
   }
   .banner .slick-arrow.slick-prev {
     bottom: 15px;
   }
   .banner .slick-arrow.slick-next {
-    margin-left: 90px;
+    margin-left: 120px;
   }
   .banner .slick-arrow.slick-next:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 11px;
+    top: 7px;
+    left: 12px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 1px;
-    height: 25px;
+    height: 20px;
     border-right: 2px solid #fff;
   }
   .banner .slick-arrow.slick-next:after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 11px;
+    top: 14px;
+    left: 12px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     width: 1px;
-    height: 25px;
+    height: 20px;
     border-right: 2px solid #fff;
   }
   .banner .slick-arrow.slick-next {
@@ -2334,15 +2266,204 @@ ul.timeline > li:before {
     justify-content: center;
   }
   .banner .slick-dots li {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
   .banner .slick-dots button {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     background: none;
     border: none;
     outline: none;
+  }
+  /*********************home slider arrow and dots ******************************************/
+  .form-block {
+    top: 18% !important;
+    width: 320px !important;
+  }
+  .form-block .card-outline-secondary {
+    padding: 0px;
+    border-radius: 30px;
+  }
+  .form-block .card-outline-secondary .enqury-card h3 {
+    font-size: 24px !important;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group {
+    margin-bottom: 10px;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .newfacalendar1 {
+    top: 21px !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .newfacalendar2 {
+    top: 21px !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
+    width: 114% !important;
+    left: -25px !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .country-code {
+    width: 60px !important;
+    padding: 5px !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group label {
+    font-size: 12px;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group input {
+    font-size: 12px;
+  }
+  .form-block.cst-position {
+    top: 0% !important;
+    width: 100% !important;
+  }
+  .form-block.cst-position .enqury-card h3 {
+    font-size: 18px !important;
+  }
+  .form-block.cst-position .enqury-card .labeltext {
+    font-size: 14px;
+  }
+  #formLogin .form-control {
+    height: 30px;
+  }
+  .banner-inner img {
+    height: 94vh !important;
+  }
+  .btn-submit {
+    padding: 5px 50px;
+  }
+  .slick-slide img {
+    height: 95vh !important;
+  }
+  .travel-section .custom-jumbotron .travel-content h1 {
+    font-family: AllThatMatters;
+    font-size: 72px;
+  }
+  .travel-section .custom-jumbotron .travel-content p {
+    font-size: 18px;
+  }
+  .card-footer .price-align {
+    font-size: 14px;
+  }
+  .pl-90 {
+    padding-left: 65px;
+  }
+  .navigation {
+    font-size: 14px;
+    top: 30px;
+  }
+  .navigation .right-toptext {
+    font-size: 14px;
+  }
+  .navigation .nav-items-holder {
+    width: 75%;
+  }
+  .navigation .nav-items-holder .nav-item span {
+    font-size: 14px;
+  }
+  .navigation .logo img {
+    width: 140px;
+  }
+  .packages .card {
+    border-radius: 15px;
+  }
+  .packages .card .card-body .title {
+    font-size: 16px;
+  }
+  .packages .card .card-footer .price-align {
+    font-size: 12px;
+  }
+  .small-btn-submit {
+    width: 100px;
+    height: 32px;
+  }
+  .new-cardblock .card .card-block {
+    padding: 0px 15px;
+  }
+  .new-cardblock .card .card-block .card-title {
+    font-size: 18px;
+  }
+  .head1 {
+    font-size: 36px;
+  }
+  /************************** package over view page *********************************/
+  .pakage-bannerblock .overview-img {
+    margin: 50px 15px 10px;
+    height: 45vh;
+  }
+  .pakage-bannerblock .pack-column h3,
+  .pakage-bannerblock .pack-column h2 {
+    font-size: 18px;
+  }
+  .pakage-bannerblock .pack-column p {
+    font-size: 14px;
+  }
+  .form-.form-block.cst-position .h3 {
+    font-size: 18px !important;
+  }
+  .packsection {
+    border-radius: 30px;
+  }
+  .mall-24 {
+    margin: 15px;
+  }
+  .section {
+    margin: 50px 0px;
+  }
+  .packdetail h1 {
+    font-size: 24px;
+  }
+  .packdetail p {
+    font-size: 14px;
+  }
+  .packdetail .hotel-description h4 {
+    font-size: 18px;
+  }
+  .hotel-Info .nav-tabs .nav-item a {
+    font-size: 12px;
+  }
+  .hotel-Info .nav-tabs .zbtn {
+    left: 22%;
+  }
+  .dis .ab {
+    width: 230px;
+    height: 56px;
+  }
+  .dis .cd {
+    width: 290px;
+    height: 72px;
+  }
+  /************************** package over view page *********************************/
+}
+
+@media (max-width: 1200px) {
+  /*.section {
+    top: 48rem;
+    
+}*/
+}
+
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .new-cardblock .card-footer {
+    padding: 12px 8px !important;
+  }
+  .small-btn-submit {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-inner img {
+    height: 65vh !important;
+  }
+  #formLogin .form-control {
+    height: 35px;
+  }
+  .enqury-card h3 {
+    font-size: 20px !important;
+  }
+  .slick-slide img {
+    height: 83vh !important;
   }
   .head1 {
     font-size: 26px;
@@ -2361,10 +2482,7 @@ ul.timeline > li:before {
     font-size: 24px;
   }
   .card-footer .price-align {
-    font-size: 14px;
-  }
-  .enquiry-form {
-    width: 52% !important;
+    font-size: 14px !important;
   }
 }
 
@@ -2393,6 +2511,9 @@ ul.timeline > li:before {
   }
   .navigation .nav-items-holder {
     margin-top: 0px;
+  }
+  .pakage-bannerblock .overview-img {
+    height: auto;
   }
 }
 
@@ -2434,6 +2555,11 @@ ul.timeline > li:before {
     width: 100% !important;
     right: 0;
     margin: 30px 0px;
+    padding: 15px;
+  }
+  .navigation .page-logo {
+    top: 5px;
+    left: 15px;
   }
 }
 
@@ -2452,9 +2578,6 @@ ul.timeline > li:before {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
-  }
-  .small-btn-submit {
-    padding: 5px 15px;
   }
   .slideshow-container .mySlides .text {
     position: absolute;
@@ -2576,9 +2699,6 @@ ul.timeline > li:before {
   footer {
     padding: 15px;
   }
-  .small-btn-submit {
-    padding: 5px 15px;
-  }
   .travel-section .custom-jumbotron .travel-content h1 {
     font-size: 48px;
   }
@@ -2596,6 +2716,21 @@ ul.timeline > li:before {
     width: 100% !important;
     left: 0 !important;
     right: 0 !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .custom-to {
+    margin-left: 0px !important;
+  }
+  .form-block .card-outline-secondary .enqury-card #datepicker2 {
+    padding: 10px 5px 10px 30px !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .newfacalendar2 {
+    left: 10px !important;
+    top: 24px !important;
   }
   .pr-0 {
     padding-right: 15px !important;

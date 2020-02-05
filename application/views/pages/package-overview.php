@@ -139,7 +139,7 @@
                 <!-- <div class="card-header"> -->
                 <!-- </div> -->
                 <div class="card-body enqury-card">
-                  <h3 class="mb-10">Want to Go For <br />A Memorable Holiday</h3>
+                  <h3 class="mb-10 h3">Want to Go For <br />A Memorable Holiday</h3>
                   <p class="labeltext">Provide Your Details to Know Best Holiday Deals</p>
                   <form autocomplete="off" name="createmail" class="form createmail" id="formLogin" role="form">
                     <div class="row">
@@ -202,7 +202,7 @@
     </div>
   </div>
 </section>
-<section class="section">
+<section class="section packdetail">
   <div class="container-fluid">
     <div class="col-xl-10 offset-xl-2 col-lg-10 offset-lg-2 col-md-12 m-auto">
       <div class="row section hotel-overview"></div>

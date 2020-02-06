@@ -297,10 +297,6 @@ h4 {
   /* position: absolute;*/
 }
 
-.carousel .carousel-inner {
-  border-radius: 55px;
-}
-
 .carousel .banner-carousel-inner .banner-inner img {
   height: 96vh;
 }
@@ -480,6 +476,10 @@ h4 {
   font-family: "Mont-Bold";
   font-size: 35px;
   margin-bottom: 25px;
+}
+
+.form-block .card-outline-secondary .card-body .dsn {
+  display: none;
 }
 
 .form-block .card-outline-secondary .card-body form .form-group lable {
@@ -754,15 +754,16 @@ header span {
 
 .custom-jumbotronhome {
   position: relative;
-  top: 13rem;
+  top: 9rem;
   left: 0rem;
   background: transparent;
   padding: 0;
 }
 
 .custom-jumbotronhome p {
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: Mont-Regular;
+  font-size: 16px;
 }
 
 .custom-jumbotronhome p span {
@@ -771,9 +772,13 @@ header span {
 
 .custom-jumbotronhome h1 {
   font-family: AllThatMatters;
-  font-size: 50px;
+  font-size: 82px;
   margin: 0;
   line-height: 0.5;
+}
+
+.custom-jumbotronhome h4 {
+  font-size: 26px;
 }
 
 .new-cardblock .card {
@@ -849,7 +854,7 @@ header span {
 }
 
 .cstitem2.active {
-  background: url("../images/home/Base@2x.png");
+  background: url("../images/home/homeslider.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -859,7 +864,7 @@ header span {
 }
 
 .cstitem3.active {
-  background: url("../images/home/Base@3x.png");
+  background: url("../images/home/Base@2x.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -884,7 +889,7 @@ footer {
   background: #161616 0% 0% no-repeat padding-box;
   border-radius: 50px;
   color: #fff;
-  padding: 50px;
+  padding: 50px 0px;
   height: 400px;
 }
 
@@ -1285,6 +1290,7 @@ ul.timeline > li:before {
   position: absolute;
   top: 30%;
   right: 10px;
+  z-index: 99;
 }
 
 .navigation .blur-backdrop {
@@ -1499,15 +1505,15 @@ ul.timeline > li:before {
 @media all and (max-width: 1023px) {
   .navigation .nav-items-holder .nav-item .sub-menu {
     position: fixed;
-    top: -35px;
-    left: 10%;
+    top: -20px;
+    left: 0%;
     height: 80vh;
     width: 100vw;
   }
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder {
-  background: #fcfcfc;
+  background: #fff;
   margin: 20px 0;
   margin-bottom: 8px;
   border-radius: 33px;
@@ -1593,7 +1599,7 @@ ul.timeline > li:before {
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .sub-item-desc {
   text-align: left;
   height: calc(100% - 48px);
-  width: 75%;
+  width: 73%;
   color: #1c1c1c;
   padding: 15px;
   -webkit-box-pack: start;
@@ -1611,6 +1617,7 @@ ul.timeline > li:before {
   .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .sub-item-desc {
     top: 0;
     position: static;
+    width: 100%;
   }
 }
 
@@ -1770,6 +1777,16 @@ ul.timeline > li:before {
     overflow-x: visible;
     padding: 15px 0 15px 30px;
   }
+  .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item.active .sub-item-desc .sub-item-item {
+    margin-right: 25px;
+  }
+  .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item.active .sub-item-desc .sub-item-item h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item.active .sub-item-desc .sub-item-item p {
+    font-size: 14px;
+  }
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-item-desc-holder {
@@ -1848,8 +1865,11 @@ ul.timeline > li:before {
   .sub-menu-item.active .sub-item-desc {
     display: block !important;
   }
+  .sub-menu-item.active .sub-item-desc .sub-item-item.slider {
+    width: 300px !important;
+  }
   .sub-menu-item.active .sub-item-desc .sub-item-item {
-    width: 100% !important;
+    width: 85% !important;
   }
 }
 
@@ -2434,6 +2454,53 @@ ul.timeline > li:before {
     height: 72px;
   }
   /************************** package over view page *********************************/
+  #carousel-example-1 .carousel-inner .carousel-item {
+    height: 480px;
+    border-radius: 30px;
+  }
+  #carousel-example-1 .carousel-inner .cst-carousel-control-next2 span:before {
+    height: 20px;
+  }
+  #carousel-example-1 .carousel-inner .cst-carousel-control-next2 span:after {
+    height: 20px;
+  }
+  #carousel-example-1 .carousel-inner .cst-carousel-control-prev2 span:before {
+    height: 20px;
+  }
+  #carousel-example-1 .carousel-inner .cst-carousel-control-prev2 span:after {
+    height: 20px;
+  }
+  #carousel-example-1 .carousel-inner .csthome-indict {
+    bottom: 15%;
+  }
+  #carousel-example-1 .cst-carousel-control-next2 {
+    top: -1rem;
+  }
+  #carousel-example-1 .custom-indicators1 li {
+    width: 10px;
+    height: 10px;
+  }
+  .custom-jumbotronhome {
+    top: 10rem;
+  }
+  .custom-jumbotronhome h1 {
+    font-size: 65px;
+  }
+  .custom-jumbotronhome p {
+    font-size: 14px;
+  }
+  .custom-jumbotronhome h4 {
+    font-size: 24px;
+  }
+  .custom-indicators1 {
+    bottom: 12px;
+  }
+  footer {
+    border-radius: 30px;
+  }
+  footer h5 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2484,6 +2551,9 @@ ul.timeline > li:before {
   .card-footer .price-align {
     font-size: 14px !important;
   }
+  footer {
+    padding: 30px 30px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2515,6 +2585,9 @@ ul.timeline > li:before {
   .pakage-bannerblock .overview-img {
     height: auto;
   }
+  .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
+    width: 107.5% !important;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -2532,7 +2605,7 @@ ul.timeline > li:before {
 @media (max-width: 1023px) and (min-width: 992px) {
   .enquiry-form {
     border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 55px;
+    border-radius: 30px;
   }
   .enquiry-form .card-outline-secondary {
     -webkit-box-shadow: none;
@@ -2557,9 +2630,47 @@ ul.timeline > li:before {
     margin: 30px 0px;
     padding: 15px;
   }
+  .banner .enquiry-form .dsb {
+    display: none;
+  }
+  .banner .enquiry-form .dsn {
+    font-family: "Mont-Bold";
+    display: block !important;
+    font-size: 20px;
+    text-align: center;
+  }
   .navigation .page-logo {
     top: 5px;
     left: 15px;
+  }
+  .banner {
+    border-radius: 15px;
+  }
+  .banner .header-banner {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .navigation .logo img {
+    width: 18%;
+    float: left;
+  }
+  .secondary {
+    text-align: center;
+  }
+  .secondary img {
+    float: none !important;
+  }
+  .custom-jumbotronhome {
+    top: 10rem;
+  }
+  .custom-jumbotronhome h1 {
+    font-size: 50px;
+  }
+  .custom-jumbotronhome p {
+    font-size: 13px;
+  }
+  .custom-jumbotronhome h4 {
+    font-size: 18px;
   }
 }
 
@@ -2572,7 +2683,7 @@ ul.timeline > li:before {
 @media (max-width: 991px) {
   .enquiry-form {
     border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 55px;
+    border-radius: 15px;
   }
   .enquiry-form .card-outline-secondary {
     -webkit-box-shadow: none;
@@ -2586,6 +2697,12 @@ ul.timeline > li:before {
     padding: 30px;
     height: 290px;
     width: 375px;
+  }
+  #carousel-example-1 .carousel-inner .carousel-item {
+    border-radius: 15px;
+  }
+  footer {
+    border-radius: 15px;
   }
 }
 
@@ -2606,7 +2723,7 @@ ul.timeline > li:before {
     height: 65vh !important;
   }
   .slick-slide img {
-    height: 60vh !important;
+    height: 45vh !important;
   }
 }
 
@@ -2690,6 +2807,10 @@ ul.timeline > li:before {
     right: 0;
     padding: 0px 5px;
   }
+  .navigation .right-toptext {
+    font-size: 12px;
+    top: -10px;
+  }
 }
 
 @media (max-height: 600px) {
@@ -2739,13 +2860,13 @@ ul.timeline > li:before {
     padding-left: 15px !important;
   }
   footer {
-    padding: 5px;
+    padding: 20px;
   }
   .custom-formgroup2 {
     margin-left: 0 !important;
   }
   .slick-slide img {
-    height: 50vh !important;
+    height: 45vh !important;
   }
   .mySlides img {
     height: 40vh;
@@ -2786,6 +2907,16 @@ ul.timeline > li:before {
   .custom-to {
     margin-left: 0px;
   }
+  .navigation .right-toptext {
+    font-size: 10px;
+    top: -15px;
+  }
+  .banner .slick-arrow.slick-next {
+    left: 30%;
+  }
+  .banner .slick-arrow.slick-prev {
+    left: 70%;
+  }
 }
 
 @media (max-width: 414px) {
@@ -2802,7 +2933,7 @@ ul.timeline > li:before {
     bottom: 15% !important;
   }
   .custom-indicators1 {
-    bottom: 8px !important;
+    bottom: 13px !important;
   }
   .btn-black {
     padding: 10px 20px 10px 10px !important;
@@ -2811,6 +2942,25 @@ ul.timeline > li:before {
   .zbtn {
     left: 39%;
     padding: 10px 10px 10px 20px !important;
+  }
+  .navigation .right-toptext {
+    font-size: 9px;
+    top: -15px;
+  }
+  .slick-slide img {
+    height: 40vh !important;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item.slider {
+    width: 280px !important;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item.slider .slick-arrow.slick-prev {
+    left: 54%;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item.slider .slick-arrow.slick-next {
+    left: 45%;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item {
+    width: 85% !important;
   }
 }
 
@@ -2821,6 +2971,21 @@ ul.timeline > li:before {
   .line::before,
   .line::after {
     width: 2rem;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item.slider {
+    width: 240px !important;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item.slider .slick-arrow.slick-prev {
+    left: 65%;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item.slider .slick-arrow.slick-next {
+    left: 35%;
+  }
+  .sub-menu-item.active .sub-item-desc .sub-item-item {
+    width: 50% !important;
+  }
+  .dsn {
+    font-size: 18px !important;
   }
 }
 

@@ -2,13 +2,13 @@
 <footer class="mall-24">
 
   <!-- Footer Links  text-center text-md-left-->
-  <div class="col-xl-10 offset-xl-1">
+  <div class="col-xl-10 m-auto">
 
     <!-- Grid row -->
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-lg-3 col-md-6 mx-auto">
+      <div class="col-xl-2 col-lg-3 col-md-6 col-sm-5 mx-auto p-0">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">CONTACT US</h5>
@@ -29,10 +29,10 @@
       </div>
       <!-- Grid column -->
 
-      <hr class="clearfix w-100 d-md-none">
+      <!-- <hr class="clearfix w-100 d-md-none"> -->
 
       <!-- Grid column -->
-      <div class="col-lg-3 col-md-6 mx-auto">
+      <div class="col-xl-2 col-lg-3 col-md-6 col-sm-7 mx-auto p-0">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">CUSTOMER RERVICE</h5>
@@ -53,10 +53,10 @@
       </div>
       <!-- Grid column -->
 
-      <hr class="clearfix w-100 d-md-none">
+      <!-- <hr class="clearfix w-100 d-md-none"> -->
 
       <!-- Grid column -->
-      <div class="col-lg-3 col-md-6 mx-auto">
+      <div class="col-xl-2 col-lg-3 col-md-6 col-sm-5 mx-auto p-0">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">INFORMATION</h5>
@@ -83,10 +83,10 @@
       </div>
       <!-- Grid column -->
 
-      <hr class="clearfix w-100 d-md-none">
+      <!-- <hr class="clearfix w-100 d-md-none"> -->
 
       <!-- Grid column -->
-      <div class="col-lg-3 col-md-6 mx-auto">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-7 mx-auto p-0">
 
         <!-- Links -->
         <h5 class="text-uppercase mt-3 mb-4">Subscribe to Holidaymate via Email</h5>

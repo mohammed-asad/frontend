@@ -19,7 +19,8 @@
 				<!-- <div class="card-header"> -->
 				<!-- </div> -->
 				<div class="card-body enqury-card">
-					<h3 class="mb-10">Book unique places to stay and things to do.</h3>
+					<h3 class="mb-10 dsb">Book unique places to stay and things to do.</h3>
+					<h4 class="mb-10 dsn">Book unique places to<br> stay and things to do.</h4>
 					<form autocomplete="off" class="form createmail" id="formLogin" name="createmail" role="form">
 						<div class="row">
 							<div class="col-md-12">

@@ -3,35 +3,41 @@
 <?php $this->load->view('pages/sections/navigation', $data); ?>
 
 <section class="travel-section">
-  <div class="container-fluid">
-    <div class="custom-jumbotron">
-      <div class="travel-content">
-        <div class="row">
-          <div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-4 offset-md-8 col-sm-12 col-12">
-            <div class="text-center text-white">
-              <h1>Travel</h1>
-              <h1>Private</h1>
-              <p class="mt-5">Think about your holiday, we make it happen</p>
-            </div>
+
+  <div class="custom-jumbotron">
+    <div class="travel-content">
+      <div class="row">
+        <div class="col-xl-4 offset-xl-8 col-lg-7 offset-lg-5 col-md-7 offset-md-5 col-sm-12 col-12">
+          <div class="text-center text-white">
+            <h1>Travel</h1>
+            <h1>Private</h1>
+            <p class="mt-5">Think about your holiday, we make it happen</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </section>
 <section class="section1">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
     <div class="trvalep-content">
-      <h3>What is Travel Private?</h3>
-      <p>HolidayMate motto when it comes to Travel Private means – Personalized Travel.</p>
-      <h3>Why Travel Private with holidaymate?</h3>
-      <p>No fixed itinerary of pre-existing route of journey or places that is forced upon you. No preset – dates that
-        makes you take a second thought.</p>
-      <p> It is you who choose WHERE, WHEN and HOW you want to travel.</p>
-      <h3>How can you Travel Private with holidaymate?</h3>
-      <p>Get in touch with our Guide Directors, we make sure to montage your requirements into an everlasting touring
-        experience.
-        Your trip and tour details will be curated and planed with painstaking attention to detail.</p>
+      <div class="distance">
+        <h3>What is Travel Private?</h3>
+        <p>HolidayMate motto when it comes to Travel Private means – Personalized Travel.</p>
+      </div>
+      <div class="distance">
+        <h3>Why Travel Private with holidaymate?</h3>
+        <p>No fixed itinerary of pre-existing route of journey or places that is forced upon you. No preset – dates that
+          makes you take a second thought.</p>
+        <p> It is you who choose WHERE, WHEN and HOW you want to travel.</p>
+      </div>
+      <div class="distance">
+        <h3>How can you Travel Private with holidaymate?</h3>
+        <p>Get in touch with our Guide Directors, we make sure to montage your requirements into an everlasting touring
+          experience.
+          Your trip and tour details will be curated and planed with painstaking attention to detail.</p>
+      </div>
     </div>
   </div>
 </section>

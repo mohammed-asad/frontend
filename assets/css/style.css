@@ -156,6 +156,9 @@ h4 {
 .changenev {
   position: relative !important;
   top: 0px !important;
+  width: calc(100% - 15px) !important;
+  margin: 20px auto !important;
+  margin-bottom: 0 !important;
 }
 
 .changenev .blur-backdrop {
@@ -171,11 +174,20 @@ h4 {
 
 .changenev .logo {
   min-width: 120px;
-  top: 5px !important;
+  top: -5px !important;
+  left: 7% !important;
+  z-index: 99;
 }
 
 .changenev .logo img {
-  width: 100%;
+  width: 200px !important;
+  position: relative;
+}
+
+@media all and (max-width: 1366px) {
+  .changenev .logo img {
+    width: 160px !important;
+  }
 }
 
 .changenev .logo.secondary {
@@ -188,6 +200,18 @@ h4 {
   .changenev .logo.secondary {
     display: block;
   }
+  .changenev .logo.secondary .nav-items-holder a {
+    color: #fff !important;
+  }
+  .changenev .logo.secondary .nav-items-holder .nav-item {
+    color: #fff !important;
+  }
+}
+
+.changenev .nav-items-holder {
+  width: 100% !important;
+  position: absolute;
+  z-index: 1 !important;
 }
 
 .changenev .nav-items-holder a {
@@ -198,12 +222,32 @@ h4 {
   color: #000 !important;
 }
 
+.changenev .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder {
+  margin: 20px 10px !important;
+}
+
+.changenev .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .sub-item-desc {
+  top: 22px !important;
+  left: 25.5% !important;
+}
+
 .changenev .changenev {
   display: none;
 }
 
 .changenev .right-toptext {
   color: #000 !important;
+  right: 7% !important;
+  top: -5px !important;
+}
+
+.changenev .hamburger-menu {
+  border-top: 2px solid #000 !important;
+  border-bottom: 2px solid #000 !important;
+}
+
+.changenev .hamburger-menu:before {
+  border-top: 2px solid #000 !important;
 }
 
 .small-btn-submit {
@@ -942,14 +986,14 @@ footer .list-unstyled li .lastlink {
 }
 
 .travel-section {
-  margin: 0px 17px;
-  border-radius: 55px;
+  margin: 24px 24px;
+  border-radius: 50px;
   overflow: hidden;
   position: relative;
 }
 
 .travel-section .custom-jumbotron {
-  height: 95vh;
+  height: 87vh;
   background: url("../images/travelprivate/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -957,7 +1001,6 @@ footer .list-unstyled li .lastlink {
   width: 100%;
   border-radius: 55px;
   overflow: hidden;
-  margin: 24px 0px;
 }
 
 .travel-section .custom-jumbotron .travel-content {
@@ -985,12 +1028,48 @@ footer .list-unstyled li .lastlink {
   width: 100%;
 }
 
-.section1 .trvalep-content h3 {
+.section1 .trvalep-content {
+  margin: 30px 0;
+}
+
+.section1 .trvalep-content .distance {
+  margin-bottom: 30px;
+}
+
+.section1 .trvalep-content .distance h3 {
   font-size: 24px;
 }
 
-.section1 .trvalep-content p {
+.section1 .trvalep-content .distance p {
   font-family: Mont-SemiBold;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 1366px) {
+  .section1 .trvalep-content .distance {
+    margin-bottom: 30px;
+  }
+  .section1 .trvalep-content .distance h3 {
+    font-size: 18px;
+  }
+  .section1 .trvalep-content .distance p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .section1 .trvalep-content .distance {
+    margin-bottom: 30px;
+  }
+  .section1 .trvalep-content .distance h3 {
+    font-size: 16px;
+  }
+  .section1 .trvalep-content .distance p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }
 
 .section .custom-text-align {
@@ -1129,10 +1208,40 @@ footer .list-unstyled li .lastlink {
 
 .section .custom-text-align .content-block h2 {
   font-family: "Mont-Bold";
+  font-size: 40px;
 }
 
 .section .custom-text-align .content-block p {
   font-family: "Mont-Regular";
+  font-size: 24px;
+}
+
+@media all and (max-width: 1366px) {
+  .section .custom-text-align .content-block h2 {
+    font-family: "Mont-Bold";
+    font-size: 28px;
+  }
+  .section .custom-text-align .content-block p {
+    font-family: "Mont-Regular";
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .section .custom-text-align .content-block h2 {
+    font-family: "Mont-Bold";
+    font-size: 24px;
+  }
+  .section .custom-text-align .content-block p {
+    font-family: "Mont-Regular";
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .section .custom-text-align .content-block {
+    margin: 15px 0px;
+  }
 }
 
 /**************************** travel private page css **************************************/
@@ -1290,7 +1399,7 @@ ul.timeline > li:before {
   position: absolute;
   top: 30%;
   right: 10px;
-  z-index: 99;
+  z-index: 999;
 }
 
 .navigation .blur-backdrop {
@@ -1911,15 +2020,20 @@ ul.timeline > li:before {
   margin: 24px;
 }
 
-.gather-section .gather-jumbotron {
+.gather-section .container-fluid {
+  padding: 0px;
+}
+
+.gather-section .container-fluid .gather-jumbotron {
   border-radius: 50px;
   background: url("../images/others/gather-banner.png");
   background-repeat: no-repeat;
-  height: 95vh;
+  height: 87vh;
   background-size: cover;
+  background-position: center;
 }
 
-.gather-section .gather-jumbotron .travel-content {
+.gather-section .container-fluid .gather-jumbotron .travel-content {
   /*position: absolute;
       text-align: center;
       left: 30%;
@@ -1930,29 +2044,92 @@ ul.timeline > li:before {
   top: 70%;
 }
 
-.gather-section .gather-jumbotron .travel-content h1 {
-  font-size: 5rem;
+.gather-section .container-fluid .gather-jumbotron .travel-content h1 {
+  font-size: 57px;
 }
 
-.gather-section .friends {
+.gather-section .container-fluid .gather-jumbotron .travel-content p {
+  font-size: 22px;
+}
+
+@media (max-width: 1366px) {
+  .gather-section .container-fluid .gather-jumbotron {
+    border-radius: 30px;
+    height: 84vh;
+  }
+  .gather-section .container-fluid .gather-jumbotron .travel-content h1 {
+    font-size: 45px;
+  }
+  .gather-section .container-fluid .gather-jumbotron .travel-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .gather-section .container-fluid .gather-jumbotron {
+    border-radius: 15px;
+    height: 45vh;
+  }
+  .gather-section .container-fluid .gather-jumbotron .travel-content h1 {
+    font-size: 36px;
+  }
+  .gather-section .container-fluid .gather-jumbotron .travel-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gather-section .container-fluid .gather-jumbotron .travel-content h1 {
+    font-size: 28px;
+  }
+  .gather-section .container-fluid .gather-jumbotron .travel-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 414px) {
+  .gather-section .container-fluid .gather-jumbotron .travel-content h1 {
+    font-size: 24px;
+  }
+  .gather-section .container-fluid .gather-jumbotron .travel-content p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 414px) {
+  .gather-section .container-fluid .gather-jumbotron .travel-content h1 {
+    font-size: 18px;
+  }
+  .gather-section .container-fluid .gather-jumbotron .travel-content p {
+    font-size: 10px;
+  }
+}
+
+.gather-section .container-fluid .friends {
   background: url("../images/gather/banner.png");
   background-repeat: no-repeat;
   height: 95vh;
   background-size: cover;
 }
 
-.gather-section .colleague {
+.gather-section .container-fluid .colleague {
   background: url("../images/gather/colleague.png");
   background-repeat: no-repeat;
   height: 95vh;
   background-size: cover;
 }
 
-.gather-section .solo {
+.gather-section .container-fluid .solo {
   background: url("../images/gather/solo.jpg");
   background-repeat: no-repeat;
   height: 95vh;
   background-size: cover;
+}
+
+@media (max-width: 1366px) {
+  .gather-section {
+    margin: 15px;
+  }
 }
 
 .section3 {
@@ -2110,6 +2287,19 @@ ul.timeline > li:before {
 /************************************* our specialities page ******************************************/
 .specialities p {
   font-family: Mont-regular;
+  font-size: 24px;
+}
+
+@media (max-width: 1366px) {
+  .specialities p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .specialities p {
+    font-size: 14px;
+  }
 }
 
 /************************************* our specialities page ******************************************/
@@ -2353,14 +2543,25 @@ ul.timeline > li:before {
     padding: 5px 50px;
   }
   .slick-slide img {
-    height: 95vh !important;
+    height: 96vh !important;
+  }
+  .travel-section {
+    margin: 15px;
+    border-radius: 30px;
+  }
+  .travel-section .custom-jumbotron {
+    height: 85vh;
+    border-radius: 30px;
+  }
+  .travel-section .custom-jumbotron .travel-content {
+    right: 9.3%;
   }
   .travel-section .custom-jumbotron .travel-content h1 {
     font-family: AllThatMatters;
     font-size: 72px;
   }
   .travel-section .custom-jumbotron .travel-content p {
-    font-size: 18px;
+    font-size: 14px;
   }
   .card-footer .price-align {
     font-size: 14px;
@@ -2538,12 +2739,6 @@ ul.timeline > li:before {
   .new-cardblock p {
     font-size: 14px;
   }
-  .travel-section {
-    margin: 0;
-  }
-  .travel-section .custom-jumbotron {
-    margin: 15px 0px;
-  }
   h2,
   h3 {
     font-size: 24px;
@@ -2553,6 +2748,9 @@ ul.timeline > li:before {
   }
   footer {
     padding: 30px 30px;
+  }
+  .travel-section .custom-jumbotron .travel-content {
+    right: 0;
   }
 }
 
@@ -2581,6 +2779,7 @@ ul.timeline > li:before {
   }
   .navigation .nav-items-holder {
     margin-top: 0px;
+    z-index: 99 !important;
   }
   .pakage-bannerblock .overview-img {
     height: auto;
@@ -2672,11 +2871,35 @@ ul.timeline > li:before {
   .custom-jumbotronhome h4 {
     font-size: 18px;
   }
+  .changenev .nav-items-holder .logo.secondary {
+    margin-top: 30px !important;
+    width: 100% !important;
+    left: 0 !important;
+    text-align: center;
+  }
+  .changenev .nav-items-holder .logo.secondary img {
+    width: 20% !important;
+  }
+  .changenev .nav-items-holder .nav-item {
+    color: #fff !important;
+  }
+  .changenev .logo img {
+    width: 60% !important;
+  }
+  .changenev .right-toptext {
+    top: -10px;
+  }
+  .travel-section {
+    border-radius: 15px;
+  }
+  .travel-section .custom-jumbotron {
+    border-radius: 15px;
+  }
 }
 
 @media (max-width: 992px) {
   .travel-section .custom-jumbotron {
-    height: 45vh;
+    height: 32vh;
   }
 }
 
@@ -2802,7 +3025,7 @@ ul.timeline > li:before {
   }
   .travel-section .custom-jumbotron .travel-content {
     position: relative;
-    top: 35%;
+    top: 30%;
     width: 100%;
     right: 0;
     padding: 0px 5px;
@@ -2820,11 +3043,15 @@ ul.timeline > li:before {
   footer {
     padding: 15px;
   }
+}
+
+@media (max-width: 600px) {
   .travel-section .custom-jumbotron .travel-content h1 {
-    font-size: 48px;
+    font-size: 45px !important;
   }
   .travel-section .custom-jumbotron .travel-content p {
-    font-size: 16px;
+    font-size: 12px;
+    margin-top: 2rem !important;
   }
 }
 

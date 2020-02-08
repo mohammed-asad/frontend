@@ -108,9 +108,60 @@ var package = {
               });
             });
 
+            var packpolicytittle = item.c_policy_title.replace(/ /g, "_");
+            package.getPolicy(packpolicytittle, index);
+            var packpterms_n_condition = item.tnc_title.replace(/ /g, "_");
+            package.getTerms(packpterms_n_condition, index);
 
           });
 
+        }
+      })
+      .fail(function (response) {
+        alert("API failed, check Token");
+      })
+  },
+
+  getPolicy: function (policytitle) {
+    console.log(hotel);
+    var maxLenght = 100;
+    i = 0;
+    fns.ajaxGet('holidaymate/api/policy/policytitle/' + policytitle, 'user').
+    done(function (response) {
+        if (response.status === 401) {
+          alert(response.message)
+        } else if (response.status === 200) {
+          $.map(response.data, function (item, index) {
+            i += 1;
+            //Populate Terms list
+            var newcancellation = `<p>${item.description}</p>`;
+            if (index <= (maxLenght - 1)) {
+              $('.cancellation-tab').append(newcancellation);
+            }
+          })
+        }
+      })
+      .fail(function (response) {
+        alert("API failed, check Token");
+      })
+  },
+  //-------------------------------------- Code to Terms and Conditions----------------------------------------------------------------------------------------------------
+  getTerms: function (termstitle) {
+    var maxLenght = 100;
+    i = 0;
+    fns.ajaxGet('holidaymate/api/terms/termbytitle/' + termstitle, 'user').
+    done(function (response) {
+        if (response.status === 401) {
+          alert(response.message)
+        } else if (response.status === 200) {
+          $.map(response.data, function (item, index) {
+            i += 1;
+            //Populate Terms list
+            var terms = `<p>${item.description}</p>`;
+            if (index <= (maxLenght - 1)) {
+              $('.term-tab').append(terms);
+            }
+          })
         }
       })
       .fail(function (response) {

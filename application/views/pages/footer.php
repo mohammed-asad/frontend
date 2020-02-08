@@ -97,10 +97,11 @@
           </li>
 
           <section class="text-center mt-2">
-            <form action="#" method="Post">
+            <form action="#" name="createsubscriber" class="createsubscriber" method="Post">
               <div class="mb-3 d-flex">
-                <input type="text" class="form-control subscribe" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <button class="btn subscribe-btn" type="button">Subscribe</button>
+                <input type="text" class="form-control subscribe sub_email" name="sub_email" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                <input type="submit" name="createsubscriber" class="btn subscribe-btn createsubscriber" value="Subscribe" />
               </div>
             </form>
           </section>
@@ -123,6 +124,10 @@
 <input type="hidden" id="base" value="<?php echo base_url(); ?>">
 <!-- Footer -->
 
+<script src="<?php echo base_url(); ?>assets/js/frontend/footer.js"></script>
+<script>
+  footer.addSubscriber();
+</script>
 </body>
 <!-- <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>

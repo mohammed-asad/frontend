@@ -1,120 +1,7 @@
-<section class="packsection mb-5 mall-24">
-  <section class="navigation changenev">
-    <div class="position">
-      <div class="blur-backdrop"></div>
-      <div class="hamburger-menu"></div>
-    </div>
-    <a href="<?php echo base_url(); ?>" class="logo mobile-logo">
-      <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/logo.svg" alt="">
-    </a>
-    <div class="nav-items-holder">
-      <span class="close-hamburger-menu"></span>
-      <a href="<?php echo base_url(); ?>" class="logo secondary">
-        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
-      </a>
-      <a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
-        <span>
-          Travel private
-        </span>
-      </a>
-      <div class="nav-item" data-bluritem="true">
-        <span>Destinations</span>
-        <div class="sub-menu">
-          <!-- Sub Menu Start-->
-          <div class="sub-menu-items-holder">
-            <span class="reset-menu"></span>
-            <!-- Sub Menu Region Start-->
-            <div class="sub-menu-item-list">
-              <div class="sub-menu-item active">
-                <span data-region="europe">
-
-                </span>
-                <div class="sub-item-desc" data-region="europe">
-                  <div class="sub-item-item overview">
-                    <h4>Overview</h4>
-
-                  </div>
-                  <div class="sub-item-item countries">
-                    <h4>Destinations</h4>
-                    <ul>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sub-menu-item">
-                <span data-region="asia">
-                  <!-- region list -->
-                </span>
-                <div class="sub-item-desc" data-region="europe">
-                  <div class="sub-item-item overview">
-                    <h4>Overview</h4>
-
-                  </div>
-                  <div class="sub-item-item countries">
-                    <h4>Destinations</h4>
-                    <ul>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sub-menu-item">
-                <span data-region="america">
-
-                </span>
-                <div class="sub-item-desc" data-region="europe">
-                  <div class="sub-item-item overview">
-                    <h4>Overview</h4>
-
-                  </div>
-                  <div class="sub-item-item countries">
-                    <h4>Destinations</h4>
-                    <ul>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <!-- Sub Menu Region Ends-->
-
-            <!-- Sub Menu Detauls Start-->
-            <div class="sub-item-desc-holder">
-
-
-              <div class="sub-item-desc" data-region="asia">
-                <div class="sub-item-item overview">
-                  <h4 class="mb-2">Overview</h4>
-                  <!-- country overview -->
-                </div>
-                <div class="sub-item-item countries">
-                  <h4 class="mb-2">Destinations</h4>
-                  <!-- country list -->
-                  <ul> </ul>
-                </div>
-              </div>
-
-            </div>
-            <!-- Sub Menu Detauls End-->
-          </div>
-          <!-- Sub Menu End-->
-        </div>
-      </div>
-      <a href="<?php echo base_url(); ?>ourspecialities" class="nav-item">
-        <span>
-          Our Specialities
-        </span>
-      </a>
-    </div>
-    <div class="nav-texts">
-
-    </div>
-
-  </section>
+<section class="packsection packoverview mb-5 mall-24">
+  <!-- //Load the navigation menu -->
+  <?php $data['home'] = "changenev"; ?>
+  <?php $this->load->view('pages/sections/navigation', $data); ?>
   <div class="container-fluid">
     <div class="col-xl-11 offset-xl-1 col-lg-11 offset-lg-1 col-md-12 m-auto">
       <div class="row">
@@ -133,76 +20,76 @@
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 cst-padding-0">
           <div class="row  form-block position-relative cst-position">
-            <div class="col-12">
-              <!-- form card login -->
-              <div class="card card-outline-secondary">
-                <!-- <div class="card-header"> -->
-                <!-- </div> -->
-                <div class="card-body enqury-card">
-                  <h3 class="mb-10 h3">Want to Go For <br />A Memorable Holiday</h3>
-                  <p class="labeltext">Provide Your Details to Know Best Holiday Deals</p>
-                  <form autocomplete="off" name="createmail" class="form createmail" id="formLogin" role="form">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group" id="input-packagename">
-                          <label for="packagename">Package Name</label>
+            <!-- <div class="col-12"> -->
+            <!-- form card login -->
+            <div class="card card-outline-secondary">
+              <!-- <div class="card-header"> -->
+              <!-- </div> -->
+              <div class="card-body enqury-card">
+                <h3 class="mb-10 h3">Want to Go For <br />A Memorable Holiday</h3>
+                <p class="labeltext">Provide Your Details to Know Best Holiday Deals</p>
+                <form autocomplete="off" name="createmail" class="form createmail" id="formLogin" role="form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group" id="input-packagename">
+                        <label for="packagename">Package Name</label>
 
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group" id="input-citydeparture">
+                        <label for="city">City of Departure</label>
+                        <input class="form-control from_where" name="from_where" required="" type="text">
+                      </div>
+                    </div>
+                    <p class="mont-book text-center line">Contact Details</p>
+                    <div class="col-md-12">
+                      <div class="form-group custom-formgroup1">
+                        <label class="control-label">Date of Departure</label>
+                        <div class="icon-input">
+                          <i class="fa fa-calendar newfacalendar1"></i>
+                          <input id="datepicker1" data-provide="datepicker" name="date_from" type="text" class="form-control date_from" placeholder="Select a date">
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group" id="input-citydeparture">
-                          <label for="city">City of Departure</label>
-                          <input class="form-control from_where" name="from_where" required="" type="text">
-                        </div>
-                      </div>
-                      <p class="mont-book text-center line">Contact Details</p>
-                      <div class="col-md-12">
-                        <div class="form-group custom-formgroup1">
-                          <label class="control-label">From</label>
-                          <div class="icon-input">
-                            <i class="fa fa-calendar newfacalendar1"></i>
-                            <input id="datepicker1" data-provide="datepicker" name="date_from" type="text" class="form-control date_from" placeholder="Select a date">
-                          </div>
-                        </div>
-                      </div>
+                    </div>
 
-                      <div class="col-md-6 col-sm-6 pr-0">
-                        <div class="form-group">
-                          <label>Name</label>
-                          <input class="form-control c_name" name="c_name" id="uname1" required="" type="text">
-                        </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control c_name" name="c_name" id="uname1" required="" type="text">
                       </div>
-                      <div class="col-md-6 col-sm-6 pl-0">
-                        <div class="form-group">
-                          <label for="to1">Email</label>
-                          <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
-                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pl-0">
+                      <div class="form-group">
+                        <label for="to1">Email</label>
+                        <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="mobile">Mobile Number</label>
-                          <!-- <span class="country-code">+91</span> -->
-                          <input class="form-control country-code text-center" name="mobile" type="text" disable="disabled" readonly value="+91">
-                          <input class="form-control pl-90 c_mobile" name="c_mobile" required="" type="text">
-                        </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <!-- <span class="country-code">+91</span> -->
+                        <input class="form-control country-code text-center" name="mobile" type="text" disable="disabled" readonly value="+91">
+                        <input class="form-control pl-90 c_mobile" name="c_mobile" required="" type="text">
                       </div>
-                      <div class="col-md-12 text-center">
-                        <!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
-                        <input type="submit" name="btncreatemail1" class="btn btn-submit btn-lg btncreatemail1" value="submit" />
-                      </div>
-                  </form>
-                </div>
-                <!--/card-block-->
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
+                      <input type="submit" name="btncreatemail1" class="btn btn-submit btn-lg btncreatemail1" value="submit" />
+                    </div>
+                </form>
               </div>
-              <!-- /form card login -->
+              <!--/card-block-->
             </div>
+            <!-- /form card login -->
+            <!-- </div> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="section packdetail">
+<section class="section packdetail overview-content-details">
   <div class="container-fluid">
     <div class="col-xl-10 offset-xl-2 col-lg-10 offset-lg-2 col-md-12 m-auto">
       <div class="row section hotel-overview"></div>

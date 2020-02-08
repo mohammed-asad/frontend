@@ -30,13 +30,14 @@ var fns = {
       }
     });
   },
-  ajaxGet: function (url) {
+  ajaxGet: function (url, type) {
     return $.ajax({
       url: baseURL + url,
       type: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': localStorage.getItem("token")
+        'Authorization': localStorage.getItem("token"),
+        'utype': type
       }
     });
   },

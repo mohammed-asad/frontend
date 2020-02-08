@@ -1,14 +1,14 @@
 //API call to fetch Slider
 var home = {
-	generatenavigation: function () {
-		fns.ajaxGet('holidaymate/api/navigation')
-			.done(function (res) {
-				if (res.status === 200) {
-					$('.navigation .sub-menu').find('.sub-menu-item-list').html("");
-					$('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
-					$.map(res.data, function (item, index) {
-						//Dumping Countries
-						var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
+    generatenavigation: function () {
+        fns.ajaxGet('holidaymate/api/navigation', 'user')
+          .done(function (res) {
+              if (res.status === 200) {
+                $('.navigation .sub-menu').find('.sub-menu-item-list').html("");
+                $('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
+                $.map(res.data, function (item, index) {
+                      //Dumping Countries
+                      var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
             <div class="sub-item-item overview">
               <h4 >Overview</h4>
               <p>

@@ -8,7 +8,7 @@ var package = {
     var i = 0;
     // var id = 1;
     const id = fns.getURLSlugs();
-    fns.ajaxGet('holidaymate/api/packages/id/' + id).
+    fns.ajaxGet('holidaymate/api/packages/id/' + id, 'user').
     done(function (response) {
         if (response.status === 401) {
           alert(response.message)
@@ -120,7 +120,7 @@ var package = {
 
   getPackage: function () {
     var maxLenght = 100;
-    fns.ajaxGet('holidaymate/api/packages/id/').
+    fns.ajaxGet('holidaymate/api/packages/id/', 'user').
     done(function (response) {
         if (response.status === 401) {
           alert(response.message)
@@ -168,7 +168,7 @@ var package = {
   getPackageImages: function (package) {
     //console.log(country);
     var img = "";
-    fns.ajaxGet('holidaymate/api/packageimages/images/' + package).
+    fns.ajaxGet('holidaymate/api/packageimages/images/' + package, 'user').
     done(function (r) {
         if (r.status === 401) {
           alert(e.message)
@@ -188,7 +188,7 @@ var package = {
   getCountrypackage: function () {
     var maxLenght = 100;
     const countrypackage = fns.getURLSlugs();
-    fns.ajaxGet('holidaymate/api/packages/pack_country/' + countrypackage).
+    fns.ajaxGet('holidaymate/api/packages/pack_country/' + countrypackage, 'user').
     done(function (response) {
         if (response.status === 401) {
           alert(response.message)

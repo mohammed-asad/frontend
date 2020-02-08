@@ -1244,6 +1244,34 @@ footer .list-unstyled li .lastlink {
   }
 }
 
+.section3 .trvalep-content p {
+  font-size: 24px;
+  font-family: Mont-Regular;
+}
+
+.section3 .slideshow-container {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media (max-width: 1366px) {
+  .section3 .trvalep-content p {
+    font-size: 18px;
+  }
+  .section3 .slideshow-container {
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section3 .trvalep-content p {
+    font-size: 14px;
+  }
+  .section3 .slideshow-container {
+    border-radius: 15px;
+  }
+}
+
 /**************************** travel private page css **************************************/
 /*********************************** package overview ************************************/
 .packoverview {
@@ -2296,7 +2324,7 @@ ul.timeline > li:before {
   -webkit-box-shadow: 0px 4px 5px #00000033;
   box-shadow: 0px 4px 5px #00000033;
   padding: 30px;
-  height: 350px;
+  min-height: 350px;
   width: 400px;
   border-radius: 29px;
   font-size: 18px;
@@ -2306,7 +2334,7 @@ ul.timeline > li:before {
 .slideshow-container .prev,
 .slideshow-container .next {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 70%;
   width: auto;
   padding: 16px;
@@ -2325,7 +2353,8 @@ ul.timeline > li:before {
 }
 
 .slideshow-container .next {
-  top: 70.4%;
+  top: 44%;
+  position: absolute;
   right: 15%;
   border-radius: 3px 0 0 3px;
   z-index: 999;
@@ -2384,6 +2413,63 @@ ul.timeline > li:before {
   width: 1px;
   height: 18px;
   border-right: 2px solid #010300;
+}
+
+.slideshow-container .arrow {
+  position: absolute;
+  right: 15%;
+  bottom: 31%;
+}
+
+@media (max-width: 1366px) {
+  .slideshow-container .arrow {
+    right: 22%;
+    bottom: 22%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .slideshow-container .arrow {
+    right: 87%;
+    bottom: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow-container .arrow {
+    right: 85%;
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .slideshow-container .arrow {
+    bottom: 0%;
+    right: 80%;
+  }
+  .slideshow-container .mySlides .text {
+    min-height: 185px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .slideshow-container .arrow {
+    bottom: 10%;
+    right: 70%;
+  }
+  .slideshow-container .mySlides .text {
+    min-height: 215px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .slideshow-container .arrow {
+    bottom: -20%;
+    right: 60%;
+  }
+  .slideshow-container .mySlides .text {
+    top: 42px !important;
+  }
 }
 
 .gather-card {
@@ -2937,6 +3023,15 @@ ul.timeline > li:before {
   .travel-section .custom-jumbotron .travel-content {
     right: 0;
   }
+  .slideshow-container .mySlides .text {
+    background-color: #ffffffba;
+    position: absolute;
+    right: 1%;
+    top: 66px;
+    padding: 30px;
+    width: 98%;
+    min-height: 260px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3101,14 +3196,6 @@ ul.timeline > li:before {
             box-shadow: none;
     border: none;
   }
-  .slideshow-container .mySlides .text {
-    position: absolute;
-    right: 2%;
-    top: 35px;
-    padding: 30px;
-    height: 290px;
-    width: 375px;
-  }
   #carousel-example-1 .carousel-inner .carousel-item {
     border-radius: 15px;
   }
@@ -3201,13 +3288,6 @@ ul.timeline > li:before {
   .gather-section .gather-jumbotron .travel-content p {
     font-size: 14px;
   }
-  .slideshow-container .mySlides .text {
-    position: absolute;
-    right: 0%;
-    top: 30px;
-    padding: 14px;
-    height: 240px;
-  }
   .slideshow-container .mySlides .text p {
     font-size: 14px;
   }
@@ -3285,10 +3365,6 @@ ul.timeline > li:before {
   }
   .mySlides img {
     height: 40vh;
-  }
-  .mySlides .text {
-    width: 300px !important;
-    left: 7%;
   }
   .dis {
     display: block;

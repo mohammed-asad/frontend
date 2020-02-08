@@ -199,7 +199,7 @@ var package = {
             var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
 						<a href="${url}">
             <div class="card mt-3 mb-3">
-             <div id="countryid${item.package_name}"></div>
+             <div id="countryid${item.package_name.replace(/ /g, "_")}"></div>
               <div class="text-right mt-3">
 							</div>
               <div class="card-block">

@@ -1331,6 +1331,31 @@ footer {
 			height: 50vh;
 			box-shadow: 0px 5px 8px #00000033;
 		}
+
+		@media(max-width:1366px) {
+			.overview-img {
+				//	margin: 60px 30px 10px;
+				border-radius: 30px;
+				height: 45vh;
+				box-shadow: 0px 5px 8px #00000033;
+			}
+		}
+
+		@media(max-width:1366px) {
+			.overview-img {
+				//	margin: 60px 30px 10px;
+				border-radius: 15px;
+				height: 100%;
+				box-shadow: 0px 5px 8px #00000033;
+			}
+		}
+
+		@media(max-width:1199px) {
+			.overview-img {
+				margin: 0;
+
+			}
+		}
 	}
 
 	.hotel-description {
@@ -1382,6 +1407,18 @@ footer {
 		div {
 			font-size: 20px;
 			font-family: Mont-Regular;
+		}
+	}
+
+	.inlude-description {
+		li {
+			font-size: 28px;
+		}
+	}
+
+	.exclude-content {
+		li {
+			font-size: 28px;
 		}
 	}
 
@@ -3264,6 +3301,8 @@ ul.timeline>li:before {
 	}
 
 	.form-block .card-outline-secondary {
+		border-radius: 15px;
+
 		.enqury-card .form-group {
 			.cstpl-wd {
 				width: 107.5% !important;

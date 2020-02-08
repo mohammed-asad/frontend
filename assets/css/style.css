@@ -1246,21 +1246,133 @@ footer .list-unstyled li .lastlink {
 
 /**************************** travel private page css **************************************/
 /*********************************** package overview ************************************/
-.hotel-img {
-  height: 375px;
+.packoverview {
+  padding: 15px 0px;
 }
 
-.pakage-bannerblock .pack-column {
+.packoverview .changenev {
+  top: 10px !important;
+  margin-bottom: 50px !important;
+}
+
+.packoverview .changenev .right-toptext {
+  top: -20px !important;
+  right: 4% !important;
+}
+
+.packoverview .changenev .logo {
+  left: 3% !important;
+}
+
+.packoverview .pakage-bannerblock .pack-column {
   margin-top: 10px;
 }
 
-.pakage-bannerblock .overview-img {
-  margin: 100px 30px 10px;
+.packoverview .pakage-bannerblock .overview-img {
+  margin: 60px 30px 10px;
   height: 50vh;
+  -webkit-box-shadow: 0px 5px 8px #00000033;
+          box-shadow: 0px 5px 8px #00000033;
 }
 
-.hotel-description h4 {
+.packoverview .hotel-description h4 {
   font-size: 20px;
+  font-family: Mont-bold;
+}
+
+.packoverview .hotel-description p {
+  margin: 0 !important;
+}
+
+.packoverview .hotel-description div {
+  font-size: 18px;
+}
+
+.overview-content-details .section h1 {
+  font-size: 42px;
+  font-family: Mont-Bold;
+}
+
+.overview-content-details .section p {
+  font-size: 20px;
+  font-family: Mont-Regular;
+}
+
+.overview-content-details #hotel_id img {
+  height: 375px;
+  width: 100%;
+}
+
+.overview-content-details .hotel-description h4 {
+  font-size: 20px;
+  font-family: Mont-bold;
+}
+
+.overview-content-details .hotel-description p {
+  margin: 0 !important;
+}
+
+.overview-content-details .hotel-description div {
+  font-size: 20px;
+  font-family: Mont-Regular;
+}
+
+@media (max-width: 1366px) {
+  .overview-content-details .section h1 {
+    font-size: 24px;
+    font-family: Mont-Bold;
+  }
+  .overview-content-details .section p {
+    font-size: 16px;
+    font-family: Mont-Regular;
+  }
+  .overview-content-details .hotel-description h4 {
+    font-size: 16px;
+    font-family: Mont-bold;
+  }
+  .overview-content-details .hotel-description p {
+    margin: 0 !important;
+  }
+  .overview-content-details .hotel-description div {
+    font-size: 16px;
+    font-family: Mont-Regular;
+  }
+}
+
+@media (max-width: 1023px) {
+  .overview-content-details .section h1 {
+    font-size: 18px;
+    font-family: Mont-Bold;
+  }
+  .overview-content-details .section p {
+    font-size: 14px;
+    font-family: Mont-Regular;
+  }
+  .overview-content-details .hotel-description h4 {
+    font-size: 14px;
+    font-family: Mont-bold;
+  }
+  .overview-content-details .hotel-description p {
+    margin: 0 !important;
+  }
+  .overview-content-details .hotel-description div {
+    font-size: 14px;
+    font-family: Mont-Regular;
+  }
+}
+
+.hotel-itinerary .iti_items p {
+  font-size: 20px;
+  font-family: Mont-bold;
+}
+
+.hotel-itinerary .iti_items ul p {
+  font-size: 14px;
+  font-family: Mont-Regular;
+}
+
+.hotel-itinerary .iti_items ul .timeline-left span {
+  font-size: 14px;
   font-family: Mont-bold;
 }
 
@@ -2273,14 +2385,56 @@ ul.timeline > li:before {
 .region-banner {
   border-radius: 50px;
   overflow: hidden;
+  height: 87vh;
 }
 
 .region-banner img {
-  border-radius: 50px;
   height: 95vh;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100vw;
+}
+
+@media (max-width: 1366px) {
+  .region-banner {
+    border-radius: 30px;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 1023px) {
+  .region-banner {
+    border-radius: 15px;
+    height: 45vh;
+  }
+}
+
+.section .region-content h1 {
+  font-family: Mont-bold;
+  font-size: 36px;
+}
+
+.section .region-content p {
+  font-size: 20px;
+  font-family: Mont-Regular;
+}
+
+@media (max-width: 1366px) {
+  .section .region-content h1 {
+    font-size: 28px;
+  }
+  .section .region-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section .region-content h1 {
+    font-size: 24px;
+  }
+  .section .region-content p {
+    font-size: 14px;
+  }
 }
 
 /************************************* region page ******************************************/
@@ -2315,7 +2469,6 @@ ul.timeline > li:before {
 
 .line {
   color: #B4B4B4;
-  margin: 5px auto;
 }
 
 .line::before,
@@ -2323,7 +2476,7 @@ ul.timeline > li:before {
   display: inline-block;
   content: "";
   border-top: .1rem solid #B4B4B4;
-  width: 4rem;
+  width: 175px;
   margin: 0 1rem;
   -webkit-transform: translateY(-0.4rem);
           transform: translateY(-0.4rem);
@@ -2543,14 +2696,14 @@ ul.timeline > li:before {
     padding: 5px 50px;
   }
   .slick-slide img {
-    height: 96vh !important;
+    height: 95vh !important;
   }
   .travel-section {
     margin: 15px;
     border-radius: 30px;
   }
   .travel-section .custom-jumbotron {
-    height: 85vh;
+    height: 88vh;
     border-radius: 30px;
   }
   .travel-section .custom-jumbotron .travel-content {

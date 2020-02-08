@@ -1300,25 +1300,176 @@ footer {
 
 /**************************** travel private page css **************************************/
 /*********************************** package overview ************************************/
-.hotel-img {
-	height: 375px;
-}
+.packoverview {
+	padding: 15px 0px;
 
-.pakage-bannerblock {
-	.pack-column {
-		margin-top: 10px;
+	.changenev {
+		top: 10px !important;
+		margin-bottom: 50px !important;
+
+		.right-toptext {
+			top: -20px !important;
+			right: 4% !important;
+		}
+
+		.logo {
+			left: 3% !important;
+		}
 	}
 
-	.overview-img {
-		margin: 100px 30px 10px;
-		height: 50vh;
+	// .hotel-img {
+	// 	height: 375px;
+	// }
+
+	.pakage-bannerblock {
+		.pack-column {
+			margin-top: 10px;
+		}
+
+		.overview-img {
+			margin: 60px 30px 10px;
+			height: 50vh;
+			box-shadow: 0px 5px 8px #00000033;
+		}
+	}
+
+	.hotel-description {
+		h4 {
+			font-size: 20px;
+			font-family: Mont-bold;
+		}
+
+		p {
+			margin: 0 !important;
+		}
+
+		div {
+			font-size: 18px;
+		}
 	}
 }
 
-.hotel-description {
-	h4 {
-		font-size: 20px;
-		font-family: Mont-bold;
+.overview-content-details {
+	.section {
+
+
+		h1 {
+			font-size: 42px;
+			font-family: Mont-Bold;
+		}
+
+		p {
+			font-size: 20px;
+			font-family: Mont-Regular;
+		}
+	}
+
+	#hotel_id img {
+		height: 375px;
+		width: 100%;
+	}
+
+	.hotel-description {
+		h4 {
+			font-size: 20px;
+			font-family: Mont-bold;
+		}
+
+		p {
+			margin: 0 !important;
+		}
+
+		div {
+			font-size: 20px;
+			font-family: Mont-Regular;
+		}
+	}
+
+	@media(max-width:1366px) {
+		.section {
+
+
+			h1 {
+				font-size: 24px;
+				font-family: Mont-Bold;
+			}
+
+			p {
+				font-size: 16px;
+				font-family: Mont-Regular;
+			}
+		}
+
+		.hotel-description {
+			h4 {
+				font-size: 16px;
+				font-family: Mont-bold;
+			}
+
+			p {
+				margin: 0 !important;
+			}
+
+			div {
+				font-size: 16px;
+				font-family: Mont-Regular;
+			}
+		}
+	}
+
+	@media(max-width:1023px) {
+		.section {
+
+
+			h1 {
+				font-size: 18px;
+				font-family: Mont-Bold;
+			}
+
+			p {
+				font-size: 14px;
+				font-family: Mont-Regular;
+			}
+		}
+
+		.hotel-description {
+			h4 {
+				font-size: 14px;
+				font-family: Mont-bold;
+			}
+
+			p {
+				margin: 0 !important;
+			}
+
+			div {
+				font-size: 14px;
+				font-family: Mont-Regular;
+			}
+		}
+
+	}
+}
+
+.hotel-itinerary {
+	.iti_items {
+		p {
+			font-size: 20px;
+			font-family: Mont-bold;
+		}
+
+		ul {
+			p {
+				font-size: 14px;
+				font-family: Mont-Regular;
+			}
+
+			.timeline-left span {
+				font-size: 14px;
+				font-family: Mont-bold;
+
+			}
+		}
 	}
 }
 
@@ -2339,13 +2490,58 @@ ul.timeline>li:before {
 .region-banner {
 	border-radius: 50px;
 	overflow: hidden;
+	height: 87vh;
 
 	// height: 95vh;
 	img {
-		border-radius: 50px;
+		//	border-radius: 50px; 
 		height: 95vh;
 		object-fit: cover;
 		width: 100vw;
+	}
+
+	@media(max-width:1366px) {
+		border-radius: 30px;
+		height: 85vh;
+	}
+
+	@media(max-width:1023px) {
+		border-radius: 15px;
+		height: 45vh;
+	}
+}
+
+.section {
+	.region-content {
+		h1 {
+			font-family: Mont-bold;
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 20px;
+			font-family: Mont-Regular;
+		}
+
+		@media(max-width:1366px) {
+			h1 {
+				font-size: 28px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+
+		@media(max-width:1023px) {
+			h1 {
+				font-size: 24px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
 	}
 }
 
@@ -2387,7 +2583,7 @@ ul.timeline>li:before {
 
 .line {
 	color: #B4B4B4;
-	margin: 5px auto;
+	//	margin: 5px auto;
 }
 
 .line::before,
@@ -2395,7 +2591,7 @@ ul.timeline>li:before {
 	display: inline-block;
 	content: "";
 	border-top: .1rem solid #B4B4B4;
-	width: 4rem;
+	width: 175px;
 	margin: 0 1rem;
 	transform: translateY(-0.4rem);
 }
@@ -2689,7 +2885,7 @@ ul.timeline>li:before {
 	}
 
 	.slick-slide img {
-		height: 96vh !important;
+		height: 95vh !important;
 	}
 
 	.travel-section {
@@ -2697,7 +2893,7 @@ ul.timeline>li:before {
 		border-radius: 30px;
 
 		.custom-jumbotron {
-			height: 85vh;
+			height: 88vh;
 			border-radius: 30px;
 
 			.travel-content {
@@ -2834,6 +3030,7 @@ ul.timeline>li:before {
 			h4 {
 				font-size: 18px;
 			}
+
 		}
 	}
 
@@ -2858,6 +3055,7 @@ ul.timeline>li:before {
 		width: 290px;
 		height: 72px;
 	}
+
 
 
 	/************************** package over view page *********************************/

@@ -1275,6 +1275,30 @@ footer .list-unstyled li .lastlink {
           box-shadow: 0px 5px 8px #00000033;
 }
 
+@media (max-width: 1366px) {
+  .packoverview .pakage-bannerblock .overview-img {
+    border-radius: 30px;
+    height: 45vh;
+    -webkit-box-shadow: 0px 5px 8px #00000033;
+            box-shadow: 0px 5px 8px #00000033;
+  }
+}
+
+@media (max-width: 1366px) {
+  .packoverview .pakage-bannerblock .overview-img {
+    border-radius: 15px;
+    height: 100%;
+    -webkit-box-shadow: 0px 5px 8px #00000033;
+            box-shadow: 0px 5px 8px #00000033;
+  }
+}
+
+@media (max-width: 1199px) {
+  .packoverview .pakage-bannerblock .overview-img {
+    margin: 0;
+  }
+}
+
 .packoverview .hotel-description h4 {
   font-size: 20px;
   font-family: Mont-bold;
@@ -1315,6 +1339,14 @@ footer .list-unstyled li .lastlink {
 .overview-content-details .hotel-description div {
   font-size: 20px;
   font-family: Mont-Regular;
+}
+
+.overview-content-details .inlude-description li {
+  font-size: 28px;
+}
+
+.overview-content-details .exclude-content li {
+  font-size: 28px;
 }
 
 @media (max-width: 1366px) {
@@ -2936,6 +2968,9 @@ ul.timeline > li:before {
   }
   .pakage-bannerblock .overview-img {
     height: auto;
+  }
+  .form-block .card-outline-secondary {
+    border-radius: 15px;
   }
   .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
     width: 107.5% !important;

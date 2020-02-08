@@ -98,7 +98,7 @@
           <h1>What's included</h1>
         </div>
         <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
-          <div class="inlude-description"></div>
+          <ul class="inlude-description"></ul>
         </div>
       </div>
       <div class="row section hotel-excluded">
@@ -106,7 +106,7 @@
           <h1>What's exclude</h1>
         </div>
         <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
-          <div class="exclude-content"></div>
+          <ul class="exclude-content"></ul>
         </div>
 
       </div>

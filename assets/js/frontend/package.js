@@ -66,7 +66,7 @@ var package = {
               var aminitiesimagenvalue = ` <li class="list-inline-item "><img class="img-fluid" src="${item1.image}">
 							<p>${item1.title}</p>
 							</li>`;
-              var newpackageinclude = `<p>${item1.description}</p>`;
+              var newpackageinclude = `<li><p>${item1.description}</p></li>`;
               $('.aminiteisvalue').append(aminitiesimagenvalue);
               $('.inlude-description').append(newpackageinclude);
 
@@ -75,7 +75,7 @@ var package = {
             var objexclude = JSON.parse(item.exclude);
             $.map(objexclude, function (item2, index2) {
 
-              var newpackageexclude = `<p>${item2.description}</p>`;
+              var newpackageexclude = `<li><p>${item2.description}</p></li>`;
               $('.exclude-content').append(newpackageexclude);
 
             });

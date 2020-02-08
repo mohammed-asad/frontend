@@ -37,7 +37,7 @@ var fns = {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': localStorage.getItem("token"),
-        'utype': type
+        'Type': type
       }
     });
   },

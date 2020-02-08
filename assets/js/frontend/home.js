@@ -107,7 +107,7 @@ var home = {
 	getCountryByName: function () {
 		var maxLenght = 100;
 		const countryname = fns.getURLSlugs();
-		fns.ajaxGet('holidaymate/api/country/country_name/' + countryname)
+		fns.ajaxGet('holidaymate/api/country/country_name/' + countryname, 'user')
 			.done(function (response) {
 				if (response.status === 401) {
 					alert(response.message)
@@ -132,7 +132,7 @@ var home = {
 	//-------------------------------------- Code to country images ----------------------------------------------------------------------------------------------------
 	getCountryImages: function (country) {
 		var img = "";
-		fns.ajaxGet('holidaymate/api/country/images/' + country).
+		fns.ajaxGet('holidaymate/api/country/images/' + country, 'user').
 		done(function (r) {
 				if (r.status === 401) {
 					alert(e.message)

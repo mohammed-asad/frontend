@@ -20,7 +20,7 @@ var home = {
               <ul>
               ${item.countries.map(function (country) {
 								var base_url = $('#base').val();
-							var url = `${base_url}country_name/${country}`;
+							var url = `${base_url}country_name/${country.replace(/ /g, "_")}`;
 							return `<li><a href="${url}">${country}</a></li>`;
 							//return '<li><a href="">' + country + '</a></li>';
 						}).join('') }
@@ -115,7 +115,7 @@ var home = {
 					$.map(response.data, function (item, index) {
 
 						console.log(item);
-						var newcountry = `<div id="countryid${ item.country_name }"></div>`;
+						var newcountry = `<div id="countryid${ item.country_name.replace(/ /g, "_") }"></div>`;
 						var region_content = `<h1 class="text-center">${ item.country_name }</h1>
             <p class="text-center">${item.description }</p>`;
 						if (index <= (maxLenght - 1)) {
@@ -123,7 +123,7 @@ var home = {
 							$('.region-banner').append(newcountry);
 							$('.region-content').append(region_content);
 						}
-						home.getCountryImages(item.country_name);
+						home.getCountryImages(item.country_name.replace(/ /g, "_"));
 
 					})
 				}

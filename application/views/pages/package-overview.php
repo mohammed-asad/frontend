@@ -42,7 +42,10 @@
                         <input class="form-control from_where" name="from_where" required="" type="text">
                       </div>
                     </div>
-                    <p class="mont-book text-center line">Contact Details</p>
+                    <div class="contact">
+                      <!-- <p class="mont-book text-center line">Contact Details</p> -->
+                      <p class="background"><span>Contact Details</span></p>
+                    </div>
                     <div class="col-md-12">
                       <div class="form-group custom-formgroup1">
                         <label class="control-label">Date of Departure</label>

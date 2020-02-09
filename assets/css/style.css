@@ -2622,6 +2622,119 @@ ul.timeline > li:before {
   font-family: Mont-Bold;
 }
 
+.contact {
+  text-align: center;
+  width: 100%;
+}
+
+.contact p {
+  font: 14px sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #B4B4B4;
+}
+
+.contact p.background {
+  position: relative;
+  z-index: 1;
+}
+
+.contact p.background:before {
+  border-top: 2px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.contact p.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #fff;
+  padding: 0 15px;
+}
+
+.contact p.double:before {
+  /* this is just to undo the :before styling from above */
+  border-top: none;
+}
+
+.contact p.double:after {
+  border-bottom: 1px solid blue;
+  -webkit-box-shadow: 0 1px 0 0 red;
+  box-shadow: 0 1px 0 0 red;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.contact p.no-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact p.no-background span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+.contact p.no-background span:before, .contact p.no-background span:after {
+  content: '';
+  display: block;
+  width: 1000px;
+  position: absolute;
+  top: 0.73em;
+  border-top: 1px solid red;
+}
+
+.contact p.no-background span:before {
+  right: 100%;
+}
+
+.contact p.no-background span:after {
+  left: 100%;
+}
+
+.contact p.no-span {
+  display: table;
+  white-space: nowrap;
+}
+
+.contact p.no-span:before, .contact p.no-span:after {
+  border-top: 1px solid green;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+
+.contact p.no-span:before {
+  right: 1.5%;
+}
+
+.contact p.no-span:after {
+  left: 1.5%;
+}
+
 /*************************************************** media queries ***********************************/
 /*************************enquery form ***************************************************************/
 @media (max-width: 1700px) {

@@ -2433,6 +2433,9 @@ ul.timeline > li:before {
     right: 87%;
     bottom: 33%;
   }
+  .slideshow-container .mySlides .text {
+    min-height: 240px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2448,13 +2451,14 @@ ul.timeline > li:before {
     right: 80%;
   }
   .slideshow-container .mySlides .text {
+    padding: 10px 20px !important;
     min-height: 185px !important;
   }
 }
 
 @media (max-width: 414px) {
   .slideshow-container .arrow {
-    bottom: 10%;
+    bottom: 6%;
     right: 70%;
   }
   .slideshow-container .mySlides .text {
@@ -2469,6 +2473,7 @@ ul.timeline > li:before {
   }
   .slideshow-container .mySlides .text {
     top: 42px !important;
+    min-height: 225px !important;
   }
 }
 

@@ -60,9 +60,10 @@
             <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
-        <a class="prev" onclick="plusSlides(-1)"></a>
-        <a class="next" onclick="plusSlides(1)"></a>
-
+        <div class="arrow">
+          <a class="prev" onclick="plusSlides(-1)"></a>
+          <a class="next" onclick="plusSlides(1)"></a>
+        </div>
       </div>
     </div>
   </section>
@@ -144,3 +145,5 @@
       // dots[slideIndex - 1].className += " active";
     }
   </script>
+  <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>

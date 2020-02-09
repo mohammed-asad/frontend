@@ -158,3 +158,5 @@
     // dots[slideIndex - 1].className += " active";
   }
 </script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>

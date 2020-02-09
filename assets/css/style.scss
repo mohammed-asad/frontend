@@ -2559,6 +2559,10 @@ ul.timeline>li:before {
 
 		}
 
+		.mySlides .text {
+			min-height: 240px !important;
+		}
+
 	}
 
 	@media(max-width:768px) {
@@ -2579,6 +2583,7 @@ ul.timeline>li:before {
 		}
 
 		.mySlides .text {
+			padding: 10px 20px !important;
 			min-height: 185px !important;
 		}
 	}
@@ -2586,7 +2591,7 @@ ul.timeline>li:before {
 	@media(max-width:414px) {
 		.arrow {
 
-			bottom: 10%;
+			bottom: 6%;
 			right: 70%;
 
 
@@ -2609,6 +2614,7 @@ ul.timeline>li:before {
 
 		.mySlides .text {
 			top: 42px !important;
+			min-height: 225px !important;
 		}
 
 	}

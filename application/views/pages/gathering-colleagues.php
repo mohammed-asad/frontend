@@ -57,23 +57,23 @@
           <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
           <div class="text">
             <p>Good Times and Crazy friends make the best memories. Let the HolidayMate create those best times for you with your buddies.</p>
-            </p>- Travel at Your Pace, leave the planning and execution to HolidayMate<p>
+            <p>- Travel at Your Pace, leave the planning and execution to HolidayMate</p>
           </div>
         </div>
         <div class="mySlides ">
           <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
           <div class="text">
             <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes. Pack your bags, choose your friends and say “Here we GO”</p>
-            </p>- At HolidayMate, you get Custom Journeys, tailor made for you through your choice.<p>
+            <p>- At HolidayMate, you get Custom Journeys, tailor made for you through your choice.</p>
           </div>
         </div>
 
 
+        <div class="arrow">
 
-
-        <a class="prev" onclick="plusSlides(-1)"></a>
-        <a class="next" onclick="plusSlides(1)"></a>
-
+          <a class="prev" onclick="plusSlides(-1)"></a>
+          <a class="next" onclick="plusSlides(1)"></a>
+        </div>
       </div>
     </div>
   </section>
@@ -155,3 +155,5 @@
       // dots[slideIndex - 1].className += " active";
     }
   </script>
+  <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>

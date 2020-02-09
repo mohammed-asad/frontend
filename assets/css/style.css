@@ -2227,13 +2227,17 @@ ul.timeline > li:before {
 @media (max-width: 1366px) {
   .gather-section .container-fluid .gather-jumbotron {
     border-radius: 30px;
-    height: 84vh;
+    height: 85vh;
   }
   .gather-section .container-fluid .gather-jumbotron .travel-content h1 {
     font-size: 45px;
   }
   .gather-section .container-fluid .gather-jumbotron .travel-content p {
     font-size: 18px;
+  }
+  .gather-section .container-fluid .gather-jumbotron .gather-jumbotron {
+    border-radius: 30px;
+    height: 85vh !important;
   }
 }
 
@@ -2247,6 +2251,10 @@ ul.timeline > li:before {
   }
   .gather-section .container-fluid .gather-jumbotron .travel-content p {
     font-size: 16px;
+  }
+  .gather-section .container-fluid .gather-jumbotron .gather-jumbotron {
+    border-radius: 15px;
+    height: 32vh !important;
   }
 }
 
@@ -2280,21 +2288,18 @@ ul.timeline > li:before {
 .gather-section .container-fluid .friends {
   background: url("../images/gather/banner.png");
   background-repeat: no-repeat;
-  height: 95vh;
   background-size: cover;
 }
 
 .gather-section .container-fluid .colleague {
   background: url("../images/gather/colleague.png");
   background-repeat: no-repeat;
-  height: 95vh;
   background-size: cover;
 }
 
 .gather-section .container-fluid .solo {
   background: url("../images/gather/solo.jpg");
   background-repeat: no-repeat;
-  height: 95vh;
   background-size: cover;
 }
 
@@ -2826,7 +2831,7 @@ ul.timeline > li:before {
     border-radius: 30px;
   }
   .travel-section .custom-jumbotron {
-    height: 88vh;
+    height: 85vh;
     border-radius: 30px;
   }
   .travel-section .custom-jumbotron .travel-content {
@@ -3074,6 +3079,15 @@ ul.timeline > li:before {
   }
   .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
     width: 107.5% !important;
+  }
+  .packages .card {
+    border-radius: 9px;
+  }
+  .packages .card .card-body .title {
+    font-size: 14px;
+  }
+  .packages .card .card-footer .price-align {
+    font-size: 12px;
   }
 }
 

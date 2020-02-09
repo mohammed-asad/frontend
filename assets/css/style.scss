@@ -2327,7 +2327,7 @@ ul.timeline>li:before {
 
 			@media(max-width:1366px) {
 				border-radius: 30px;
-				height: 84vh;
+				height: 85vh;
 
 				.travel-content h1 {
 					font-size: 45px;
@@ -2337,6 +2337,10 @@ ul.timeline>li:before {
 					font-size: 18px;
 				}
 
+				.gather-jumbotron {
+					border-radius: 30px;
+					height: 85vh !important;
+				}
 			}
 
 			@media(max-width:1023px) {
@@ -2351,6 +2355,10 @@ ul.timeline>li:before {
 					font-size: 16px;
 				}
 
+				.gather-jumbotron {
+					border-radius: 15px;
+					height: 32vh !important;
+				}
 			}
 
 			@media(max-width:767px) {
@@ -2399,21 +2407,21 @@ ul.timeline>li:before {
 		.friends {
 			background: url("../images/gather/banner.png");
 			background-repeat: no-repeat;
-			height: 95vh;
+
 			background-size: cover;
 		}
 
 		.colleague {
 			background: url("../images/gather/colleague.png");
 			background-repeat: no-repeat;
-			height: 95vh;
+
 			background-size: cover;
 		}
 
 		.solo {
 			background: url("../images/gather/solo.jpg");
 			background-repeat: no-repeat;
-			height: 95vh;
+
 			background-size: cover;
 		}
 	}
@@ -3053,7 +3061,7 @@ ul.timeline>li:before {
 		border-radius: 30px;
 
 		.custom-jumbotron {
-			height: 88vh;
+			height: 85vh;
 			border-radius: 30px;
 
 			.travel-content {
@@ -3444,6 +3452,21 @@ ul.timeline>li:before {
 			}
 		}
 	}
+
+	.packages {
+		.card {
+			border-radius: 9px;
+
+			.card-body .title {
+				font-size: 14px;
+			}
+
+			.card-footer .price-align {
+				font-size: 12px;
+			}
+		}
+	}
+
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {

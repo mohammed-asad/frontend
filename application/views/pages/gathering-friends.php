@@ -1,3 +1,5 @@
+<?php $data['home'] = "changenev"; ?>
+<?php $this->load->view('pages/sections/navigation', $data); ?>
 <section class="gather-section ">
   <div class="container-fluid p-0">
     <div class="gather-jumbotron friends">

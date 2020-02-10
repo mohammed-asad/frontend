@@ -29,6 +29,11 @@
 }
 
 @font-face {
+  font-family: "Mont-SemiBoldItalic";
+  src: url("../fonts/Mont-fonts/Mont-SemiBoldItalic.ttf");
+}
+
+@font-face {
   font-family: "Mont-Regular";
   src: url("../fonts/Mont-fonts/Mont-Regular.ttf");
 }
@@ -2103,6 +2108,18 @@ ul.timeline > li:before {
     margin-bottom: 15px;
   }
   .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item.active .sub-item-desc .sub-item-item p {
+    font-size: 14px;
+  }
+}
+
+.navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .regionnames {
+  font-family: Mont-SemiBoldItalic;
+  color: #87DEFE !important;
+  font-size: 16px;
+}
+
+@media (max-width: 1366px) {
+  .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .regionnames {
     font-size: 14px;
   }
 }

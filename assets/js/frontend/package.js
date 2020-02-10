@@ -85,8 +85,10 @@ var package = {
 							var newday = `<p>${item1.day}</p><ul class="timeline  mb-3 list"></ul>`;
 							$('.iti_items').append(newday);
 							$.map(item1.activities, function (item2, index2) {
+								console.log(item1.activities);
 								var newtime = `${item2.time} `;
 								var newactivity = `${item2.activity} `;
+								var newitenaryimg = `${item2.url} `;
 								var itinew =
 									`<li>
 										<div class="row">
@@ -95,7 +97,7 @@ var package = {
 											</div>
 											<div class="col-xl-10 col-lg-10 col-md-8 timeline-right">
 												<div class="row">
-													<div class="col-xl-1 col-lg-2 col-md-2 pr-0 text-center-md"><i class="fa fa-bus mr-2" aria-hidden="true"></i>
+													<div class="col-xl-1 col-lg-2 col-md-2 pr-0 text-center-md"><img src="${newitenaryimg}" class="img-fluid">
 													</div>
 													<div class="col-md-11 col-lg-10 col-md-10 pl-0">
 														<p class="ml-2">${newactivity}</p>

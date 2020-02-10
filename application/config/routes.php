@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['packageoverview/(:any)'] = 'packageoverview/index/$1';
 $route['country_name/(:any)'] = 'country_name/index/$name';
+$route['region/(:any)'] = 'region/index/$regionname';

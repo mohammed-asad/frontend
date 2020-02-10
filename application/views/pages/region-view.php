@@ -6,14 +6,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-12 col-md-12 p-0">
-        <div class="region-banner text-center"></div>
+        <div class="region1-banner text-center"></div>
       </div>
     </div>
   </div>
 </section>
 <section class="section">
   <div class="container">
-    <div class="region-content">
+    <div class="regionname"></div>
+    <div class="region-content1">
 
     </div>
   </div>
@@ -44,10 +45,11 @@
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/package.js"></script>
-
+<script src="<?php echo base_url(); ?>assets/js/frontend/region.js"></script>
+<!-- 
 <script>
   home.getCountryByName();
 </script>
 <script>
   package.getCountrypackage();
-</script>
+</script> -->

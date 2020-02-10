@@ -39,6 +39,7 @@
 										the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
 										It comprises the westernmost part of Eurasia.
 									</p>
+									<a href="#">View all <span class="regionnames"></span></a>
 								</div>
 								<div class="sub-item-item countries">
 									<h4>Destinations</h4>

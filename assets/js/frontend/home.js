@@ -1,19 +1,22 @@
 //API call to fetch Slider
 var home = {
-    generatenavigation: function () {
-        fns.ajaxGet('holidaymate/api/navigation', 'user')
-          .done(function (res) {
-              if (res.status === 200) {
-                $('.navigation .sub-menu').find('.sub-menu-item-list').html("");
-                $('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
-                $.map(res.data, function (item, index) {
-                      //Dumping Countries
-                      var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
+	generatenavigation: function () {
+		fns.ajaxGet('holidaymate/api/navigation', 'user')
+			.done(function (res) {
+				if (res.status === 200) {
+					$('.navigation .sub-menu').find('.sub-menu-item-list').html("");
+					$('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
+					$.map(res.data, function (item, index) {
+						//Dumping Countries
+						var base_url = $('#base').val();
+						var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
             <div class="sub-item-item overview">
               <h4 >Overview</h4>
               <p>
-              ${item.overview }
-              </p>
+							${item.overview }
+							</p>
+							 
+							<a href="${base_url}region/${item.region}" class="regionnames">View all ${item.region.toLowerCase()} </a>
             </div>
             <div class="sub-item-item countries">
               <h4 >Destinations</h4>
@@ -36,14 +39,20 @@ var home = {
 						</div>
           </div>`;
 						//Dumping Regions
+						var regiontitle = `<h1>${item.region}</h1>`;
+						var reover = ` <p>	${item.overview }</p>`;
 						var nav_item = `<div class="sub-menu-item ${ (index === 0 ? 'active' : '') }">
             <span data-region="${ item.region.toLowerCase() }">
-              ${item.region }
+							${item.region }
+							 
             </span>
             ${ nav_desc }
           </div>`;
 						$('.navigation .sub-menu').find('.sub-menu-item-list').append(nav_item);
 						// $('.navigation .sub-menu').find('.sub-item-desc-holder').append(nav_desc);
+						// $('.region-content1').append(reover);
+						// $('.regionname').append(regiontitle);
+
 					});
 				}
 			})

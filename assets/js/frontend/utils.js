@@ -1,9 +1,9 @@
-var baseURL = 'http://localhost/';
+var baseURL = 'http://holidaymate.in/';
 
 var fns = {
 
   //Defined functions for AJAX
-  baseURL: 'http://localhost/',
+  //baseURL: 'http://localhost/',
   ajaxPostFile: function (url, method, formData) {
     // console.log({ data })
     return $.ajax({

@@ -898,7 +898,7 @@ header span {
 }
 
 .cstitem2.active {
-  background: url("../images/home/homeslider.png");
+  background: url("../images/home/1872x520_Celebfrind.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -908,7 +908,17 @@ header span {
 }
 
 .cstitem3.active {
-  background: url("../images/home/Base@2x.png");
+  background: url("../images/home/1872x520_RetreatCol1.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 520px;
+  width: 100%;
+  border-radius: 55px;
+}
+
+.cstitem4.active {
+  background: url("../images/home/1872x520_Solo_trip.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -1397,6 +1407,9 @@ footer .list-unstyled li .lastlink {
     font-size: 16px;
     font-family: Mont-Regular;
   }
+  .overview-content-details .boredercl {
+    border-radius: 30px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1408,6 +1421,10 @@ footer .list-unstyled li .lastlink {
     font-size: 14px;
     font-family: Mont-Regular;
   }
+  .overview-content-details #hotel_id img {
+    height: 100%;
+    width: 100%;
+  }
   .overview-content-details .hotel-description h4 {
     font-size: 14px;
     font-family: Mont-bold;
@@ -1418,6 +1435,9 @@ footer .list-unstyled li .lastlink {
   .overview-content-details .hotel-description div {
     font-size: 14px;
     font-family: Mont-Regular;
+  }
+  .overview-content-details .boredercl {
+    border-radius: 15px;
   }
 }
 
@@ -3037,8 +3057,8 @@ ul.timeline > li:before {
   .hotel-Info .nav-tabs .nav-item a {
     font-size: 12px;
   }
-  .hotel-Info .nav-tabs .zbtn {
-    left: 22%;
+  .hotel-Info .zbtn {
+    left: 24%;
   }
   .dis .ab {
     width: 230px;
@@ -3095,6 +3115,9 @@ ul.timeline > li:before {
   }
   footer h5 {
     font-size: 16px;
+  }
+  .boredercls {
+    border-radius: 30px !important;
   }
 }
 
@@ -3155,6 +3178,12 @@ ul.timeline > li:before {
     width: 98%;
     min-height: 260px;
   }
+  .hotel-Info .nav-tabs .nav-item a {
+    font-size: 12px;
+  }
+  .hotel-Info .zbtn {
+    left: 31%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3201,6 +3230,17 @@ ul.timeline > li:before {
   }
   .packages .card .card-footer .price-align {
     font-size: 12px;
+  }
+  .hotel-Info .nav-tabs .nav-item {
+    position: relative;
+    width: 135px;
+  }
+  .hotel-Info .nav-tabs .nav-item a {
+    font-size: 10px;
+    padding: 8px 15px !important;
+  }
+  .hotel-Info .nav-tabs .nav-item .zbtn {
+    left: 0%;
   }
 }
 
@@ -3309,6 +3349,9 @@ ul.timeline > li:before {
   }
   .travel-section .custom-jumbotron {
     border-radius: 15px;
+  }
+  .boredercls {
+    border-radius: 15px !important;
   }
 }
 
@@ -3585,6 +3628,14 @@ ul.timeline > li:before {
   .sub-menu-item.active .sub-item-desc .sub-item-item {
     width: 85% !important;
   }
+  .hotel-Info .nav-tabs .nav-item {
+    position: relative;
+    width: 128px;
+  }
+  .hotel-Info .nav-tabs .nav-item a {
+    font-size: 10px;
+    padding: 8px 12px !important;
+  }
 }
 
 @media (max-width: 380px) {
@@ -3637,6 +3688,14 @@ ul.timeline > li:before {
   }
   .gather-section .gather-jumbotron .travel-content p {
     font-size: 14px;
+  }
+  .hotel-Info .nav-tabs .nav-item {
+    position: relative;
+    width: 80px;
+  }
+  .hotel-Info .nav-tabs .nav-item a {
+    font-size: 9px;
+    padding: 8px 10px !important;
   }
 }
 

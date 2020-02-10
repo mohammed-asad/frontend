@@ -142,6 +142,18 @@
 								</div>
 							</div>
 						</div>
+						<div class="carousel-item cstitem4">
+							<div class="jumbotron custom-jumbotronhome">
+								<!--Content-->
+								<div class="col-sm-12 col-md-12 col-lg-4">
+									<h1 class="text-white">Travel</h1>
+									<h1 class="text-white">Private</h1>
+									<p>holiday<span>mate</span> motto when it comes to</p>
+									<h4>Solor Trip</h4>
+								</div>
+							</div>
+						</div>
+
 						<!--Third slide-->
 						<div class="csthome-indict">
 							<div class="col-sm-12 col-md-12 col-lg-4">
@@ -154,6 +166,7 @@
 									<li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
 									<li data-target="#carousel-example-1" data-slide-to="1"></li>
 									<li data-target="#carousel-example-1" data-slide-to="2"></li>
+									<li data-target="#carousel-example-1" data-slide-to="3"></li>
 									<!--Controls-->
 								</ul>
 								<a class="carousel-control-next right carousel-control cst-carousel-control-next2" href="#carousel-example-1" role="button" data-slide="next">

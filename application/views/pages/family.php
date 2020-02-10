@@ -84,27 +84,27 @@
 <section class="section3">
   <div class="col-xl-10 offset-xl-1">
     <div class="row">
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-3 mb-sm-4 mb-4">
         <div class="gather-card">
-          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/others/base.png" alt="Gathering">
+          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_FG.jpg" alt="Family Gathering">
           <h4> Gathering with Family</h4>
         </div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-3 mb-sm-4 mb-4">
         <div class="gather-card">
-          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/others/base1.png" alt="Gathering">
+          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_Celebfrind.jpg" alt="Friends Gathering">
           <h4>Celebration with Friends</h4>
         </div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-3 mb-sm-4 mb-4">
         <div class="gather-card">
-          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/others/base2.png" alt="Gathering">
+          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_RetreatCol.jpg" alt="Colleagues Gathering">
           <h4>Retreats With Colleagues</h4>
         </div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-3 mb-sm-4 mb-4">
         <div class="gather-card">
-          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/gather/solo.jpg" alt="Gathering">
+          <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_Solo_trip.jpg" alt="Solo Trip">
           <h4>Solo Trip</h4>
         </div>
       </div>

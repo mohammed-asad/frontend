@@ -1034,8 +1034,25 @@ footer .list-unstyled li .lastlink {
   text-shadow: 0px 3px 6px #00000029;
 }
 
+.image-container {
+  overflow: hidden;
+  border-radius: 50px;
+}
+
 .image-container img {
   width: 100%;
+}
+
+@media (max-width: 1366px) {
+  .image-container {
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .image-container {
+    border-radius: 15px;
+  }
 }
 
 .section1 .trvalep-content {
@@ -2218,7 +2235,7 @@ ul.timeline > li:before {
 
 .gather-section .container-fluid .gather-jumbotron {
   border-radius: 50px;
-  background: url("../images/others/gather-banner.png");
+  background: url("../images/travelprivate/1872x885_FG.jpg");
   background-repeat: no-repeat;
   height: 87vh;
   background-size: cover;
@@ -2306,19 +2323,19 @@ ul.timeline > li:before {
 }
 
 .gather-section .container-fluid .friends {
-  background: url("../images/gather/banner.png");
+  background: url("../images/travelprivate/1872x885_Celebfrind.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .gather-section .container-fluid .colleague {
-  background: url("../images/gather/colleague.png");
+  background: url("../images/travelprivate/1872x885_RetreatCol.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .gather-section .container-fluid .solo {
-  background: url("../images/gather/solo.jpg");
+  background: url("../images/travelprivate/1872x885_Solotrip.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2526,6 +2543,25 @@ ul.timeline > li:before {
 .gather-card img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1366px) {
+  .gather-card {
+    border-radius: 30px;
+  }
+  .gather-card h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .gather-card {
+    border-radius: 15px;
+    margin: 15px 0px;
+  }
+  .gather-card h4 {
+    font-size: 16px;
+  }
 }
 
 /************************************* gathering page ******************************************/

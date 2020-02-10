@@ -85,8 +85,8 @@ var region = {
 				} else if (r.status === 200) {
 					$.map(r.data, function (item1, index1) {
 
-						$('.regionname').append(`<h1>${item1.region_name}</h1>`);
-						$('.region-content1').append(`<p>${item1.description}</p>`);
+						$('.regionname').append(`<h1 class="text-center">${item1.region_name}</h1>`);
+						$('.region-content1').append(`<p class="text-center">${item1.description}</p>`);
 					});
 				}
 			})

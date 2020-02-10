@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-12 col-md-12 p-0">
-        <div class="region1-banner text-center"></div>
+        <div class="region1-banner region-banner text-center"></div>
       </div>
     </div>
   </div>

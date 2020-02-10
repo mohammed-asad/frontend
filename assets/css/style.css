@@ -3096,6 +3096,9 @@ ul.timeline > li:before {
   footer h5 {
     font-size: 16px;
   }
+  .boredercls {
+    border-radius: 30px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -3201,6 +3204,12 @@ ul.timeline > li:before {
   }
   .packages .card .card-footer .price-align {
     font-size: 12px;
+  }
+  .boredercls {
+    border-radius: 15px;
+  }
+  .form-block.position-relative.cst-position {
+    margin: 0 !important;
   }
 }
 

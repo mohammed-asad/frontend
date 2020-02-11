@@ -1,5 +1,4 @@
 //API call to fetch country
-var baseURL = 'http://localhost/';
 var package = {
 	//-------------------------------------- Code to load home package  ----------------------------------------------------------------------------------------------------
 

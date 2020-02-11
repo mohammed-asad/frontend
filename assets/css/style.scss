@@ -1650,18 +1650,25 @@ footer {
 ul.timeline {
 	list-style-type: none;
 	position: relative;
+	li{
+		&:last-of-type{
+			&:after{
+				display: none;
+			}
+		}
+	}
 }
 
-ul.timeline:before {
-	content: " ";
+ul.timeline li:after {
+	content: '';
+	width: 1px;
+	height: 40px;
+	z-index: 400;
+	top: 15px;
+	left: 100px;
 	background: #d4d9df;
 	display: inline-block;
 	position: absolute;
-	// left: 29px;
-	left: 115px;
-	width: 2px;
-	height: 92%;
-	z-index: 400;
 }
 
 ul.timeline>li {

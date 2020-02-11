@@ -200,10 +200,10 @@
 	})
 </script>
 <script>
-	// $('#carousel-example-1').carousel({
-	// 	interval: 3000,
-	// 	cycle: true
-	// });
+	$('#carousel-example-1').carousel({
+		interval: 3000,
+		cycle: true
+	});
 </script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
 

@@ -278,7 +278,7 @@ h4 {
 	height: 32px;
 	color: #fff;
 	font-size: 12px;
-	font-family: "Mont-Bold";
+	font-family: "Mont-Regular";
 }
 
 .small-btn-submit:focus,
@@ -286,6 +286,8 @@ h4 {
 .small-btn-submit:active {
 	box-shadow: none;
 	outline: none;
+	color: #fff !important;
+	font-family: "Mont-Semibold";
 }
 
 .btn-submit {
@@ -706,27 +708,29 @@ header {
 	outline: none;
 	cursor: pointer;
 	background: transparent;
-	bottom: 25px;
+	bottom: 20px;
 
 	&:before {
 		content: "";
 		position: absolute;
 		top: -3px;
 		left: 13px;
+		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 		width: 1px;
-		height: 28px;
+		height: 23px;
 		border-right: 2px solid #fff;
 	}
 
 	&:after {
 		content: "";
 		position: absolute;
-		top: 5px;
+		top: 6px;
 		left: 13px;
+		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 		width: 1px;
-		height: 28px;
+		height: 23px;
 		border-right: 2px solid #fff;
 	}
 }
@@ -749,22 +753,24 @@ header {
 	&:before {
 		content: "";
 		position: absolute;
-		top: 7px;
-		left: 12px;
+		top: 6px;
+		left: 13px;
+		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 		width: 1px;
-		height: 28px;
+		height: 23px;
 		border-right: 2px solid #fff;
 	}
 
 	&:after {
 		content: "";
 		position: absolute;
-		top: 15px;
-		left: 12px;
+		top: 16px;
+		left: 13px;
+		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 		width: 1px;
-		height: 28px;
+		height: 23px;
 		border-right: 2px solid #fff;
 	}
 }
@@ -804,8 +810,8 @@ header {
 	// height: 100vh;
 	// margin: 0 30px 0 30px;
 	margin: 24px;
-	border-radius: 55px;
-	overflow: hidden;
+	border-radius: 50px !important;
+	overflow: hidden !important;
 	position: relative;
 
 	// .slick-slide {
@@ -837,6 +843,15 @@ header {
 	.slick-slide img {
 		height: 95vh;
 	}
+
+	@media(max-width:1366px) {
+		border-radius: 30px !important;
+	}
+
+	@media(max-width:1023px) {
+		border-radius: 15px !important;
+	}
+
 }
 
 .cst-sm-form-block {
@@ -892,6 +907,7 @@ header {
 			.card-text {
 				font-family: "Mont-Book";
 				color: #9a9a9a;
+				min-height: 42px;
 			}
 		}
 
@@ -1336,6 +1352,7 @@ footer {
 	.slideshow-container {
 		border-radius: 50px;
 		overflow: hidden;
+		height: 639px;
 	}
 
 	@media(max-width:1366px) {
@@ -1892,9 +1909,9 @@ ul.timeline>li:before {
 			padding: 20px;
 			cursor: pointer;
 
-			&>span {
-				text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-			}
+			// &>span {
+			// 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+			// }
 
 			@media all and (max-width: 1023px) {
 				border-bottom: 1px solid #f5f5f5;
@@ -1914,9 +1931,9 @@ ul.timeline>li:before {
 				font-family: "Mont-Bold";
 
 				// color: #1c1c1c;
-				&>span {
-					text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-				}
+				// &>span {
+				// 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+				// }
 
 				.sub-menu {
 					display: block;
@@ -2457,21 +2474,21 @@ ul.timeline>li:before {
 		.friends {
 			background: url("../images/travelprivate/1872x885_Celebfrind.jpg");
 			background-repeat: no-repeat;
-
+			background-position: center;
 			background-size: cover;
 		}
 
 		.colleague {
 			background: url("../images/travelprivate/1872x885_RetreatCol.jpg");
 			background-repeat: no-repeat;
-
+			background-position: center;
 			background-size: cover;
 		}
 
 		.solo {
 			background: url("../images/travelprivate/1872x885_Solotrip.jpg");
 			background-repeat: no-repeat;
-
+			background-position: center;
 			background-size: cover;
 		}
 	}
@@ -3921,6 +3938,10 @@ ul.timeline>li:before {
 	.form-block {
 		position: relative;
 		right: 0%;
+	}
+
+	.form-block.position-relative.cst-position {
+		margin: 0;
 	}
 
 	.sm-form-none {

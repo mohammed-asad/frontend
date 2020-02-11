@@ -171,7 +171,6 @@ var package = {
 	},
 
 	getPackage: function () {
-		var maxLenght = 100;
 		fns.ajaxGet('holidaymate/api/packages/id/', 'user').
 		done(function (response) {
 				if (response.status === 401) {
@@ -200,7 +199,7 @@ var package = {
 						</a>
 					</div>`;
 
-						if (index <= (maxLenght - 1)) {
+						if (item.home_page_status === 'true') {
 
 							$('.packages').append(newpackage);
 						}

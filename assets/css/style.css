@@ -1535,6 +1535,10 @@ ul.timeline {
   position: relative;
 }
 
+ul.timeline li {
+  position: relative;
+}
+
 ul.timeline li:last-of-type:after {
   display: none;
 }

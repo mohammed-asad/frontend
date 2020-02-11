@@ -1651,6 +1651,7 @@ ul.timeline {
 	list-style-type: none;
 	position: relative;
 	li{
+		position: relative;
 		&:last-of-type{
 			&:after{
 				display: none;

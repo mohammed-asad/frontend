@@ -101,11 +101,13 @@ var home = {
 	showTabMenu: function () {
 		$('.hamburger-menu').click('on', function () {
 			$('.nav-items-holder').toggleClass("active");
+			$(this).hide();
 		})
 	},
 	closeTabMenu: function () {
 		$('.close-hamburger-menu').click('on', function () {
 			$('.nav-items-holder').removeClass("active");
+			$('.hamburger-menu').show();
 		});
 		$('.reset-menu').click('on', function () {
 			$('.sub-menu').css("display", "none");

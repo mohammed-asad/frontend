@@ -48,6 +48,154 @@
   src: url("../fonts/allthatmatters/AllThatMatters.ttf");
 }
 
+@-webkit-keyframes rotateS {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateS {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes rotateP {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotateP {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes dropintext {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dropintext {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes turnLogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  20% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  60% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  90% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes turnLogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  20% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  60% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  90% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -1718,15 +1866,15 @@ ul.timeline > li:before {
           justify-content: center;
   z-index: 1007;
   width: 82%;
-  -webkit-transition: all 250ms ease-in;
-  transition: all 250ms ease-in;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 
 .navigation .nav-items-holder .close-hamburger-menu, .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .reset-menu {
   display: inline-block;
   width: 100%;
   height: 30px;
-  margin-top: 15px;
+  margin-top: 45px;
   margin-bottom: 15px;
   position: relative;
   margin-right: 30px;
@@ -1744,16 +1892,6 @@ ul.timeline > li:before {
   right: 20px;
 }
 
-.navigation .nav-items-holder .close-hamburger-menu:before, .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .reset-menu:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.navigation .nav-items-holder .close-hamburger-menu:after, .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .reset-menu:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
 @media all and (max-width: 1023px) {
   .navigation .nav-items-holder .close-hamburger-menu, .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .reset-menu {
     display: block;
@@ -1763,6 +1901,30 @@ ul.timeline > li:before {
 .navigation .nav-items-holder.active {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+
+.navigation .nav-items-holder.active .nav-item {
+  text-align: center;
+}
+
+.navigation .nav-items-holder.active .nav-item > span {
+  font-size: 18px;
+}
+
+.navigation .nav-items-holder.active .close-hamburger-menu:before, .navigation .nav-items-holder.active .nav-item .sub-menu .sub-menu-items-holder .reset-menu:before {
+  opacity: 0;
+  -webkit-animation: rotateS 350ms forwards ease;
+          animation: rotateS 350ms forwards ease;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.navigation .nav-items-holder.active .close-hamburger-menu:after, .navigation .nav-items-holder.active .nav-item .sub-menu .sub-menu-items-holder .reset-menu:after {
+  opacity: 0;
+  -webkit-animation: rotateP 350ms forwards ease;
+          animation: rotateP 350ms forwards ease;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 @media all and (max-width: 1023px) {
@@ -1811,9 +1973,6 @@ ul.timeline > li:before {
 }
 
 @media all and (max-width: 1023px) {
-  .navigation .nav-items-holder .nav-item {
-    border-bottom: 1px solid #f5f5f5;
-  }
   .navigation .nav-items-holder .nav-item > span {
     pointer-events: none;
   }
@@ -1830,6 +1989,8 @@ ul.timeline > li:before {
 
 .navigation .nav-items-holder .nav-item:hover .sub-menu {
   display: block;
+  -webkit-animation: dropintext 400ms forwards ease-in-out;
+          animation: dropintext 400ms forwards ease-in-out;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu {
@@ -1872,7 +2033,7 @@ ul.timeline > li:before {
   right: 20px;
   top: 30px;
   height: 40px;
-  background: #acacac;
+  background: #222;
 }
 
 .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .reset-menu:before, .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .reset-menu:after {

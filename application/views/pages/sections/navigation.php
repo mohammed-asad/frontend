@@ -12,7 +12,7 @@
 	<div class="nav-items-holder">
 		<span class="close-hamburger-menu"></span>
 		<a href="<?php echo base_url(); ?>" class="logo secondary">
-			<img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
+			<img src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 		</a>
 		<a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
 			<span>

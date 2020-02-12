@@ -13,7 +13,14 @@
             <p class="text-center mt-5 mb-4">Take part in sunset & sunrise views of Dubai Red Dunes safari overnig</p>
 
             <ul class="list-inline text-center aminiteisvalue">
-
+              <li class="list-inline-item ">
+                <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/amenities/clock.svg">
+                <p class="daynnight"></p>
+              </li>
+              <li class="list-inline-item ">
+                <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/amenities/location.svg">
+                <p class="locationtxt"></p>
+              </li>
             </ul>
 
           </div>

@@ -44,11 +44,14 @@ var package = {
 						//----------------------------- form input value fetching ----------------------
 						var inputpackage = `<input class="form-control package_name" name="package_name" required="" type="text" value="${item.package_name}" readonly>`
 						//----------------------------- form input value fetching ----------------------
-
+						var daynnight = `${item.duration_night} Nights & ${item.duration_day} Days`;
+						var locationtxt = `${item.destination_name}`;
 						if (index <= (maxLenght - 1)) {
 
 							$('.pakage-bannerblock').append(newpackagebannerimage);
 							$('#input-packagename').append(inputpackage);
+							$('.daynnight').append(daynnight);
+							$('.locationtxt').append(locationtxt);
 							$('.hotel-overview').append(newpackageoverview);
 
 							//fetch hotel details from here by sending the Hotel name mentined in the Pacakge
@@ -60,9 +63,10 @@ var package = {
 						package.getPackageImages(packageName);
 						// Get inclucded aminities
 						var obj = JSON.parse(item.include);
+
 						$.map(obj, function (item1, index1) {
 
-							var aminitiesimagenvalue = ` <li class="list-inline-item "><img class="img-fluid" src="${item1.image}">
+							var aminitiesimagenvalue = `<li class="list-inline-item "><img class="img-fluid" src="${item1.image}">
 							<p>${item1.title}</p>
 							</li>`;
 							var newpackageinclude = `<li><p>${item1.description}</p></li>`;
@@ -72,12 +76,18 @@ var package = {
 						});
 						// Get exclucded aminities
 						var objexclude = JSON.parse(item.exclude);
-						$.map(objexclude, function (item2, index2) {
+						var count = Object.keys(objexclude).length;
+						console.log(count);
+						if (count === 0) {
 
-							var newpackageexclude = `<li><p>${item2.description}</p></li>`;
-							$('.exclude-content').append(newpackageexclude);
+							$('.hotel-excluded').addClass('empty');
+						} else {
+							$.map(objexclude, function (item2, index2) {
+								var newpackageexclude = `<li><p>${item2.description}</p></li>`;
+								$('.exclude-content').append(newpackageexclude);
 
-						});
+							});
+						}
 						// GET ITINERARY
 						var objiti = JSON.parse(item.itinerary);
 						$.map(objiti, function (item1, index1) {

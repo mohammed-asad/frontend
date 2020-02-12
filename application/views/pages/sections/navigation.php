@@ -1,3 +1,4 @@
+<div class="nav-wrapper">
 <section class="navigation <?php echo $home; ?>">
 	<p class="right-toptext">Your Dream Destination is just Call Away :<span> +91 9845 944499</span></p>
 	<div class="position">
@@ -143,3 +144,4 @@
 	</div>
 
 </section>
+</div>

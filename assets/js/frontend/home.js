@@ -84,6 +84,15 @@ var home = {
 				$(".other-container").addClass("blur");
 				$('.sub-menu').css("display", "block");
 			}
+		});
+
+
+		$(window).scroll(function(e){
+			if($(window).scrollTop() > 45){
+				$('.navigation').addClass("fixed");
+			}else{
+				$('.navigation').removeClass("fixed");
+			}
 		})
 	},
 

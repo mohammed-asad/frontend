@@ -1637,6 +1637,12 @@ footer .list-unstyled li .lastlink {
   font-family: Mont-Regular;
 }
 
+@media (max-width: 1199px) {
+  .hotel-itinerary .iti_items ul p {
+    margin-bottom: 0;
+  }
+}
+
 .hotel-itinerary .iti_items ul .timeline-left span {
   font-size: 14px;
   font-family: Mont-bold;
@@ -1691,21 +1697,64 @@ ul.timeline li:last-of-type:after {
   display: none;
 }
 
+@media (max-width: 1366px) {
+  ul.timeline li .text-center-md {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.timeline li {
+    margin-left: 15px !important;
+  }
+  ul.timeline li .text-center-md {
+    text-align: left;
+  }
+  ul.timeline li .row {
+    margin-left: 15px !important;
+  }
+}
+
 ul.timeline li:after {
   content: '';
   width: 1px;
-  height: 40px;
+  height: 114%;
   z-index: 400;
   top: 15px;
-  left: 100px;
+  left: 125px;
   background: #d4d9df;
   display: inline-block;
   position: absolute;
 }
 
+@media (max-width: 1366px) {
+  ul.timeline li:after {
+    left: 103px;
+  }
+}
+
+@media (max-width: 1199px) {
+  ul.timeline li:after {
+    left: 96px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.timeline li:after {
+    left: 8px;
+    height: 100%;
+  }
+}
+
 ul.timeline > li {
   margin: 20px 0;
   padding-left: 20px;
+}
+
+@media (max-width: 1199px) {
+  ul.timeline > li {
+    margin: 12px 0;
+  }
 }
 
 ul.timeline > li:before {
@@ -1715,10 +1764,28 @@ ul.timeline > li:before {
   position: absolute;
   border-radius: 50%;
   border: 1px solid #d4d9df;
-  left: 108px;
+  left: 118px;
   width: 15px;
   height: 15px;
   z-index: 400;
+}
+
+@media (max-width: 1366px) {
+  ul.timeline > li:before {
+    left: 96px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.timeline > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #d4d9df;
+    left: 0px;
+  }
 }
 
 .cst-nav-tabs {
@@ -2989,6 +3056,10 @@ ul.timeline > li:before {
   left: 1.5%;
 }
 
+.hotel-excluded.empty {
+  display: none;
+}
+
 /*************************************************** media queries ***********************************/
 /*************************enquery form ***************************************************************/
 @media (max-width: 1700px) {
@@ -3000,13 +3071,6 @@ ul.timeline > li:before {
 }
 
 @media (max-width: 1550px) and (min-width: 1200px) {
-  ul.timeline:before {
-    content: " ";
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 100px;
-  }
   ul.timeline > li:before {
     content: " ";
     background: white;
@@ -3014,7 +3078,6 @@ ul.timeline > li:before {
     position: absolute;
     border-radius: 50%;
     border: 1px solid #d4d9df;
-    left: 93px;
   }
   .new-cardblock .card-footer {
     padding: 12px 15px !important;
@@ -3031,13 +3094,6 @@ ul.timeline > li:before {
 }
 
 @media (max-width: 1199px) and (min-width: 768px) {
-  ul.timeline:before {
-    content: " ";
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 95px;
-  }
   ul.timeline > li:before {
     content: " ";
     background: white;
@@ -3674,15 +3730,6 @@ ul.timeline > li:before {
     position: absolute;
     left: 0px;
     height: 86%;
-  }
-  ul.timeline > li:before {
-    content: " ";
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid #d4d9df;
-    left: -7px;
   }
   footer {
     height: 100% !important;

@@ -26,7 +26,7 @@
 							<div class="col-md-12">
 								<div class="form-group">
 									<label for="uname1">where</label>
-									<input class="form-control from_where" id="uname1" name="from_where" required="" type="text">
+									<input class="form-control to_where" id="uname1" name="to_where" required="" type="text">
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 pr-0">

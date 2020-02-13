@@ -1,6 +1,6 @@
 //API to send mail
 var mail = {
-  //-------------------------------------- Code to load table on page-load ----------------------------------------------------------------------------------------------------
+  //-------------------------------------- Code to add / send mail -----------------------------------------------------------
 
 
   addNewMail: function () {
@@ -13,7 +13,7 @@ var mail = {
         )
         .done(function (response) {
           console.log(response.message);
-          alert(response.message)
+          alert(response.mail)
         })
         .always(function (res) {
           console.log(res.message);

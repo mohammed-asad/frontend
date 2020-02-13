@@ -149,18 +149,6 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
-	var ts;
-	$(document).bind('touchstart', function (e){
-		ts = e.originalEvent.touches[0].clientY;
-	});
-
-	$(document).bind('touchend', function (e){
-		var te = e.originalEvent.changedTouches[0].clientY;
-		if(ts > te+5){
-			$('.navigation').fadeOut();
-		}else if(ts < te-5){
-			$('.navigation').fadeIn();
-		}
-	});
+	home.scrollDetector();
 })
 </script>

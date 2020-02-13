@@ -1,3 +1,4 @@
+<div class="nav-wrapper">
 <section class="navigation <?php echo $home; ?>">
 	<p class="right-toptext">Your Dream Destination is just Call Away :<span> +91 9845 944499</span></p>
 	<div class="position">
@@ -12,7 +13,7 @@
 	<div class="nav-items-holder">
 		<span class="close-hamburger-menu"></span>
 		<a href="<?php echo base_url(); ?>" class="logo secondary">
-			<img class="img-fluid" src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
+			<img src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 		</a>
 		<a href="<?php echo base_url(); ?>travelprivate" class="nav-item">
 			<span>
@@ -143,3 +144,4 @@
 	</div>
 
 </section>
+</div>

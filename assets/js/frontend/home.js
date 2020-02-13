@@ -1,7 +1,6 @@
 //API call to fetch Slider
 var home = {
 	menuActive:false,
-	isMobile: window.innerWidth <=1024,
     generatenavigation: function () {
         fns.ajaxGet('holidaymate/api/navigation', 'user')
           .done(function (res) {
@@ -172,46 +171,9 @@ var home = {
 				alert(r.message);
 			});
 	},
-
-	getAverage: function (elements, number){
-		var sum = 0;
-		var lastElements = elements.slice(Math.max(elements.length - number, 1));
-		for(var i = 0; i < lastElements.length; i++){
-				sum = sum + lastElements[i];
-		}
-		return Math.ceil(sum/number);
-	},
-	scrollings:[],
-	scrollDetector: function(e){
-		
-		var value = e.wheelDelta || -e.deltaY || -e.detail;
-		var delta = Math.max(-1, Math.min(1, value));
-		if(home.scrollings.length > 149){
-			home.scrollings.shift();
-		}
-		home.scrollings.push(Math.abs(value));
-
-		var averageEnd = home.getAverage(home.scrollings, 10);
-		var averageMiddle = home.getAverage(home.scrollings, 70);
-		var isAccelerating = averageEnd >= averageMiddle;
-
-		if(isAccelerating){
-				if (delta < 0 && !home.menuActive && home.isMobile) {
-					$('.navigation').fadeOut();
-				}else {
-					console.log("Down");
-					$('.navigation').fadeIn();
-				}
-		}
-		return false;
-	}
-
-	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-};
+}
 
 home.generatenavigation();
 home.navigationHover();
 home.showTabMenu();
 home.closeTabMenu();
-
-document.querySelector('body').addEventListener("mousewheel", home.scrollDetector);

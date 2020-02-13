@@ -1899,6 +1899,12 @@ ul.timeline > li:before {
   color: #000;
 }
 
+@media (max-width: 1023px) {
+  .nav-wrapper .navigation.fixed .nav-items-holder .nav-item {
+    color: #fff;
+  }
+}
+
 .nav-wrapper .navigation.fixed .right-toptext {
   color: #000;
 }
@@ -2086,24 +2092,6 @@ ul.timeline > li:before {
     width: 100%;
     -webkit-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@media all and (max-width: 600px) {
-  .nav-wrapper .navigation .nav-items-holder {
-    width: 40%;
-  }
-}
-
-@media all and (max-width: 414px) {
-  .nav-wrapper .navigation .nav-items-holder {
-    width: 50%;
-  }
-}
-
-@media all and (max-width: 380px) {
-  .nav-wrapper .navigation .nav-items-holder {
-    width: 65%;
   }
 }
 
@@ -3757,7 +3745,6 @@ ul.timeline > li:before {
     overflow: hidden;
   }
   .navigation .logo img {
-    width: 18% !important;
     float: left;
   }
   .secondary {

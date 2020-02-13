@@ -1,5 +1,6 @@
 //API call to fetch Slider
 var home = {
+	menuActive:false,
     generatenavigation: function () {
         fns.ajaxGet('holidaymate/api/navigation', 'user')
           .done(function (res) {
@@ -86,9 +87,10 @@ var home = {
 			}
 		});
 
+		var isMobile = window.innerWidth <=1024;
 
 		$(window).scroll(function(e){
-			if($(window).scrollTop() > 45){
+			if($(window).scrollTop() > 50){
 				$('.navigation').addClass("fixed");
 			}else{
 				$('.navigation').removeClass("fixed");
@@ -111,12 +113,16 @@ var home = {
 		$('.hamburger-menu').click('on', function () {
 			$('.nav-items-holder').toggleClass("active");
 			$(this).hide();
+			$('body').css("overflow", "hidden")
+			home.menuActive = true;
 		})
 	},
 	closeTabMenu: function () {
 		$('.close-hamburger-menu').click('on', function () {
 			$('.nav-items-holder').removeClass("active");
 			$('.hamburger-menu').show();
+			$('body').css("overflow", "visible");
+			home.menuActive = false;
 		});
 		$('.reset-menu').click('on', function () {
 			$('.sub-menu').css("display", "none");
@@ -166,6 +172,41 @@ var home = {
 			.fail(function (r) {
 				alert(r.message);
 			});
+	},
+
+	getAverage: function (elements, number){
+		var sum = 0;
+		var lastElements = elements.slice(Math.max(elements.length - number, 1));
+
+		for(var i = 0; i < lastElements.length; i++){
+				sum = sum + lastElements[i];
+		}
+
+		return Math.ceil(sum/number);
+	},
+	scrollings:[],
+	scrollDetector: function(e){
+		
+		var value = e.wheelDelta || -e.deltaY || -e.detail;
+		var delta = Math.max(-1, Math.min(1, value));
+		if(home.scrollings.length > 149){
+			home.scrollings.shift();
+		}
+		home.scrollings.push(Math.abs(value));
+
+		var averageEnd = home.getAverage(home.scrollings, 10);
+		var averageMiddle = home.getAverage(home.scrollings, 70);
+		var isAccelerating = averageEnd >= averageMiddle;
+
+		if(isAccelerating){
+				if (delta < 0 && !home.menuActive) {
+					$('.navigation').fadeOut();
+				}else {
+					console.log("Down");
+					$('.navigation').fadeIn();
+				}
+		}
+		return false;
 	}
 
 	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -175,3 +216,5 @@ home.generatenavigation();
 home.navigationHover();
 home.showTabMenu();
 home.closeTabMenu();
+
+document.querySelector('body').addEventListener("mousewheel", home.scrollDetector);

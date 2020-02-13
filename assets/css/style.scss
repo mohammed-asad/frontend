@@ -1882,6 +1882,9 @@ ul.timeline>li:before {
 			}
 
 			.nav-items-holder .nav-item {
+				@media(max-width:1023px) {
+					color: #fff;
+				}
 				color: #000;
 			}
 
@@ -2072,17 +2075,17 @@ ul.timeline>li:before {
 				transform: translate3d(-100%, 0, 0);
 			}
 
-			@media all and(max-width: 600px) {
-				width: 40%;
-			}
+			// @media all and(max-width: 600px) {
+			// 	width: 40%;
+			// }
 
-			@media all and(max-width: 414px) {
-				width: 50%;
-			}
+			// @media all and(max-width: 414px) {
+			// 	width: 50%;
+			// }
 
-			@media all and(max-width: 380px) {
-				width: 65%;
-			}
+			// @media all and(max-width: 380px) {
+			// 	width: 65%;
+			// }
 
 			.nav-item {
 				text-decoration: none;
@@ -4053,7 +4056,7 @@ ul.timeline>li:before {
 	}
 
 	.navigation .logo img {
-		width: 18% !important;
+		// width: 18% !important;
 		float: left;
 	}
 

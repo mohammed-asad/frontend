@@ -1,6 +1,7 @@
 //API call to fetch Slider
 var home = {
 	menuActive:false,
+	isMobile: window.innerWidth <=1024,
     generatenavigation: function () {
         fns.ajaxGet('holidaymate/api/navigation', 'user')
           .done(function (res) {
@@ -86,8 +87,6 @@ var home = {
 				$('.sub-menu').css("display", "block");
 			}
 		});
-
-		var isMobile = window.innerWidth <=1024;
 
 		$(window).scroll(function(e){
 			if($(window).scrollTop() > 50){
@@ -177,11 +176,9 @@ var home = {
 	getAverage: function (elements, number){
 		var sum = 0;
 		var lastElements = elements.slice(Math.max(elements.length - number, 1));
-
 		for(var i = 0; i < lastElements.length; i++){
 				sum = sum + lastElements[i];
 		}
-
 		return Math.ceil(sum/number);
 	},
 	scrollings:[],
@@ -199,7 +196,7 @@ var home = {
 		var isAccelerating = averageEnd >= averageMiddle;
 
 		if(isAccelerating){
-				if (delta < 0 && !home.menuActive) {
+				if (delta < 0 && !home.menuActive && isMobile) {
 					$('.navigation').fadeOut();
 				}else {
 					console.log("Down");

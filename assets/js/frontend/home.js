@@ -196,7 +196,7 @@ var home = {
 		var isAccelerating = averageEnd >= averageMiddle;
 
 		if(isAccelerating){
-				if (delta < 0 && !home.menuActive && isMobile) {
+				if (delta < 0 && !home.menuActive && home.isMobile) {
 					$('.navigation').fadeOut();
 				}else {
 					console.log("Down");

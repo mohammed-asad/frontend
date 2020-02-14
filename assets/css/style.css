@@ -367,7 +367,7 @@ h4 {
 }
 
 .changenev .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder {
-  margin: 20px 10px !important;
+  margin: 10px 10px !important;
 }
 
 .changenev .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .sub-item-desc {
@@ -1032,6 +1032,12 @@ header span {
   height: 460px;
 }
 
+@media (max-width: 1366px) {
+  .new-cardblock .card .card-img-top {
+    height: 300px;
+  }
+}
+
 .new-cardblock .card:hover {
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
@@ -1307,6 +1313,12 @@ footer .list-unstyled li .lastlink {
   border-right: 2px solid #37bcaf;
 }
 
+@media (max-width: 767px) {
+  .section .custom-text-align .content-block .cutom-button {
+    float: left !important;
+  }
+}
+
 .section .custom-text-align .content-block .maroon {
   height: 40px;
   width: 40px;
@@ -1375,6 +1387,12 @@ footer .list-unstyled li .lastlink {
   width: 1px;
   height: 18px;
   border-right: 2px solid #3c51a2;
+}
+
+@media (max-width: 767px) {
+  .section .custom-text-align .content-block .dark-blue {
+    float: left !important;
+  }
 }
 
 .section .custom-text-align .content-block .cutom-button:hover {
@@ -1479,6 +1497,10 @@ footer .list-unstyled li .lastlink {
           box-shadow: 0px 5px 8px #00000033;
 }
 
+.packoverview .pakage-bannerblock .overview-img img {
+  height: 100%;
+}
+
 @media (max-width: 1366px) {
   .packoverview .pakage-bannerblock .overview-img {
     border-radius: 30px;
@@ -1486,20 +1508,27 @@ footer .list-unstyled li .lastlink {
     -webkit-box-shadow: 0px 5px 8px #00000033;
             box-shadow: 0px 5px 8px #00000033;
   }
+  .packoverview .pakage-bannerblock .pack-column h3 {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1023px) {
   .packoverview .pakage-bannerblock .overview-img {
     border-radius: 15px;
     height: 100%;
     -webkit-box-shadow: 0px 5px 8px #00000033;
             box-shadow: 0px 5px 8px #00000033;
   }
+  .packoverview .pakage-bannerblock p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1199px) {
   .packoverview .pakage-bannerblock .overview-img {
-    margin: 0;
+    margin: 30px 0px;
+    height: auto;
   }
 }
 
@@ -1514,6 +1543,12 @@ footer .list-unstyled li .lastlink {
 
 .packoverview .hotel-description div {
   font-size: 18px;
+}
+
+@media (max-width: 1366px) {
+  .packoverview p {
+    font-size: 14px;
+  }
 }
 
 .overview-content-details .section h1 {
@@ -1659,6 +1694,22 @@ footer .list-unstyled li .lastlink {
   font-family: Mont-Bold;
 }
 
+@media (max-width: 1366px) {
+  .packsection .pack-block p {
+    font-size: 14px;
+    margin: 10px 0px !important;
+  }
+  .packsection .pack-block h2 {
+    font-size: 16px !important;
+  }
+  .packsection .pack-block ul li {
+    margin: 0 20px;
+  }
+  .packsection .pack-block ul li p {
+    font-size: 14px;
+  }
+}
+
 .boredercls {
   border-radius: 50px;
   overflow: hidden;
@@ -1691,7 +1742,7 @@ ul.timeline li:last-of-type:after {
     text-align: left;
   }
   ul.timeline li .row {
-    margin-left: 15px !important;
+    margin-left: 0px !important;
   }
 }
 
@@ -1889,12 +1940,6 @@ ul.timeline > li:before {
   }
 }
 
-@media (max-width: 1023px) {
-  .nav-wrapper .navigation.fixed .logo img {
-    width: 40% !important;
-  }
-}
-
 .nav-wrapper .navigation.fixed .nav-items-holder .nav-item {
   color: #000;
 }
@@ -1945,6 +1990,12 @@ ul.timeline > li:before {
 @media (max-width: 1366px) {
   .nav-wrapper .navigation .logo img {
     width: 140px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav-wrapper .navigation .logo img {
+    width: 100px;
   }
 }
 
@@ -2589,6 +2640,13 @@ ul.timeline > li:before {
   .nav-wrapper .navigation {
     width: calc(100% - 50px);
     margin: 15px 25px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-wrapper .navigation {
+    width: calc(100% - 25px);
+    margin: 15px 10px 0;
   }
 }
 
@@ -3735,7 +3793,7 @@ ul.timeline > li:before {
   }
   .navigation .page-logo {
     top: 5px;
-    left: 15px;
+    left: 15px !important;
   }
   .banner {
     border-radius: 15px;
@@ -3792,6 +3850,9 @@ ul.timeline > li:before {
   .boredercls {
     border-radius: 15px !important;
   }
+  .packsection {
+    border-radius: 15px !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -3815,6 +3876,19 @@ ul.timeline > li:before {
   }
   footer {
     border-radius: 15px;
+  }
+  .dis .ab {
+    width: 45%;
+    height: 56px;
+    padding: 15px 10px;
+  }
+  .dis .cd {
+    width: 100%;
+    height: 65px;
+    margin-left: -27px;
+  }
+  .dis .cd p {
+    margin-bottom: 0px;
   }
 }
 
@@ -3974,28 +4048,31 @@ ul.timeline > li:before {
   .mySlides img {
     height: 40vh;
   }
-  .dis {
-    display: block;
-  }
   .dis .ab {
-    position: relative;
-    width: 100%;
-    height: 50px;
+    position: absolute;
+    width: 36%;
+    height: 36px;
     z-index: 1;
-    padding: 10px 15px;
+    padding: 0px 15px;
     text-align: center;
     background-color: #fff;
+    font-size: 8px;
+    margin-top: 2px;
+  }
+  .dis .ab .t {
+    font-size: 12px;
   }
   .dis .cd {
-    width: 100%;
-    height: 60px;
+    width: 65%;
+    height: 50px;
     margin-left: 0;
     padding: 10px;
     margin-top: -8px;
+    margin-left: 29%;
   }
   .dis .cd p {
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 10px;
   }
   .cst-text-r {
     text-align: left;
@@ -4129,6 +4206,32 @@ ul.timeline > li:before {
   .hotel-Info .nav-tabs .nav-item a {
     font-size: 9px;
     padding: 8px 10px !important;
+  }
+  .dis .ab {
+    position: absolute;
+    width: 36%;
+    height: 36px;
+    z-index: 1;
+    padding: 0px 15px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 8px;
+    margin-top: 2px;
+  }
+  .dis .ab .t {
+    font-size: 9px;
+  }
+  .dis .cd {
+    width: 65%;
+    height: 50px;
+    margin-left: 0;
+    padding: 10px;
+    margin-top: -8px;
+    margin-left: 29%;
+  }
+  .dis .cd p {
+    margin-bottom: 0px;
+    font-size: 9px;
   }
 }
 

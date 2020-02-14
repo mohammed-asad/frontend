@@ -109,7 +109,7 @@ var package = {
 													<div class="col-xl-1 col-lg-2 col-md-2 pr-0 text-center-md"><img src="${newitenaryimg}" class="img-fluid">
 													</div>
 													<div class="col-md-11 col-lg-10 col-md-10 pl-0">
-														<p class="ml-2">${newactivity}</p>
+														<p class="xl-ml-2 lg-ml-2 md-ml-2">${newactivity}</p>
 													</div>
 												</div>
 											</div>

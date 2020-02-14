@@ -168,7 +168,7 @@
 
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 section ">
+          <div class="col-md-12 col-sm-12 section p-0">
             <div class="dis  mt-5">
               <div class="ab">
                 <p class="t">Hassle free<p>

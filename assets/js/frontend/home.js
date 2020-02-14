@@ -1,17 +1,17 @@
 //API call to fetch Slider
 var home = {
-	menuActive:false,
-	isMobile: window.innerWidth <=1024,
-    generatenavigation: function () {
-        fns.ajaxGet('holidaymate/api/navigation', 'user')
-          .done(function (res) {
-              if (res.status === 200) {
-                $('.navigation .sub-menu').find('.sub-menu-item-list').html("");
-                $('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
-                $.map(res.data, function (item, index) {
-                      //Dumping Countries
-                      var base_url = $('#base').val();
-                      var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
+	menuActive: false,
+	isMobile: window.innerWidth <= 1024,
+	generatenavigation: function () {
+		fns.ajaxGet('holidaymate/api/navigation', 'user')
+			.done(function (res) {
+				if (res.status === 200) {
+					$('.navigation .sub-menu').find('.sub-menu-item-list').html("");
+					$('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
+					$.map(res.data, function (item, index) {
+						//Dumping Countries
+						var base_url = $('#base').val();
+						var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
             <div class="sub-item-item overview">
               <h4 >Overview</h4>
               <p>
@@ -88,10 +88,10 @@ var home = {
 			}
 		});
 
-		$(window).scroll(function(e){
-			if($(window).scrollTop() > 50){
+		$(window).scroll(function (e) {
+			if ($(window).scrollTop() > 50) {
 				$('.navigation').addClass("fixed");
-			}else{
+			} else {
 				$('.navigation').removeClass("fixed");
 			}
 		})
@@ -173,49 +173,49 @@ var home = {
 			});
 	},
 
-	getAverage: function (elements, number){
+	getAverage: function (elements, number) {
 		var sum = 0;
 		var lastElements = elements.slice(Math.max(elements.length - number, 1));
-		for(var i = 0; i < lastElements.length; i++){
-				sum = sum + lastElements[i];
+		for (var i = 0; i < lastElements.length; i++) {
+			sum = sum + lastElements[i];
 		}
-		return Math.ceil(sum/number);
+		return Math.ceil(sum / number);
 	},
-	scrollings:[],
-	scrollDetector: function(e){
-		
-		// var value = e.wheelDelta || -e.deltaY || -e.detail;
-		// var delta = Math.max(-1, Math.min(1, value));
-		// if(home.scrollings.length > 149){
-		// 	home.scrollings.shift();
-		// }
-		// home.scrollings.push(Math.abs(value));
+	scrollings: [],
+	scrollDetector: function (e) {
 
-		// var averageEnd = home.getAverage(home.scrollings, 10);
-		// var averageMiddle = home.getAverage(home.scrollings, 70);
-		// var isAccelerating = averageEnd >= averageMiddle;
+		var value = e.wheelDelta || -e.deltaY || -e.detail;
+		var delta = Math.max(-1, Math.min(1, value));
+		if (home.scrollings.length > 149) {
+			home.scrollings.shift();
+		}
+		home.scrollings.push(Math.abs(value));
 
-		// if(isAccelerating){
-		// 		if (delta < 0 && !home.menuActive && home.isMobile) {
-		// 			$('.navigation').fadeOut();
-		// 		}else {
-		// 			console.log("Down");
-		// 			$('.navigation').fadeIn();
-		// 		}
-		// }
-		// return false;
+		var averageEnd = home.getAverage(home.scrollings, 10);
+		var averageMiddle = home.getAverage(home.scrollings, 70);
+		var isAccelerating = averageEnd >= averageMiddle;
+
+		if (isAccelerating) {
+			if (delta < 0 && !home.menuActive) {
+				$('.navigation').fadeOut();
+			} else {
+				console.log("Down");
+				$('.navigation').fadeIn();
+			}
+		}
+		//return false;
 
 
 		var ts;
-		$(document).bind('touchstart', function (e){
+		$(document).bind('touchstart', function (e) {
 			ts = e.originalEvent.touches[0].clientY;
 		});
 
-		$(document).bind('touchend', function (e){
+		$(document).bind('touchend', function (e) {
 			var te = e.originalEvent.changedTouches[0].clientY;
-			if(ts > te+5 && !home.menuActive){
+			if (ts > te + 5 && !home.menuActive) {
 				$('.navigation').fadeOut();
-			}else if(ts < te-5){
+			} else if (ts < te - 5) {
 				$('.navigation').fadeIn();
 			}
 		});

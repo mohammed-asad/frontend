@@ -5,7 +5,7 @@
     <div class="gather-jumbotron colleague">
       <div class="travel-content">
         <div class="text-center text-white">
-          <h1>Celebration with colleagues</h1>
+          <h1>Retreats with Colleagues</h1>
           <p class="mt-3">Rejoice with your family on a perfect holiday</p>
         </div>
       </div>
@@ -39,34 +39,36 @@
       <div class="slideshow-container">
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/retreatewithcoleaugethought1.jpg" style="width:100%">
           <div class="text">
-            <p>You are not born just to pay bills, there is an explorer waiting inside you.
-              Disconnect from Work and Chaos for a while and plan the adventure with your friends</p>
-            <p>- Dive in, to Plethora of adventures through HolidayMate </p>
+            <p>If everyone is moving together, then success take care of itself. Its not about ideas, its about making ideas happen.</p>
+            <p>- Create those ideas on a team outing and a Brain Storming trip with HolidayMate.</p>
           </div>
         </div>
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/retreatewithcoleaugethought2.jpg" style="width:100%">
           <div class="text">
-            <p>Life is meant for big adventures and good friends, OH YEAH!!! Friends that travel together, stay together for ever.</p>
-            <p>- Don’t Sweat the Details, leave it to HolidayMate to bring out the best plan for you and your buddies</p>
+            <p>Alone we can do so little; together we can do so much. The team building activity can be fun and
+              productive too.</p>
+            <p>- Do not worry about a symphony, HolidayMate can create an Orchestra of Team building</p>
           </div>
         </div>
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/retreatewithcoleaugethought3.jpg" style="width:100%">
           <div class="text">
-            <p>Good Times and Crazy friends make the best memories. Let the HolidayMate create those best times for you with your buddies.</p>
-            <p>- Travel at Your Pace, leave the planning and execution to HolidayMate</p>
+            <p>The relentless hard work you put in as a team needs pampering and resurgence through a team trip.
+              Life is about caring for team mates and building a rapport like concert.</p>
+            <p>- Push to new Heights with HolidayMate Corporate tour packages and Reinvent your Passion.</p>
           </div>
         </div>
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/colleagueslider.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/retreatewithcoleaugethought4.jpg" style="width:100%">
           <div class="text">
-            <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes. Pack your bags, choose your friends and say “Here we GO”</p>
-            <p>- At HolidayMate, you get Custom Journeys, tailor made for you through your choice.</p>
+            <p>When is comes to team, its not a solo work. Recreate the passion with your team which creates the
+              balance between Work and Family and Friends.</p>
+            <p>- Corporate Retreats with HolidayMate brings the satisfaction above all else.</p>
           </div>
         </div>
 
@@ -135,7 +137,6 @@
 
   <script>
     var slideIndex = 1;
-    showSlides(slideIndex);
 
     function plusSlides(n) {
       showSlides(slideIndex += n);
@@ -144,26 +145,28 @@
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
+    var slide;
 
     function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      // var dots = document.getElementsByClassName("dot");
+      var slides = document.querySelectorAll(".mySlides");
+      clearTimeout(slide);
       if (n > slides.length) {
         slideIndex = 1
       }
       if (n < 1) {
         slideIndex = slides.length
       }
-      for (i = 0; i < slides.length; i++) {
+      for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-      // for (i = 0; i < dots.length; i++) {
-      //   dots[i].className = dots[i].className.replace(" active", "");
-      // }
       slides[slideIndex - 1].style.display = "block";
-      // dots[slideIndex - 1].className += " active";
+      slide = setTimeout(function() {
+        slideIndex += 1;
+        showSlides(slideIndex)
+      }, 10000); // Change image every 2 seconds
     }
+
+    showSlides(slideIndex);
   </script>
   <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>

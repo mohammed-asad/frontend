@@ -15,20 +15,15 @@
 <section class="section3">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
     <div class="trvalep-content mont-r">
-      <p>The bond of friendship gets deeper and stronger with travel dairies.
-        Down the life time when you sit on a couch and get nostalgic about that particular moment with your pals and buddies…..
-        Well….. Priceless isn’t it…?</p>
-      <p>The world is a book, and those who do not travel read only the cover page.
-        The friends come in every chapter of that amazing book.</p>
-      <p> A bucket list is not complete without friends.</p>
-      <p>The best Cappuccino</p>
-      <p>View of an Ionian Sea <p>That mountain u conquered </p>
-        <p>To celebrate your important milestones</p>
-        <p>Everything is best when you are with your friends.</p>
-        <p>Get in touch with HolidayMate to know more about touring with friends to make memories.</p>
-
-        <p>We Fabricate the best travel advisory, making sure you spend each moment on tour with your family creating unforgettable memories.</p>
-        <p> There will be hours full of exercises designed to learn and explore for all ages. Stay together, Eat, Cuddle and Relax with Love.</p>
+      <p>The strength of the team is each individual member. The strength of each member is the team. Leave the desks for recreation and rejuvenation.</p>
+      <p> Let holidaymate boost your corporate energy and take care of all your particulars.</p>
+      <p>Get out on that breath taking hiking trail.</p>
+      <p> Turn on the dirt biker and ATV skills in you.</p>
+      <p> Try a PUT in the golf course.</p>
+      <p> Feel the energy in tennis court swinging racket.</p>
+      <p> Relax in the spa to stretch your collective bodies and minds.</p>
+      <p> You ask for it, we have got it for you.</p>
+      <p class="mt-3 mb-0"> holidaymate crafts corporate adventures that promote bonding, inspire new ideas, restore friendships, renew loyalty and provide perspective to move forward as a strong team.</p>
     </div>
   </div>
 </section>

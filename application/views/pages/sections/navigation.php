@@ -1,6 +1,7 @@
 <div class="nav-wrapper">
 	<section class="navigation <?php echo $home; ?>">
-		<p class="right-toptext">Your Dream Destination is just Call Away :<span> +91 9845 944499</span></p>
+		<p class="right-toptext"> <i class="fa fa-phone"></i> <span> : +91 9845 944499</span></p>
+		<!-- Your Dream Destination is just Call Away -->
 		<div class="position">
 			<div class="blur-backdrop"></div>
 			<div class="hamburger-menu change-hamburger-menu"></div>
@@ -12,11 +13,15 @@
 
 		<div class="nav-items-holder">
 			<span class="close-hamburger-menu"></span>
-			<p class="right-toptext1" style="color:#fff;">Your Dream Destination is just Call Away :<span> +91 9845 944499</span></p>
+			<p class="right-toptext1" style="color:#fff;"><i class="fa fa-phone"></i> <span> : +91 9845 944499</span></p>
 			<a href="<?php echo base_url(); ?>" class="logo secondary">
 				<img src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 			</a>
+<<<<<<< HEAD
 			<div href="<?php echo base_url(); ?>travelprivate" class="nav-item" data-bluritem="true">
+=======
+			<div class="nav-item" data-bluritem="true">
+>>>>>>> e93dff465b63ff389bc9195003d4d3effb0c1ba6
 				<span>
 					Travel private
 				</span>
@@ -27,74 +32,103 @@
 						<!-- Sub Menu Region Start-->
 						<div class="sub-menu-item-list" data-panel="travel">
 							<div class="sub-menu-item active">
-								<span data-region="europe" data-panel="travel">
-									Europe
+								<span data-panel="travel">
+									Family
 								</span>
-								<div class="sub-item-desc" data-region="europe">
+								<div class="sub-item-desc" data-region="family">
 									<div class="sub-item-item overview">
-										<h4>Overview</h4>
-										<p>Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
-											It is bordered by the Arctic Ocean to the north,
-											the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
-											It comprises the westernmost part of Eurasia.
-										</p>
-										<a href="#">View all <span class="regionnames"></span></a>
+										<h4>Gathering with Family</h4>
+										<p>Travelling with the family is a way of learning and exploring while making memories with the people you love the most...</p>
+										<a href="<?php echo base_url(); ?>gathering/family" class="regionnames">Know more</a>
+										<h4 class="mt-4"><a href="<?php echo base_url(); ?>travelprivate">What is Travel Private?</a></h4>
 									</div>
 									<div class="sub-item-item countries">
-										<h4>Destinations</h4>
+										<!-- <h4>Destinations</h4>
 										<ul>
 											<li>Switzerland</li>
 											<li>France</li>
 											<li>Turkey</li>
-										</ul>
+										</ul> -->
 									</div>
-									<div class="sub-item-item slider"></div>
+
+									<div class="sub-item-item slider1 navtravelimage">
+										<a href="<?php echo base_url(); ?>gathering/family" class="regionnames"> <img src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_FG.jpg" class="img-fluid boredercl"></a>
+									</div>
 								</div>
 							</div>
 
 							<div class="sub-menu-item">
-								<span data-region="asia" data-panel="travel">
-									Asia
+								<span data-region="colleague" data-panel="travel">
+									Friends
 								</span>
-								<div class="sub-item-desc" data-region="europe">
+								<div class="sub-item-desc" data-region="friends">
 									<div class="sub-item-item overview">
-										<h4>Overview</h4>
-										<p>Asia is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
-											It is bordered by the Arctic Ocean to the north,
-											the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
-											It comprises the westernmost part of Eurasia.
+										<h4>Celebration with Friends</h4>
+										<p>The bond of friendship gets deeper and stronger with travel dairies. Down the life time when you sit on a couch and get nostalgic about that particular moment with your pals and buddies…
 										</p>
+										<a href="<?php echo base_url(); ?>gathering/friends" class="regionnames">Know more</a>
+										<h4 class="mt-4"><a href="<?php echo base_url(); ?>travelprivate">What is Travel Private?</a></h4>
 									</div>
 									<div class="sub-item-item countries">
-										<h4>Destinations</h4>
+										<!-- <h4>Destinations</h4>
 										<ul>
 											<li>Switzerland</li>
 											<li>Turkey</li>
-										</ul>
+										</ul> -->
+									</div>
+									<div class="sub-item-item slider1 navtravelimage">
+										<a href="<?php echo base_url(); ?>gathering/friends" class="regionnames"> <img src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_Celebfrind.jpg" class="img-fluid boredercl"></a>
 									</div>
 								</div>
 							</div>
 
 							<div class="sub-menu-item">
-								<span data-region="america" data-panel="travel">
-									America
+								<span data-region="colleagues" data-panel="travel">
+									Colleagues
 								</span>
-								<div class="sub-item-desc" data-region="europe" >
+								<div class="sub-item-desc" data-region="colleagues">
 									<div class="sub-item-item overview">
-										<h4>Overview</h4>
-										<p>America is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere.
-											It is bordered by the Arctic Ocean to the north,
-											the Atlantic Ocean to the west, Asia to the east, and the Mediterranean Sea to the south.
-											It comprises the westernmost part of Eurasia.
-										</p>
+										<h4>Retreats with Colleagues</h4>
+										<p>The strength of the team is each individual member. The strength of each member is the team. Leave the desks for recreation and rejuvenation.</p>
+										<a href="<?php echo base_url(); ?>gathering/colleagues" class="regionnames">Know more</a>
+										<h4 class="mt-4"><a href="<?php echo base_url(); ?>travelprivate">What is Travel Private?</a></h4>
 									</div>
 									<div class="sub-item-item countries">
-										<h4>Destinations</h4>
+										<!-- <h4>Destinations</h4>
 										<ul>
 											<li>France</li>
 											<li>Italy</li>
 											<li>Turkey</li>
-										</ul>
+										</ul> -->
+									</div>
+									<div class="sub-item-item slider1 navtravelimage">
+										<a href="<?php echo base_url(); ?>gathering/colleagues" class="regionnames"> <img src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_RetreatCol.jpg" class="img-fluid boredercl"></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="sub-menu-item">
+								<span data-region="solo" data-panel="travel">
+									Solo
+								</span>
+								<div class="sub-item-desc" data-region="solo">
+									<div class="sub-item-item overview">
+										<h4>As you travel solo</h4>
+										<p>At Holidaymate we encourage the individuals to take the Solotrip we organise. Go on Solotrip but dont feel lonely as u will be with the group of unknown but equally enthusiastic group of people.
+										</p>
+										<a href="<?php echo base_url(); ?>gathering/solotrip" class="regionnames">Know more</a>
+										<h4 class="mt-4"><a href="<?php echo base_url(); ?>travelprivate">What is Travel Private?</a></h4>
+									</div>
+									<div class="sub-item-item countries">
+										<!-- <h4>Destinations</h4>
+										<ul>
+											<li>France</li>
+											<li>Italy</li>
+											<li>Turkey</li>
+										</ul> -->
+									</div>
+									<div class="sub-item-item slider1 navtravelimage">
+										<a href="<?php echo base_url(); ?>gathering/solotrip" class="regionnames"><img src="<?php echo base_url(); ?>assets/images/travelprivate/498x349_Solo_trip.jpg" class="img-fluid boredercl"></a>
 									</div>
 								</div>
 							</div>
@@ -133,7 +167,7 @@
 			</div>
 			<div class="nav-item" data-bluritem="true">
 				<span>Destinations</span>
-				<div class="sub-menu ds">
+				<div class="sub-menu destinations">
 					<!-- Sub Menu Start-->
 					<div class="sub-menu-items-holder">
 						<span class="reset-menu"></span>
@@ -256,7 +290,7 @@
 </div>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function(){
+	document.addEventListener('DOMContentLoaded', function() {
 		home.scrollDetectorMobile();
 	})
 </script>

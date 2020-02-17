@@ -17,11 +17,7 @@
 			<a href="<?php echo base_url(); ?>" class="logo secondary">
 				<img src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 			</a>
-<<<<<<< HEAD
-			<div href="<?php echo base_url(); ?>travelprivate" class="nav-item" data-bluritem="true">
-=======
 			<div class="nav-item" data-bluritem="true">
->>>>>>> e93dff465b63ff389bc9195003d4d3effb0c1ba6
 				<span>
 					Travel private
 				</span>

@@ -149,6 +149,6 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
-	home.scrollDetector();
+	home.scrollDetectorMobile();
 })
 </script>

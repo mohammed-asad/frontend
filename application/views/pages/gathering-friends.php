@@ -48,7 +48,7 @@
       </div>
 
       <div class="mySlides ">
-        <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
+        <img src="<?php echo base_url(); ?>assets/images/gather/celebretwithfriendthought2.jpg" style="width:100%">
         <div class="text">
           <p>Life is meant for big adventures and good friends, OH YEAH!!! Friends that travel together, stay together for ever.</p>
           <p>- Don’t Sweat the Details, leave it to HolidayMate to bring out the best plan for you and your buddies</p>
@@ -56,14 +56,14 @@
       </div>
 
       <div class="mySlides ">
-        <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
+        <img src="<?php echo base_url(); ?>assets/images/gather/celebretwithfriendthought3.jpg" style="width:100%">
         <div class="text">
           <p>Good Times and Crazy friends make the best memories. Let the HolidayMate create those best times for you with your buddies.</p>
           <p>- Travel at Your Pace, leave the planning and execution to HolidayMate</p>
         </div>
       </div>
       <div class="mySlides ">
-        <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
+        <img src="<?php echo base_url(); ?>assets/images/gather/celebretwithfriendthought1.jpg" style="width:100%">
         <div class="text">
           <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes. Pack your bags, choose your friends and say “Here we GO”</p>
           <p>- At HolidayMate, you get Custom Journeys, tailor made for you through your choice.<p>
@@ -131,7 +131,6 @@
 
 <script>
   var slideIndex = 1;
-  showSlides(slideIndex);
 
   function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -140,26 +139,28 @@
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
+  var slide;
 
   function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    // var dots = document.getElementsByClassName("dot");
+    var slides = document.querySelectorAll(".mySlides");
+    clearTimeout(slide);
     if (n > slides.length) {
       slideIndex = 1
     }
     if (n < 1) {
       slideIndex = slides.length
     }
-    for (i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    // for (i = 0; i < dots.length; i++) {
-    //   dots[i].className = dots[i].className.replace(" active", "");
-    // }
     slides[slideIndex - 1].style.display = "block";
-    // dots[slideIndex - 1].className += " active";
+    slide = setTimeout(function() {
+      slideIndex += 1;
+      showSlides(slideIndex)
+    }, 10000); // Change image every 2 seconds
   }
+
+  showSlides(slideIndex);
 </script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>

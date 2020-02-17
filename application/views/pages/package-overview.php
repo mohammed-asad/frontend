@@ -124,7 +124,7 @@
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
           <h1>Hotel Details</h1>
         </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section custom-padding">
           <div class="hotel-description">
 
           </div>
@@ -168,7 +168,7 @@
 
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 section ">
+          <div class="col-md-12 col-sm-12 section p-0">
             <div class="dis  mt-5">
               <div class="ab">
                 <p class="t">Hassle free<p>

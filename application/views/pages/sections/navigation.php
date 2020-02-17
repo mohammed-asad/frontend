@@ -148,7 +148,7 @@
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function(){
-	home.scrollDetectorMobile();
-})
+	document.addEventListener('DOMContentLoaded', function(){
+		home.scrollDetectorMobile();
+	})
 </script>

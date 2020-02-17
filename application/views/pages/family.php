@@ -137,6 +137,7 @@
     showSlides(slideIndex = n);
   }
   var slide;
+
   function showSlides(n) {
     var slides = document.querySelectorAll(".mySlides");
     clearTimeout(slide);
@@ -150,10 +151,11 @@
       slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
-    slide = setTimeout(function(){ slideIndex+=1; showSlides(slideIndex)}, 2000); // Change image every 2 seconds
+    slide = setTimeout(function() {
+      slideIndex += 1;
+      showSlides(slideIndex)
+    }, 10000); // Change image every 2 seconds
   }
 
   showSlides(slideIndex);
 </script>
-
-

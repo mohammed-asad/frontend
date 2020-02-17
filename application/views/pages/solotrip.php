@@ -33,7 +33,7 @@
       <div class="slideshow-container">
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/solothought1.jpg" style="width:100%">
           <div class="text">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
             <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/solothought2.jpg" style="width:100%">
           <div class="text">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.text ever since the 1500s, </p>
             <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -49,14 +49,14 @@
         </div>
 
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/solothought3.jpg" style="width:100%">
           <div class="text">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
         <div class="mySlides ">
-          <img src="<?php echo base_url(); ?>assets/images/gather/friends.png" style="width:100%">
+          <img src="<?php echo base_url(); ?>assets/images/gather/solothought4.jpg" style="width:100%">
           <div class="text">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever, </p>
             <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -122,10 +122,8 @@
       $('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
     })
   </script>
-
   <script>
     var slideIndex = 1;
-    showSlides(slideIndex);
 
     function plusSlides(n) {
       showSlides(slideIndex += n);
@@ -134,26 +132,28 @@
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
+    var slide;
 
     function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      // var dots = document.getElementsByClassName("dot");
+      var slides = document.querySelectorAll(".mySlides");
+      clearTimeout(slide);
       if (n > slides.length) {
         slideIndex = 1
       }
       if (n < 1) {
         slideIndex = slides.length
       }
-      for (i = 0; i < slides.length; i++) {
+      for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-      // for (i = 0; i < dots.length; i++) {
-      //   dots[i].className = dots[i].className.replace(" active", "");
-      // }
       slides[slideIndex - 1].style.display = "block";
-      // dots[slideIndex - 1].className += " active";
+      slide = setTimeout(function() {
+        slideIndex += 1;
+        showSlides(slideIndex)
+      }, 10000); // Change image every 2 seconds
     }
+
+    showSlides(slideIndex);
   </script>
   <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>

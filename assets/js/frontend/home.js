@@ -6,8 +6,8 @@ var home = {
 		fns.ajaxGet('holidaymate/api/navigation', 'user')
 			.done(function (res) {
 				if (res.status === 200) {
-					$('.navigation .sub-menu').find('.sub-menu-item-list').html("");
-					$('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
+					$('.navigation .sub-menu.destinations').find('.sub-menu-item-list').html("");
+					$('.navigation .sub-menu.destinations').find('.sub-item-desc-holder').html("");
 					$.map(res.data, function (item, index) {
 						//Dumping Countries
 						var base_url = $('#base').val();
@@ -18,7 +18,7 @@ var home = {
 							${item.overview }
 							</p>
 							 
-							<a href="${base_url}region/${item.region.replace(/ /g, "_")}" class="regionnames">View all ${item.region.toLowerCase()} </a>
+							<a href="${base_url}region/${item.region.replace(/ /g, "_")}" class="regionnames">View all packages of ${item.region.toLowerCase()} </a>
             </div>
             <div class="sub-item-item countries">
               <h4 >Destinations</h4>
@@ -50,7 +50,7 @@ var home = {
             </span>
             ${ nav_desc }
           </div>`;
-						$('.navigation .sub-menu').find('.sub-menu-item-list').append(nav_item);
+						$('.navigation .sub-menu.destinations').find('.sub-menu-item-list').append(nav_item);
 						// $('.navigation .sub-menu').find('.sub-item-desc-holder').append(nav_desc);
 						// $('.region-content1').append(reover);
 						// $('.regionname').append(regiontitle);
@@ -62,6 +62,7 @@ var home = {
 				home.navigationItemHover()
 				$('.nav-slider').slick({
 					autoplay: true,
+					dots: true,
 					autoplaySpeed: 2000,
 				});
 			});
@@ -196,16 +197,16 @@ var home = {
 		var averageMiddle = home.getAverage(home.scrollings, 70);
 		var isAccelerating = averageEnd >= averageMiddle;
 
-		if(isAccelerating){
-				if (delta < 0 && !home.menuActive) {
-					$('.navigation').fadeOut();
-				}else {
-					$('.navigation').fadeIn();
-				}
+		if (isAccelerating) {
+			if (delta < 0 && !home.menuActive) {
+				$('.navigation').fadeOut();
+			} else {
+				$('.navigation').fadeIn();
+			}
 		}
 		return false;
 	},
-	scrollDetectorMobile: function(e){
+	scrollDetectorMobile: function (e) {
 		var ts;
 		$(document).bind('touchstart', function (e) {
 			ts = e.originalEvent.touches[0].clientY;
@@ -220,7 +221,7 @@ var home = {
 			}
 		});
 	}
-		
+
 };
 
 home.generatenavigation();

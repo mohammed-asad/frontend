@@ -1,4 +1,4 @@
-var baseURL = 'http://holidaymate.in/';
+var baseURL = 'http://localhost/';
 
 var fns = {
 

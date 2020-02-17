@@ -6,12 +6,12 @@ var home = {
 		fns.ajaxGet('holidaymate/api/navigation', 'user')
 			.done(function (res) {
 				if (res.status === 200) {
-					$('.navigation .sub-menu').find('.sub-menu-item-list').html("");
-					$('.navigation .sub-menu').find('.sub-item-desc-holder').html("");
+					$('.navigation .sub-menu.ds').find('.sub-menu-item-list').html("");
+					$('.navigation .sub-menu.ds').find('.sub-item-desc-holder').html("");
 					$.map(res.data, function (item, index) {
 						//Dumping Countries
 						var base_url = $('#base').val();
-						var nav_desc = `<div class="sub-item-desc" data-region="${ item.region.toLowerCase() }">
+						var nav_desc = `<div class="sub-item-desc" data-panel="menu" data-region="${ item.region.toLowerCase() }">
             <div class="sub-item-item overview">
               <h4 >Overview</h4>
               <p>
@@ -44,13 +44,13 @@ var home = {
 						var regiontitle = `<h1>${item.region}</h1>`;
 						var reover = ` <p>	${item.overview }</p>`;
 						var nav_item = `<div class="sub-menu-item ${ (index === 0 ? 'active' : '') }">
-            <span data-region="${ item.region.toLowerCase() }">
+            <span data-region="${ item.region.toLowerCase() }" data-panel="menu">
 							${item.region }
 							 
             </span>
             ${ nav_desc }
           </div>`;
-						$('.navigation .sub-menu').find('.sub-menu-item-list').append(nav_item);
+						$('.navigation .sub-menu.ds').find('.sub-menu-item-list').append(nav_item);
 						// $('.navigation .sub-menu').find('.sub-item-desc-holder').append(nav_desc);
 						// $('.region-content1').append(reover);
 						// $('.regionname').append(regiontitle);
@@ -74,9 +74,11 @@ var home = {
 				if (blur) {
 					$(".other-container").addClass("blur");
 				}
+				home.menuActive = true;
 			},
 			function () {
 				$(".other-container").removeClass("blur");
+				home.menuActive = false;
 			});
 
 		$('.navigation').find('.nav-item').on('click', function (e) {
@@ -100,10 +102,9 @@ var home = {
 	navigationItemHover: function () {
 		$('.sub-menu-item').on('mouseover, click', function (e) {
 			var target = $(e.target).attr("data-region");
-			$('.sub-menu-item-list').find('.sub-menu-item').removeClass('active');
+			var panel = $(e.target).attr("data-panel");
+			$('.sub-menu-item-list[data-panel="' + panel + '"]').find('.sub-menu-item').removeClass('active');
 			$(this).addClass('active');
-			$('.sub-item-desc-holder').find('.sub-item-desc').css("display", "none");
-			$('.sub-item-desc-holder').find('[data-region="' + target + '"]').css("display", "flex");
 		})
 	},
 
@@ -183,6 +184,7 @@ var home = {
 	},
 
 	scrollings: [],
+	windowHeight: $(window).height(),
 	scrollDetector: function (e) {
 
 		var value = e.wheelDelta || -e.deltaY || -e.detail;
@@ -197,8 +199,10 @@ var home = {
 		var isAccelerating = averageEnd >= averageMiddle;
 
 		if(isAccelerating){
-				if (delta < 0 && !home.menuActive) {
-					$('.navigation').fadeOut();
+				if (delta < 0 && home.menuActive !== true) {
+					if($(window).scrollTop() > parseInt(home.windowHeight / 1.8)){
+						$('.navigation').fadeOut(800);
+					}
 				}else {
 					$('.navigation').fadeIn();
 				}
@@ -214,7 +218,9 @@ var home = {
 		$(document).bind('touchend', function (e) {
 			var te = e.originalEvent.changedTouches[0].clientY;
 			if (ts > te + 5 && !home.menuActive) {
-				$('.navigation').fadeOut();
+				if($(window).scrollTop() > parseInt(home.windowHeight / 2)){
+					$('.navigation').fadeOut();
+				}
 			} else if (ts < te - 5) {
 				$('.navigation').fadeIn();
 			}

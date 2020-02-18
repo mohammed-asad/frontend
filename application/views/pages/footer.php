@@ -15,14 +15,14 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">+91 345 678 903 </a>
+            <a href="#!">+91 9845 944499</a>
           </li>
           <li>
             <a href="#!">support@holidaymate.com</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#!">Find a Store</a>
-          </li>
+          </li> -->
 
         </ul>
 

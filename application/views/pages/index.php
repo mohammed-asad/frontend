@@ -171,7 +171,7 @@
 								</ul>
 								<a class="carousel-control-next right carousel-control cst-carousel-control-next2" href="#carousel-example-1" role="button" data-slide="next">
 									<span class=""></span>
-									<span class="sr-only">Next</span>
+									<!-- <span class="sr-only">Next</span> -->
 								</a>
 							</div>
 						</div>

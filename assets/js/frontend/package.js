@@ -21,14 +21,14 @@ var package = {
 						<h1>Package Overview</h1>
 					</div>
 					<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
-						<p>${item.overview}</p>
+						<p class="cst-pst">${item.overview}</p>
 					</div>`;
 						var newpackagebannerimage = `<div id="countryid${item.package_name.replace(/ /g, "_")}" class="boredercls overview-img"></div>
 						<div class="row">
 						<div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6 col-sm-6">
 						<div class="pack-column">
 							<h3>${item.package_name}</h3>
-							<p class="m-0">Tour to Stunning ${item.package_name}</p>
+							<p class="m-0"> ${item.short_desc}</p>
 							<p><span class="package-rating"></span> <img class="img-fluid star" src="${base_url}assets/images/icons/star.svg"></p>
 						</div>
 						</div>
@@ -46,6 +46,7 @@ var package = {
 						//----------------------------- form input value fetching ----------------------
 						var daynnight = `${item.duration_night} Nights & ${item.duration_day} Days`;
 						var locationtxt = `${item.destination_name}`;
+						var long_description = `${item.long_desc}`;
 						if (index <= (maxLenght - 1)) {
 
 							$('.pakage-bannerblock').append(newpackagebannerimage);
@@ -53,6 +54,7 @@ var package = {
 							$('.daynnight').append(daynnight);
 							$('.locationtxt').append(locationtxt);
 							$('.hotel-overview').append(newpackageoverview);
+							$('.long-description').append(long_description);
 
 							//fetch hotel details from here by sending the Hotel name mentined in the Pacakge
 							var hotelName = item.hotel_name.replace(/ /g, "_")
@@ -189,7 +191,7 @@ var package = {
 					$.map(response.data, function (item, index) {
 						var base_url = $('#base').val();
 						var url = `${base_url}packageoverview/${item.id}`;
-						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4 fadeInleft">
 						<a href="${url}">
             <div class="card mt-3 mb-3">
              <div id="countryid${item.package_name.replace(/ /g, "_")}"></div>

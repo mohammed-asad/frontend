@@ -503,7 +503,7 @@ h4 {
 		vertical-align: top;
 		margin-top: 0px;
 		right: 0rem;
-		top: -0.5rem;
+		top: 0.8rem;
 		z-index: 9;
 		transform: rotate(180deg);
 
@@ -810,6 +810,7 @@ header {
 	// margin: 0 30px 0 30px;
 	margin: 24px;
 	border-radius: 50px !important;
+	-webkit-border-radius: 50px;
 	overflow: hidden !important;
 	position: relative;
 
@@ -893,7 +894,7 @@ header {
 		border: none;
 		background: #ffffff 0% 0% no-repeat padding-box;
 		transition: box-shadow 0.3s ease-in-out;
-		box-shadow: 0px 16px 24px #00000033;
+		box-shadow: 0px 3px 6px #00000029;
 		border-radius: 20px;
 		overflow: hidden;
 
@@ -952,7 +953,7 @@ header {
 	}
 
 	.card:hover {
-		box-shadow: 0px 3px 6px #00000029;
+		box-shadow: 0px 16px 24px #00000033;
 	}
 }
 
@@ -963,7 +964,22 @@ header {
 	background-position: center;
 	height: 520px;
 	width: 100%;
-	border-radius: 55px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+
+	@media(max-width:1366px) {
+		border-radius: 30px;
+		-webkit-border-radius: 30px
+	}
+
+	@media(max-width:1024px) {
+		background: url("../images/home/721X480_MobileFGmobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+	}
 }
 
 .cstitem2.active {
@@ -973,7 +989,22 @@ header {
 	background-position: center;
 	height: 520px;
 	width: 100%;
-	border-radius: 55px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+
+	@media(max-width:1366px) {
+		border-radius: 30px;
+		-webkit-border-radius: 30px
+	}
+
+	@media(max-width:1024px) {
+		background: url("../images/home/721X480_Mobile_CF-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+	}
 }
 
 .cstitem3.active {
@@ -983,7 +1014,22 @@ header {
 	background-position: center;
 	height: 520px;
 	width: 100%;
-	border-radius: 55px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+
+	@media(max-width:1366px) {
+		border-radius: 30px;
+		-webkit-border-radius: 30px
+	}
+
+	@media(max-width:1024px) {
+		background: url("../images/home/721X480_Mobile_RFR-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+	}
 }
 
 .cstitem4.active {
@@ -993,7 +1039,22 @@ header {
 	background-position: center;
 	height: 520px;
 	width: 100%;
-	border-radius: 55px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+
+	@media(max-width:1366px) {
+		border-radius: 30px;
+		-webkit-border-radius: 30px
+	}
+
+	@media(max-width:1024px) {
+		background: url("../images/home/721X480_Mobile_SOLO-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+	}
 }
 
 .cst-carousel-control-prev1 {
@@ -1419,7 +1480,7 @@ footer {
 	padding: 15px 0px;
 
 	.changenev {
-		margin-bottom: 50px !important;
+		//	margin-bottom: 50px !important;
 
 		.right-toptext {
 			// top: -20px !important;
@@ -1429,6 +1490,10 @@ footer {
 		.logo {
 			//left: 3% !important;
 			left: 3%;
+		}
+
+		@media(max-width:1366px) {
+			margin: 0 auto;
 		}
 	}
 
@@ -1454,7 +1519,7 @@ footer {
 
 		@media(max-width:1366px) {
 			.overview-img {
-				//	margin: 60px 30px 10px;
+				margin: 35px 30px 10px;
 				border-radius: 30px;
 				height: 45vh;
 				box-shadow: 0px 5px 8px #00000033;
@@ -1509,7 +1574,36 @@ footer {
 		p {
 			font-size: 14px;
 		}
+
+		.card.card-outline-secondary {
+			.card-body.enqury-card {
+				padding: 10px 20px;
+
+				h3 {
+					text-align: left;
+				}
+
+				p {
+					font-size: 12px;
+				}
+
+				label {
+					font-size: 10px;
+				}
+			}
+		}
+
+		.aminiteisvalue {
+			margin: 0px;
+		}
+
+		padding: 10px 0px 4px 0;
 	}
+
+	@media(max-width:767px) {
+		padding: 15px 0px;
+	}
+
 }
 
 .overview-content-details {
@@ -1557,6 +1651,10 @@ footer {
 
 		li {
 			font-size: 28px;
+		}
+
+		@media(max-width:1366px) {
+			top: -10px;
 		}
 	}
 
@@ -1716,7 +1814,7 @@ footer {
 		@media(max-width:1366px) {
 			p {
 				font-size: 14px;
-				margin: 10px 0px !important;
+				margin: 5px 0px !important;
 			}
 
 			h2 {
@@ -3448,6 +3546,38 @@ ul.timeline>li:before {
 
 }
 
+.cst-pst {
+	position: relative;
+	top: 10px;
+
+	@media(max-width:1366px) {
+		top: 5px;
+	}
+
+	@media(max-width:1199px) {
+		top: 0px;
+	}
+}
+
+.hotel-description {
+	span {
+		font-family: Mont-Regular !important;
+		font-size: 18px;
+	}
+
+	@media(max-width:1366px) {
+		span {
+			font-size: 16px;
+		}
+	}
+
+	@media(max-width:1023px) {
+		span {
+			font-size: 14px;
+		}
+	}
+}
+
 /*************************************************** media queries ***********************************/
 /*************************enquery form ***************************************************************/
 
@@ -3540,6 +3670,7 @@ ul.timeline>li:before {
 	.banner {
 		margin: 15px;
 		border-radius: 30px;
+		-webkit-border-radius: 30px;
 
 		.slick-arrow.slick-prev {
 			margin-left: -158px;
@@ -3932,7 +4063,8 @@ ul.timeline>li:before {
 		}
 
 		.cst-carousel-control-next2 {
-			top: -1rem;
+			top: 0.2rem;
+			left: 1rem;
 		}
 
 		.custom-indicators1 li {
@@ -4160,6 +4292,7 @@ ul.timeline>li:before {
 			.nav-item {
 				position: relative;
 				width: 50%;
+				text-align: center;
 
 				a {
 					font-size: 10px;
@@ -4168,6 +4301,7 @@ ul.timeline>li:before {
 
 				.zbtn {
 					left: 0%;
+					width: 100%;
 				}
 
 			}
@@ -4250,6 +4384,7 @@ ul.timeline>li:before {
 
 	.banner {
 		border-radius: 15px;
+		-webkit-border-radius: 15px;
 
 		.header-banner {
 			border-radius: 15px;

@@ -10,8 +10,8 @@
             <div class="pakage-bannerblock">
 
             </div>
-            <p class="text-center mt-5 mb-4">Take part in sunset & sunrise views of Dubai Red Dunes safari overnig</p>
-
+            <p class="text-center mt-4 mb-4 long-description"></p>
+            <!-- Take part in sunset & sunrise views of Dubai Red Dunes safari overnig -->
             <ul class="list-inline text-center aminiteisvalue">
               <li class="list-inline-item ">
                 <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/amenities/clock.svg">

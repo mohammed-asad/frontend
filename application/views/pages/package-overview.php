@@ -72,7 +72,7 @@
                     <div class="col-md-6 col-sm-6 pl-0">
                       <div class="form-group">
                         <label for="to1">Email</label>
-                        <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
+                        <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email myemail" name="c_email" required="" type="email">
                       </div>
                     </div>
                     <div class="col-md-12">

@@ -988,6 +988,18 @@ header span {
           box-shadow: 0px 3px 6px #00000029;
   border-radius: 20px;
   overflow: hidden;
+  /***************** 19-2-2020********************* */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  /***************** 19-2-2020********************* */
 }
 
 .new-cardblock .card .card-block {
@@ -1046,6 +1058,10 @@ header span {
 .new-cardblock .card:hover {
   -webkit-box-shadow: 0px 16px 24px #00000033;
           box-shadow: 0px 16px 24px #00000033;
+  /***************** 19-2-2020********************* */
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  /***************** 19-2-2020********************* */
 }
 
 .cstitem1.active {
@@ -1670,7 +1686,7 @@ footer .list-unstyled li .lastlink {
 }
 
 .overview-content-details .section p {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Mont-Regular;
   margin: 0;
   line-height: inherit;
@@ -2046,6 +2062,8 @@ ul.timeline > li:before {
 .nav-wrapper .navigation.fixed {
   position: fixed;
   top: 0;
+  -webkit-animation: slide-down 0.7s;
+          animation: slide-down 0.7s;
 }
 
 .nav-wrapper .navigation.fixed:before {
@@ -2290,7 +2308,7 @@ ul.timeline > li:before {
   color: inherit;
   padding: 20px;
   cursor: default;
-  font-family: MOnt-regular;
+  font-family: Mont-regular;
 }
 
 @media all and (max-width: 1023px) {
@@ -2833,6 +2851,68 @@ ul.timeline > li:before {
   padding: 10px 30px;
 }
 
+.dis .ab .t {
+  font-size: 16px;
+}
+
+@media (max-width: 1366px) {
+  .dis .ab .t {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .dis .ab {
+    width: 45% !important;
+    height: 56px;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dis .ab .t {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dis .ab {
+    width: 30% !important;
+    height: 56px;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .dis .ab {
+    position: absolute;
+    width: 33% !important;
+    height: 36px !important;
+    z-index: 1;
+    padding: 6px 15px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 8px;
+    margin-top: 0px;
+  }
+  .dis .ab .t {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .dis .ab {
+    position: absolute;
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .dis .ab .t {
+    margin-top: 8px;
+  }
+}
+
 .dis .cd {
   width: 325px;
   height: 86px;
@@ -2843,8 +2923,62 @@ ul.timeline > li:before {
   padding: 10px;
 }
 
+.dis .cd p:last-child {
+  font-family: Mont-Bold;
+}
+
 .dis .cd p {
+  font-size: 18px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 1366px) {
+  .dis .cd p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .dis .cd {
+    width: 100% !important;
+    height: 65px;
+    margin-left: -27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dis .cd p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dis .cd {
+    width: 50% !important;
+    height: 65px;
+    margin-left: -27px;
+  }
+}
+
+@media (max-width: 575px) {
+  .dis .cd {
+    width: 55% !important;
+    height: 50px !important;
+    margin-left: 0;
+    padding: 10px;
+    margin-top: -8px;
+    margin-left: 29%;
+  }
+  .dis .cd p {
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .dis .cd {
+    width: 74% !important;
+  }
 }
 
 /************************************* gathering page ******************************************/
@@ -3871,6 +4005,12 @@ ul.timeline > li:before {
   .boredercls {
     border-radius: 30px !important;
   }
+  .pl-30 {
+    padding-left: 30px;
+  }
+  .myemail {
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -3936,6 +4076,15 @@ ul.timeline > li:before {
   .hotel-Info .zbtn {
     left: 31%;
   }
+  .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
+    width: 117.5% !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .newfacalendar1 {
+    top: 24px !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .newfacalendar2 {
+    top: 24px !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3971,9 +4120,6 @@ ul.timeline > li:before {
   .form-block .card-outline-secondary {
     border-radius: 15px;
   }
-  .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
-    width: 107.5% !important;
-  }
   .packages .card {
     border-radius: 9px;
   }
@@ -3995,6 +4141,12 @@ ul.timeline > li:before {
   .hotel-Info .nav-tabs .nav-item .zbtn {
     left: 0%;
     width: 100%;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .myemail {
+    width: 120.5% !important;
+  }
+  .logo {
+    z-index: 999;
   }
 }
 
@@ -4161,19 +4313,6 @@ ul.timeline > li:before {
   footer {
     border-radius: 15px;
   }
-  .dis .ab {
-    width: 45%;
-    height: 56px;
-    padding: 15px 10px;
-  }
-  .dis .cd {
-    width: 100%;
-    height: 65px;
-    margin-left: -27px;
-  }
-  .dis .cd p {
-    margin-bottom: 0px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -4194,6 +4333,12 @@ ul.timeline > li:before {
   }
   .slick-slide img {
     height: 45vh !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
+    width: 106.5% !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .myemail {
+    width: 115.5% !important;
   }
 }
 
@@ -4268,6 +4413,9 @@ ul.timeline > li:before {
     font-size: 12px;
     top: -10px;
   }
+  .form-block .card-outline-secondary .enqury-card .form-group .myemail {
+    width: 106.5% !important;
+  }
 }
 
 @media (max-height: 600px) {
@@ -4286,6 +4434,9 @@ ul.timeline > li:before {
   .travel-section .custom-jumbotron .travel-content p {
     font-size: 12px;
     margin-top: 2rem !important;
+  }
+  .form-block .card-outline-secondary .enqury-card .form-group .cstpl-wd {
+    width: 110.5% !important;
   }
 }
 
@@ -4331,32 +4482,6 @@ ul.timeline > li:before {
   }
   .mySlides img {
     height: 40vh;
-  }
-  .dis .ab {
-    position: absolute;
-    width: 36%;
-    height: 36px;
-    z-index: 1;
-    padding: 0px 15px;
-    text-align: center;
-    background-color: #fff;
-    font-size: 8px;
-    margin-top: 2px;
-  }
-  .dis .ab .t {
-    font-size: 12px;
-  }
-  .dis .cd {
-    width: 65%;
-    height: 50px;
-    margin-left: 0;
-    padding: 10px;
-    margin-top: -8px;
-    margin-left: 29%;
-  }
-  .dis .cd p {
-    margin-bottom: 0px;
-    font-size: 10px;
   }
   .cst-text-r {
     text-align: left;

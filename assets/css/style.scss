@@ -897,7 +897,17 @@ header {
 		box-shadow: 0px 3px 6px #00000029;
 		border-radius: 20px;
 		overflow: hidden;
+		/***************** 19-2-2020********************* */
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
 
+		position: relative;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+
+		/***************** 19-2-2020********************* */
 		.card-block {
 			padding: 0px 15px;
 
@@ -954,6 +964,9 @@ header {
 
 	.card:hover {
 		box-shadow: 0px 16px 24px #00000033;
+		/***************** 19-2-2020********************* */
+		transform: translateY(-5px);
+		/***************** 19-2-2020********************* */
 	}
 }
 
@@ -1617,11 +1630,10 @@ footer {
 		}
 
 		p {
-			font-size: 20px;
+			font-size: 18px;
 			font-family: Mont-Regular;
 			margin: 0;
 			line-height: inherit;
-			;
 		}
 	}
 
@@ -2038,6 +2050,7 @@ ul.timeline>li:before {
 		&.fixed {
 			position: fixed;
 			top: 0;
+			animation: slide-down 0.7s;
 
 			&:before {
 				content: '';
@@ -2272,27 +2285,12 @@ ul.timeline>li:before {
 				transform: translate3d(-100%, 0, 0);
 			}
 
-			// @media all and(max-width: 600px) {
-			// 	width: 40%;
-			// }
-
-			// @media all and(max-width: 414px) {
-			// 	width: 50%;
-			// }
-
-			// @media all and(max-width: 380px) {
-			// 	width: 65%;
-			// }
-
 			.nav-item {
 				text-decoration: none;
 				color: inherit;
 				padding: 20px;
 				cursor: default;
-				font-family: MOnt-regular;
-				// &>span {
-				// 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-				// }
+				font-family: Mont-regular;
 
 				@media all and (max-width: 1023px) {
 					// border-bottom: 1px solid #f5f5f5;
@@ -2828,6 +2826,63 @@ ul.timeline>li:before {
 		background-color: white;
 		z-index: 1;
 		padding: 10px 30px;
+
+		.t {
+			font-size: 16px;
+		}
+
+		@media(max-width:1366px) {
+			.t {
+				font-size: 14px;
+			}
+		}
+
+		@media(max-width:991px) {
+			width: 45% !important;
+			height: 56px;
+			padding: 15px 10px;
+		}
+
+		@media(max-width:768px) {
+			.t {
+				font-size: 12px;
+			}
+		}
+
+		@media(max-width:767px) {
+			width: 30% !important;
+			height: 56px;
+			padding: 15px 10px;
+		}
+
+		@media(max-width:575px) {
+			position: absolute;
+			width: 33% !important;
+			height: 36px !important;
+			z-index: 1;
+			padding: 6px 15px;
+			text-align: center;
+			background-color: #fff;
+			font-size: 8px;
+			margin-top: 0px;
+
+			.t {
+				font-size: 12px;
+			}
+		}
+
+		@media(max-width:380px) {
+			position: absolute;
+			width: 40% !important;
+
+		}
+
+		@media(max-width:320px) {
+
+			.t {
+				margin-top: 8px;
+			}
+		}
 	}
 
 	.cd {
@@ -2839,12 +2894,60 @@ ul.timeline>li:before {
 		margin-left: -40px;
 		padding: 10px;
 
+		p:last-child {
+			font-family: Mont-Bold;
+		}
+
 		p {
+			font-size: 18px;
 			margin-bottom: 0px;
+		}
+
+		@media(max-width:1366px) {
+			p {
+				font-size: 16px;
+			}
+		}
+
+		@media(max-width:991px) {
+			width: 100% !important;
+			height: 65px;
+			margin-left: -27px;
+		}
+
+		@media(max-width:768px) {
+			p {
+				font-size: 14px;
+			}
+		}
+
+		@media(max-width:767px) {
+			width: 50% !important;
+			height: 65px;
+			margin-left: -27px;
+		}
+
+		@media(max-width:575px) {
+			width: 55% !important;
+			height: 50px !important;
+			margin-left: 0;
+			padding: 10px;
+			margin-top: -8px;
+			margin-left: 29%;
+
+			p {
+				margin-bottom: 0px;
+				font-size: 10px;
+			}
+		}
+
+		@media(max-width:380px) {
+			width: 74% !important;
 		}
 
 	}
 }
+
 
 /************************************* gathering page ******************************************/
 
@@ -4003,8 +4106,6 @@ ul.timeline>li:before {
 			.nav-item a {
 				font-size: 12px;
 			}
-
-
 		}
 
 		.zbtn {
@@ -4106,6 +4207,16 @@ ul.timeline>li:before {
 	.boredercls {
 		border-radius: 30px !important;
 	}
+
+	.pl-30 {
+		padding-left: 30px;
+	}
+
+	.myemail {
+		padding-left: 20px;
+	}
+
+
 }
 
 @media (max-width: 1280px) {
@@ -4221,6 +4332,28 @@ ul.timeline>li:before {
 			left: 31%;
 		}
 	}
+
+	.form-block {
+		.card-outline-secondary {
+			.enqury-card {
+				.form-group {
+					.cstpl-wd {
+						width: 117.5% !important;
+					}
+
+					.newfacalendar1 {
+						top: 24px !important;
+					}
+
+					.newfacalendar2 {
+						top: 24px !important;
+					}
+
+				}
+			}
+		}
+	}
+
 }
 
 @media (max-width: 1024px) {
@@ -4266,11 +4399,7 @@ ul.timeline>li:before {
 	.form-block .card-outline-secondary {
 		border-radius: 15px;
 
-		.enqury-card .form-group {
-			.cstpl-wd {
-				width: 107.5% !important;
-			}
-		}
+
 	}
 
 	.packages {
@@ -4307,6 +4436,24 @@ ul.timeline>li:before {
 			}
 		}
 	}
+
+	.form-block {
+		.card-outline-secondary {
+			.enqury-card {
+				.form-group {
+					.myemail {
+						width: 120.5% !important;
+					}
+				}
+			}
+		}
+	}
+
+	.logo {
+		z-index: 999;
+	}
+
+
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -4534,31 +4681,7 @@ ul.timeline>li:before {
 		border-radius: 15px;
 	}
 
-	.dis {
 
-
-		.ab {
-
-			//	position: absolute;
-			width: 45%;
-			height: 56px;
-			padding: 15px 10px;
-
-		}
-
-		.cd {
-			width: 100%;
-			height: 65px;
-
-			margin-left: -27px;
-
-			p {
-				margin-bottom: 0px;
-
-			}
-
-		}
-	}
 }
 
 @media (max-width: 800px) {
@@ -4585,6 +4708,22 @@ ul.timeline>li:before {
 
 	.slick-slide img {
 		height: 45vh !important;
+	}
+
+	.form-block {
+		.card-outline-secondary {
+			.enqury-card {
+				.form-group {
+					.cstpl-wd {
+						width: 106.5% !important;
+					}
+
+					.myemail {
+						width: 115.5% !important;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -4695,6 +4834,17 @@ ul.timeline>li:before {
 		top: -10px;
 	}
 
+	.form-block {
+		.card-outline-secondary {
+			.enqury-card {
+				.form-group {
+					.myemail {
+						width: 106.5% !important;
+					}
+				}
+			}
+		}
+	}
 
 }
 
@@ -4706,6 +4856,8 @@ ul.timeline>li:before {
 	footer {
 		padding: 15px;
 	}
+
+
 }
 
 @media(max-width:600px) {
@@ -4724,6 +4876,17 @@ ul.timeline>li:before {
 		}
 	}
 
+	.form-block {
+		.card-outline-secondary {
+			.enqury-card {
+				.form-group {
+					.cstpl-wd {
+						width: 110.5% !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 575px) {
@@ -4789,47 +4952,6 @@ ul.timeline>li:before {
 			height: 40vh;
 		}
 
-		// .text {
-		// 	width: 300px !important;
-		// 	left: 7%;
-		// }
-	}
-
-	.dis {
-
-
-		.ab {
-
-			position: absolute;
-			width: 36%;
-			height: 36px;
-			z-index: 1;
-			padding: 0px 15px;
-			text-align: center;
-			background-color: #fff;
-			font-size: 8px;
-			margin-top: 2px;
-
-			.t {
-				font-size: 12px;
-			}
-		}
-
-		.cd {
-			width: 65%;
-			height: 50px;
-			margin-left: 0;
-			padding: 10px;
-			margin-top: -8px;
-
-			margin-left: 29%;
-
-			p {
-				margin-bottom: 0px;
-				font-size: 10px;
-			}
-
-		}
 	}
 
 	.cst-text-r {

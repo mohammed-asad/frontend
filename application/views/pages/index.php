@@ -84,7 +84,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 m-auto p-xl-0">
-					<h2 class="text-center head1">Upcoming Tours</h2>
+					<h2 class="text-center head1 wow fadeInLeft">Upcoming Tours</h2>
 					<div class="row new-cardblock packages"></div>
 				</div>
 			</div>
@@ -95,11 +95,11 @@
 	<section class="text-center section">
 		<div class="contianer">
 			<!-- Section heading -->
-			<h2 class="h1-responsive font-weight-bold text-center head1">Introducing Travel Private</h2>
+			<h2 class="h1-responsive font-weight-bold text-center head1 wow fadeInLeft">Introducing Travel Private</h2>
 
 			<div class="wrapper-carousel-fix text-white mall-24">
 				<!-- Carousel Wrapper carousel-fade-->
-				<div id="carousel-example-1" class="carousel no-flex testimonial-carousel" data-ride="carousel" data-interval="false">
+				<div id="carousel-example-1" class="carousel no-flex testimonial-carousel carousel-fade" data-ride="carousel">
 					<!--Slides-->
 					<div class="carousel-inner" role="listbox">
 						<!--First slide-->
@@ -214,4 +214,19 @@
 <script src="<?php echo base_url(); ?>assets/js/frontend/mail.js"></script>
 <script>
 	package.getPackage();
+</script>
+<script src="<?php echo base_url(); ?>assets/js/animate/wow.min.js"></script>
+<script>
+	wow = new WOW({
+		boxClass: 'wow', // default
+		animateClass: 'animated', // default
+		offset: 0, // default
+		mobile: true, // default
+		onLoad: true,
+		onScroll: true,
+		live: true // default
+
+	})
+	wow.init();
+	// new WOW().init();
 </script>

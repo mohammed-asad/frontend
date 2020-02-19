@@ -25,14 +25,14 @@ var package = {
 					</div>`;
 						var newpackagebannerimage = `<div id="countryid${item.package_name.replace(/ /g, "_")}" class="boredercls overview-img"></div>
 						<div class="row">
-						<div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6 col-sm-6">
+						<div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6 col-sm-6 col-6">
 						<div class="pack-column">
 							<h3>${item.package_name}</h3>
 							<p class="m-0"> ${item.short_desc}</p>
 							<p><span class="package-rating"></span> <img class="img-fluid star" src="${base_url}assets/images/icons/star.svg"></p>
 						</div>
 						</div>
-						<div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 cst-text-r">
+						<div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 cst-text-r col-6">
 						<div class="pack-column">
 							<div class="d-inline-block"><span class="mont-book"> Starting From </span>
 								<h2 class="d-inline-block ml-2"> <i class="fa fa-inr" aria-hidden="true"></i> ${item.price}</h2>
@@ -189,9 +189,10 @@ var package = {
 					alert(response.message)
 				} else if (response.status === 200) {
 					$.map(response.data, function (item, index) {
+						var seconds = index + 1;
 						var base_url = $('#base').val();
 						var url = `${base_url}packageoverview/${item.id}`;
-						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4 fadeInleft">
+						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4 wow fadeInLeft"  data-wow-duration="${seconds}s">
 						<a href="${url}">
             <div class="card mt-3 mb-3">
              <div id="countryid${item.package_name.replace(/ /g, "_")}"></div>

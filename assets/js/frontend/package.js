@@ -229,7 +229,7 @@ var package = {
 			})
 	},
 
-	getPackageImages: function (package) {
+	getPackageOverImages: function (package) {
 		//console.log(country);
 		var img = "";
 		fns.ajaxGet('holidaymate/api/packageimages/images/' + package, 'user').
@@ -251,7 +251,7 @@ var package = {
 			});
 
 	},
-	getPackageOverImages: function (package) {
+	getPackageImages: function (package) {
 		//console.log(country);
 		var img = "";
 		fns.ajaxGet('holidaymate/api/packageimages/images/' + package, 'user').

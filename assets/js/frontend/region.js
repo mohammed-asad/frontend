@@ -53,7 +53,9 @@ var region = {
 					alert(e.message)
 				} else if (r.status === 200) {
 					$.map(r.data, function (item1, index1) {
-						img += `<img class="img-responsive card-img-top" src="${item1.url}">`;
+						if (item1.type == "package") {
+							img += `<img class="img-responsive card-img-top" src="${item1.url}">`;
+						}
 					});
 					$(`#countryid${package}`).append(img);
 				}

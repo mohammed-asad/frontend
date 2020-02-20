@@ -201,7 +201,7 @@ var package = {
               <div class="card-block">
                 <h4 class="card-title text-center">${item.package_name}</h4>
                 <div class="card-text text-center">
-                  <small class="text-center"> ${item.short_desc}</small>
+                  <small class="text-center">${item.short_desc}</small>
                 </div>
               </div>
               <div class="card-footer">
@@ -218,7 +218,7 @@ var package = {
 						}
 						//Get images for package
 						var packageName = item.package_name.replace(/ /g, "_");
-						package.getPackageImages(packageName);
+						package.getPackageOverImages(packageName);
 
 					});
 
@@ -238,7 +238,10 @@ var package = {
 					alert(e.message)
 				} else if (r.status === 200) {
 					$.map(r.data, function (item1, index1) {
-						img += `<img class="img-responsive card-img-top" src="${item1.url}">`;
+						if (item1.type == "package") {
+							img += `<img class="img-responsive card-img-top" src="${item1.url}">`;
+						}
+
 					});
 					$(`#countryid${package}`).append(img);
 				}
@@ -248,6 +251,29 @@ var package = {
 			});
 
 	},
+	getPackageOverImages: function (package) {
+		//console.log(country);
+		var img = "";
+		fns.ajaxGet('holidaymate/api/packageimages/images/' + package, 'user').
+		done(function (r) {
+				if (r.status === 401) {
+					alert(e.message)
+				} else if (r.status === 200) {
+					$.map(r.data, function (item1, index1) {
+						if (item1.type == "package_overview") {
+							img += `<img class="img-responsive card-img-top" src="${item1.url}">`;
+						}
+
+					});
+					$(`#countryid${package}`).append(img);
+				}
+			})
+			.fail(function (r) {
+				alert(r.message);
+			});
+
+	},
+
 	// get package by id in country details page
 	getCountrypackage: function () {
 		var maxLenght = 100;

@@ -101,30 +101,31 @@
 </section>
 <section class="section packdetail overview-content-details">
   <div class="container-fluid">
-    <div class="col-xl-10 offset-xl-2 col-lg-10 offset-lg-2 col-md-12 m-auto">
+    <div class="col-xl-10 offset-xl-2 col-lg-10 offset-lg-2 col-md-12 m-auto aos-all" id="transcroller-body">
       <div class="row section hotel-overview"></div>
       <div class="row section hotel-included">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 aos-item" data-aos="fade-right">
           <h1>What's included</h1>
         </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 aos-item" data-aos="fade-left">
+
           <ul class="inlude-description"></ul>
         </div>
       </div>
       <div class="row section hotel-excluded">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 aos-item" data-aos="fade-right">
           <h1>What's exclude</h1>
         </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 aos-item" data-aos="fade-left">
           <ul class="exclude-content"></ul>
         </div>
 
       </div>
       <div class="row section">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section aos-item" data-aos="fade-right">
           <h1>Hotel Details</h1>
         </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section custom-padding">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section custom-padding aos-item" data-aos="fade-left">
           <div class="hotel-description">
 
           </div>
@@ -132,20 +133,20 @@
       </div>
       <div class="row section hotel-itinerary">
 
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 aos-item" data-aos="fade-right">
           <h1>Your itinerary</h1>
         </div>
         <!-- itenry track -->
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 iti_items">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 iti_items aos-item" data-aos="fade-left">
 
         </div>
       </div>
       <div class="row section hotel-Info">
         <!-- itenry track -->
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section aos-item" data-aos="fade-right">
           <h1>Additional Info</h1>
         </div>
-        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section aos-item" data-aos="fade-left">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs cst-nav-tabs" role="tablist">
             <li class="nav-item">
@@ -168,7 +169,7 @@
 
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 section p-0">
+          <div class="col-md-12 col-sm-12 section p-0 aos-item" data-aos="fade-right">
             <div class="dis  mt-5">
               <div class="ab">
                 <p class="t">Hassle free<p>
@@ -187,6 +188,7 @@
       <input type="hidden" id="base" value="<?php echo base_url(); ?>">
 </section>
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+
 <script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>

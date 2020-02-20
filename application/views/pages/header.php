@@ -20,7 +20,10 @@
    <link href="<?php echo base_url(); ?>assets/css/slick.min.css" rel="stylesheet" type="text/css">
    <link href="<?php echo base_url(); ?>assets/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css">
    <link href="<?php echo base_url(); ?>assets/css/animate.min.css" rel="stylesheet" type="text/css">
+
    <link href="<?php echo base_url(); ?>assets/css/header.css" rel="stylesheet" type="text/css">
+
+   <link href="<?php echo base_url(); ?>assets/css/aos.css" rel="stylesheet" type="text/css">
    <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css">
    <!--[if IE 7]>
       <link rel="stylesheet" href="css/fontello-ie7.css">

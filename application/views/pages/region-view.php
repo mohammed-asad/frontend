@@ -1,4 +1,4 @@
-<!-- //Load the navigation menu -->
+<!-- //Load the navigation menu reagion page-->
 <?php $data['home'] = "changenev"; ?>
 <?php $this->load->view('pages/sections/navigation', $data); ?>
 

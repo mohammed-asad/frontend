@@ -5,7 +5,7 @@
     <div class="gather-jumbotron solo">
       <div class="travel-content">
         <div class="text-center text-white">
-          <h1>As you travel solo</h1>
+          <h1 class="wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">As you travel solo</h1>
           <!-- <p class="mt-3">Rejoice with your family on a perfect holiday</p> -->
         </div>
       </div>
@@ -15,10 +15,10 @@
 <section class="section3">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
     <div class="trvalep-content mont-r">
-      <p>At Holidaymate we encourage the individuals to take the Solotrip we organise. Go on Solotrip but dont feel lonely as u will be with the group of unknown but equally enthusiastic group of people. Do the things which you always wanted to do but shy(ed) away to do in front of your family/friends.</p>
-      <p> This Lonetrips will make you Beat out those deep fears and phobias which are accumulated within you from long and gives the gut to do the things which you longed to do but haven't done cause of the peer pressures. On Holidaymate 's Rediscovery trips there are no one who wants to judge you nor want to get judged.
+      <p class="wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">At Holidaymate we encourage the individuals to take the Solotrip we organise. Go on Solotrip but dont feel lonely as u will be with the group of unknown but equally enthusiastic group of people. Do the things which you always wanted to do but shy(ed) away to do in front of your family/friends.</p>
+      <p class="wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms"> This Lonetrips will make you Beat out those deep fears and phobias which are accumulated within you from long and gives the gut to do the things which you longed to do but haven't done cause of the peer pressures. On Holidaymate 's Rediscovery trips there are no one who wants to judge you nor want to get judged.
       </p>
-      <p>Find new Passions
+      <p class="wow fadeInLeft" data-wow-delay="1.6s" data-wow-duration="1500ms">Find new Passions
         Break the Chains with the Past,
         Do little drama, Dance a lot
         Discover a New You

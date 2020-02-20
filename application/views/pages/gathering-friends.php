@@ -5,8 +5,8 @@
     <div class="gather-jumbotron friends">
       <div class="travel-content">
         <div class="text-center text-white">
-          <h1>Celebration with Friends</h1>
-          <p class="mt-3">Rejoice with your family on a perfect holiday</p>
+          <h1 class="wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">Celebration with Friends</h1>
+          <p class="mt-3 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Rejoice with your family on a perfect holiday</p>
         </div>
       </div>
     </div>
@@ -15,20 +15,21 @@
 <section class="section3">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
     <div class="trvalep-content mont-r">
-      <p>The bond of friendship gets deeper and stronger with travel dairies.
+      <p class="wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">The bond of friendship gets deeper and stronger with travel dairies.
         Down the life time when you sit on a couch and get nostalgic about that particular moment with your pals and buddies…..
         Well….. Priceless isn’t it…?</p>
-      <p>The world is a book, and those who do not travel read only the cover page.
+      <p class="wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">The world is a book, and those who do not travel read only the cover page.
         The friends come in every chapter of that amazing book.</p>
-      <p> A bucket list is not complete without friends.</p>
-      <p>The best Cappuccino</p>
-      <p>View of an Ionian Sea <p>That mountain u conquered </p>
-        <p>To celebrate your important milestones</p>
-        <p>Everything is best when you are with your friends.</p>
-        <p>Get in touch with HolidayMate to know more about touring with friends to make memories.</p>
+      <p class="wow fadeInLeft" data-wow-delay="1.5s" data-wow-duration="1500ms"> A bucket list is not complete without friends.</p>
+      <p class="wow fadeInLeft" data-wow-delay="1.9s" data-wow-duration="1500ms">The best Cappuccino</p>
+      <p class="wow fadeInLeft" data-wow-delay="2.3s" data-wow-duration="1500ms">View of an Ionian Sea</p>
+      <p class="wow fadeInLeft" data-wow-delay="2.8s" data-wow-duration="1500ms">That mountain u conquered </p>
+      <p class="wow fadeInLeft" data-wow-delay="3s" data-wow-duration="1500ms">To celebrate your important milestones</p>
+      <p class="wow fadeInLeft" data-wow-delay="3.3s" data-wow-duration="1500ms">Everything is best when you are with your friends.</p>
+      <p class="wow fadeInLeft" data-wow-delay="3.6s" data-wow-duration="1500ms">Get in touch with HolidayMate to know more about touring with friends to make memories.</p>
 
-        <p>We Fabricate the best travel advisory, making sure you spend each moment on tour with your family creating unforgettable memories.</p>
-        <p> There will be hours full of exercises designed to learn and explore for all ages. Stay together, Eat, Cuddle and Relax with Love.</p>
+      <p class="wow fadeInLeft" data-wow-delay="4s" data-wow-duration="1500ms">We Fabricate the best travel advisory, making sure you spend each moment on tour with your family creating unforgettable memories.</p>
+      <p class="wow fadeInLeft" data-wow-delay="4.5s" data-wow-duration="1500ms"> There will be hours full of exercises designed to learn and explore for all ages. Stay together, Eat, Cuddle and Relax with Love.</p>
     </div>
   </div>
 </section>

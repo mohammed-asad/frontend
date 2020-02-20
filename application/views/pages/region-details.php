@@ -1,4 +1,4 @@
-<!-- //Load the navigation menu -->
+<!-- //Load the navigation menu  country page-->
 <?php $data['home'] = "changenev"; ?>
 <?php $this->load->view('pages/sections/navigation', $data); ?>
 

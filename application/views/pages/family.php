@@ -7,8 +7,8 @@
         <div class="row">
           <div class="col-12">
             <div class="text-center text-white">
-              <h1>Gathering with Family</h1>
-              <p class="mt-3">Rejoice with your family on a perfect holiday</p>
+              <h1 class="wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">Gathering with Family</h1>
+              <p class="mt-3 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Rejoice with your family on a perfect holiday</p>
             </div>
           </div>
         </div>
@@ -19,12 +19,12 @@
 <section class="section3">
   <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12">
     <div class="trvalep-content">
-      <p>Travelling with the family is a way of learning and exploring while making memories with the people you love the most.
+      <p class="wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">Travelling with the family is a way of learning and exploring while making memories with the people you love the most.
         Mom wants the spa, kids want to dive in pool, dad need to relish nature, grand parents want some adventure.
         Oh Yeah!!! holidaymate has got it covered all.</p>
 
-      <p>We Fabricate the best travel advisory, making sure you spend each moment on tour with your family creating unforgettable memories.</p>
-      <p> There will be hours full of exercises designed to learn and explore for all ages. Stay together, Eat, Cuddle and Relax with Love.</p>
+      <p class="wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">We Fabricate the best travel advisory, making sure you spend each moment on tour with your family creating unforgettable memories.</p>
+      <p class="wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1500ms"> There will be hours full of exercises designed to learn and explore for all ages. Stay together, Eat, Cuddle and Relax with Love.</p>
     </div>
   </div>
 </section>

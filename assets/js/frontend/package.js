@@ -17,10 +17,10 @@ var package = {
 						//var stat;
 						var base_url = $('#base').val();
 
-						var newpackageoverview = ` <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section">
+						var newpackageoverview = ` <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section aos-item" data-aos="fade-right">
 						<h1>Package Overview</h1>
 					</div>
-					<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section">
+					<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section aos-item" data-aos="fade-left">
 						<p class="cst-pst">${item.overview}</p>
 					</div>`;
 						var newpackagebannerimage = `<div id="countryid${item.package_name.replace(/ /g, "_")}" class="boredercls overview-img"></div>
@@ -79,7 +79,7 @@ var package = {
 						// Get exclucded aminities
 						var objexclude = JSON.parse(item.exclude);
 						var count = Object.keys(objexclude).length;
-						console.log(count);
+						//console.log(count);
 						if (count === 0) {
 
 							$('.hotel-excluded').addClass('empty');
@@ -96,7 +96,7 @@ var package = {
 							var newday = `<p>${item1.day}</p><ul class="timeline  mb-3 list"></ul>`;
 							$('.iti_items').append(newday);
 							$.map(item1.activities, function (item2, index2) {
-								console.log(item1.activities);
+								//console.log(item1.activities);
 								var newtime = `${item2.time} `;
 								var newactivity = `${item2.activity} `;
 								var newitenaryimg = `${item2.url} `;
@@ -136,7 +136,7 @@ var package = {
 	},
 
 	getPolicy: function (policytitle) {
-		console.log(hotel);
+		//console.log(hotel);
 		var maxLenght = 100;
 		i = 0;
 		fns.ajaxGet('holidaymate/api/policy/policytitle/' + policytitle, 'user').
@@ -192,7 +192,7 @@ var package = {
 						var seconds = index + 1;
 						var base_url = $('#base').val();
 						var url = `${base_url}packageoverview/${item.id}`;
-						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4 wow fadeInLeft"  data-wow-duration="${seconds}s">
+						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4 wow fadeInLeft"  data-wow-delay="0.${seconds}s" data-wow-duration="1500ms">
 						<a href="${url}">
             <div class="card mt-3 mb-3">
              <div id="countryid${item.package_name.replace(/ /g, "_")}"></div>
@@ -258,9 +258,10 @@ var package = {
 					alert(response.message)
 				} else if (response.status === 200) {
 					$.map(response.data, function (item, index) {
+						var seconds1 = index + 1;
 						var base_url = $('#base').val();
 						var url = `${base_url}packageoverview/${item.id}`;
-						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+						var newpackage = `<div class="col-sm-6 col-md-6 col-lg-3 mt-4 wow fadeInLeft" data-wow-delay="0.${seconds1}s" data-wow-duration="1500ms">
 						<a href="${url}">
             <div class="card mt-3 mb-3">
              <div id="countryid${item.package_name.replace(/ /g, "_")}"></div>

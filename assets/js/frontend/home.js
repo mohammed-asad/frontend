@@ -143,8 +143,8 @@ var home = {
 
 						console.log(item);
 						var newcountry = `<div id="countryid${ item.country_name.replace(/ /g, "_") }"></div>`;
-						var region_content = `<h1 class="text-center">${ item.country_name }</h1>
-            <p class="text-center">${item.description }</p>`;
+						var region_content = `<h1 class="text-center wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">${ item.country_name }</h1>
+            <p class="text-center wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1500ms">${item.description }</p>`;
 						if (index <= (maxLenght - 1)) {
 
 							$('.region-banner').append(newcountry);
@@ -199,14 +199,14 @@ var home = {
 		var averageMiddle = home.getAverage(home.scrollings, 70);
 		var isAccelerating = averageEnd >= averageMiddle;
 
-		if(isAccelerating){
-				if (delta < 0 && home.menuActive !== true) {
-					if($(window).scrollTop() > parseInt(home.windowHeight / 1.8)){
-						$('.navigation').fadeOut(800);
-					}
-				}else {
-					$('.navigation').fadeIn();
+		if (isAccelerating) {
+			if (delta < 0 && home.menuActive !== true) {
+				if ($(window).scrollTop() > parseInt(home.windowHeight / 1.8)) {
+					$('.navigation').fadeOut(800);
 				}
+			} else {
+				$('.navigation').fadeIn();
+			}
 		}
 		return false;
 	},
@@ -219,7 +219,7 @@ var home = {
 		$(document).bind('touchend', function (e) {
 			var te = e.originalEvent.changedTouches[0].clientY;
 			if (ts > te + 5 && !home.menuActive) {
-				if($(window).scrollTop() > parseInt(home.windowHeight / 2)){
+				if ($(window).scrollTop() > parseInt(home.windowHeight / 2)) {
 					$('.navigation').fadeOut();
 				}
 			} else if (ts < te - 5) {

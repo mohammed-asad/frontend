@@ -5,8 +5,8 @@
     <div class="gather-jumbotron colleague">
       <div class="travel-content">
         <div class="text-center text-white">
-          <h1>Retreats with Colleagues</h1>
-          <p class="mt-3">Rejoice with your family on a perfect holiday</p>
+          <h1 class="wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">Retreats with Colleagues</h1>
+          <p class="mt-3 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Rejoice with your family on a perfect holiday</p>
         </div>
       </div>
     </div>
@@ -15,15 +15,15 @@
 <section class="section3">
   <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
     <div class="trvalep-content mont-r">
-      <p>The strength of the team is each individual member. The strength of each member is the team. Leave the desks for recreation and rejuvenation.</p>
-      <p> Let holidaymate boost your corporate energy and take care of all your particulars.</p>
-      <p>Get out on that breath taking hiking trail.</p>
-      <p> Turn on the dirt biker and ATV skills in you.</p>
-      <p> Try a PUT in the golf course.</p>
-      <p> Feel the energy in tennis court swinging racket.</p>
-      <p> Relax in the spa to stretch your collective bodies and minds.</p>
-      <p> You ask for it, we have got it for you.</p>
-      <p class="mt-3 mb-0"> holidaymate crafts corporate adventures that promote bonding, inspire new ideas, restore friendships, renew loyalty and provide perspective to move forward as a strong team.</p>
+      <p class="wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">The strength of the team is each individual member. The strength of each member is the team. Leave the desks for recreation and rejuvenation.</p>
+      <p class="wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1500ms"> Let holidaymate boost your corporate energy and take care of all your particulars.</p>
+      <p class="wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Get out on that breath taking hiking trail.</p>
+      <p class="wow fadeInLeft" data-wow-delay="1.5s" data-wow-duration="1500ms"> Turn on the dirt biker and ATV skills in you.</p>
+      <p class="wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1500ms"> Try a PUT in the golf course.</p>
+      <p class="wow fadeInLeft" data-wow-delay="2.3s" data-wow-duration="1500ms"> Feel the energy in tennis court swinging racket.</p>
+      <p class="wow fadeInLeft" data-wow-delay="2.6s" data-wow-duration="1500ms"> Relax in the spa to stretch your collective bodies and minds.</p>
+      <p class="wow fadeInLeft" data-wow-delay="3s" data-wow-duration="1500ms"> You ask for it, we have got it for you.</p>
+      <p class="mt-3 mb-0 wow fadeInLeft" data-wow-delay="3.2s" data-wow-duration="1500ms"> holidaymate crafts corporate adventures that promote bonding, inspire new ideas, restore friendships, renew loyalty and provide perspective to move forward as a strong team.</p>
     </div>
   </div>
 </section>

@@ -69,6 +69,7 @@
 							<div class="col-md-12 text-center">
 								<!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
 								<input type="submit" name="btncreatemail" class="btn btn-submit btn-lg btncreatemail" value="submit" />
+								<p class="information">Your information will be Kept Confidential</p>
 							</div>
 					</form>
 				</div>
@@ -111,7 +112,7 @@
 								<div class="col-sm-12 col-md-12 col-lg-4">
 									<h1 class="text-white">Travel</h1>
 									<h1 class="text-white">Private</h1>
-									<p>holiday<span>mate</span> motto when it comes to</p>
+									<!-- <p>holiday<span>mate</span> motto when it comes to</p> -->
 									<h4>Gathering with Family</h4>
 								</div>
 							</div>
@@ -124,7 +125,7 @@
 									<!--Content-->
 									<h1 class="text-white">Travel</h1>
 									<h1 class="text-white">Private</h1>
-									<p>holiday<span>mate</span> motto when it comes to</p>
+									<!-- <p>holiday<span>mate</span> motto when it comes to</p> -->
 									<h4>Celebration with Friends</h4>
 								</div>
 							</div>
@@ -137,7 +138,7 @@
 								<div class="col-sm-12 col-md-12 col-lg-4">
 									<h1 class="text-white">Travel</h1>
 									<h1 class="text-white">Private</h1>
-									<p>holiday<span>mate</span> motto when it comes to</p>
+									<!-- <p>holiday<span>mate</span> motto when it comes to</p> -->
 									<h4>Retreats With Colleagues</h4>
 								</div>
 							</div>
@@ -148,8 +149,8 @@
 								<div class="col-sm-12 col-md-12 col-lg-4">
 									<h1 class="text-white">Travel</h1>
 									<h1 class="text-white">Private</h1>
-									<p>holiday<span>mate</span> motto when it comes to</p>
-									<h4>Solor Trip</h4>
+									<!-- <p>holiday<span>mate</span> motto when it comes to</p> -->
+									<h4>Solo Trip</h4>
 								</div>
 							</div>
 						</div>

@@ -6,7 +6,7 @@
       <div class="travel-content">
         <div class="text-center text-white">
           <h1 class="wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">Retreats with Colleagues</h1>
-          <p class="mt-3 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Rejoice with your family on a perfect holiday</p>
+          <p class="mt-3 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Talent wins games, teamwork wins Championships</p>
         </div>
       </div>
     </div>

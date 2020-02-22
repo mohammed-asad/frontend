@@ -18,6 +18,12 @@
             <a href="#!">+91 9845 944499</a>
           </li>
           <li>
+            <a href="#!">Lavanya – +91 9845944499</a>
+          </li>
+          <li>
+            <a href="#!">Rajat-David - +91 9880212129</a>
+          </li>
+          <li>
             <a href="#!">support@holidaymate.com</a>
           </li>
           <!-- <li>
@@ -143,14 +149,6 @@
   })
   wow.init();
   // new WOW().init();
-</script>
-
-
-<script src="<?php echo base_url(); ?>assets/js/frontend/aos.js"></script>
-<script>
-  AOS.init({
-    easing: 'ease-in-out-sine'
-  });
 </script>
 
 </body>

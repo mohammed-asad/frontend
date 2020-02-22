@@ -17,10 +17,10 @@ var package = {
 						//var stat;
 						var base_url = $('#base').val();
 
-						var newpackageoverview = ` <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section aos-item" data-aos="fade-right">
+						var newpackageoverview = ` <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 section wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.1s">
 						<h1>Package Overview</h1>
 					</div>
-					<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section aos-item" data-aos="fade-left">
+					<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 section wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.1s">
 						<p class="cst-pst">${item.overview}</p>
 					</div>`;
 						var newpackagebannerimage = `<div id="countryid${item.package_name.replace(/ /g, "_")}" class="boredercls overview-img"></div>
@@ -46,7 +46,7 @@ var package = {
 						//----------------------------- form input value fetching ----------------------
 						var daynnight = `${item.duration_night} Nights & ${item.duration_day} Days`;
 						var locationtxt = `${item.destination_name}`;
-						var long_description = `${item.long_desc}`;
+						//	var long_description = `${item.long_desc}`;
 						if (index <= (maxLenght - 1)) {
 
 							$('.pakage-bannerblock').append(newpackagebannerimage);
@@ -54,7 +54,7 @@ var package = {
 							$('.daynnight').append(daynnight);
 							$('.locationtxt').append(locationtxt);
 							$('.hotel-overview').append(newpackageoverview);
-							$('.long-description').append(long_description);
+							//	$('.long-description').append(long_description);
 
 							//fetch hotel details from here by sending the Hotel name mentined in the Pacakge
 							var hotelName = item.hotel_name.replace(/ /g, "_")

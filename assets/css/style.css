@@ -209,8 +209,6 @@ body {
   font-family: "Mont-SemiBold";
   font-size: 14px;
   background-color: #fff;
-  /*overflow:hidden;
-    overflow-y: auto;*/
   padding: 0;
 }
 
@@ -230,11 +228,6 @@ html {
   font-family: "Mont-Regular";
 }
 
-/*.abs-center-x {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}*/
 .mall-24 {
   margin: 24px;
 }
@@ -298,7 +291,6 @@ h4 {
 .section {
   margin: 80px 0px;
   position: relative;
-  /* top: 75rem;*/
 }
 
 .star {
@@ -375,6 +367,10 @@ h4 {
   left: 25.5% !important;
 }
 
+.changenev .nav-items-holder .right-toptext {
+  color: #000;
+}
+
 .changenev .changenev {
   display: none;
 }
@@ -382,7 +378,8 @@ h4 {
 .changenev .right-toptext {
   color: #000 !important;
   right: 7% !important;
-  top: -5px !important;
+  top: -10px !important;
+  font-family: Mont-Semibold !important;
 }
 
 .small-btn-submit {
@@ -473,11 +470,6 @@ h4 {
 }
 
 /* Make the image fully responsive */
-.carousel {
-  /* height: 96.8vh;*/
-  /* position: absolute;*/
-}
-
 .carousel .banner-carousel-inner .banner-inner img {
   height: 96vh;
 }
@@ -761,7 +753,6 @@ h4 {
 header section {
   border-radius: 50px;
   display: block;
-  /*  position: absolute;*/
   position: relative;
   width: 100%;
   height: 180px;
@@ -974,6 +965,7 @@ header span {
 }
 
 .custom-jumbotronhome h4 {
+  margin-top: 40px;
   font-size: 26px;
 }
 
@@ -1021,8 +1013,6 @@ header span {
   background: #fff;
   border: none;
   border-radius: 20px;
-  /*padding: 15px;
-    padding: 15px 15px 30px 15px;*/
   padding: 15px 30px;
 }
 
@@ -2403,6 +2393,7 @@ ul.timeline > li:before {
     max-width: 100%;
     position: relative;
     overflow: scroll;
+    padding-top: 26px;
   }
 }
 
@@ -2659,8 +2650,11 @@ ul.timeline > li:before {
 
 .nav-wrapper .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .regionnames {
   font-family: Mont-SemiBoldItalic;
-  color: #87DEFE !important;
   font-size: 16px;
+}
+
+.nav-wrapper .navigation .nav-items-holder .nav-item .sub-menu .sub-menu-items-holder .sub-menu-item-list .sub-menu-item .regionnames:hover {
+  color: #87DEFE !important;
 }
 
 @media (max-width: 1366px) {
@@ -2732,9 +2726,9 @@ ul.timeline > li:before {
 
 .nav-wrapper .navigation .right-toptext {
   position: absolute;
-  right: 30px;
-  top: 0;
-  font-family: Mont-LightItalic;
+  right: 10px;
+  top: -5px;
+  font-family: Mont-semibold;
   font-size: 16px;
   color: #fff;
 }
@@ -2752,7 +2746,7 @@ ul.timeline > li:before {
 @media (max-width: 1199px) {
   .nav-wrapper .navigation .right-toptext {
     font-size: 14px;
-    color: #fff !important;
+    color: #fff;
   }
 }
 
@@ -2767,7 +2761,7 @@ ul.timeline > li:before {
   position: absolute;
   text-align: center;
   top: 36px !important;
-  font-family: Mont-LightItalic;
+  font-family: Mont-Semibold;
   font-size: 18px;
   display: none;
   color: #fff;
@@ -2782,12 +2776,19 @@ ul.timeline > li:before {
   .nav-wrapper .navigation .right-toptext1 {
     display: block !important;
     font-size: 14px;
+    top: 40px !important;
   }
 }
 
 @media (max-width: 414px) {
   .nav-wrapper .navigation .right-toptext1 {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-wrapper .navigation .right-toptext1 {
+    font-size: 8px;
   }
 }
 
@@ -2804,6 +2805,9 @@ ul.timeline > li:before {
     position: relative;
     left: 15px;
   }
+  .nav-wrapper .navigation .slick-slider img {
+    left: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2817,6 +2821,9 @@ ul.timeline > li:before {
   .nav-wrapper .navigation img {
     position: relative;
     left: 10px;
+  }
+  .nav-wrapper .navigation .slick-slider img {
+    left: 0;
   }
 }
 
@@ -3000,10 +3007,6 @@ ul.timeline > li:before {
 }
 
 .gather-section .container-fluid .gather-jumbotron .travel-content {
-  /*position: absolute;
-      text-align: center;
-      left: 30%;
-      bottom: 15%;*/
   position: relative;
   width: 100%;
   text-align: center;
@@ -3661,6 +3664,14 @@ ul.timeline > li:before {
   }
 }
 
+.information {
+  color: grey;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: Mont-Regular;
+}
+
 /*************************************************** media queries ***********************************/
 /*************************enquery form ***************************************************************/
 @media (max-width: 1700px) {
@@ -4020,13 +4031,6 @@ ul.timeline > li:before {
   }
 }
 
-@media (max-width: 1200px) {
-  /*.section {
-    top: 48rem;
-    
-}*/
-}
-
 @media (max-width: 1199px) and (min-width: 1024px) {
   .new-cardblock .card-footer {
     padding: 12px 8px !important;
@@ -4092,6 +4096,14 @@ ul.timeline > li:before {
   .form-block .card-outline-secondary .enqury-card .form-group .newfacalendar2 {
     top: 24px !important;
   }
+  .banner {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+  }
+  .banner .header-banner {
+    border-radius: 15px;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -4153,7 +4165,7 @@ ul.timeline > li:before {
     width: 120.5% !important;
   }
   .logo {
-    z-index: 999;
+    z-index: 9;
   }
 }
 
@@ -4512,6 +4524,9 @@ ul.timeline > li:before {
 }
 
 @media (max-width: 414px) {
+  .mySlides img {
+    height: 33vh;
+  }
   .cst-carousel-control-next2 {
     top: 0.5rem;
   }
@@ -4556,7 +4571,6 @@ ul.timeline > li:before {
   }
   .hotel-Info .nav-tabs .nav-item {
     position: relative;
-    width: 128px;
   }
   .hotel-Info .nav-tabs .nav-item a {
     font-size: 10px;
@@ -4617,7 +4631,6 @@ ul.timeline > li:before {
   }
   .hotel-Info .nav-tabs .nav-item {
     position: relative;
-    width: 80px;
   }
   .hotel-Info .nav-tabs .nav-item a {
     font-size: 9px;

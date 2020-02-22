@@ -6,7 +6,7 @@
       <div class="travel-content">
         <div class="text-center text-white">
           <h1 class="wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">Celebration with Friends</h1>
-          <p class="mt-3 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Rejoice with your family on a perfect holiday</p>
+          <p class="mt-3 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1500ms">Without friends, you cannot score your bucket list</p>
         </div>
       </div>
     </div>

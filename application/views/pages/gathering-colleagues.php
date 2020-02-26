@@ -27,6 +27,91 @@
     </div>
   </div>
 </section>
+<section>
+  <button class="btn btn-info fixedbutton" data-toggle="modal" data-target="#mycstModal"><i class="fa fa-angle-left" aria-hidden="true"></i> Book Now</button>
+  <!-- Modal -->
+  <div class="modal left fade" id="mycstModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        </div> -->
+
+        <div class="modal-body">
+          <!-- Form -->
+          <div class="row form-block enquiry-form">
+            <!--	<div class="col-xl-6 offset-xl-6 col-lg-8 offset-lg-4 col-md-8 offset-md-2 custom-md-6 col-sm-10 offset-sm-1">
+				 form card login -->
+            <div class="card card-outline-secondary">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="card-body enqury-card">
+                <h3 class="mb-10 dsb">Book unique places to stay and things to do.</h3>
+                <h4 class="mb-10 dsn">Book unique places to<br> stay and things to do.</h4>
+                <form autocomplete="off" class="form createmail" id="formLogin" name="createmail" role="form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="uname1">where</label>
+                        <input class="form-control to_where" id="uname1" name="to_where" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                      <div class="form-group custom-formgroup1">
+                        <label class="control-label">From</label>
+                        <div class="icon-input">
+                          <i class="fa fa-calendar newfacalendar1"></i>
+                          <input id="datepicker1" name="date_from" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_from" placeholder="Select a date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pl-0">
+                      <div class="form-group custom-formgroup2">
+                        <label class="control-label custom-to">To</label>
+                        <div class="icon-input">
+                          <i class="fa fa-calendar newfacalendar2"></i>
+                          <input id="datepicker2" name="date_to" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_to" placeholder="Select a date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input name="c_name" class="form-control cst-pr text-left c_name" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pl-0">
+                      <div class="form-group">
+                        <label for="to1" class="ml-3">Email</label>
+                        <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <span class="form-control country-code text-center">+91</span>
+                        <input class="form-control pl-90 c_mobile" name="c_mobile" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
+                      <input type="submit" name="btncreatemail" class="btn btn-submit btn-lg btncreatemail" value="submit" />
+                      <p class="information">Your information will be Kept Confidential</p>
+                    </div>
+                </form>
+              </div>
+              <!--/card-block-->
+              <!--</div>
+				 /form card login -->
+            </div>
+          </div>
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+</section>
 <section class="section3">
   <section class="">
     <div class="col-xl-10 offset-xl-1 ">
@@ -37,7 +122,7 @@
           <img src="<?php echo base_url(); ?>assets/images/gather/retreatewithcoleaugethought1.jpg" style="width:100%">
           <div class="text">
             <p>If everyone is moving together, then success take care of itself. Its not about ideas, its about making ideas happen.</p>
-            <p>- Create those ideas on a team outing and a Brain Storming trip with HolidayMate.</p>
+            <p>- Create those ideas on a team outing and a <span class="mont-bold">Brain Storming</span> trip with HolidayMate.</p>
           </div>
         </div>
 
@@ -46,7 +131,7 @@
           <div class="text">
             <p>Alone we can do so little; together we can do so much. The team building activity can be fun and
               productive too.</p>
-            <p>- Do not worry about a symphony, HolidayMate can create an Orchestra of Team building</p>
+            <p>- Do not worry about a symphony, HolidayMate can create an Orchestra of <span class="mont-bold">Team building</span></p>
           </div>
         </div>
 
@@ -55,7 +140,7 @@
           <div class="text">
             <p>The relentless hard work you put in as a team needs pampering and resurgence through a team trip.
               Life is about caring for team mates and building a rapport like concert.</p>
-            <p>- Push to new Heights with HolidayMate Corporate tour packages and Reinvent your Passion.</p>
+            <p><span class="mont-bold">- Push to new Heights</span> with HolidayMate Corporate tour packages and Reinvent your Passion.</p>
           </div>
         </div>
         <div class="mySlides ">
@@ -63,7 +148,7 @@
           <div class="text">
             <p>When is comes to team, its not a solo work. Recreate the passion with your team which creates the
               balance between Work and Family and Friends.</p>
-            <p>- Corporate Retreats with HolidayMate brings the satisfaction above all else.</p>
+            <p><span class="mont-bold">- Corporate Retreats</span> with HolidayMate brings the satisfaction above all else.</p>
           </div>
         </div>
 
@@ -165,3 +250,5 @@
   </script>
   <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
   <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/frontend/mail.js"></script>

@@ -1,6 +1,17 @@
 <div class="nav-wrapper">
 	<section class="navigation <?php echo $home; ?>">
-		<p class="right-toptext"> <i class="fa fa-phone"></i> <span> : +91 9845 944499 </span> | Lavanya – +91 9845944499 | Rajat-David - +91 9880212129</p>
+		<div class="right-toptext">
+
+			<div class="inner">
+				<span> <i class="fa fa-phone"></i> </span>
+
+				<p> +91 9845 944499 </p>
+				<p>Lavanya – +91 9845944499 </p>
+				<p>Rajat-David - +91 9880212129</p>
+
+
+			</div>
+		</div>
 		<!-- Your Dream Destination is just Call Away -->
 		<div class="position">
 			<div class="blur-backdrop"></div>
@@ -13,7 +24,17 @@
 
 		<div class="nav-items-holder">
 			<span class="close-hamburger-menu"></span>
-			<p class="right-toptext1" style="color:#fff;"><i class="fa fa-phone"></i> <span> : +91 9845 944499 </span> | Lavanya – +91 9845944499 | Rajat-David - +91 9880212129</p>
+			<div class="right-toptext1">
+				<div class="inner">
+					<span><i class="fa fa-phone"></i></span>
+
+					<p style="color:#000;"> +91 9845 944499 </p>
+					<p style="color:#000;">Lavanya – +91 9845944499 </p>
+					<p style="color:#000;">Rajat-David - +91 9880212129</p>
+
+
+				</div>
+			</div>
 			<a href="<?php echo base_url(); ?>" class="logo secondary">
 				<img src="<?php echo base_url(); ?>assets/images/logo/gray-logo.svg" alt="">
 			</a>

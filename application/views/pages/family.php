@@ -28,6 +28,91 @@
     </div>
   </div>
 </section>
+<section>
+  <button class="btn btn-info fixedbutton" data-toggle="modal" data-target="#mycstModal"><i class="fa fa-angle-left" aria-hidden="true"></i> Book Now</button>
+  <!-- Modal -->
+  <div class="modal left fade" id="mycstModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        </div> -->
+
+        <div class="modal-body">
+          <!-- Form -->
+          <div class="row form-block enquiry-form">
+            <!--	<div class="col-xl-6 offset-xl-6 col-lg-8 offset-lg-4 col-md-8 offset-md-2 custom-md-6 col-sm-10 offset-sm-1">
+				 form card login -->
+            <div class="card card-outline-secondary">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="card-body enqury-card">
+                <h3 class="mb-10 dsb">Book unique places to stay and things to do.</h3>
+                <h4 class="mb-10 dsn">Book unique places to<br> stay and things to do.</h4>
+                <form autocomplete="off" class="form createmail" id="formLogin" name="createmail" role="form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="uname1">where</label>
+                        <input class="form-control to_where" id="uname1" name="to_where" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                      <div class="form-group custom-formgroup1">
+                        <label class="control-label">From</label>
+                        <div class="icon-input">
+                          <i class="fa fa-calendar newfacalendar1"></i>
+                          <input id="datepicker1" name="date_from" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_from" placeholder="Select a date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pl-0">
+                      <div class="form-group custom-formgroup2">
+                        <label class="control-label custom-to">To</label>
+                        <div class="icon-input">
+                          <i class="fa fa-calendar newfacalendar2"></i>
+                          <input id="datepicker2" name="date_to" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_to" placeholder="Select a date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input name="c_name" class="form-control cst-pr text-left c_name" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pl-0">
+                      <div class="form-group">
+                        <label for="to1" class="ml-3">Email</label>
+                        <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <span class="form-control country-code text-center">+91</span>
+                        <input class="form-control pl-90 c_mobile" name="c_mobile" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
+                      <input type="submit" name="btncreatemail" class="btn btn-submit btn-lg btncreatemail" value="submit" />
+                      <p class="information">Your information will be Kept Confidential</p>
+                    </div>
+                </form>
+              </div>
+              <!--/card-block-->
+              <!--</div>
+				 /form card login -->
+            </div>
+          </div>
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+</section>
 <section class="section3">
 
   <div class="col-xl-10 offset-xl-1 ">
@@ -38,7 +123,7 @@
         <img src="<?php echo base_url(); ?>assets/images/others/thought1.jpg" style="width:100%">
         <div class="text">
           <p>Home is where the best place is!!! <br>When you are with your family, far away destination holiday just feels like home.</p>
-          <p>- Choice and Flexibility, choose your family holiday with holidaymate</p>
+          <p><span class="mont-bold">- Choice and Flexibility,</span> choose your family holiday with holidaymate</p>
         </div>
       </div>
 
@@ -46,7 +131,7 @@
         <img src="<?php echo base_url(); ?>assets/images/others/thought2.jpg" style="width:100%">
         <div class="text">
           <p>A happy family is but an earlier heaven, the next holiday you choose with your family will be an heavenly experience</p>
-          <p>- HolidayMate makes you create everlasting memories with FOCUS on FAMILY.</p>
+          <p>- HolidayMate makes you create everlasting memories with <span class="mont-bold">FOCUS on FAMILY.</span></p>
         </div>
       </div>
 
@@ -54,21 +139,21 @@
         <img src="<?php echo base_url(); ?>assets/images/others/thought3.jpg" style="width:100%">
         <div class="text">
           <p>In this amazing world with eternal beauty its endless exploration when you take a trip with your family.</p>
-          <p>- Use Your Pace and Rejoice with your family by choosing Exquisite HolidayMate Tour plans</p>
+          <p>- Use <span class="mont-bold">Your Pace</span> and Rejoice with your family by choosing Exquisite HolidayMate Tour plans</p>
         </div>
       </div>
       <div class="mySlides">
         <img src="<?php echo base_url(); ?>assets/images/others/thought4.jpg" style="width:100%">
         <div class="text">
           <p>On the ocean of life when you sail on the family ship, choose HolidayMate as your compass.</p>
-          <p>- Endless Exploration family tours from HolidayMate</p>
+          <p><span class="mont-bold">- Endless Exploration</span> family tours from HolidayMate</p>
         </div>
       </div>
       <div class="mySlides">
         <img src="<?php echo base_url(); ?>assets/images/others/thought5.jpg" style="width:100%">
         <div class="text">
           <p>Family are God’s gift to you, as you are to them. A family trip is a celebration.</p>
-          <p>- Let the HolidayMate plan the Itinerary that you choose to explore</p>
+          <p>- Let the HolidayMate plan the <span class="mont-bold">Itinerary </span> you choose to explore</p>
         </div>
       </div>
 
@@ -159,3 +244,5 @@
 
   showSlides(slideIndex);
 </script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/mail.js"></script>

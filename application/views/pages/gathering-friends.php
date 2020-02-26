@@ -33,6 +33,95 @@
     </div>
   </div>
 </section>
+
+<section>
+  <button class="btn btn-info fixedbutton" data-toggle="modal" data-target="#mycstModal"><i class="fa fa-angle-left" aria-hidden="true"></i> Book Now</button>
+  <!-- Modal -->
+  <div class="modal left fade" id="mycstModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        </div> -->
+
+        <div class="modal-body">
+          <!-- Form -->
+          <div class="row form-block enquiry-form">
+            <!--	<div class="col-xl-6 offset-xl-6 col-lg-8 offset-lg-4 col-md-8 offset-md-2 custom-md-6 col-sm-10 offset-sm-1">
+				 form card login -->
+            <div class="card card-outline-secondary">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="card-body enqury-card">
+                <h3 class="mb-10 dsb">Book unique places to stay and things to do.</h3>
+                <h4 class="mb-10 dsn">Book unique places to<br> stay and things to do.</h4>
+                <form autocomplete="off" class="form createmail" id="formLogin" name="createmail" role="form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="uname1">where</label>
+                        <input class="form-control to_where" id="uname1" name="to_where" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                      <div class="form-group custom-formgroup1">
+                        <label class="control-label">From</label>
+                        <div class="icon-input">
+                          <i class="fa fa-calendar newfacalendar1"></i>
+                          <input id="datepicker1" name="date_from" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_from" placeholder="Select a date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pl-0">
+                      <div class="form-group custom-formgroup2">
+                        <label class="control-label custom-to">To</label>
+                        <div class="icon-input">
+                          <i class="fa fa-calendar newfacalendar2"></i>
+                          <input id="datepicker2" name="date_to" data-provide="datepicker" data-date-format="dd/mm/yyyy" type="text" class="form-control date_to" placeholder="Select a date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input name="c_name" class="form-control cst-pr text-left c_name" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pl-0">
+                      <div class="form-group">
+                        <label for="to1" class="ml-3">Email</label>
+                        <input class="form-control cst-pl cstpl-wd text-left pl-30 c_email" name="c_email" required="" type="email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <span class="form-control country-code text-center">+91</span>
+                        <input class="form-control pl-90 c_mobile" name="c_mobile" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <!-- <button class="btn btn-submit btn-lg" type="button">Submit</button> -->
+                      <input type="submit" name="btncreatemail" class="btn btn-submit btn-lg btncreatemail" value="submit" />
+                      <p class="information">Your information will be Kept Confidential</p>
+                    </div>
+                </form>
+              </div>
+              <!--/card-block-->
+              <!--</div>
+				 /form card login -->
+            </div>
+          </div>
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+</section>
+
+
+
 <section class="section3">
 
   <div class="col-xl-10 offset-xl-1 ">
@@ -44,7 +133,7 @@
         <div class="text">
           <p>You are not born just to pay bills, there is an explorer waiting inside you.
             Disconnect from Work and Chaos for a while and plan the adventure with your friends</p>
-          <p>- Dive in, to Plethora of adventures through HolidayMate </p>
+          <p><span class="mont-bold">- Dive in,</span> to Plethora of adventures through HolidayMate </p>
         </div>
       </div>
 
@@ -52,7 +141,7 @@
         <img src="<?php echo base_url(); ?>assets/images/gather/celebretwithfriendthought2.jpg" style="width:100%">
         <div class="text">
           <p>Life is meant for big adventures and good friends, OH YEAH!!! Friends that travel together, stay together for ever.</p>
-          <p>- Don’t Sweat the Details, leave it to HolidayMate to bring out the best plan for you and your buddies</p>
+          <p><span class="mont-bold">- Don’t Sweat the Details,</span> leave it to HolidayMate to bring out the best plan for you and your buddies</p>
         </div>
       </div>
 
@@ -60,14 +149,14 @@
         <img src="<?php echo base_url(); ?>assets/images/gather/celebretwithfriendthought3.jpg" style="width:100%">
         <div class="text">
           <p>Good Times and Crazy friends make the best memories. Let the HolidayMate create those best times for you with your buddies.</p>
-          <p>- Travel at Your Pace, leave the planning and execution to HolidayMate</p>
+          <p>- Travel at <span class="mont-bold">Your Pace,</span> leave the planning and execution to HolidayMate</p>
         </div>
       </div>
       <div class="mySlides ">
         <img src="<?php echo base_url(); ?>assets/images/gather/celebretwithfriendthought1.jpg" style="width:100%">
         <div class="text">
           <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes. Pack your bags, choose your friends and say “Here we GO”</p>
-          <p>- At HolidayMate, you get Custom Journeys, tailor made for you through your choice.<p>
+          <p>- At HolidayMate, you get <span class="mont-bold">Custom Journeys,</span> tailor made for you through your choice.<p>
         </div>
       </div>
       <div class="arrow">
@@ -165,3 +254,5 @@
 </script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/utils.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/frontend/home.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/frontend/mail.js"></script>

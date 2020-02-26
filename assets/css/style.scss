@@ -1170,6 +1170,8 @@ footer {
 }
 
 .section1 {
+	margin: 50px 0;
+
 	.trvalep-content {
 		margin: 30px 0;
 
@@ -1177,12 +1179,12 @@ footer {
 			margin-bottom: 30px;
 
 			h3 {
-				font-size: 24px;
+				font-size: 22px;
 			}
 
 			p {
 				font-family: Mont-SemiBold;
-				font-size: 24px;
+				font-size: 22px;
 				margin-bottom: 0;
 			}
 
@@ -1362,7 +1364,7 @@ footer {
 
 			p {
 				font-family: "Mont-Regular";
-				font-size: 24px;
+				font-size: 22px;
 			}
 
 			@media all and (max-width: 1366px) {
@@ -1459,6 +1461,16 @@ footer {
 					outline: none;
 				}
 			}
+
+			@media(max-width:380px) {
+				width: 260px !important;
+
+				.card-outline-secondary .enqury-card h3 {
+					font-size: 17px !important;
+				}
+			}
+
+
 		}
 	}
 }
@@ -2058,7 +2070,8 @@ ul.timeline>li:before {
 		position: absolute;
 		width: calc(100% - 120px);
 		top: 35px;
-		z-index: 1009;
+		// z-index: 1009;
+		z-index: 1013;
 		margin: 15px 60px 0;
 		display: flex;
 		// justify-content: space-between;
@@ -2096,7 +2109,7 @@ ul.timeline>li:before {
 				}
 
 				@media(max-width:1023px) {
-					width: 20% !important;
+					//	width: 20% !important;
 				}
 			}
 
@@ -2106,6 +2119,12 @@ ul.timeline>li:before {
 
 				@media all and (max-width: 1023px) {
 					display: block;
+				}
+			}
+
+			@media(max-width:1023px) {
+				.home {
+					width: 20% !important;
 				}
 			}
 		}
@@ -2120,6 +2139,7 @@ ul.timeline>li:before {
 			margin-left: 30px;
 			cursor: pointer;
 			display: none;
+			top: -5px;
 
 			&:before {
 				content: '';
@@ -3227,7 +3247,7 @@ ul.timeline>li:before {
 
 .gather-card {
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 	border-radius: 40px;
 	box-shadow: 0px 0px 30px #00000029;
 	overflow: hidden;
@@ -3246,7 +3266,7 @@ ul.timeline>li:before {
 
 	img {
 		width: 100%;
-		height: 100%;
+		height: auto;
 		transition: ease-in-out 0.5s;
 
 		&:hover {
@@ -3273,6 +3293,18 @@ ul.timeline>li:before {
 			font-size: 16px;
 		}
 
+	}
+
+	@media(max-width:767px) {
+		h4 {
+			font-size: 12px;
+		}
+	}
+
+	@media(max-width:575px) {
+		h4 {
+			font-size: 14px;
+		}
 	}
 }
 
@@ -3332,6 +3364,38 @@ ul.timeline>li:before {
 			}
 		}
 	}
+
+	.region-content1 {
+		h1 {
+			font-family: Mont-bold;
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 20px;
+			font-family: Mont-Regular;
+		}
+
+		@media(max-width:1366px) {
+			h1 {
+				font-size: 28px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+
+		@media(max-width:1023px) {
+			h1 {
+				font-size: 24px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 /************************************* region page ******************************************/
@@ -3339,7 +3403,7 @@ ul.timeline>li:before {
 .specialities {
 	p {
 		font-family: Mont-regular;
-		font-size: 24px;
+		font-size: 21px;
 	}
 
 	@media(max-width:1366px) {
@@ -3769,7 +3833,7 @@ ul.timeline>li:before {
 	border-radius: 10px;
 	width: 250px;
 	// clip-path: circle(9% at 90% 22%);
-	clip-path: circle(7% at 91% 22%);
+	clip-path: circle(6% at 91.5% 22%);
 	transition: all .5s ease-in-out;
 	cursor: pointer;
 	box-shadow: 0px 0px 3px #000000ab;
@@ -3834,6 +3898,67 @@ ul.timeline>li:before {
 	}
 
 
+}
+
+.termspage {
+	h1 {
+		font-size: 36px;
+		font-family: Mont-bold;
+	}
+
+	@media(max-width:1366px) {
+		font-size: 24px;
+	}
+}
+
+.termspage-content {
+	p {
+		font-size: 20px;
+		font-family: Mont-Regular;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-family: Mont-semibold;
+	}
+
+	ul {
+		margin-left: 30px;
+
+		li {
+			font-family: Mont-Regular;
+			font-size: 20px;
+		}
+	}
+
+	@media(max-width:1366px) {
+		p {
+			font-size: 16px;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		ul {
+			margin-left: 30px;
+
+			li {
+
+				font-size: 16px;
+			}
+		}
+	}
+
+	.custom-table {
+		th {
+			font-family: Mont-semibold;
+		}
+
+		td {
+			font-family: Mont-Regular;
+		}
+	}
 }
 
 /*************************************************** media queries ***********************************/
@@ -4678,8 +4803,13 @@ ul.timeline>li:before {
 		}
 
 		.logo img {
-			width: 60% !important;
+			width: 50% !important;
 		}
+
+		.changenev1 {
+			width: 50% !important;
+		}
+
 
 		.right-toptext {
 			top: -10px;
@@ -4733,7 +4863,6 @@ ul.timeline>li:before {
 	}
 
 	.nav-items-holder {
-
 		z-index: 999 !important;
 	}
 }

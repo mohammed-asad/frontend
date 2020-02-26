@@ -1,7 +1,7 @@
 //API call to fetch country
 var package = {
 	//-------------------------------------- Code to load home package  ----------------------------------------------------------------------------------------------------
-
+	// package overview (package details) page 
 	getPackageDetails: function () {
 		var maxLenght = 100;
 		var i = 0;
@@ -181,7 +181,7 @@ var package = {
 				alert("API failed, check Token");
 			})
 	},
-
+	//   package cards in home page
 	getPackage: function () {
 		fns.ajaxGet('holidaymate/api/packages/id/', 'user').
 		done(function (response) {
@@ -229,6 +229,7 @@ var package = {
 			})
 	},
 
+	//   package image cards in home page
 	getPackageOverImages: function (package) {
 		//console.log(country);
 		var img = "";
@@ -251,6 +252,7 @@ var package = {
 			});
 
 	},
+	// package overview image (package details) page 
 	getPackageImages: function (package) {
 		//console.log(country);
 		var img = "";
@@ -313,7 +315,7 @@ var package = {
 						}
 						//Get images for package
 						var packageName = item.package_name.replace(/ /g, "_");
-						package.getPackageImages(packageName);
+						package.getPackageOverImages(packageName);
 
 					});
 

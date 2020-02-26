@@ -72,10 +72,10 @@
             <a href="#!">About us</a>
           </li>
           <li>
-            <a href="#!">Privacy Policy</a>
+            <a href="<?php echo base_url(); ?>privacy_policy">Privacy Policy</a>
           </li>
           <li>
-            <a href="#!">Terms & Conditions</a>
+            <a href="<?php echo base_url(); ?>terms_and_condition">Terms & Conditions</a>
           </li>
           <li>
             <a href="#!">Contact Us</a>

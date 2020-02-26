@@ -2,7 +2,7 @@
 <?php $data['home'] = "changenev"; ?>
 <?php $this->load->view('pages/sections/navigation', $data); ?>
 
-<section class="section">
+<section class="section2">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
@@ -13,8 +13,8 @@
     </div>
   </div>
 </section>
-<section class="section">
-  <div class="container">
+<section class="section1">
+  <div class="col-md-9 m-auto">
     <div class="specialities">
       <p class="wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1500ms">We are not here to say We are unique. But we have identified that you are unique. Each one are distinctive and every traveller’s story is different. You are our Guest from the time you logged into our Site. In one word being “Guest centric” is our mission, vision and Secret of our Success. </p>
       <p class="wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1500ms">The only potential you need to possess is the enthusiasm to travel. Travel simple or premium. Travel solo or have a Famjam. But travel only with holidaymate. We will fulfill your dream destination in your number, in the way you have planned to do it. You will tell your travel story to your family and friends starting with “I booked my vacation with holidaymate and I had an amazing experience and I am looking forward to travel more destinations with holidaymate”. </p>

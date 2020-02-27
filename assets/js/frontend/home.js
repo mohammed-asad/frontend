@@ -92,7 +92,7 @@ var home = {
 		});
 
 		$(window).scroll(function (e) {
-			if ($(window).scrollTop() > 50) {
+			if ($(window).scrollTop() > 200) {
 				$('.navigation').addClass("fixed");
 			} else {
 				$('.navigation').removeClass("fixed");

@@ -2849,9 +2849,6 @@ ul.timeline > li:before {
     font-size: 14px;
     top: 80px !important;
   }
-  .nav-wrapper .navigation .right-toptext1 .inner p {
-    color: #000;
-  }
 }
 
 @media (max-width: 414px) {
@@ -3808,7 +3805,6 @@ ul.timeline > li:before {
 .right-toptext .inner {
   width: 100%;
   border-radius: 50px;
-  text-align: center;
 }
 
 .right-toptext .inner .card {
@@ -3922,19 +3918,26 @@ ul.timeline > li:before {
   padding: 0.9em 0.8em;
   border-radius: 10px;
   width: 250px;
-  -webkit-clip-path: circle(6% at 91.5% 22%);
-          clip-path: circle(6% at 91.5% 22%);
+  -webkit-clip-path: circle(6% at 91.5% 20%);
+          clip-path: circle(6% at 91.5% 20%);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 3px #000000ab;
-          box-shadow: 0px 0px 3px #000000ab;
+  -webkit-box-shadow: 0px 5px 8px #0000003d;
+  box-shadow: 0px 5px 8px #0000003d;
 }
 
 .inner:hover {
   -webkit-clip-path: circle(75%);
           clip-path: circle(75%);
   background: #ff5a5f;
+  padding: 15px 50px;
+}
+
+@media (max-width: 1023px) {
+  .inner:hover {
+    padding: 15px 15px;
+  }
 }
 
 .inner h1 {
@@ -3944,14 +3947,25 @@ ul.timeline > li:before {
 
 .inner p {
   color: #fff;
-  margin: 5px;
-  font-family: Mont-semibold;
+  margin-bottom: 5px;
+  font-family: Mont-bold;
   font-size: 14px;
 }
 
 @media (max-width: 1366px) {
   .inner p {
     font-size: 12px;
+  }
+}
+
+.inner small {
+  font-size: 12px;
+  font-family: Mont-Regular;
+}
+
+@media (max-width: 1366px) {
+  .inner small {
+    font-size: 10px;
   }
 }
 
@@ -3971,15 +3985,15 @@ ul.timeline > li:before {
 
 @media (max-width: 1366px) {
   .inner {
-    -webkit-clip-path: circle(7% at 91% 20.5%);
-            clip-path: circle(7% at 91% 20.5%);
+    -webkit-clip-path: circle(7% at 91% 19%);
+            clip-path: circle(7% at 91% 19%);
   }
 }
 
 @media (max-width: 1199px) {
   .inner {
-    -webkit-clip-path: circle(7% at 91.5% 20%);
-            clip-path: circle(7% at 91.5% 20%);
+    -webkit-clip-path: circle(7% at 91.5% 19%);
+            clip-path: circle(7% at 91.5% 19%);
   }
 }
 
@@ -3990,8 +4004,8 @@ ul.timeline > li:before {
     float: right;
     z-index: 9999;
     padding: 0.5em;
-    -webkit-clip-path: circle(7% at 91% 19%);
-            clip-path: circle(7% at 91% 19%);
+    -webkit-clip-path: circle(7% at 91% 17%);
+            clip-path: circle(7% at 91% 17%);
   }
 }
 
@@ -4006,6 +4020,29 @@ ul.timeline > li:before {
   .inner {
     -webkit-clip-path: circle(6% at 93% 13%);
             clip-path: circle(6% at 93% 13%);
+  }
+}
+
+.inner .media img {
+  width: 30px;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 414px) {
+  .inner .media img {
+    margin-top: 0px !important;
+  }
+}
+
+.inner .media .media-body {
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .inner .media .media-body {
+    position: relative;
+    left: 10px;
+    text-align: left;
   }
 }
 

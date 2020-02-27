@@ -5,10 +5,20 @@
 			<div class="inner">
 				<span> <i class="fa fa-phone"></i> </span>
 
-				<p> +91 9845 944499 </p>
-				<p>Lavanya – +91 9845944499 </p>
-				<p>Rajat-David - +91 9880212129</p>
-
+				<div class="media">
+					<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/img_avatar3.png" alt="image">
+					<div class="media-body">
+						<small>Lavanya</small>
+						<p>+91 9845944499</p>
+					</div>
+				</div>
+				<div class="media">
+					<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/img_avatar3.png" alt="image">
+					<div class="media-body">
+						<small>Rajat-David</small>
+						<p>+91 9880212129</p>
+					</div>
+				</div>
 
 			</div>
 		</div>
@@ -27,12 +37,20 @@
 			<div class="right-toptext1">
 				<div class="inner">
 					<span><i class="fa fa-phone"></i></span>
-
-					<p style="color:#000;"> +91 9845 944499 </p>
-					<p style="color:#000;">Lavanya – +91 9845944499 </p>
-					<p style="color:#000;">Rajat-David - +91 9880212129</p>
-
-
+					<div class="media">
+						<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/img_avatar3.png" alt="image">
+						<div class="media-body">
+							<small>Lavanya</small>
+							<p>+91 9845944499</p>
+						</div>
+					</div>
+					<div class="media">
+						<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/img_avatar3.png" alt="image">
+						<div class="media-body">
+							<small>Rajat-David</small>
+							<p>+91 9880212129</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<a href="<?php echo base_url(); ?>" class="logo secondary">

@@ -2726,11 +2726,11 @@ ul.timeline>li:before {
 				font-size: 14px;
 				top: 80px !important;
 
-				.inner {
-					p {
-						color: #000;
-					}
-				}
+				// .inner {
+				// 	p {
+				// 		color: #000;
+				// 	}
+				// }
 			}
 
 			@media(max-width:414px) {
@@ -3712,7 +3712,7 @@ ul.timeline>li:before {
 	.inner {
 		width: 100%;
 		border-radius: 50px;
-		text-align: center;
+
 
 		.card {
 			background: transparent;
@@ -3835,14 +3835,22 @@ ul.timeline>li:before {
 	border-radius: 10px;
 	width: 250px;
 	// clip-path: circle(9% at 90% 22%);
-	clip-path: circle(6% at 91.5% 22%);
+	// clip-path: circle(6% at 91.5% 22%);
+	clip-path: circle(6% at 91.5% 20%);
 	transition: all .5s ease-in-out;
 	cursor: pointer;
-	box-shadow: 0px 0px 3px #000000ab;
+	// box-shadow: 0px 0px 3px #000000ab;
+	-webkit-box-shadow: 0px 5px 8px #0000003d;
+	box-shadow: 0px 5px 8px #0000003d;
 
 	&:hover {
 		clip-path: circle(75%);
 		background: #ff5a5f;
+		padding: 15px 50px;
+
+		@media(max-width:1023px) {
+			padding: 15px 15px;
+		}
 	}
 
 	h1 {
@@ -3852,12 +3860,21 @@ ul.timeline>li:before {
 
 	p {
 		color: #fff;
-		margin: 5px;
-		font-family: Mont-semibold;
+		margin-bottom: 5px;
+		font-family: Mont-bold;
 		font-size: 14px;
 
 		@media(max-width:1366px) {
 			font-size: 12px;
+		}
+	}
+
+	small {
+		font-size: 12px;
+		font-family: Mont-Regular;
+
+		@media(max-width:1366px) {
+			font-size: 10px;
 		}
 	}
 
@@ -3875,11 +3892,13 @@ ul.timeline>li:before {
 	}
 
 	@media(max-width:1366px) {
-		clip-path: circle(7% at 91% 20.5%);
+		// clip-path: circle(7% at 91% 20.5%);
+		clip-path: circle(7% at 91% 19%);
 	}
 
 	@media(max-width:1199px) {
-		clip-path: circle(7% at 91.5% 20%);
+		// clip-path: circle(7% at 91.5% 20%);
+		clip-path: circle(7% at 91.5% 19%);
 	}
 
 	@media(max-width:1023px) {
@@ -3888,7 +3907,8 @@ ul.timeline>li:before {
 		float: right;
 		z-index: 9999;
 		padding: 0.5em;
-		clip-path: circle(7% at 91% 19%);
+		// clip-path: circle(7% at 91% 19%);
+		clip-path: circle(7% at 91% 17%);
 	}
 
 	@media(max-width:414px) {
@@ -3899,6 +3919,30 @@ ul.timeline>li:before {
 		clip-path: circle(6% at 93% 13%);
 	}
 
+	.media {
+		img {
+			width: 30px;
+			border: 2px solid #fff;
+		}
+
+		@media(max-width:414px) {
+			img {
+				margin-top: 0px !important;
+			}
+		}
+
+		.media-body {
+			color: #fff;
+
+			@media(max-width:1023px) {
+				position: relative;
+				left: 10px;
+				text-align: left;
+			}
+
+
+		}
+	}
 
 }
 

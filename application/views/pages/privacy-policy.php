@@ -16,7 +16,7 @@
           <p>You may be asked for personal information anytime you are in contact with Holidaymate directly or indirectly through a third party.
             The only way we will get any kind of personal information is if you choose to give it to us in following
           </p>
-          <h3>circumstance</h3>
+          <h3>Circumstance</h3>
           <ul>
             <li>
               When you make a reservation or purchase from our website or through our customer service team – by email, letter, fax, on the phone or in physical store</li>
@@ -87,7 +87,7 @@
           <p>Holidaymate Ltd, its contractors, agents, owners, and employees are not responsible for the content or the privacy policies of other web sites to which this site may link to or use offers from. Please take time to learn about them as well.</p>
           <h3>Privacy Questions</h3>
           <p>Our Privacy Policy undergoes revision from time to time. We may also make changes to the policy at such time. To make sure you have the access to latest version of Privacy policy, Kindly check/review this page periodically.</p>
-          <p>If at any time you believe that Holidaymate has not adhered to above principles/policy, please notify us by e-mail at info@chariotworldtours.com and we will use all commercially reasonable efforts to promptly determine and correct the problem.</p>
+          <p>If at any time you believe that Holidaymate has not adhered to above principles/policy, please notify us by e-mail at info@holidaymate.in and we will use all commercially reasonable efforts to promptly determine and correct the problem.</p>
 
 
 

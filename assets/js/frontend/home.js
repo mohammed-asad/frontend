@@ -92,10 +92,11 @@ var home = {
 		});
 
 		$(window).scroll(function (e) {
-			if ($(window).scrollTop() > 200) {
+			if ($(window).scrollTop() > 50) {
 				$('.navigation').addClass("fixed");
 			} else {
 				$('.navigation').removeClass("fixed");
+				$('.navigation').addClass("animated fadeIn");
 			}
 		})
 	},

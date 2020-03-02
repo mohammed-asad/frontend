@@ -3836,7 +3836,8 @@ ul.timeline>li:before {
 	width: 250px;
 	// clip-path: circle(9% at 90% 22%);
 	// clip-path: circle(6% at 91.5% 22%);
-	clip-path: circle(6% at 91.5% 20%);
+	//	clip-path: circle(6% at 91.5% 20%);
+	clip-path: circle(6% at 91.5% 14%);
 	transition: all .5s ease-in-out;
 	cursor: pointer;
 	// box-shadow: 0px 0px 3px #000000ab;
@@ -3893,12 +3894,23 @@ ul.timeline>li:before {
 
 	@media(max-width:1366px) {
 		// clip-path: circle(7% at 91% 20.5%);
-		clip-path: circle(7% at 91% 19%);
+		//	clip-path: circle(7% at 91% 19%);
+		clip-path: circle(7% at 91% 13.5%);
+	}
+
+	@media(max-width:1280px) {
+		clip-path: circle(7% at 90.5% 13.5%);
+
 	}
 
 	@media(max-width:1199px) {
 		// clip-path: circle(7% at 91.5% 20%);
-		clip-path: circle(7% at 91.5% 19%);
+		//clip-path: circle(7% at 91.5% 19%);
+		clip-path: circle(7% at 91% 13.5%);
+	}
+
+	@media(max-width:1024px) {
+		clip-path: circle(6% at 91.5% 13.5%);
 	}
 
 	@media(max-width:1023px) {
@@ -3908,15 +3920,21 @@ ul.timeline>li:before {
 		z-index: 9999;
 		padding: 0.5em;
 		// clip-path: circle(7% at 91% 19%);
-		clip-path: circle(7% at 91% 17%);
+		//clip-path: circle(7% at 91% 17%);
+		clip-path: circle(7% at 91.5% 11%);
 	}
 
 	@media(max-width:414px) {
-		clip-path: circle(6% at 92% 15%);
+		//	clip-path: circle(6% at 92% 15%);
+		clip-path: circle(6% at 92.5% 9.5%);
 	}
 
-	@media(max-width:414px) {
-		clip-path: circle(6% at 93% 13%);
+	@media(max-width:380px) {
+		clip-path: circle(6% at 93.5% 9.5%);
+
+		span {
+			margin-top: 3px;
+		}
 	}
 
 	.media {

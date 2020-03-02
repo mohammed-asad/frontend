@@ -3918,8 +3918,8 @@ ul.timeline > li:before {
   padding: 0.9em 0.8em;
   border-radius: 10px;
   width: 250px;
-  -webkit-clip-path: circle(6% at 91.5% 20%);
-          clip-path: circle(6% at 91.5% 20%);
+  -webkit-clip-path: circle(6% at 91.5% 14%);
+          clip-path: circle(6% at 91.5% 14%);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   cursor: pointer;
@@ -3985,15 +3985,29 @@ ul.timeline > li:before {
 
 @media (max-width: 1366px) {
   .inner {
-    -webkit-clip-path: circle(7% at 91% 19%);
-            clip-path: circle(7% at 91% 19%);
+    -webkit-clip-path: circle(7% at 91% 13.5%);
+            clip-path: circle(7% at 91% 13.5%);
+  }
+}
+
+@media (max-width: 1280px) {
+  .inner {
+    -webkit-clip-path: circle(7% at 90.5% 13.5%);
+            clip-path: circle(7% at 90.5% 13.5%);
   }
 }
 
 @media (max-width: 1199px) {
   .inner {
-    -webkit-clip-path: circle(7% at 91.5% 19%);
-            clip-path: circle(7% at 91.5% 19%);
+    -webkit-clip-path: circle(7% at 91% 13.5%);
+            clip-path: circle(7% at 91% 13.5%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    -webkit-clip-path: circle(6% at 91.5% 13.5%);
+            clip-path: circle(6% at 91.5% 13.5%);
   }
 }
 
@@ -4004,22 +4018,25 @@ ul.timeline > li:before {
     float: right;
     z-index: 9999;
     padding: 0.5em;
-    -webkit-clip-path: circle(7% at 91% 17%);
-            clip-path: circle(7% at 91% 17%);
+    -webkit-clip-path: circle(7% at 91.5% 11%);
+            clip-path: circle(7% at 91.5% 11%);
   }
 }
 
 @media (max-width: 414px) {
   .inner {
-    -webkit-clip-path: circle(6% at 92% 15%);
-            clip-path: circle(6% at 92% 15%);
+    -webkit-clip-path: circle(6% at 92.5% 9.5%);
+            clip-path: circle(6% at 92.5% 9.5%);
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 380px) {
   .inner {
-    -webkit-clip-path: circle(6% at 93% 13%);
-            clip-path: circle(6% at 93% 13%);
+    -webkit-clip-path: circle(6% at 93.5% 9.5%);
+            clip-path: circle(6% at 93.5% 9.5%);
+  }
+  .inner span {
+    margin-top: 3px;
   }
 }
 

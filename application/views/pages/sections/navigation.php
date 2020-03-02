@@ -6,21 +6,21 @@
 				<span> <i class="fa fa-phone"></i> </span>
 
 				<div class="media">
-					<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/lavanya.png" alt="image">
+					<img class="mr-3 mt-1 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/lavanya.png" alt="image">
 					<div class="media-body">
 						<small>Lavanya</small>
 						<p>+91 98459 44499</p>
 					</div>
 				</div>
 				<div class="media">
-					<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/rajat.png" alt="image">
+					<img class="mr-3 mt-1 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/rajat.png" alt="image">
 					<div class="media-body">
 						<small>Rajat</small>
 						<p>+91 98880 04954</p>
 					</div>
 				</div>
 				<div class="media">
-					<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/david.png" alt="image">
+					<img class="mr-3 mt-1 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/david.png" alt="image">
 					<div class="media-body">
 						<small>David Abraham</small>
 						<p>+91 98802 12129</p>
@@ -44,21 +44,21 @@
 				<div class="inner">
 					<span><i class="fa fa-phone"></i></span>
 					<div class="media">
-						<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/lavanya.png" alt="image">
+						<img class="mr-3 mt-1 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/lavanya.png" alt="image">
 						<div class="media-body">
 							<small>Lavanya</small>
 							<p>+91 98459 44499</p>
 						</div>
 					</div>
 					<div class="media">
-						<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/rajat.png" alt="image">
+						<img class="mr-3 mt-1 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/rajat.png" alt="image">
 						<div class="media-body">
 							<small>Rajat</small>
 							<p>+91 98880 04954</p>
 						</div>
 					</div>
 					<div class="media">
-						<img class="mr-3 mt-2 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/david.png" alt="image">
+						<img class="mr-3 mt-1 rounded-circle" src="<?php echo base_url(); ?>assets/images/icons/david.png" alt="image">
 						<div class="media-body">
 							<small>David Abraham</small>
 							<p>+91 98802 12129</p>

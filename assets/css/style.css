@@ -3934,6 +3934,12 @@ ul.timeline > li:before {
   padding: 15px 50px;
 }
 
+@media (max-width: 1200px) {
+  .inner:hover {
+    padding: 15px 40px;
+  }
+}
+
 @media (max-width: 1023px) {
   .inner:hover {
     padding: 15px 15px;
@@ -4041,8 +4047,14 @@ ul.timeline > li:before {
 }
 
 .inner .media img {
-  width: 30px;
+  width: 40px;
   border: 2px solid #fff;
+}
+
+@media (max-width: 1366px) {
+  .inner .media img {
+    width: 35px;
+  }
 }
 
 @media (max-width: 414px) {
